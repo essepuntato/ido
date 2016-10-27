@@ -1,0 +1,19 @@
+persona: una persona regolarmente iscritta sulla piattaforma, caratterizzata da un genere, la data di nascita, la provincia e la regione di residenza.
+
+provincia: la provincia di residenza di una persona o di consegna di un ordine.
+
+regione: la regione di residenza di una persona o di consegna di un ordine.
+
+utente: l'avatar con cui una persona è riconosciuta nella piattaforma.
+
+articolo: il prodotto messo a disposizione nel catalogo del negozio per un particolare genere di persone (uomo o donna) e identificato da un codice univoco.
+
+materializzazione articolo: una descrizione di un articolo in base al suo colore e alla taglia ed esso associata.
+
+colore: il colore che può essere associato ad una materializzazione
+
+taglia: la taglia che può essere associata ad una materializzazione.
+
+capo: l'oggetto fisico comprato dal cliente e consegnato nel luogo specificato nell'ordine.
+
+ordine: un particolare ordine, per un prezzo stabilito, di uno o più capi fatto da un qualche utente ad una certa ora e da consegnare in un certo luogo.

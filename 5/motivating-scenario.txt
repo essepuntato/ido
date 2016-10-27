@@ -1,0 +1,11 @@
+Nome: Ordini e fatture
+
+
+Descrizione: In genere, un qualunque meccanismo di vendita prevede la creazione di un ordine (ad una certa data), ovvero la specificazione degli articoli che si vogliono ordinare comprensivi delle loro caratteristiche (tessuto, colore, taglia), la quantità ordinata, il loro prezzo al pezzo, e un ricapitolo generale del valore dell'ordine. L'ordine è associato a un insieme di capi ipotetico, indipendentemente dal fatto che i pezzi di questi siano immediatamente disponibili in magazzino.
+
+In corrispondenza con la spedizione dei relativi pezzi, viene emessa (ad una certa data) una fattura associata all'ordine precedentemente effettuato, che indica i pezzi dei capi effettivamente spediti al cliente, il prezzo a cui questi sono stati venduti, e un ricapitolo generale del valore della fattura. Tuttavia è possibile che i prodotti fatturati siano potenzialmente diversi da quelli ordinati.
+
+Sia gli ordini sia le fatture devono essere accompagnate dalla piattaforma di distribuzione utilizzata, che può essere all'ingrosso (o "B2B", dove il destinatoario della merce è un altra azienda intermedia) o al dettaglio (o "B2C", dove il destinatario della merce è il consumatore finale). In più, ogni ordine/fattura è caratterizzata dal tipo di canale di vendita utilizzato, ad esempio "e-commerce" e vendita frontale.
+
+
+Esempio: In data 15 gennaio 2016, viene effettuato un ordine (sulla piattaforma di distribuzione B2B e-commerce) che include un articolo gestito in magazzino per 4 quantità (35 euro a pezzo), e un altro articolo gestito in magazzino per un totale di 3 quantità (57 euro a pezzo), per un valore totale di 311 euro. La fattura emessa due giorni dopo (e associata all'ordine e utilizzando la medesima piattaforma di distribuzione) indica la spedizione di 3 pezzi del primo articolo gestito in magazzino, e di 3 pezzi del secondo articolo gestito in magazzino, allo stesso prezzo indicato sull'ordine. Il pezzo mancante relativo al primo articolo gestito in magazzino è stato sostituito con un altro pezzo dello stesso capo ma di colore diverso, venduto al prezzo di 37 euro. Il valore totale della fattura è di 313 euro.

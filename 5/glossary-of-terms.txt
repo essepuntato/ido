@@ -1,0 +1,25 @@
+ordine: Indica gli articoli che qualcuno vuole comprare, comprensivi delle loro caratteristiche (tessuto, colore, taglia), la quantità ordinata, il loro prezzo al pezzo, e un ricapitolo generale del valore dell'ordine.
+
+fattura: Indica gli articoli effettivamente comprati e spediti al compratore in riferimento ad un ordine effettuato in precedenza.
+
+ha data di creazione: Il momento in cui un ordine o una fattura viene generato/emesso.
+
+ha valore totale: Il costo totale associato all'ordine o alla fattura.
+
+include articolo gestito in magazzino: Il particolare articolo gestito in magazzino che è stato ordinato.
+
+ha quantità: La quantità richiesta per un certo articolo gestito in magazzino incluso in un ordine, che deve essere maggiore o uguale a 1.
+
+ha costo al pezzo: Il costo per pezzo dell'articolo gestito in magazzino incluso in un ordine.
+
+si riferisce all'ordine: Il legame tra una fattura e l'ordine a cui essa si riferisce.
+
+include pezzo: Il particolare pezzo comprato e spedito indicato sulla fattura.
+
+ha prezzo: Il prezzo a cui un certo pezzo incluso nella fattura è stato venduto.
+
+effettuato attraverso la piattaforma di distribuzione: Indica la piattaforma di distribuzione (per esempio B2C o B2B) utilizzata relativamente all'ordine e alla fattura.
+
+ha canale di vendita: Indica il canale di vendita (per esempio e-commerce) utilizzato relativamente all'ordine e alla fattura.
+
+è disponibile come: Permette di collegare un certo articolo presente in magazzino con un relativo pezzo prodotto.

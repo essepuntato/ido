@@ -1,0 +1,41 @@
+modello: è un particolare disegno di un abito di una certa categoria e destinato ad uno o più generi di persone.
+
+ha categoria di articolo: specifica la categoria a cui appartiene il modello.
+
+categoria di articolo: una plausibile categoria di un modello  (gonna, pantalone, abito, etc.).
+
+ha genere di destinazione: specifica il genere del potenziale cliente a cui il modello è rivolto.
+
+genere: il genere ("maschio" o "femmina") di una persona.
+
+è realizzato come: specifica il capo in cui un modello è realizzato.
+
+capo: è una particolare realizzazione di un modello relativamente ad un certo tessuto, e viene proposto per una certa stagione.
+
+utilizza il tessuto: specifica il tessuto utilizzato da un certo capo.
+
+tessuto: una particolare tipologia di tessuto che può essere utilizzata per caratterizzare un certo capo.
+
+è proposto per la stagione: specifica la stagione a cui un capo è destinato.
+
+stagione: una stagione (es., primavera-estate 2016) a cui i capi possono essere destinati.
+
+è messo a disposizione in: specifica il particolare articolo gestito in magazzino relativamente a un capo.
+
+articolo gestito in magazzino: indica una possibile combinazione di una taglia e di un colore relativamente capo.
+
+ha taglia: specifica la taglia associata ad un certo articolo gestito in magazzino.
+
+taglia: una taglia che definisce la dimensione di un capo.
+
+ha colore: specifica il colore associato ad un certo articolo gestito in magazzino.
+
+colore: un colore che può essere usato per caratterizzare un capo.
+
+è prodotto come: specifica il pezzo realmente prodotto in modo conforme all'articolo gestito in magazzino in considerazione.
+
+pezzo: l'oggetto concreto e prodotto seguendo le specifiche indicate da un articolo gestito in magazzino e dal relativo capo.
+
+ha identificativo: specifica il codice univoco associato ad un certa entità.
+
+identificativo: una stringa che permette di identificare univocamente un'entità.

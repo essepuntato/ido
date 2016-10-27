@@ -1,0 +1,309 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.essepuntato.it/example/"
+     xml:base="http://www.essepuntato.it/example/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://www.essepuntato.it/example"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.essepuntato.it/example/hasPiece -->
+
+    <owl:ObjectProperty rdf:about="http://www.essepuntato.it/example/hasPiece">
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/example"/>
+        <rdfs:range rdf:resource="http://www.essepuntato.it/example/Piece"/>
+        <rdfs:domain rdf:resource="http://www.essepuntato.it/example/PieceWithPrice"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/example/hasPrice -->
+
+    <owl:ObjectProperty rdf:about="http://www.essepuntato.it/example/hasPrice">
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/example"/>
+        <rdfs:domain rdf:resource="http://www.essepuntato.it/example/PieceWithPrice"/>
+        <rdfs:range rdf:resource="http://www.essepuntato.it/example/Price"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/example/hasPricePerPiece -->
+
+    <owl:ObjectProperty rdf:about="http://www.essepuntato.it/example/hasPricePerPiece">
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/example"/>
+        <rdfs:range rdf:resource="http://www.essepuntato.it/example/Price"/>
+        <rdfs:domain rdf:resource="http://www.essepuntato.it/example/StockKeepingUnitAmount"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/example/hasStockKeepingUnit -->
+
+    <owl:ObjectProperty rdf:about="http://www.essepuntato.it/example/hasStockKeepingUnit">
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/example"/>
+        <rdfs:range rdf:resource="http://www.essepuntato.it/example/StockKeepingUnit"/>
+        <rdfs:domain rdf:resource="http://www.essepuntato.it/example/StockKeepingUnitAmount"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/example/hasTotalValue -->
+
+    <owl:ObjectProperty rdf:about="http://www.essepuntato.it/example/hasTotalValue">
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/example"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/example/includes -->
+
+    <owl:ObjectProperty rdf:about="http://www.essepuntato.it/example/includes">
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/example"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/example/isAvailableAs -->
+
+    <owl:ObjectProperty rdf:about="http://www.essepuntato.it/example/isAvailableAs">
+        <rdfs:range rdf:resource="http://www.essepuntato.it/example/Piece"/>
+        <rdfs:domain rdf:resource="http://www.essepuntato.it/example/StockKeepingUnit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/example/refersTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.essepuntato.it/example/refersTo">
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/example"/>
+        <rdfs:domain rdf:resource="http://www.essepuntato.it/example/Invoice"/>
+        <rdfs:range rdf:resource="http://www.essepuntato.it/example/Order"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/example/specifiesDistributionPlatform -->
+
+    <owl:ObjectProperty rdf:about="http://www.essepuntato.it/example/specifiesDistributionPlatform">
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/example"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/example/specifiesSalesChannel -->
+
+    <owl:ObjectProperty rdf:about="http://www.essepuntato.it/example/specifiesSalesChannel">
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/example"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.essepuntato.it/example/hasAmount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.essepuntato.it/example/hasAmount">
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/example"/>
+        <rdfs:domain rdf:resource="http://www.essepuntato.it/example/StockKeepingUnitAmount"/>
+        <rdfs:range rdf:resource="&xsd;positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/example/hasCreationDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.essepuntato.it/example/hasCreationDate">
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/example"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/example/hasCurrency -->
+
+    <owl:DatatypeProperty rdf:about="http://www.essepuntato.it/example/hasCurrency">
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/example"/>
+        <rdfs:domain rdf:resource="http://www.essepuntato.it/example/Price"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.essepuntato.it/example/hasCurrencyValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.essepuntato.it/example/hasCurrencyValue">
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/example"/>
+        <rdfs:domain rdf:resource="http://www.essepuntato.it/example/Price"/>
+        <rdfs:range rdf:resource="&xsd;decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.essepuntato.it/example/DistributionPlatform -->
+
+    <owl:Class rdf:about="http://www.essepuntato.it/example/DistributionPlatform">
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/example"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.essepuntato.it/example/Invoice -->
+
+    <owl:Class rdf:about="http://www.essepuntato.it/example/Invoice">
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/example"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.essepuntato.it/example/Order -->
+
+    <owl:Class rdf:about="http://www.essepuntato.it/example/Order">
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/example"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.essepuntato.it/example/Piece -->
+
+    <owl:Class rdf:about="http://www.essepuntato.it/example/Piece">
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/example"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.essepuntato.it/example/PieceWithPrice -->
+
+    <owl:Class rdf:about="http://www.essepuntato.it/example/PieceWithPrice">
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/example"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.essepuntato.it/example/Price -->
+
+    <owl:Class rdf:about="http://www.essepuntato.it/example/Price">
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/example"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.essepuntato.it/example/SalesChannel -->
+
+    <owl:Class rdf:about="http://www.essepuntato.it/example/SalesChannel">
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/example"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.essepuntato.it/example/StockKeepingUnit -->
+
+    <owl:Class rdf:about="http://www.essepuntato.it/example/StockKeepingUnit">
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/example"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.essepuntato.it/example/StockKeepingUnitAmount -->
+
+    <owl:Class rdf:about="http://www.essepuntato.it/example/StockKeepingUnitAmount">
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/example"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.essepuntato.it/example/b2b -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/example/b2b">
+        <rdf:type rdf:resource="http://www.essepuntato.it/example/DistributionPlatform"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/example/b2c -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/example/b2c">
+        <rdf:type rdf:resource="http://www.essepuntato.it/example/DistributionPlatform"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/example/e-commerce -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/example/e-commerce">
+        <rdf:type rdf:resource="http://www.essepuntato.it/example/SalesChannel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/example/front-desk -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/example/front-desk">
+        <rdf:type rdf:resource="http://www.essepuntato.it/example/SalesChannel"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+

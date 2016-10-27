@@ -1,0 +1,133 @@
+Prefix: : <http://www.essepuntato.it/example/>
+Prefix: dc: <http://purl.org/dc/elements/1.1/>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+
+
+Ontology: <http://www.essepuntato.it/example>
+
+
+AnnotationProperty: rdfs:isDefinedBy
+
+    
+Datatype: xsd:dateTime
+
+    
+Datatype: rdfs:Literal
+
+    
+ObjectProperty: <http://schema.org/containedIn>
+
+    Annotations: 
+        rdfs:isDefinedBy <http://www.essepuntato.it/example>
+    
+    Domain: 
+        <http://www.essepuntato.it/2015/07/ido/Province>
+    
+    Range: 
+        <http://www.essepuntato.it/2015/07/ido/Region>
+    
+    
+ObjectProperty: <http://www.essepuntato.it/2015/07/ido/hasDeliveryLocation>
+
+    Annotations: 
+        rdfs:isDefinedBy <http://www.essepuntato.it/example>
+    
+    Domain: 
+        <http://www.essepuntato.it/2015/07/ido/Order>
+    
+    Range: 
+        <http://www.essepuntato.it/2015/07/ido/Province>
+    
+    
+ObjectProperty: <http://schema.org/orderedItem>
+
+    Annotations: 
+        rdfs:isDefinedBy <http://www.essepuntato.it/example>
+    
+    Domain: 
+        <http://www.essepuntato.it/2015/07/ido/Order>
+    
+    Range: 
+        <http://www.essepuntato.it/2015/07/ido/Item>
+    
+    
+ObjectProperty: <http://www.essepuntato.it/2015/07/ido/hasArticleCategory>
+
+    Annotations: 
+        rdfs:isDefinedBy <http://www.essepuntato.it/example>
+    
+    Domain: 
+        <http://www.essepuntato.it/2015/07/ido/Article>
+    
+    Range: 
+        <http://www.essepuntato.it/2015/07/ido/ArticleCategory>
+    
+    
+DataProperty: <http://schema.org/orderDate>
+
+    Annotations: 
+        rdfs:isDefinedBy <http://www.essepuntato.it/example>
+    
+    Domain: 
+        <http://www.essepuntato.it/2015/07/ido/Order>
+    
+    Range: 
+        xsd:dateTime
+    
+    
+DataProperty: <http://purl.org/dc/terms/identifier>
+
+    Annotations: 
+        rdfs:isDefinedBy <http://www.essepuntato.it/example>
+    
+    Domain: 
+        <http://www.essepuntato.it/2015/07/ido/Article>
+    
+    Range: 
+        rdfs:Literal
+    
+    
+Class: <http://www.essepuntato.it/2015/07/ido/Order>
+
+    Annotations: 
+        rdfs:isDefinedBy <http://www.essepuntato.it/example>
+    
+    
+Class: <http://www.essepuntato.it/2015/07/ido/Province>
+
+    Annotations: 
+        rdfs:isDefinedBy <http://www.essepuntato.it/example>
+    
+    
+Class: <http://www.essepuntato.it/2015/07/ido/ArticleCategory>
+
+    Annotations: 
+        rdfs:isDefinedBy <http://www.essepuntato.it/example>
+    
+    
+Class: owl:Thing
+
+    
+Class: <http://www.essepuntato.it/2015/07/ido/Item>
+
+    Annotations: 
+        rdfs:isDefinedBy <http://www.essepuntato.it/example>
+    
+    
+Class: <http://www.essepuntato.it/2015/07/ido/Region>
+
+    Annotations: 
+        rdfs:isDefinedBy <http://www.essepuntato.it/example>
+    
+    
+Class: <http://www.essepuntato.it/2015/07/ido/Article>
+
+    Annotations: 
+        rdfs:isDefinedBy <http://www.essepuntato.it/example>
+    
+    

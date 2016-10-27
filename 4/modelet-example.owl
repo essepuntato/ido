@@ -1,0 +1,959 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY tbox "http://www.essepuntato.it/example/" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.essepuntato.it/modelet-example/"
+     xml:base="http://www.essepuntato.it/modelet-example/"
+     xmlns:tbox="http://www.essepuntato.it/example/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.essepuntato.it/modelet-example">
+        <owl:imports rdf:resource="http://www.essepuntato.it/example"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/autumn-winter-2015 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/autumn-winter-2015"/>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/item -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/item">
+        <rdf:type rdf:resource="&tbox;Item"/>
+        <tbox:relatesTo rdf:resource="http://www.essepuntato.it/modelet-example/sko"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sales-january-2016 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sales-january-2016"/>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko">
+        <rdf:type rdf:resource="&tbox;StockKeepingUnit"/>
+        <tbox:relatesTo rdf:resource="http://www.essepuntato.it/modelet-example/sko-1"/>
+        <tbox:relatesTo rdf:resource="http://www.essepuntato.it/modelet-example/sko-10"/>
+        <tbox:relatesTo rdf:resource="http://www.essepuntato.it/modelet-example/sko-11"/>
+        <tbox:relatesTo rdf:resource="http://www.essepuntato.it/modelet-example/sko-12"/>
+        <tbox:relatesTo rdf:resource="http://www.essepuntato.it/modelet-example/sko-13"/>
+        <tbox:relatesTo rdf:resource="http://www.essepuntato.it/modelet-example/sko-14"/>
+        <tbox:relatesTo rdf:resource="http://www.essepuntato.it/modelet-example/sko-15"/>
+        <tbox:relatesTo rdf:resource="http://www.essepuntato.it/modelet-example/sko-16"/>
+        <tbox:relatesTo rdf:resource="http://www.essepuntato.it/modelet-example/sko-17"/>
+        <tbox:relatesTo rdf:resource="http://www.essepuntato.it/modelet-example/sko-18"/>
+        <tbox:relatesTo rdf:resource="http://www.essepuntato.it/modelet-example/sko-19"/>
+        <tbox:relatesTo rdf:resource="http://www.essepuntato.it/modelet-example/sko-2"/>
+        <tbox:relatesTo rdf:resource="http://www.essepuntato.it/modelet-example/sko-20"/>
+        <tbox:relatesTo rdf:resource="http://www.essepuntato.it/modelet-example/sko-21"/>
+        <tbox:relatesTo rdf:resource="http://www.essepuntato.it/modelet-example/sko-22"/>
+        <tbox:relatesTo rdf:resource="http://www.essepuntato.it/modelet-example/sko-23"/>
+        <tbox:relatesTo rdf:resource="http://www.essepuntato.it/modelet-example/sko-24"/>
+        <tbox:relatesTo rdf:resource="http://www.essepuntato.it/modelet-example/sko-25"/>
+        <tbox:relatesTo rdf:resource="http://www.essepuntato.it/modelet-example/sko-26"/>
+        <tbox:relatesTo rdf:resource="http://www.essepuntato.it/modelet-example/sko-27"/>
+        <tbox:relatesTo rdf:resource="http://www.essepuntato.it/modelet-example/sko-28"/>
+        <tbox:relatesTo rdf:resource="http://www.essepuntato.it/modelet-example/sko-29"/>
+        <tbox:relatesTo rdf:resource="http://www.essepuntato.it/modelet-example/sko-3"/>
+        <tbox:relatesTo rdf:resource="http://www.essepuntato.it/modelet-example/sko-30"/>
+        <tbox:relatesTo rdf:resource="http://www.essepuntato.it/modelet-example/sko-31"/>
+        <tbox:relatesTo rdf:resource="http://www.essepuntato.it/modelet-example/sko-32"/>
+        <tbox:relatesTo rdf:resource="http://www.essepuntato.it/modelet-example/sko-4"/>
+        <tbox:relatesTo rdf:resource="http://www.essepuntato.it/modelet-example/sko-5"/>
+        <tbox:relatesTo rdf:resource="http://www.essepuntato.it/modelet-example/sko-6"/>
+        <tbox:relatesTo rdf:resource="http://www.essepuntato.it/modelet-example/sko-7"/>
+        <tbox:relatesTo rdf:resource="http://www.essepuntato.it/modelet-example/sko-8"/>
+        <tbox:relatesTo rdf:resource="http://www.essepuntato.it/modelet-example/sko-9"/>
+        <tbox:hasPrice rdf:resource="http://www.essepuntato.it/modelet-example/sko-cogs"/>
+        <tbox:hasPrice rdf:resource="http://www.essepuntato.it/modelet-example/sko-cogs-sales"/>
+        <tbox:hasPrice rdf:resource="http://www.essepuntato.it/modelet-example/sko-sellin"/>
+        <tbox:hasPrice rdf:resource="http://www.essepuntato.it/modelet-example/sko-sellin-sales"/>
+        <tbox:hasPrice rdf:resource="http://www.essepuntato.it/modelet-example/sko-sellout"/>
+        <tbox:hasPrice rdf:resource="http://www.essepuntato.it/modelet-example/sko-sellout-sales"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-1">
+        <rdf:type rdf:resource="&tbox;Piece"/>
+        <tbox:hasPrice rdf:resource="http://www.essepuntato.it/modelet-example/sko-1-sellin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-1-sellin -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-1-sellin">
+        <rdf:type rdf:resource="&tbox;SellInPrice"/>
+        <tbox:hasCurrencyValue rdf:datatype="&xsd;integer">24</tbox:hasCurrencyValue>
+        <tbox:includesVAT rdf:datatype="&xsd;boolean">true</tbox:includesVAT>
+        <tbox:hasCurrency>EUR</tbox:hasCurrency>
+        <tbox:hasType rdf:resource="&tbox;net"/>
+        <tbox:hasValidityInterval rdf:resource="http://www.essepuntato.it/modelet-example/sko-sellin-s-2015-12-15"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-10">
+        <rdf:type rdf:resource="&tbox;Piece"/>
+        <tbox:hasPrice rdf:resource="http://www.essepuntato.it/modelet-example/sko-10-sellout"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-10-sellout -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-10-sellout">
+        <rdf:type rdf:resource="&tbox;SellOutPrice"/>
+        <tbox:hasDiscountPercentage rdf:datatype="&xsd;integer">10</tbox:hasDiscountPercentage>
+        <tbox:hasCurrencyValue rdf:datatype="&xsd;decimal">35.10</tbox:hasCurrencyValue>
+        <tbox:includesVAT rdf:datatype="&xsd;boolean">true</tbox:includesVAT>
+        <tbox:hasCurrency>EUR</tbox:hasCurrency>
+        <tbox:hasType rdf:resource="&tbox;net"/>
+        <tbox:hasValidityInterval rdf:resource="http://www.essepuntato.it/modelet-example/sko-sellout-sales-s-2016-01-07"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-11">
+        <rdf:type rdf:resource="&tbox;Piece"/>
+        <tbox:hasPrice rdf:resource="http://www.essepuntato.it/modelet-example/sko-11-sellout"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-11-sellout -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-11-sellout">
+        <rdf:type rdf:resource="&tbox;SellOutPrice"/>
+        <tbox:hasDiscountPercentage rdf:datatype="&xsd;integer">10</tbox:hasDiscountPercentage>
+        <tbox:hasCurrencyValue rdf:datatype="&xsd;decimal">35.10</tbox:hasCurrencyValue>
+        <tbox:includesVAT rdf:datatype="&xsd;boolean">true</tbox:includesVAT>
+        <tbox:hasCurrency>EUR</tbox:hasCurrency>
+        <tbox:hasType rdf:resource="&tbox;net"/>
+        <tbox:hasValidityInterval rdf:resource="http://www.essepuntato.it/modelet-example/sko-sellout-sales-s-2016-01-07"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-12">
+        <rdf:type rdf:resource="&tbox;Piece"/>
+        <tbox:hasPrice rdf:resource="http://www.essepuntato.it/modelet-example/sko-12-sellout"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-12-sellout -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-12-sellout">
+        <rdf:type rdf:resource="&tbox;SellOutPrice"/>
+        <tbox:hasDiscountPercentage rdf:datatype="&xsd;integer">10</tbox:hasDiscountPercentage>
+        <tbox:hasCurrencyValue rdf:datatype="&xsd;decimal">35.10</tbox:hasCurrencyValue>
+        <tbox:includesVAT rdf:datatype="&xsd;boolean">true</tbox:includesVAT>
+        <tbox:hasCurrency>EUR</tbox:hasCurrency>
+        <tbox:hasType rdf:resource="&tbox;net"/>
+        <tbox:hasValidityInterval rdf:resource="http://www.essepuntato.it/modelet-example/sko-sellout-sales-s-2016-01-07"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-13">
+        <rdf:type rdf:resource="&tbox;Piece"/>
+        <tbox:hasPrice rdf:resource="http://www.essepuntato.it/modelet-example/sko-13-sellin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-13-sellin -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-13-sellin">
+        <rdf:type rdf:resource="&tbox;SellInPrice"/>
+        <tbox:hasCurrencyValue rdf:datatype="&xsd;decimal">19.20</tbox:hasCurrencyValue>
+        <tbox:includesVAT rdf:datatype="&xsd;boolean">true</tbox:includesVAT>
+        <tbox:hasCurrency>EUR</tbox:hasCurrency>
+        <tbox:hasType rdf:resource="&tbox;net"/>
+        <tbox:hasValidityInterval rdf:resource="http://www.essepuntato.it/modelet-example/sko-sellin-sales-s-2016-01-15"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-14 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-14">
+        <rdf:type rdf:resource="&tbox;Piece"/>
+        <tbox:hasPrice rdf:resource="http://www.essepuntato.it/modelet-example/sko-14-sellin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-14-sellin -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-14-sellin">
+        <rdf:type rdf:resource="&tbox;SellInPrice"/>
+        <tbox:hasCurrencyValue rdf:datatype="&xsd;decimal">19.20</tbox:hasCurrencyValue>
+        <tbox:includesVAT rdf:datatype="&xsd;boolean">true</tbox:includesVAT>
+        <tbox:hasCurrency>EUR</tbox:hasCurrency>
+        <tbox:hasType rdf:resource="&tbox;net"/>
+        <tbox:hasValidityInterval rdf:resource="http://www.essepuntato.it/modelet-example/sko-sellin-sales-s-2016-01-15"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-15">
+        <rdf:type rdf:resource="&tbox;Piece"/>
+        <tbox:hasPrice rdf:resource="http://www.essepuntato.it/modelet-example/sko-15-sellin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-15-sellin -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-15-sellin">
+        <rdf:type rdf:resource="&tbox;SellInPrice"/>
+        <tbox:hasCurrencyValue rdf:datatype="&xsd;decimal">19.20</tbox:hasCurrencyValue>
+        <tbox:includesVAT rdf:datatype="&xsd;boolean">true</tbox:includesVAT>
+        <tbox:hasCurrency>EUR</tbox:hasCurrency>
+        <tbox:hasType rdf:resource="&tbox;net"/>
+        <tbox:hasValidityInterval rdf:resource="http://www.essepuntato.it/modelet-example/sko-sellin-sales-s-2016-01-15"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-16 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-16">
+        <rdf:type rdf:resource="&tbox;Piece"/>
+        <tbox:hasPrice rdf:resource="http://www.essepuntato.it/modelet-example/sko-16-sellin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-16-sellin -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-16-sellin">
+        <rdf:type rdf:resource="&tbox;SellInPrice"/>
+        <tbox:hasCurrencyValue rdf:datatype="&xsd;decimal">19.20</tbox:hasCurrencyValue>
+        <tbox:includesVAT rdf:datatype="&xsd;boolean">true</tbox:includesVAT>
+        <tbox:hasCurrency>EUR</tbox:hasCurrency>
+        <tbox:hasType rdf:resource="&tbox;net"/>
+        <tbox:hasValidityInterval rdf:resource="http://www.essepuntato.it/modelet-example/sko-sellin-sales-s-2016-01-15"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-17 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-17">
+        <rdf:type rdf:resource="&tbox;Piece"/>
+        <tbox:hasPrice rdf:resource="http://www.essepuntato.it/modelet-example/sko-17-sellin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-17-sellin -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-17-sellin">
+        <rdf:type rdf:resource="&tbox;SellInPrice"/>
+        <tbox:hasCurrencyValue rdf:datatype="&xsd;decimal">19.20</tbox:hasCurrencyValue>
+        <tbox:includesVAT rdf:datatype="&xsd;boolean">true</tbox:includesVAT>
+        <tbox:hasCurrency>EUR</tbox:hasCurrency>
+        <tbox:hasType rdf:resource="&tbox;net"/>
+        <tbox:hasValidityInterval rdf:resource="http://www.essepuntato.it/modelet-example/sko-sellin-sales-s-2016-01-15"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-18 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-18">
+        <rdf:type rdf:resource="&tbox;Piece"/>
+        <tbox:hasPrice rdf:resource="http://www.essepuntato.it/modelet-example/sko-18-sellin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-18-sellin -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-18-sellin">
+        <rdf:type rdf:resource="&tbox;SellInPrice"/>
+        <tbox:hasCurrencyValue rdf:datatype="&xsd;decimal">19.20</tbox:hasCurrencyValue>
+        <tbox:includesVAT rdf:datatype="&xsd;boolean">true</tbox:includesVAT>
+        <tbox:hasCurrency>EUR</tbox:hasCurrency>
+        <tbox:hasType rdf:resource="&tbox;net"/>
+        <tbox:hasValidityInterval rdf:resource="http://www.essepuntato.it/modelet-example/sko-sellin-sales-s-2016-01-15"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-19 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-19">
+        <rdf:type rdf:resource="&tbox;Piece"/>
+        <tbox:hasPrice rdf:resource="http://www.essepuntato.it/modelet-example/sko-19-sellin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-19-sellin -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-19-sellin">
+        <rdf:type rdf:resource="&tbox;SellInPrice"/>
+        <tbox:hasCurrencyValue rdf:datatype="&xsd;decimal">19.20</tbox:hasCurrencyValue>
+        <tbox:includesVAT rdf:datatype="&xsd;boolean">true</tbox:includesVAT>
+        <tbox:hasCurrency>EUR</tbox:hasCurrency>
+        <tbox:hasType rdf:resource="&tbox;net"/>
+        <tbox:hasValidityInterval rdf:resource="http://www.essepuntato.it/modelet-example/sko-sellin-sales-s-2016-01-15"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-2">
+        <rdf:type rdf:resource="&tbox;Piece"/>
+        <tbox:hasPrice rdf:resource="http://www.essepuntato.it/modelet-example/sko-2-sellin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-2-sellin -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-2-sellin">
+        <rdf:type rdf:resource="&tbox;SellInPrice"/>
+        <tbox:hasCurrencyValue rdf:datatype="&xsd;integer">24</tbox:hasCurrencyValue>
+        <tbox:includesVAT rdf:datatype="&xsd;boolean">true</tbox:includesVAT>
+        <tbox:hasCurrency>EUR</tbox:hasCurrency>
+        <tbox:hasType rdf:resource="&tbox;net"/>
+        <tbox:hasValidityInterval rdf:resource="http://www.essepuntato.it/modelet-example/sko-sellin-s-2015-12-15"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-20 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-20">
+        <rdf:type rdf:resource="&tbox;Piece"/>
+        <tbox:hasPrice rdf:resource="http://www.essepuntato.it/modelet-example/sko-20-sellin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-20-sellin -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-20-sellin">
+        <rdf:type rdf:resource="&tbox;SellInPrice"/>
+        <tbox:hasCurrencyValue rdf:datatype="&xsd;decimal">19.20</tbox:hasCurrencyValue>
+        <tbox:includesVAT rdf:datatype="&xsd;boolean">true</tbox:includesVAT>
+        <tbox:hasCurrency>EUR</tbox:hasCurrency>
+        <tbox:hasType rdf:resource="&tbox;net"/>
+        <tbox:hasValidityInterval rdf:resource="http://www.essepuntato.it/modelet-example/sko-sellin-sales-s-2016-01-15"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-21 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-21">
+        <rdf:type rdf:resource="&tbox;Piece"/>
+        <tbox:hasPrice rdf:resource="http://www.essepuntato.it/modelet-example/sko-21-sellin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-21-sellin -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-21-sellin">
+        <rdf:type rdf:resource="&tbox;SellInPrice"/>
+        <tbox:hasCurrencyValue rdf:datatype="&xsd;decimal">19.20</tbox:hasCurrencyValue>
+        <tbox:includesVAT rdf:datatype="&xsd;boolean">true</tbox:includesVAT>
+        <tbox:hasCurrency>EUR</tbox:hasCurrency>
+        <tbox:hasType rdf:resource="&tbox;net"/>
+        <tbox:hasValidityInterval rdf:resource="http://www.essepuntato.it/modelet-example/sko-sellin-sales-s-2016-01-15"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-22 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-22">
+        <rdf:type rdf:resource="&tbox;Piece"/>
+        <tbox:hasPrice rdf:resource="http://www.essepuntato.it/modelet-example/sko-22-sellin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-22-sellin -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-22-sellin">
+        <rdf:type rdf:resource="&tbox;SellInPrice"/>
+        <tbox:hasCurrencyValue rdf:datatype="&xsd;decimal">19.20</tbox:hasCurrencyValue>
+        <tbox:includesVAT rdf:datatype="&xsd;boolean">true</tbox:includesVAT>
+        <tbox:hasCurrency>EUR</tbox:hasCurrency>
+        <tbox:hasType rdf:resource="&tbox;net"/>
+        <tbox:hasValidityInterval rdf:resource="http://www.essepuntato.it/modelet-example/sko-sellin-sales-s-2016-01-15"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-23 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-23">
+        <rdf:type rdf:resource="&tbox;Piece"/>
+        <tbox:hasPrice rdf:resource="http://www.essepuntato.it/modelet-example/sko-23-sellin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-23-sellin -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-23-sellin">
+        <rdf:type rdf:resource="&tbox;SellInPrice"/>
+        <tbox:hasCurrencyValue rdf:datatype="&xsd;decimal">19.20</tbox:hasCurrencyValue>
+        <tbox:includesVAT rdf:datatype="&xsd;boolean">true</tbox:includesVAT>
+        <tbox:hasCurrency>EUR</tbox:hasCurrency>
+        <tbox:hasType rdf:resource="&tbox;net"/>
+        <tbox:hasValidityInterval rdf:resource="http://www.essepuntato.it/modelet-example/sko-sellin-sales-s-2016-01-15"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-24 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-24">
+        <rdf:type rdf:resource="&tbox;Piece"/>
+        <tbox:hasPrice rdf:resource="http://www.essepuntato.it/modelet-example/sko-24-sellin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-24-sellin -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-24-sellin">
+        <rdf:type rdf:resource="&tbox;SellInPrice"/>
+        <tbox:hasCurrencyValue rdf:datatype="&xsd;decimal">19.20</tbox:hasCurrencyValue>
+        <tbox:includesVAT rdf:datatype="&xsd;boolean">true</tbox:includesVAT>
+        <tbox:hasCurrency>EUR</tbox:hasCurrency>
+        <tbox:hasType rdf:resource="&tbox;net"/>
+        <tbox:hasValidityInterval rdf:resource="http://www.essepuntato.it/modelet-example/sko-sellin-sales-s-2016-01-15"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-25 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-25">
+        <rdf:type rdf:resource="&tbox;Piece"/>
+        <tbox:hasPrice rdf:resource="http://www.essepuntato.it/modelet-example/sko-25-sellin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-25-sellin -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-25-sellin">
+        <rdf:type rdf:resource="&tbox;SellInPrice"/>
+        <tbox:hasCurrencyValue rdf:datatype="&xsd;decimal">19.20</tbox:hasCurrencyValue>
+        <tbox:includesVAT rdf:datatype="&xsd;boolean">true</tbox:includesVAT>
+        <tbox:hasCurrency>EUR</tbox:hasCurrency>
+        <tbox:hasType rdf:resource="&tbox;net"/>
+        <tbox:hasValidityInterval rdf:resource="http://www.essepuntato.it/modelet-example/sko-sellin-sales-s-2016-01-15"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-26 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-26">
+        <rdf:type rdf:resource="&tbox;Piece"/>
+        <tbox:hasPrice rdf:resource="http://www.essepuntato.it/modelet-example/sko-26-sellin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-26-sellin -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-26-sellin">
+        <rdf:type rdf:resource="&tbox;SellInPrice"/>
+        <tbox:hasCurrencyValue rdf:datatype="&xsd;decimal">19.20</tbox:hasCurrencyValue>
+        <tbox:includesVAT rdf:datatype="&xsd;boolean">true</tbox:includesVAT>
+        <tbox:hasCurrency>EUR</tbox:hasCurrency>
+        <tbox:hasType rdf:resource="&tbox;net"/>
+        <tbox:hasValidityInterval rdf:resource="http://www.essepuntato.it/modelet-example/sko-sellin-sales-s-2016-01-15"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-27 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-27">
+        <rdf:type rdf:resource="&tbox;Piece"/>
+        <tbox:hasPrice rdf:resource="http://www.essepuntato.it/modelet-example/sko-27-sellin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-27-sellin -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-27-sellin">
+        <rdf:type rdf:resource="&tbox;SellInPrice"/>
+        <tbox:hasCurrencyValue rdf:datatype="&xsd;decimal">19.20</tbox:hasCurrencyValue>
+        <tbox:includesVAT rdf:datatype="&xsd;boolean">true</tbox:includesVAT>
+        <tbox:hasCurrency>EUR</tbox:hasCurrency>
+        <tbox:hasType rdf:resource="&tbox;net"/>
+        <tbox:hasValidityInterval rdf:resource="http://www.essepuntato.it/modelet-example/sko-sellin-sales-s-2016-01-15"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-28 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-28">
+        <rdf:type rdf:resource="&tbox;Piece"/>
+        <tbox:hasPrice rdf:resource="http://www.essepuntato.it/modelet-example/sko-28-sellin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-28-sellin -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-28-sellin">
+        <rdf:type rdf:resource="&tbox;SellInPrice"/>
+        <tbox:hasCurrencyValue rdf:datatype="&xsd;decimal">19.20</tbox:hasCurrencyValue>
+        <tbox:includesVAT rdf:datatype="&xsd;boolean">true</tbox:includesVAT>
+        <tbox:hasCurrency>EUR</tbox:hasCurrency>
+        <tbox:hasType rdf:resource="&tbox;net"/>
+        <tbox:hasValidityInterval rdf:resource="http://www.essepuntato.it/modelet-example/sko-sellin-sales-s-2016-01-15"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-29 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-29">
+        <rdf:type rdf:resource="&tbox;Piece"/>
+        <tbox:hasPrice rdf:resource="http://www.essepuntato.it/modelet-example/sko-29-sellin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-29-sellin -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-29-sellin">
+        <rdf:type rdf:resource="&tbox;SellInPrice"/>
+        <tbox:hasCurrencyValue rdf:datatype="&xsd;decimal">19.20</tbox:hasCurrencyValue>
+        <tbox:includesVAT rdf:datatype="&xsd;boolean">true</tbox:includesVAT>
+        <tbox:hasCurrency>EUR</tbox:hasCurrency>
+        <tbox:hasType rdf:resource="&tbox;net"/>
+        <tbox:hasValidityInterval rdf:resource="http://www.essepuntato.it/modelet-example/sko-sellin-sales-s-2016-01-15"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-3">
+        <rdf:type rdf:resource="&tbox;Piece"/>
+        <tbox:hasPrice rdf:resource="http://www.essepuntato.it/modelet-example/sko-3-sellin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-3-sellin -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-3-sellin">
+        <rdf:type rdf:resource="&tbox;SellInPrice"/>
+        <tbox:hasCurrencyValue rdf:datatype="&xsd;integer">24</tbox:hasCurrencyValue>
+        <tbox:includesVAT rdf:datatype="&xsd;boolean">true</tbox:includesVAT>
+        <tbox:hasCurrency>EUR</tbox:hasCurrency>
+        <tbox:hasType rdf:resource="&tbox;net"/>
+        <tbox:hasValidityInterval rdf:resource="http://www.essepuntato.it/modelet-example/sko-sellin-s-2015-12-15"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-30 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-30">
+        <rdf:type rdf:resource="&tbox;Piece"/>
+        <tbox:hasPrice rdf:resource="http://www.essepuntato.it/modelet-example/sko-30-sellin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-30-sellin -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-30-sellin">
+        <rdf:type rdf:resource="&tbox;SellInPrice"/>
+        <tbox:hasCurrencyValue rdf:datatype="&xsd;decimal">19.20</tbox:hasCurrencyValue>
+        <tbox:includesVAT rdf:datatype="&xsd;boolean">true</tbox:includesVAT>
+        <tbox:hasCurrency>EUR</tbox:hasCurrency>
+        <tbox:hasType rdf:resource="&tbox;net"/>
+        <tbox:hasValidityInterval rdf:resource="http://www.essepuntato.it/modelet-example/sko-sellin-sales-s-2016-01-15"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-31 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-31">
+        <rdf:type rdf:resource="&tbox;Piece"/>
+        <tbox:hasPrice rdf:resource="http://www.essepuntato.it/modelet-example/sko-31-sellin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-31-sellin -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-31-sellin">
+        <rdf:type rdf:resource="&tbox;SellInPrice"/>
+        <tbox:hasCurrencyValue rdf:datatype="&xsd;decimal">19.20</tbox:hasCurrencyValue>
+        <tbox:includesVAT rdf:datatype="&xsd;boolean">true</tbox:includesVAT>
+        <tbox:hasCurrency>EUR</tbox:hasCurrency>
+        <tbox:hasType rdf:resource="&tbox;net"/>
+        <tbox:hasValidityInterval rdf:resource="http://www.essepuntato.it/modelet-example/sko-sellin-sales-s-2016-01-15"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-32 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-32">
+        <rdf:type rdf:resource="&tbox;Piece"/>
+        <tbox:hasPrice rdf:resource="http://www.essepuntato.it/modelet-example/sko-32-sellin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-32-sellin -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-32-sellin">
+        <rdf:type rdf:resource="&tbox;SellInPrice"/>
+        <tbox:hasCurrencyValue rdf:datatype="&xsd;decimal">19.20</tbox:hasCurrencyValue>
+        <tbox:includesVAT rdf:datatype="&xsd;boolean">true</tbox:includesVAT>
+        <tbox:hasCurrency>EUR</tbox:hasCurrency>
+        <tbox:hasType rdf:resource="&tbox;net"/>
+        <tbox:hasValidityInterval rdf:resource="http://www.essepuntato.it/modelet-example/sko-sellin-sales-s-2016-01-15"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-4">
+        <rdf:type rdf:resource="&tbox;Piece"/>
+        <tbox:hasPrice rdf:resource="http://www.essepuntato.it/modelet-example/sko-4-sellout"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-4-sellout -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-4-sellout">
+        <rdf:type rdf:resource="&tbox;SellOutPrice"/>
+        <tbox:hasCurrencyValue rdf:datatype="&xsd;integer">39</tbox:hasCurrencyValue>
+        <tbox:includesVAT rdf:datatype="&xsd;boolean">true</tbox:includesVAT>
+        <tbox:hasCurrency>EUR</tbox:hasCurrency>
+        <tbox:hasType rdf:resource="&tbox;net"/>
+        <tbox:hasValidityInterval rdf:resource="http://www.essepuntato.it/modelet-example/sko-sellout-s-2015-12-15"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-5">
+        <rdf:type rdf:resource="&tbox;Piece"/>
+        <tbox:hasPrice rdf:resource="http://www.essepuntato.it/modelet-example/sko-5-sellout"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-5-sellout -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-5-sellout">
+        <rdf:type rdf:resource="&tbox;SellOutPrice"/>
+        <tbox:hasCurrencyValue rdf:datatype="&xsd;integer">39</tbox:hasCurrencyValue>
+        <tbox:includesVAT rdf:datatype="&xsd;boolean">true</tbox:includesVAT>
+        <tbox:hasCurrency>EUR</tbox:hasCurrency>
+        <tbox:hasType rdf:resource="&tbox;net"/>
+        <tbox:hasValidityInterval rdf:resource="http://www.essepuntato.it/modelet-example/sko-sellout-s-2015-12-15"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-6">
+        <rdf:type rdf:resource="&tbox;Piece"/>
+        <tbox:hasPrice rdf:resource="http://www.essepuntato.it/modelet-example/sko-6-sellout"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-6-sellout -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-6-sellout">
+        <rdf:type rdf:resource="&tbox;SellOutPrice"/>
+        <tbox:hasDiscountPercentage rdf:datatype="&xsd;integer">10</tbox:hasDiscountPercentage>
+        <tbox:hasCurrencyValue rdf:datatype="&xsd;decimal">35.10</tbox:hasCurrencyValue>
+        <tbox:includesVAT rdf:datatype="&xsd;boolean">true</tbox:includesVAT>
+        <tbox:hasCurrency>EUR</tbox:hasCurrency>
+        <tbox:hasType rdf:resource="&tbox;net"/>
+        <tbox:hasValidityInterval rdf:resource="http://www.essepuntato.it/modelet-example/sko-sellout-sales-s-2016-01-07"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-7">
+        <rdf:type rdf:resource="&tbox;Piece"/>
+        <tbox:hasPrice rdf:resource="http://www.essepuntato.it/modelet-example/sko-7-sellout"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-7-sellout -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-7-sellout">
+        <rdf:type rdf:resource="&tbox;SellOutPrice"/>
+        <tbox:hasDiscountPercentage rdf:datatype="&xsd;integer">10</tbox:hasDiscountPercentage>
+        <tbox:hasCurrencyValue rdf:datatype="&xsd;decimal">35.10</tbox:hasCurrencyValue>
+        <tbox:includesVAT rdf:datatype="&xsd;boolean">true</tbox:includesVAT>
+        <tbox:hasCurrency>EUR</tbox:hasCurrency>
+        <tbox:hasType rdf:resource="&tbox;net"/>
+        <tbox:hasValidityInterval rdf:resource="http://www.essepuntato.it/modelet-example/sko-sellout-sales-s-2016-01-07"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-8">
+        <rdf:type rdf:resource="&tbox;Piece"/>
+        <tbox:hasPrice rdf:resource="http://www.essepuntato.it/modelet-example/sko-8-sellout"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-8-sellout -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-8-sellout">
+        <rdf:type rdf:resource="&tbox;SellOutPrice"/>
+        <tbox:hasDiscountPercentage rdf:datatype="&xsd;integer">10</tbox:hasDiscountPercentage>
+        <tbox:hasCurrencyValue rdf:datatype="&xsd;decimal">35.10</tbox:hasCurrencyValue>
+        <tbox:includesVAT rdf:datatype="&xsd;boolean">true</tbox:includesVAT>
+        <tbox:hasCurrency>EUR</tbox:hasCurrency>
+        <tbox:hasType rdf:resource="&tbox;net"/>
+        <tbox:hasValidityInterval rdf:resource="http://www.essepuntato.it/modelet-example/sko-sellout-sales-s-2016-01-07"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-9">
+        <rdf:type rdf:resource="&tbox;Piece"/>
+        <tbox:hasPrice rdf:resource="http://www.essepuntato.it/modelet-example/sko-9-sellout"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-9-sellout -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-9-sellout">
+        <rdf:type rdf:resource="&tbox;SellOutPrice"/>
+        <tbox:hasDiscountPercentage rdf:datatype="&xsd;integer">10</tbox:hasDiscountPercentage>
+        <tbox:hasCurrencyValue rdf:datatype="&xsd;decimal">35.10</tbox:hasCurrencyValue>
+        <tbox:includesVAT rdf:datatype="&xsd;boolean">true</tbox:includesVAT>
+        <tbox:hasCurrency>EUR</tbox:hasCurrency>
+        <tbox:hasType rdf:resource="&tbox;net"/>
+        <tbox:hasValidityInterval rdf:resource="http://www.essepuntato.it/modelet-example/sko-sellout-sales-s-2016-01-07"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-cogs -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-cogs">
+        <rdf:type rdf:resource="&tbox;CostOfGoodsSold"/>
+        <tbox:hasCurrencyValue rdf:datatype="&xsd;integer">15</tbox:hasCurrencyValue>
+        <tbox:includesVAT rdf:datatype="&xsd;boolean">true</tbox:includesVAT>
+        <tbox:hasCurrency>EUR</tbox:hasCurrency>
+        <tbox:hasType rdf:resource="&tbox;net"/>
+        <tbox:isApplicableFor rdf:resource="http://www.essepuntato.it/modelet-example/autumn-winter-2015"/>
+        <tbox:hasValidityInterval rdf:resource="http://www.essepuntato.it/modelet-example/sko-cogs-s-2015-12-15"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-cogs-s-2015-12-15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-cogs-s-2015-12-15">
+        <rdf:type rdf:resource="&tbox;TimeInterval"/>
+        <tbox:hasStartTime rdf:datatype="&xsd;dateTime">2015-12-15T00:00:00</tbox:hasStartTime>
+        <tbox:hasEndTime rdf:datatype="&xsd;dateTime">2016-01-14T23:59:59</tbox:hasEndTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-cogs-sales -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-cogs-sales">
+        <tbox:hasCurrencyValue rdf:datatype="&xsd;integer">12</tbox:hasCurrencyValue>
+        <tbox:includesVAT rdf:datatype="&xsd;boolean">true</tbox:includesVAT>
+        <tbox:hasCurrency>EUR</tbox:hasCurrency>
+        <tbox:hasType rdf:resource="&tbox;net"/>
+        <tbox:isApplicableFor rdf:resource="http://www.essepuntato.it/modelet-example/autumn-winter-2015"/>
+        <tbox:isApplicableFor rdf:resource="http://www.essepuntato.it/modelet-example/sales-january-2016"/>
+        <tbox:hasValidityInterval rdf:resource="http://www.essepuntato.it/modelet-example/sko-cogs-sales-s-2016-01-15"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-cogs-sales-s-2016-01-15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-cogs-sales-s-2016-01-15">
+        <rdf:type rdf:resource="&tbox;TimeInterval"/>
+        <tbox:hasStartTime rdf:datatype="&xsd;dateTime">2016-01-15T00:00:00</tbox:hasStartTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-sellin -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-sellin">
+        <rdf:type rdf:resource="&tbox;SellInPrice"/>
+        <tbox:hasCurrencyValue rdf:datatype="&xsd;integer">24</tbox:hasCurrencyValue>
+        <tbox:includesVAT rdf:datatype="&xsd;boolean">true</tbox:includesVAT>
+        <tbox:hasCurrency>EUR</tbox:hasCurrency>
+        <tbox:hasType rdf:resource="&tbox;net"/>
+        <tbox:isApplicableFor rdf:resource="http://www.essepuntato.it/modelet-example/autumn-winter-2015"/>
+        <tbox:hasValidityInterval rdf:resource="http://www.essepuntato.it/modelet-example/sko-sellin-s-2015-12-15"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-sellin-s-2015-12-15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-sellin-s-2015-12-15">
+        <rdf:type rdf:resource="&tbox;TimeInterval"/>
+        <tbox:hasStartTime rdf:datatype="&xsd;dateTime">2015-12-15T00:00:00</tbox:hasStartTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-sellin-sales -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-sellin-sales">
+        <tbox:hasCurrencyValue rdf:datatype="&xsd;decimal">19.20</tbox:hasCurrencyValue>
+        <tbox:includesVAT rdf:datatype="&xsd;boolean">true</tbox:includesVAT>
+        <tbox:hasCurrency>EUR</tbox:hasCurrency>
+        <tbox:hasType rdf:resource="&tbox;net"/>
+        <tbox:isApplicableFor rdf:resource="http://www.essepuntato.it/modelet-example/autumn-winter-2015"/>
+        <tbox:isApplicableFor rdf:resource="http://www.essepuntato.it/modelet-example/sales-january-2016"/>
+        <tbox:hasValidityInterval rdf:resource="http://www.essepuntato.it/modelet-example/sko-sellin-sales-s-2016-01-15"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-sellin-sales-s-2016-01-15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-sellin-sales-s-2016-01-15">
+        <rdf:type rdf:resource="&tbox;TimeInterval"/>
+        <tbox:hasStartTime rdf:datatype="&xsd;dateTime">2016-01-15T00:00:00</tbox:hasStartTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-sellout -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-sellout">
+        <rdf:type rdf:resource="&tbox;SellOutPrice"/>
+        <tbox:hasCurrencyValue rdf:datatype="&xsd;integer">39</tbox:hasCurrencyValue>
+        <tbox:includesVAT rdf:datatype="&xsd;boolean">true</tbox:includesVAT>
+        <tbox:hasCurrency>EUR</tbox:hasCurrency>
+        <tbox:hasType rdf:resource="&tbox;net"/>
+        <tbox:isApplicableFor rdf:resource="http://www.essepuntato.it/modelet-example/autumn-winter-2015"/>
+        <tbox:hasValidityInterval rdf:resource="http://www.essepuntato.it/modelet-example/sko-sellout-s-2015-12-15"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-sellout-s-2015-12-15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-sellout-s-2015-12-15">
+        <rdf:type rdf:resource="&tbox;TimeInterval"/>
+        <tbox:hasStartTime rdf:datatype="&xsd;dateTime">2015-12-15T00:00:00</tbox:hasStartTime>
+        <tbox:hasEndTime rdf:datatype="&xsd;dateTime">2016-01-06T23:59:59</tbox:hasEndTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-sellout-sales -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-sellout-sales">
+        <rdf:type rdf:resource="&tbox;SellOutPrice"/>
+        <tbox:hasDiscountPercentage rdf:datatype="&xsd;integer">10</tbox:hasDiscountPercentage>
+        <tbox:hasCurrencyValue rdf:datatype="&xsd;decimal">35.10</tbox:hasCurrencyValue>
+        <tbox:includesVAT rdf:datatype="&xsd;boolean">true</tbox:includesVAT>
+        <tbox:hasCurrency>EUR</tbox:hasCurrency>
+        <tbox:hasType rdf:resource="&tbox;net"/>
+        <tbox:isApplicableFor rdf:resource="http://www.essepuntato.it/modelet-example/autumn-winter-2015"/>
+        <tbox:isApplicableFor rdf:resource="http://www.essepuntato.it/modelet-example/sales-january-2016"/>
+        <tbox:hasValidityInterval rdf:resource="http://www.essepuntato.it/modelet-example/sko-sellout-sales-s-2016-01-07"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sko-sellout-sales-s-2016-01-07 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sko-sellout-sales-s-2016-01-07">
+        <rdf:type rdf:resource="&tbox;TimeInterval"/>
+        <tbox:hasStartTime rdf:datatype="&xsd;dateTime">2016-01-07T00:00:00</tbox:hasStartTime>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+

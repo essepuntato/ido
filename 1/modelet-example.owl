@@ -1,0 +1,221 @@
+Prefix: dc: <http://purl.org/dc/elements/1.1/>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+Prefix: abox: <http://www.essepuntato.it/example/abox/>
+Prefix: onto: <http://www.essepuntato.it/example/>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+
+
+Ontology: <http://www.essepuntato.it/example/abox>
+
+Import: <http://www.essepuntato.it/example>
+
+Datatype: xsd:date
+
+    
+Datatype: xsd:float
+
+    
+Datatype: xsd:dateTime
+
+    
+Datatype: xsd:integer
+
+    
+Datatype: rdf:PlainLiteral
+
+    
+ObjectProperty: onto:includesItem
+
+    
+ObjectProperty: onto:wasCreatedFor
+
+    
+ObjectProperty: onto:isPartOf
+
+    
+ObjectProperty: onto:hasGenre
+
+    
+ObjectProperty: onto:hasPriceCurrency
+
+    
+ObjectProperty: onto:isMaterialisedAs
+
+    
+ObjectProperty: onto:hasTotalPrice
+
+    
+ObjectProperty: onto:holdsAccount
+
+    
+ObjectProperty: onto:hasItem
+
+    
+ObjectProperty: onto:hasSize
+
+    
+ObjectProperty: onto:hasHomeLocation
+
+    
+ObjectProperty: onto:hasColour
+
+    
+ObjectProperty: onto:madeOrder
+
+    
+DataProperty: onto:hasIdentifier
+
+    
+DataProperty: onto:hasPriceValue
+
+    
+DataProperty: onto:hasOrderDate
+
+    
+DataProperty: onto:hasDateOfBirth
+
+    
+Class: onto:Size
+
+    
+Class: onto:Article
+
+    
+Class: onto:Materialisation
+
+    
+Class: onto:UserAccount
+
+    
+Class: onto:Item
+
+    
+Class: onto:Person
+
+    
+Class: onto:Order
+
+    
+Class: onto:Province
+
+    
+Class: onto:Region
+
+    
+Class: onto:Price
+
+    
+Class: onto:Colour
+
+    
+Individual: abox:size-s
+
+    Types: 
+        onto:Size
+    
+    
+Individual: abox:person-1981
+
+    Types: 
+        onto:Person
+    
+    Facts:  
+     onto:holdsAccount  abox:user-4626,
+     onto:hasHomeLocation  abox:province-trieste,
+     onto:hasGenre  onto:female,
+     onto:hasDateOfBirth  "1981-06-15"^^xsd:date
+    
+    
+Individual: onto:female
+
+    
+Individual: abox:item-amt3odo-s-black
+
+    Types: 
+        onto:Item
+    
+    
+Individual: abox:article-amt3odo-s-black
+
+    Types: 
+        onto:Materialisation
+    
+    Facts:  
+     onto:hasColour  abox:colour-black,
+     onto:hasItem  abox:item-amt3odo-s-black,
+     onto:hasSize  abox:size-s
+    
+    
+Individual: onto:euro
+
+    
+Individual: abox:user-4626
+
+    Types: 
+        onto:UserAccount
+    
+    Facts:  
+     onto:madeOrder  abox:order-2378,
+     onto:hasIdentifier  4626
+    
+    
+Individual: abox:region-friuli-venezia-giulia
+
+    Types: 
+        onto:Region
+    
+    
+Individual: abox:order-2378-price
+
+    Types: 
+        onto:Price
+    
+    Facts:  
+     onto:hasPriceCurrency  onto:euro,
+     onto:hasPriceValue  89.0f
+    
+    
+Individual: abox:colour-black
+
+    Types: 
+        onto:Colour
+    
+    
+Individual: abox:article-amt3odo
+
+    Types: 
+        onto:Article
+    
+    Facts:  
+     onto:isMaterialisedAs  abox:article-amt3odo-s-black,
+     onto:wasCreatedFor  onto:female,
+     onto:hasIdentifier  "AMT3ODO"
+    
+    
+Individual: onto:male
+
+    
+Individual: abox:order-2378
+
+    Types: 
+        onto:Order
+    
+    Facts:  
+     onto:hasTotalPrice  abox:order-2378-price,
+     onto:includesItem  abox:item-amt3odo-s-black,
+     onto:hasOrderDate  "2015-01-02T12:58:00"^^xsd:dateTime
+    
+    
+Individual: abox:province-trieste
+
+    Types: 
+        onto:Province
+    
+    Facts:  
+     onto:isPartOf  abox:region-friuli-venezia-giulia
+    
+    

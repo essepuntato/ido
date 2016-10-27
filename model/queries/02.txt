@@ -1,0 +1,108 @@
+#question_it Qual è la categoria di articolo più venduta il 2 gennaio 2015?
+
+#question_en What is the best sold article category on January 2, 2015?
+
+#sparql PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX ido: <http://www.essepuntato.it/2015/07/ido/>
+PREFIX schema: <http://schema.org/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+PREFIX : <http://www.essepuntato.it/2015/07/ido/abox/>
+
+SELECT ?category (sum(?amount) as ?n)
+WHERE {
+    ?order
+        schema:orderDate ?date ;
+        schema:orderedItem ?sku_amount .
+        ?sku_amount
+            schema:orderQuantity ?amount ;
+            gr:typeOfGood/^ido:isAvailableAs/^ido:wasRealisedAs/ido:hasArticleCategory ?category .
+    FILTER (year(?date) = 2015 && month(?date) = 1 && day(?date) = 2)
+}
+GROUP BY ?category
+ORDER BY DESC(?n)
+LIMIT 1
+
+
+#question_it Quali sono le categorie di articolo più vendute nelle varie regioni?
+
+#question_en What are the best sold article categories in each region?
+
+#sparql PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX ido: <http://www.essepuntato.it/2015/07/ido/>
+PREFIX schema: <http://schema.org/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+PREFIX : <http://www.essepuntato.it/2015/07/ido/abox/>
+
+SELECT ?region ?category
+WHERE {
+    {
+        SELECT ?region (MAX(?num) AS ?max)
+        WHERE {
+            {
+                SELECT ?region ?category (sum(?amount) as ?num)
+                WHERE {
+                    ?order
+                        ido:hasDeliveryLocation/schema:containedIn* ?region ;
+                        schema:orderedItem ?sku_amount .
+                    ?sku_amount
+                        schema:orderQuantity ?amount ;
+                        gr:typeOfGood/^ido:isAvailableAs/^ido:wasRealisedAs/ido:hasArticleCategory
+                            ?category .
+                    ?region a ido:Region .
+                }
+                GROUP BY ?region ?category
+            }
+        } GROUP BY ?region
+    }
+    {
+        SELECT ?region ?category (sum(?amount) as ?num)
+        WHERE {
+            ?order
+                ido:hasDeliveryLocation/schema:containedIn+ ?region ;
+                schema:orderedItem ?sku_amount .
+            ?sku_amount
+                schema:orderQuantity ?amount ;
+                gr:typeOfGood/^ido:isAvailableAs/^ido:wasRealisedAs/ido:hasArticleCategory
+                    ?category .
+            ?region a ido:Region .
+        }
+        GROUP BY ?region ?category
+    }
+    FILTER (?num = ?max)
+}
+
+
+#question_it Qual è la categoria di articolo più venduta il 2 gennaio 2015 in Lombardia?
+
+#question_en What is the best sold article category in Lombardia on January 2, 2015?
+
+#sparql PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX ido: <http://www.essepuntato.it/2015/07/ido/>
+PREFIX schema: <http://schema.org/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+PREFIX : <http://www.essepuntato.it/2015/07/ido/abox/>
+
+SELECT ?category (sum(?amount) as ?n)
+WHERE {
+    ?order
+        ido:hasDeliveryLocation/schema:containedIn* :lombardia ;
+        schema:orderDate ?date ;
+        schema:orderedItem ?sku_amount .
+    ?sku_amount
+        schema:orderQuantity ?amount ;
+        gr:typeOfGood/^ido:isAvailableAs/^ido:wasRealisedAs/ido:hasArticleCategory
+            ?category .
+    FILTER (year(?date) = 2015 && month(?date) = 1 && day(?date) = 2)
+}
+GROUP BY ?category
+ORDER BY DESC(?n)
+LIMIT 1

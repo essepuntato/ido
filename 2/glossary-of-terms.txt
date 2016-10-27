@@ -1,0 +1,11 @@
+provincia: la provincia di residenza di una persona o di consegna di un ordine.
+
+regione: la regione di residenza di una persona o di consegna di un ordine.
+
+articolo: il prodotto messo a disposizione nel catalogo del negozio e identificato da un codice univoco.
+
+categoria articolo: il tipo di un certo articolo, ad esempio "maglia", "pantalone", ecc.
+
+capo: l'oggetto fisico comprato dal cliente e consegnato nel luogo specificato nell'ordine.
+
+ordine: un particolare ordine di uno o più capi fatto da un qualche utente ad una certa ora e da consegnare in un certo luogo.

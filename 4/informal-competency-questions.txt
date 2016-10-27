@@ -1,0 +1,29 @@
+1. Quali sono i prezzi di cogs, sell-in e sell-out (tutti al netto dell'IVA) di tutti gli articoli gestiti in magazzino relativamente al periodo successivo al 10 gennaio?
+Risposta: l'articolo presente in magazzino, accompagnato dai relativi prezzi di cogs, sell-in e sell-out al netto dell'IVA
+Esempio:
+    sku-1, 15 euro, 24 euro, 35.10 euro
+    sku-1, 15 euro, 19.20 euro, 35.10 euro
+    sku-1, 12 euro, 24 euro, 35.10 euro
+    sku-1, 12 euro, 19.20 euro, 35.10 euro
+
+2. Quali sono i pezzi che sono stati comprati con dello sconto, indipendentemente da particolare prezzo su cui lo sconto è stato applicato?
+Risposta: il capo, il prezzo d'acquisto, il tipo di prezzo, lo sconto,
+Esempio:
+    piece-1, 35,10 euro, sell-out, 10%
+    piece-2, 35,10 euro, sell-out, 10%
+    piece-3, 35,10 euro, sell-out, 10%
+    piece-4, 35,10 euro, sell-out, 10%
+    piece-5, 35,10 euro, sell-out, 10%
+    piece-6, 35,10 euro, sell-out, 10%
+    piece-7, 35,10 euro, sell-out, 10%
+
+3. Come è variato il prezzo di cogs di un certo articolo gestito in magazzino nel tempo?
+Risposta: il prezzo di cogs, con le date di inizio (che da l'ordine dei risultati) e di fine di validità del cogs
+Esempio:
+    15 euro, 2015-12-15T00:00:00, 2016-01-14T23:59:59
+    12 euro, 2016-01-15T00:00:00, NONE
+
+4. Qual è il ricavato totale di tutti i pezzi venduti?
+Risposta: Il prezzo totale in euro
+Esempio:
+    779,70 euro

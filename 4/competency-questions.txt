@@ -1,0 +1,98 @@
+1. Quali sono i prezzi di cogs, sell-in e sell-out (tutti al netto dell'IVA) di tutti gli articoli gestiti in magazzino relativamente al periodo successivo al 10 gennaio?
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX onto: <http://www.essepuntato.it/example/>
+PREFIX : <http://www.essepuntato.it/modelet-example/>
+
+SELECT DISTINCT ?sku ?cogs ?sellin ?sellout
+WHERE {
+    ?sku onto:hasPrice ?cogs_r, ?sellin_r, ?sellout_r .
+    ?cogs_r a onto:CostOfGoodsSold ;
+        onto:includesVAT "true"^^xsd:boolean ;
+        onto:hasCurrencyValue ?cogs .
+    FILTER NOT EXISTS {
+        ?cogs_r onto:hasValidityInterval/onto:hasEndTime ?cogs_et .
+        FILTER (?cogs_et < "2016-01-10T00:00:00"^^xsd:dateTime)
+    }
+
+    ?sellin_r a onto:SellInPrice ;
+        onto:includesVAT "true"^^xsd:boolean ;
+        onto:hasCurrencyValue ?sellin .
+    FILTER NOT EXISTS {
+        ?sellin_r onto:hasValidityInterval/onto:hasEndTime ?sellin_et .
+        FILTER (?sellin_et < "2016-01-10T00:00:00"^^xsd:dateTime)
+    }
+
+    ?sellout_r a onto:SellOutPrice ;
+        onto:includesVAT "true"^^xsd:boolean ;
+        onto:hasCurrencyValue ?sellout .
+    FILTER NOT EXISTS {
+        ?sellout_r onto:hasValidityInterval/onto:hasEndTime ?sellout_et .
+        FILTER (?sellout_et < "2016-01-10T00:00:00"^^xsd:dateTime)
+    }
+}
+
+
+2. Quali sono i pezzi che sono stati comprati con dello sconto, indipendentemente da particolare prezzo su cui lo sconto è stato applicato?
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX onto: <http://www.essepuntato.it/example/>
+PREFIX : <http://www.essepuntato.it/modelet-example/>
+
+SELECT DISTINCT ?piece ?price ?type ?discount
+WHERE {
+    ?piece a onto:Piece ;
+    onto:hasPrice [
+        a ?type ;
+        onto:hasCurrencyValue ?price ;
+        onto:hasDiscountPercentage ?discount
+    ] .
+    FILTER (?discount > 0)
+    FILTER (contains(str(?type), "/example/"))
+}
+
+
+3. Come è variato il prezzo di cogs di un certo articolo gestito in magazzino nel tempo?
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX onto: <http://www.essepuntato.it/example/>
+PREFIX : <http://www.essepuntato.it/modelet-example/>
+
+SELECT DISTINCT ?sku ?cogs ?st ?et
+WHERE {
+    ?sku a onto:StockKeepingUnit ;
+        onto:hasPrice ?cogs_r .
+
+    ?cogs_r a onto:CostOfGoodsSold ;
+        onto:hasCurrencyValue ?cogs ;
+        onto:hasValidityInterval ?vi .
+
+    ?vi onto:hasStartTime ?st .
+    OPTIONAL {
+        ?vi onto:hasEndTime ?et
+    }
+}
+ORDER BY ?st
+
+
+4. Qual è il ricavato totale di tutti i pezzi venduti?
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX onto: <http://www.essepuntato.it/example/>
+PREFIX : <http://www.essepuntato.it/modelet-example/>
+
+SELECT DISTINCT (sum(?price) as ?tot)
+WHERE {
+    ?piece a onto:Piece ;
+        onto:hasPrice [
+            onto:hasCurrencyValue ?price
+        ]
+}

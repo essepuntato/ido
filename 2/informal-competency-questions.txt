@@ -1,0 +1,18 @@
+1. Qual è la categoria di articolo più venduta il 2 gennaio 2015?
+Risposta: la categoria dell'articolo e la quantità
+Esempio:
+    maglia, 4
+
+2. Quali sono le categorie di articolo più vendute nelle varie regioni?
+Risposta: la regione e la categoria più venduta
+Esempio:
+    Basilicata, pantalone
+    Friuli-Venezia Giulia, abito
+    Molise, abito
+    Lombardia, maglia
+
+3. Qual è la categoria di articolo più venduta il 2 gennaio 2015 in Lombardia?
+Risposta: la categoria e la quantità
+Esempio:
+    maglia, 4
+Dipende da: 1

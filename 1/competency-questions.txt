@@ -1,0 +1,84 @@
+1. Chi è l'utente che ha speso di più sulla piattaforma nell'anno 2015?
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX onto: <http://www.essepuntato.it/example/>
+
+SELECT DISTINCT ?client (sum(?price) AS ?totalAmount)
+WHERE {
+	?client a onto:UserAccount ;
+		onto:madeOrder ?order .
+    ?order onto:hasOrderDate ?date .
+    FILTER (year(?date) = 2015)
+	?order a onto:Order ;
+		onto:hasTotalPrice/onto:hasPriceValue ?price .
+
+}
+GROUP BY ?client
+ORDER BY DESC(?totalAmount)
+LIMIT 1
+
+
+2. Quale provincia i cui utenti hanno ordinato il maggior numero di articoli?
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX onto: <http://www.essepuntato.it/example/>
+
+SELECT DISTINCT ?province (count(?item) AS ?totalItem)
+WHERE {
+    ?province a onto:Province .
+	?order a onto:Order ;
+        onto:includesItem ?item ;
+		onto:hasDeliveryLocation/onto:isPartOf* ?province
+}
+GROUP BY ?province
+ORDER BY DESC(?totalItem)
+LIMIT 1
+
+3. Qual è il colore più richiesto nel mese di gennaio 2015?
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX onto: <http://www.essepuntato.it/example/>
+
+SELECT DISTINCT ?colour (count(?colour) AS ?total)
+WHERE {
+    ?order a onto:Order ;
+        onto:includesItem ?item ;
+        onto:hasOrderDate ?date .
+    ?item ^onto:hasItem/onto:hasColour ?colour .
+    FILTER (month(?date) = 1 && year(?date) = 2015)
+}
+GROUP BY ?colour
+ORDER BY DESC(?total)
+LIMIT 1
+
+
+4. Qual è l'articolo più venduto del mese di gennaio 2015 e quale il suo colore più scelto?
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX onto: <http://www.essepuntato.it/example/>
+
+SELECT DISTINCT ?article (count(?item) AS ?total) ?colour (count(?colour) AS ?totalColour)
+WHERE {
+    ?order a onto:Order ;
+        onto:includesItem ?item ;
+        onto:hasOrderDate ?date .
+    ?item ^onto:hasItem ?man .
+    ?man onto:hasColour ?colour ;
+        ^onto:isMaterialisedAs ?article.
+    FILTER (month(?date) = 1 && year(?date) = 2015)
+}
+GROUP BY ?article ?colour
+ORDER BY DESC(?total)
+LIMIT 1

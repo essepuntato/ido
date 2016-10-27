@@ -1,0 +1,25 @@
+1. Qual è la categoria del modello, il genere, la stagione, il tessuto, la taglia, e il colore di tutti i pezzi prodotti?
+Risposta: il pezzo, la categoria del suo modello, il tessuto del relativo capo, e la taglia e il colore del relativo articolo gestito in magazzino.
+Esempio:
+    pezzo 1, abito, femminile, primavera-estate 2016, odo, m, nero
+    pezzo 2, abito, femminile, primavera-estate 2016, odo, m, nero
+    pezzo 3, abito, femminile, primavera-estate 2016, odo, m, nero
+    pezzo 4, abito, femminile, primavera-estate 2016, odo, m, nero
+    pezzo 5, abito, femminile, primavera-estate 2016, odo, m, nero
+    pezzo 6, abito, femminile, primavera-estate 2016, odo, m, bianco
+    pezzo 7, abito, femminile, primavera-estate 2016, odo, m, bianco
+    pezzo 8, abito, femminile, primavera-estate 2016, odo, m, bianco
+
+2. Quali sono i colori più prodotti?
+Risposta: il colore e quanti pezzi sono stati prodotti con quel colore
+Esempio:
+    nero, 5
+    bianco, 3
+
+3. Qual è la taglia degli articoli gestiti in magazzino di colore nero sono stati messi a disposizione per il capo di codice "AMT3ODO"?
+Risposta: articolo gestito in magazzino e taglia
+Esempio:
+    sku 1, s
+    sku 2, m
+    sku 3, l
+    sku 4, xl

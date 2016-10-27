@@ -1,0 +1,294 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY tbox "http://www.essepuntato.it/example/" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.essepuntato.it/modelet-example/"
+     xml:base="http://www.essepuntato.it/modelet-example/"
+     xmlns:tbox="http://www.essepuntato.it/example/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.essepuntato.it/modelet-example">
+        <owl:imports rdf:resource="http://www.essepuntato.it/example"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/AMT3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/AMT3">
+        <rdf:type rdf:resource="&tbox;Style"/>
+        <tbox:wasDesignedFor>female</tbox:wasDesignedFor>
+        <tbox:isRealisedAs rdf:resource="http://www.essepuntato.it/modelet-example/AMT3ODO"/>
+        <tbox:hasCategory rdf:resource="http://www.essepuntato.it/modelet-example/dress"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/AMT3ODO -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/AMT3ODO">
+        <rdf:type rdf:resource="&tbox;Item"/>
+        <tbox:hasIdentifier rdf:datatype="&rdfs;Literal">AMT3ODO</tbox:hasIdentifier>
+        <tbox:isAvailableAs rdf:resource="http://www.essepuntato.it/modelet-example/AMT3ODO-l-black"/>
+        <tbox:isAvailableAs rdf:resource="http://www.essepuntato.it/modelet-example/AMT3ODO-l-white"/>
+        <tbox:isAvailableAs rdf:resource="http://www.essepuntato.it/modelet-example/AMT3ODO-m-black"/>
+        <tbox:isAvailableAs rdf:resource="http://www.essepuntato.it/modelet-example/AMT3ODO-m-white"/>
+        <tbox:isAvailableAs rdf:resource="http://www.essepuntato.it/modelet-example/AMT3ODO-s-black"/>
+        <tbox:isAvailableAs rdf:resource="http://www.essepuntato.it/modelet-example/AMT3ODO-s-white"/>
+        <tbox:isAvailableAs rdf:resource="http://www.essepuntato.it/modelet-example/AMT3ODO-xl-black"/>
+        <tbox:isAvailableAs rdf:resource="http://www.essepuntato.it/modelet-example/AMT3ODO-xl-white"/>
+        <tbox:uses rdf:resource="http://www.essepuntato.it/modelet-example/ODO"/>
+        <tbox:wasProposedFor rdf:resource="http://www.essepuntato.it/modelet-example/spring-summer-2016"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/AMT3ODO-l-black -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/AMT3ODO-l-black">
+        <rdf:type rdf:resource="&tbox;StockKeepingUnit"/>
+        <tbox:hasColour rdf:resource="http://www.essepuntato.it/modelet-example/black"/>
+        <tbox:hasSize rdf:resource="http://www.essepuntato.it/modelet-example/l"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/AMT3ODO-l-white -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/AMT3ODO-l-white">
+        <rdf:type rdf:resource="&tbox;StockKeepingUnit"/>
+        <tbox:hasSize rdf:resource="http://www.essepuntato.it/modelet-example/l"/>
+        <tbox:hasColour rdf:resource="http://www.essepuntato.it/modelet-example/white"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/AMT3ODO-m-black -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/AMT3ODO-m-black">
+        <rdf:type rdf:resource="&tbox;StockKeepingUnit"/>
+        <tbox:wasProducedAs rdf:resource="http://www.essepuntato.it/modelet-example/AMT3ODO-m-black-1"/>
+        <tbox:wasProducedAs rdf:resource="http://www.essepuntato.it/modelet-example/AMT3ODO-m-black-2"/>
+        <tbox:wasProducedAs rdf:resource="http://www.essepuntato.it/modelet-example/AMT3ODO-m-black-3"/>
+        <tbox:wasProducedAs rdf:resource="http://www.essepuntato.it/modelet-example/AMT3ODO-m-black-4"/>
+        <tbox:wasProducedAs rdf:resource="http://www.essepuntato.it/modelet-example/AMT3ODO-m-black-5"/>
+        <tbox:hasColour rdf:resource="http://www.essepuntato.it/modelet-example/black"/>
+        <tbox:hasSize rdf:resource="http://www.essepuntato.it/modelet-example/m"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/AMT3ODO-m-black-1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/AMT3ODO-m-black-1">
+        <rdf:type rdf:resource="&tbox;Piece"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/AMT3ODO-m-black-2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/AMT3ODO-m-black-2">
+        <rdf:type rdf:resource="&tbox;Piece"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/AMT3ODO-m-black-3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/AMT3ODO-m-black-3">
+        <rdf:type rdf:resource="&tbox;Piece"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/AMT3ODO-m-black-4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/AMT3ODO-m-black-4">
+        <rdf:type rdf:resource="&tbox;Piece"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/AMT3ODO-m-black-5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/AMT3ODO-m-black-5">
+        <rdf:type rdf:resource="&tbox;Piece"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/AMT3ODO-m-white -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/AMT3ODO-m-white">
+        <rdf:type rdf:resource="&tbox;StockKeepingUnit"/>
+        <tbox:wasProducedAs rdf:resource="http://www.essepuntato.it/modelet-example/AMT3ODO-m-white-1"/>
+        <tbox:wasProducedAs rdf:resource="http://www.essepuntato.it/modelet-example/AMT3ODO-m-white-2"/>
+        <tbox:wasProducedAs rdf:resource="http://www.essepuntato.it/modelet-example/AMT3ODO-m-white-3"/>
+        <tbox:hasSize rdf:resource="http://www.essepuntato.it/modelet-example/m"/>
+        <tbox:hasColour rdf:resource="http://www.essepuntato.it/modelet-example/white"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/AMT3ODO-m-white-1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/AMT3ODO-m-white-1">
+        <rdf:type rdf:resource="&tbox;Piece"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/AMT3ODO-m-white-2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/AMT3ODO-m-white-2">
+        <rdf:type rdf:resource="&tbox;Piece"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/AMT3ODO-m-white-3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/AMT3ODO-m-white-3">
+        <rdf:type rdf:resource="&tbox;Piece"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/AMT3ODO-s-black -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/AMT3ODO-s-black">
+        <rdf:type rdf:resource="&tbox;StockKeepingUnit"/>
+        <tbox:hasColour rdf:resource="http://www.essepuntato.it/modelet-example/black"/>
+        <tbox:hasSize rdf:resource="http://www.essepuntato.it/modelet-example/s"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/AMT3ODO-s-white -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/AMT3ODO-s-white">
+        <rdf:type rdf:resource="&tbox;StockKeepingUnit"/>
+        <tbox:hasSize rdf:resource="http://www.essepuntato.it/modelet-example/s"/>
+        <tbox:hasColour rdf:resource="http://www.essepuntato.it/modelet-example/white"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/AMT3ODO-xl-black -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/AMT3ODO-xl-black">
+        <rdf:type rdf:resource="&tbox;StockKeepingUnit"/>
+        <tbox:hasColour rdf:resource="http://www.essepuntato.it/modelet-example/black"/>
+        <tbox:hasSize rdf:resource="http://www.essepuntato.it/modelet-example/xl"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/AMT3ODO-xl-white -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/AMT3ODO-xl-white">
+        <rdf:type rdf:resource="&tbox;StockKeepingUnit"/>
+        <tbox:hasColour rdf:resource="http://www.essepuntato.it/modelet-example/white"/>
+        <tbox:hasSize rdf:resource="http://www.essepuntato.it/modelet-example/xl"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/ODO -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/ODO">
+        <rdf:type rdf:resource="&tbox;Textile"/>
+        <tbox:hasIdentifier rdf:datatype="&rdfs;Literal">ODO</tbox:hasIdentifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/black -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/black">
+        <rdf:type rdf:resource="&tbox;Colour"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/dress -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/dress">
+        <rdf:type rdf:resource="&tbox;ArticleCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/l -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/l">
+        <rdf:type rdf:resource="&tbox;Size"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/m -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/m">
+        <rdf:type rdf:resource="&tbox;Size"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/s -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/s">
+        <rdf:type rdf:resource="&tbox;Size"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/spring-summer-2016 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/spring-summer-2016">
+        <rdf:type rdf:resource="&tbox;Season"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/white -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/white">
+        <rdf:type rdf:resource="&tbox;Colour"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/xl -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/xl">
+        <rdf:type rdf:resource="&tbox;Size"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+

@@ -1,0 +1,59 @@
+1. Qual è la categoria del modello, il genere, la stagione, il tessuto, la taglia, e il colore di tutti i pezzi prodotti?
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX onto: <http://www.essepuntato.it/example/>
+PREFIX : <http://www.essepuntato.it/modelet-example/>
+
+SELECT DISTINCT ?piece ?category ?genre ?season ?textile ?size ?colour
+WHERE {
+    ?style a onto:Style ;
+        onto:hasCategory ?category ;
+        onto:wasDesignedFor ?genre ;
+        onto:isRealisedAs [
+            a onto:Item ;
+            onto:wasProposedFor ?season ;
+            onto:uses ?textile ;
+            onto:isAvailableAs [
+                a onto:StockKeepingUnit ;
+                onto:hasColour ?colour ;
+                onto:hasSize ?size ;
+                onto:wasProducedAs ?piece
+            ]
+        ]
+}
+
+
+2. Quali sono i colori più prodotti?
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX onto: <http://www.essepuntato.it/example/>
+PREFIX : <http://www.essepuntato.it/modelet-example/>
+
+SELECT DISTINCT ?colour (count(?colour) AS ?n)
+WHERE {
+    ?sku onto:wasProducedAs ?piece ;
+        onto:hasColour ?colour
+}
+GROUP BY ?colour
+ORDER BY DESC(?n)
+
+
+3. Qual è la taglia degli articoli gestiti in magazzino di colore nero sono stati messi a disposizione per il capo di codice "AMT3ODO"?
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX onto: <http://www.essepuntato.it/example/>
+PREFIX : <http://www.essepuntato.it/modelet-example/>
+
+SELECT DISTINCT ?sku ?size
+WHERE {
+    ?item onto:hasIdentifier "AMT3ODO"^^rdfs:Literal ;
+        onto:isAvailableAs ?sku .
+    ?sku onto:hasColour :black ;
+        onto:hasSize ?size
+}

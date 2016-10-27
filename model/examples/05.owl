@@ -1,0 +1,451 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.essepuntato.it/2015/07/ido/abox/"
+     xml:base="http://www.essepuntato.it/2015/07/ido/abox/"
+     xmlns:schema="http://schema.org/"
+     xmlns:tbox="http://www.essepuntato.it/example/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos1="http://www.w3.org/2008/05/skos#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:ido="http://www.essepuntato.it/2015/07/ido/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:sw-vocab-status="http://www.w3.org/2003/06/sw-vocab-status/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:v1="http://purl.org/goodrelations/v1#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://www.essepuntato.it/2015/07/ido/abox">
+        <owl:imports rdf:resource="http://www.essepuntato.it/2015/07/ido"/>
+    </owl:Ontology>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://schema.org/referencesOrder -->
+
+    <owl:ObjectProperty rdf:about="http://schema.org/referencesOrder"/>
+
+
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/hasPricePerPiece -->
+
+    <owl:ObjectProperty rdf:about="http://www.essepuntato.it/2015/07/ido/hasPricePerPiece"/>
+
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/hasTotalValue -->
+
+    <owl:ObjectProperty rdf:about="http://www.essepuntato.it/2015/07/ido/hasTotalValue"/>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/includesPiece -->
+
+    <owl:ObjectProperty rdf:about="http://www.essepuntato.it/2015/07/ido/includesPiece"/>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/specifiesDistributionPlatform -->
+
+    <owl:ObjectProperty rdf:about="http://www.essepuntato.it/2015/07/ido/specifiesDistributionPlatform"/>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/specifiesSalesChannel -->
+
+    <owl:ObjectProperty rdf:about="http://www.essepuntato.it/2015/07/ido/specifiesSalesChannel"/>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/wasProducedAs -->
+
+    <owl:ObjectProperty rdf:about="http://www.essepuntato.it/2015/07/ido/wasProducedAs"/>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://purl.org/goodrelations/v1#hasCurrency -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/goodrelations/v1#hasCurrency"/>
+
+
+
+    <!-- http://purl.org/goodrelations/v1#hasCurrencyValue -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/goodrelations/v1#hasCurrencyValue"/>
+
+
+
+    <!-- http://schema.org/orderDate -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/orderDate"/>
+
+
+
+    <!-- http://schema.org/orderQuantity -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/orderQuantity"/>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/Invoice -->
+
+    <owl:Class rdf:about="http://www.essepuntato.it/2015/07/ido/Invoice"/>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/Order -->
+
+    <owl:Class rdf:about="http://www.essepuntato.it/2015/07/ido/Order"/>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/Piece -->
+
+    <owl:Class rdf:about="http://www.essepuntato.it/2015/07/ido/Piece"/>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/PieceWithPrice -->
+
+    <owl:Class rdf:about="http://www.essepuntato.it/2015/07/ido/PieceWithPrice"/>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/Price -->
+
+    <owl:Class rdf:about="http://www.essepuntato.it/2015/07/ido/Price"/>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/StockKeepingUnit -->
+
+    <owl:Class rdf:about="http://www.essepuntato.it/2015/07/ido/StockKeepingUnit"/>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/StockKeepingUnitAmount -->
+
+    <owl:Class rdf:about="http://www.essepuntato.it/2015/07/ido/StockKeepingUnitAmount"/>
+
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/invoice-order-2016-01-15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/invoice-order-2016-01-15">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Invoice"/>
+        <schema:referencesOrder rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/order-2016-01-15"/>
+        <schema:totalPaymentDue rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/invoice-order-2016-01-15-total-value"/>
+        <ido:includesPiece rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/invoice-order-2016-01-15-total-value"/>
+        <ido:includesPiece rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/piece-1-sku-1-with-price"/>
+        <ido:includesPiece rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/piece-1-sku-2-with-price"/>
+        <ido:includesPiece rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/piece-1-sku-3-with-price"/>
+        <ido:includesPiece rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/piece-2-sku-1-with-price"/>
+        <ido:includesPiece rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/piece-2-sku-2-with-price"/>
+        <ido:includesPiece rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/piece-3-sku-1-with-price"/>
+        <ido:includesPiece rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/piece-3-sku-2-with-price"/>
+        <ido:specifiesDistributionPlatform rdf:resource="http://www.essepuntato.it/2015/07/ido/b2b"/>
+        <ido:specifiesSalesChannel rdf:resource="http://www.essepuntato.it/2015/07/ido/e-commerce"/>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-17T00:00:00</terms:issued>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/invoice-order-2016-01-15-total-value -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/invoice-order-2016-01-15-total-value">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Price"/>
+        <ido:hasPriceCurrency rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">EUR</ido:hasPriceCurrency>
+        <ido:hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">313.0</ido:hasPriceValue>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/order-2016-01-15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/order-2016-01-15">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Order"/>
+        <schema:orderedItem rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sku-1-4"/>
+        <schema:orderedItem rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sku-2-3"/>
+        <ido:hasTotalValue rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/order-2016-01-15-total-value"/>
+        <ido:specifiesDistributionPlatform rdf:resource="http://www.essepuntato.it/2015/07/ido/b2b"/>
+        <ido:specifiesSalesChannel rdf:resource="http://www.essepuntato.it/2015/07/ido/e-commerce"/>
+        <schema:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-15T00:00:00</schema:orderDate>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/order-2016-01-15-total-value -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/order-2016-01-15-total-value">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Price"/>
+        <ido:hasPriceCurrency rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">EUR</ido:hasPriceCurrency>
+        <ido:hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">311.0</ido:hasPriceValue>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/piece-1-sku-1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/piece-1-sku-1">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Piece"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/piece-1-sku-1-with-price -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/piece-1-sku-1-with-price">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/PieceWithPrice"/>
+        <v1:typeOfGood rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/piece-1-sku-1"/>
+        <ido:hasPricePerPiece rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sku-1-price"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/piece-1-sku-2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/piece-1-sku-2">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Piece"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/piece-1-sku-2-with-price -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/piece-1-sku-2-with-price">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/PieceWithPrice"/>
+        <v1:typeOfGood rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/piece-1-sku-2"/>
+        <ido:hasPricePerPiece rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sku-2-price"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/piece-1-sku-3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/piece-1-sku-3">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Piece"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/piece-1-sku-3-with-price -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/piece-1-sku-3-with-price">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/PieceWithPrice"/>
+        <v1:typeOfGood rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/piece-1-sku-3"/>
+        <ido:hasPricePerPiece rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sku-3-price"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/piece-2-sku-1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/piece-2-sku-1">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Piece"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/piece-2-sku-1-with-price -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/piece-2-sku-1-with-price">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/PieceWithPrice"/>
+        <v1:typeOfGood rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/piece-2-sku-1"/>
+        <ido:hasPricePerPiece rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sku-1-price"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/piece-2-sku-2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/piece-2-sku-2">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Piece"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/piece-2-sku-2-with-price -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/piece-2-sku-2-with-price">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/PieceWithPrice"/>
+        <v1:typeOfGood rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/piece-2-sku-2"/>
+        <ido:hasPricePerPiece rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sku-2-price"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/piece-3-sku-1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/piece-3-sku-1">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Piece"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/piece-3-sku-1-with-price -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/piece-3-sku-1-with-price">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/PieceWithPrice"/>
+        <v1:typeOfGood rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/piece-3-sku-1"/>
+        <ido:hasPricePerPiece rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sku-1-price"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/piece-3-sku-2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/piece-3-sku-2">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Piece"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/piece-3-sku-2-with-price -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/piece-3-sku-2-with-price">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/PieceWithPrice"/>
+        <v1:typeOfGood rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/piece-2-sku-2"/>
+        <ido:hasPricePerPiece rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sku-2-price"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sku-1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sku-1">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/StockKeepingUnit"/>
+        <ido:wasProducedAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/piece-1-sku-1"/>
+        <ido:wasProducedAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/piece-2-sku-1"/>
+        <ido:wasProducedAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/piece-3-sku-1"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sku-1-4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sku-1-4">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/StockKeepingUnitAmount"/>
+        <ido:hasPricePerPiece rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sku-1-price"/>
+        <v1:typeOfGood rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sku-1"/>
+        <schema:orderQuantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</schema:orderQuantity>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sku-1-price -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sku-1-price">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Price"/>
+        <ido:hasPriceCurrency rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">EUR</ido:hasPriceCurrency>
+        <ido:hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">35.0</ido:hasPriceValue>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sku-2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sku-2">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/StockKeepingUnit"/>
+        <ido:wasProducedAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/piece-1-sku-2"/>
+        <ido:wasProducedAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/piece-2-sku-2"/>
+        <ido:wasProducedAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/piece-3-sku-2"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sku-2-3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sku-2-3">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/StockKeepingUnitAmount"/>
+        <ido:hasPricePerPiece rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sku-2-price"/>
+        <v1:typeOfGood rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sku-2"/>
+        <schema:orderQuantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</schema:orderQuantity>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sku-2-price -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sku-2-price">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Price"/>
+        <ido:hasPriceCurrency rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">EUR</ido:hasPriceCurrency>
+        <ido:hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">57.0</ido:hasPriceValue>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sku-3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sku-3">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/StockKeepingUnit"/>
+        <ido:wasProducedAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/piece-1-sku-3"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sku-3-price -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sku-3-price">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Price"/>
+        <ido:hasPriceCurrency rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">EUR</ido:hasPriceCurrency>
+        <ido:hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">37.0</ido:hasPriceValue>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.1.20160306-0033) https://github.com/owlcs/owlapi -->

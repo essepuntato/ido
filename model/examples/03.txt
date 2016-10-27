@@ -1,0 +1,5 @@
+#example_it Il capo di codice "AMT3ODO" di tessuto di codice "ODO", realizzazione dell'abito femminile di codice "AMT3" per la stagione primavera-estate 2016, è stato messo a disposizione in quattro taglie differenti - "s", "m", "l", e "xl" - nei colori bianco e nero. Dell'articolo a magazzino di taglia "m" ne sono stati prodotti 5 pezzi in colore nero e 3 pezzi di colore bianco.
+
+#example_en The item with code "AMT3ODO" made with the textile with code "ODO", realisation of the female dress with code "AMT3" and proposed for the spring-summer 2016 season, has been made available in four different sizes – "s", "m", "l", e "xl" – either in black or white colour. Of those, the company produced 5 pieces with size "m" and colour black, and 3 pieces with size "m" and colour white.
+
+#uri 03.owl

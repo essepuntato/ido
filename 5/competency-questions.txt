@@ -1,0 +1,109 @@
+1. Qual è la somma totale di tutti gli ordini effettuati in gennaio 2016?
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX onto: <http://www.essepuntato.it/example/>
+PREFIX : <http://www.essepuntato.it/modelet-example/>
+
+SELECT DISTINCT (sum(?totalValue) AS ?sum)
+WHERE {
+    ?order a onto:Order ;
+        onto:hasTotalValue/onto:hasCurrencyValue ?totalValue ;
+        onto:hasCreationDate ?date .
+    FILTER (year(?date) = 2016 && month(?date) = 1)
+}
+
+2. Qual è il valore totale della fattura associata a tutti gli ordini effettuati in gennaio 2016?
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX onto: <http://www.essepuntato.it/example/>
+PREFIX : <http://www.essepuntato.it/modelet-example/>
+
+SELECT DISTINCT (sum(?totalValue) AS ?sum) ?order
+WHERE {
+    ?invoice a onto:Invoice ;
+        onto:refersTo ?order ;
+        onto:hasTotalValue/onto:hasCurrencyValue ?totalValue ;
+        onto:hasCreationDate ?date .
+    FILTER (year(?date) = 2016 && month(?date) = 1)
+} GROUP BY ?order
+
+3. Qual è il costo complessivo per articolo gestito in magazzino di tutti gli ordini?
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX onto: <http://www.essepuntato.it/example/>
+PREFIX : <http://www.essepuntato.it/modelet-example/>
+
+SELECT DISTINCT ?sku ?sum ?price ?order
+WHERE {
+    ?order a onto:Order ;
+        onto:includes ?skuamount .
+    ?skuamount a onto:StockKeepingUnitAmount ;
+        onto:hasStockKeepingUnit ?sku ;
+        onto:hasAmount ?amount ;
+        onto:hasPricePerPiece/onto:hasCurrencyValue ?price .
+    BIND (?amount * ?price AS ?sum)
+}
+
+4. Quali sono tutte le fatture che specificano un valore totale diverso rispetto a quello indicato dal relativo ordine?
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX onto: <http://www.essepuntato.it/example/>
+PREFIX : <http://www.essepuntato.it/modelet-example/>
+
+SELECT DISTINCT ?invoice ?invoicevalue ?order ?ordervalue ?difference
+WHERE {
+    ?invoice a onto:Invoice ;
+        onto:refersTo ?order ;
+        onto:hasTotalValue/onto:hasCurrencyValue ?invoicevalue .
+
+    ?order a onto:Order ;
+        onto:hasTotalValue/onto:hasCurrencyValue ?ordervalue .
+
+    FILTER (?invoicevalue != ?ordervalue)
+
+    BIND (?invoicevalue - ?ordervalue AS ?difference)
+}
+
+5. Quali sono tutte le fatture che includono un pezzo di un articolo gestito in magazzino che non era incluso nel relativo ordine?
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX onto: <http://www.essepuntato.it/example/>
+PREFIX : <http://www.essepuntato.it/modelet-example/>
+
+SELECT DISTINCT ?invoice ?sku (count(?piece) AS ?n) ?order
+WHERE {
+    ?invoice a onto:Invoice ;
+        onto:refersTo ?order ;
+        onto:includes/onto:hasPiece ?piece .
+
+    ?piece ^onto:isAvailableAs ?sku .
+
+    FILTER NOT EXISTS {
+        ?order onto:includes/onto:hasStockKeepingUnit ?sku
+    }
+} GROUP BY ?invoice ?order ?sku
+
+6. Quali sono le piattaforme e i canali di vendita utilizzati per tutti gli ordini?
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX onto: <http://www.essepuntato.it/example/>
+PREFIX : <http://www.essepuntato.it/modelet-example/>
+
+SELECT DISTINCT ?order ?platform ?channel
+WHERE {
+    ?order a onto:Order ;
+        onto:specifiesDistributionPlatform ?platform ;
+        onto:specifiesSalesChannel ?channel
+}

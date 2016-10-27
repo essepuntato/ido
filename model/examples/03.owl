@@ -1,0 +1,377 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY terms "http://purl.org/dc/terms/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY tbox "http://www.essepuntato.it/example/" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY ido "http://www.essepuntato.it/2015/07/ido/" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="&ido;abox/"
+     xml:base="&ido;abox/"
+     xmlns:tbox="http://www.essepuntato.it/example/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:ido="http://www.essepuntato.it/2015/07/ido/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="&ido;abox">
+        <owl:imports rdf:resource="http://www.essepuntato.it/2015/07/ido/"/>
+    </owl:Ontology>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/hasArticleCategory -->
+
+    <owl:ObjectProperty rdf:about="&ido;hasArticleCategory"/>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/hasColour -->
+
+    <owl:ObjectProperty rdf:about="&ido;hasColour"/>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/hasSize -->
+
+    <owl:ObjectProperty rdf:about="&ido;hasSize"/>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/isAvailableAs -->
+
+    <owl:ObjectProperty rdf:about="&ido;isAvailableAs"/>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/wasProducedAs -->
+
+    <owl:ObjectProperty rdf:about="&ido;wasProducedAs"/>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/wasProposedFor -->
+
+    <owl:ObjectProperty rdf:about="&ido;wasProposedFor"/>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/wasRealisedAs -->
+
+    <owl:ObjectProperty rdf:about="&ido;wasRealisedAs"/>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/wasMadeOf -->
+
+    <owl:ObjectProperty rdf:about="&ido;wasMadeOf"/>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+    <owl:DatatypeProperty rdf:about="&terms;identifier"/>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/wasDesignedFor -->
+
+    <owl:DatatypeProperty rdf:about="&ido;wasDesignedFor"/>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/AMT3 -->
+
+    <owl:NamedIndividual rdf:about="&ido;abox/AMT3">
+        <rdf:type rdf:resource="&ido;Style"/>
+        <ido:wasDesignedFor>female</ido:wasDesignedFor>
+        <ido:wasRealisedAs rdf:resource="&ido;abox/AMT3ODO"/>
+        <ido:hasArticleCategory rdf:resource="&ido;category/dress"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/AMT3ODO -->
+
+    <owl:NamedIndividual rdf:about="&ido;abox/AMT3ODO">
+        <rdf:type rdf:resource="&ido;Item"/>
+        <terms:identifier rdf:datatype="&rdfs;Literal">AMT3ODO</terms:identifier>
+        <ido:isAvailableAs rdf:resource="&ido;abox/AMT3ODO-l-black"/>
+        <ido:isAvailableAs rdf:resource="&ido;abox/AMT3ODO-l-white"/>
+        <ido:isAvailableAs rdf:resource="&ido;abox/AMT3ODO-m-black"/>
+        <ido:isAvailableAs rdf:resource="&ido;abox/AMT3ODO-m-white"/>
+        <ido:isAvailableAs rdf:resource="&ido;abox/AMT3ODO-s-black"/>
+        <ido:isAvailableAs rdf:resource="&ido;abox/AMT3ODO-s-white"/>
+        <ido:isAvailableAs rdf:resource="&ido;abox/AMT3ODO-xl-black"/>
+        <ido:isAvailableAs rdf:resource="&ido;abox/AMT3ODO-xl-white"/>
+        <ido:wasMadeOf rdf:resource="&ido;abox/ODO"/>
+        <ido:wasProposedFor rdf:resource="&ido;abox/spring-summer-2016"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/AMT3ODO-l-black -->
+
+    <owl:NamedIndividual rdf:about="&ido;abox/AMT3ODO-l-black">
+        <rdf:type rdf:resource="&ido;StockKeepingUnit"/>
+        <ido:hasColour rdf:resource="&ido;abox/black"/>
+        <ido:hasSize rdf:resource="&ido;abox/l"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/AMT3ODO-l-white -->
+
+    <owl:NamedIndividual rdf:about="&ido;abox/AMT3ODO-l-white">
+        <rdf:type rdf:resource="&ido;StockKeepingUnit"/>
+        <ido:hasSize rdf:resource="&ido;abox/l"/>
+        <ido:hasColour rdf:resource="&ido;abox/white"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/AMT3ODO-m-black -->
+
+    <owl:NamedIndividual rdf:about="&ido;abox/AMT3ODO-m-black">
+        <rdf:type rdf:resource="&ido;StockKeepingUnit"/>
+        <ido:wasProducedAs rdf:resource="&ido;abox/AMT3ODO-m-black-1"/>
+        <ido:wasProducedAs rdf:resource="&ido;abox/AMT3ODO-m-black-2"/>
+        <ido:wasProducedAs rdf:resource="&ido;abox/AMT3ODO-m-black-3"/>
+        <ido:wasProducedAs rdf:resource="&ido;abox/AMT3ODO-m-black-4"/>
+        <ido:wasProducedAs rdf:resource="&ido;abox/AMT3ODO-m-black-5"/>
+        <ido:hasColour rdf:resource="&ido;abox/black"/>
+        <ido:hasSize rdf:resource="&ido;abox/m"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/AMT3ODO-m-black-1 -->
+
+    <owl:NamedIndividual rdf:about="&ido;abox/AMT3ODO-m-black-1">
+        <rdf:type rdf:resource="&ido;Piece"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/AMT3ODO-m-black-2 -->
+
+    <owl:NamedIndividual rdf:about="&ido;abox/AMT3ODO-m-black-2">
+        <rdf:type rdf:resource="&ido;Piece"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/AMT3ODO-m-black-3 -->
+
+    <owl:NamedIndividual rdf:about="&ido;abox/AMT3ODO-m-black-3">
+        <rdf:type rdf:resource="&ido;Piece"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/AMT3ODO-m-black-4 -->
+
+    <owl:NamedIndividual rdf:about="&ido;abox/AMT3ODO-m-black-4">
+        <rdf:type rdf:resource="&ido;Piece"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/AMT3ODO-m-black-5 -->
+
+    <owl:NamedIndividual rdf:about="&ido;abox/AMT3ODO-m-black-5">
+        <rdf:type rdf:resource="&ido;Piece"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/AMT3ODO-m-white -->
+
+    <owl:NamedIndividual rdf:about="&ido;abox/AMT3ODO-m-white">
+        <rdf:type rdf:resource="&ido;StockKeepingUnit"/>
+        <ido:wasProducedAs rdf:resource="&ido;abox/AMT3ODO-m-white-1"/>
+        <ido:wasProducedAs rdf:resource="&ido;abox/AMT3ODO-m-white-2"/>
+        <ido:wasProducedAs rdf:resource="&ido;abox/AMT3ODO-m-white-3"/>
+        <ido:hasSize rdf:resource="&ido;abox/m"/>
+        <ido:hasColour rdf:resource="&ido;abox/white"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/AMT3ODO-m-white-1 -->
+
+    <owl:NamedIndividual rdf:about="&ido;abox/AMT3ODO-m-white-1">
+        <rdf:type rdf:resource="&ido;Piece"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/AMT3ODO-m-white-2 -->
+
+    <owl:NamedIndividual rdf:about="&ido;abox/AMT3ODO-m-white-2">
+        <rdf:type rdf:resource="&ido;Piece"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/AMT3ODO-m-white-3 -->
+
+    <owl:NamedIndividual rdf:about="&ido;abox/AMT3ODO-m-white-3">
+        <rdf:type rdf:resource="&ido;Piece"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/AMT3ODO-s-black -->
+
+    <owl:NamedIndividual rdf:about="&ido;abox/AMT3ODO-s-black">
+        <rdf:type rdf:resource="&ido;StockKeepingUnit"/>
+        <ido:hasColour rdf:resource="&ido;abox/black"/>
+        <ido:hasSize rdf:resource="&ido;abox/s"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/AMT3ODO-s-white -->
+
+    <owl:NamedIndividual rdf:about="&ido;abox/AMT3ODO-s-white">
+        <rdf:type rdf:resource="&ido;StockKeepingUnit"/>
+        <ido:hasSize rdf:resource="&ido;abox/s"/>
+        <ido:hasColour rdf:resource="&ido;abox/white"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/AMT3ODO-xl-black -->
+
+    <owl:NamedIndividual rdf:about="&ido;abox/AMT3ODO-xl-black">
+        <rdf:type rdf:resource="&ido;StockKeepingUnit"/>
+        <ido:hasColour rdf:resource="&ido;abox/black"/>
+        <ido:hasSize rdf:resource="&ido;abox/xl"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/AMT3ODO-xl-white -->
+
+    <owl:NamedIndividual rdf:about="&ido;abox/AMT3ODO-xl-white">
+        <rdf:type rdf:resource="&ido;StockKeepingUnit"/>
+        <ido:hasColour rdf:resource="&ido;abox/white"/>
+        <ido:hasSize rdf:resource="&ido;abox/xl"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/ODO -->
+
+    <owl:NamedIndividual rdf:about="&ido;abox/ODO">
+        <rdf:type rdf:resource="&ido;Textile"/>
+        <terms:identifier rdf:datatype="&rdfs;Literal">ODO</terms:identifier>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/black -->
+
+    <owl:NamedIndividual rdf:about="&ido;abox/black">
+        <rdf:type rdf:resource="&ido;Colour"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/l -->
+
+    <owl:NamedIndividual rdf:about="&ido;abox/l">
+        <rdf:type rdf:resource="&ido;Size"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/m -->
+
+    <owl:NamedIndividual rdf:about="&ido;abox/m">
+        <rdf:type rdf:resource="&ido;Size"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/s -->
+
+    <owl:NamedIndividual rdf:about="&ido;abox/s">
+        <rdf:type rdf:resource="&ido;Size"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/spring-summer-2016 -->
+
+    <owl:NamedIndividual rdf:about="&ido;abox/spring-summer-2016">
+        <rdf:type rdf:resource="&ido;Season"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/white -->
+
+    <owl:NamedIndividual rdf:about="&ido;abox/white">
+        <rdf:type rdf:resource="&ido;Colour"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/xl -->
+
+    <owl:NamedIndividual rdf:about="&ido;abox/xl">
+        <rdf:type rdf:resource="&ido;Size"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/category/dress -->
+
+    <owl:NamedIndividual rdf:about="&ido;category/dress"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->

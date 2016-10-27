@@ -1,0 +1,25 @@
+# Cose da fare
+
+# 1 [c4]
+Bisogna introdurre un nuovo concetto, ovvero quello di fattura, che è la spesa effettiva fatta da qualcuno per l'acquisto dei capi. La fattura, chiaramente, viene generata dopo un ordine e tendenzialmente si allinea a questo. Tuttavia è possibile che i prodotti fatturati (cioé effettivamente venduti e spediti a un cliente) siano potenzialmente diversi a quelli ordinati, per una qualsiasi ragione. A livello generale, l'ordine è di fatto un'azione fatta su un insieme di capi ipotetico (non necessariamente prodotti, quindi a livello materializzazione), mentre la fatturazione è un atto sugli effettivi esemplari di capi venduti (quindi prodotti, livello item).
+
+# 2
+La stagione di un capo è un aspetto importantissimo di cui tenere traccia. Si differisce per tre tipi, ovvero autunno-inverno, primavera-estate, o basici (trovare il termine più adatto qui). Ogni stagione deve essere anche caratterizzata da un anno. L'associazione della stagione può esistere sia a livello di capo, sia a livello di manifestazione, dipende molto dallo stilista e dagli altri membri dell'azienda responsabili per la materializzazione.
+
+# 3
+Il tessuto è un aspetto fondamentale da tenere in considerazione e deve assolutamente essere in aspetto rilevante della materializzazione di un capo.
+
+# 4 [c3]
+Ci sono due prezzi che necessariamente devono essere associati ad ogni materializzazione, che si chiamano "prezzo di sell-in" e "prezzo di sell-out". Quest'ultimo è di fatto calcolato sul primo (a Imperial è un fattore moltiplicativo di 2,6 lordo iva). Questi prezzi possono variare nel tempo (ad esempio quando ci sono i saldi) e a seconda del contesto (lo vendo sul web, lo vendo sul trade)?
+
+# 5 [c4]
+Gli ordini e le fatture non hanno un prezzo, ma hanno dei valori associati (che identificano la spesa), e il numero di pezzi richiesti. Il prezzo sta negli articoli (ovvero, nella materializzazione e, eventualmente, negli item, [cosa ancora da chiarire, vedi #4]).
+
+# 6
+Le città sono un campo importante da gestire, insieme alle province e alle regioni.
+
+# 7
+Uno stesso agente (una persona, un'organizzazione come un negozio, etc.) può avere più user associati, e ogni user è in realtà devoto a uno specifico canale di distribuzione (monomarca o multimarca).
+
+# 8 [c4]
+Sia gli ordini sia le fatture devono essere dotate di provenance per quanto riguarda la piattaforma di vendita, ovvero, "trade" (es., IMPERIAL al center gross), "retail" (es., i negozi sul territorio sia di proprietà sia in franchising), e "web".

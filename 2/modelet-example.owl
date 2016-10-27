@@ -1,0 +1,325 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY onto "http://www.essepuntato.it/example/" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.essepuntato.it/modelet-example/"
+     xml:base="http://www.essepuntato.it/modelet-example/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:onto="http://www.essepuntato.it/example/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://www.essepuntato.it/modelet-example">
+        <owl:imports rdf:resource="http://www.essepuntato.it/example"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/amt3odo -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/amt3odo">
+        <rdf:type rdf:resource="&onto;Article"/>
+        <onto:hasIdentifier>AMT3ODO</onto:hasIdentifier>
+        <onto:hasItem rdf:resource="http://www.essepuntato.it/modelet-example/amt3odo-1"/>
+        <onto:hasArticleCategory rdf:resource="http://www.essepuntato.it/modelet-example/dress"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/amt3odo-1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/amt3odo-1">
+        <rdf:type rdf:resource="&onto;Item"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/anv5owm -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/anv5owm">
+        <rdf:type rdf:resource="&onto;Article"/>
+        <onto:hasIdentifier>ANV5OWM</onto:hasIdentifier>
+        <onto:hasItem rdf:resource="http://www.essepuntato.it/modelet-example/anv5owm-1"/>
+        <onto:hasArticleCategory rdf:resource="http://www.essepuntato.it/modelet-example/dress"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/anv5owm-1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/anv5owm-1">
+        <rdf:type rdf:resource="&onto;Item"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/basilicata -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/basilicata">
+        <rdf:type rdf:resource="&onto;Region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/campobasso -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/campobasso">
+        <rdf:type rdf:resource="&onto;Province"/>
+        <onto:isPartOf rdf:resource="http://www.essepuntato.it/modelet-example/molise"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/dress -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/dress">
+        <rdf:type rdf:resource="&onto;ArticleCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/friuli-venezia-giulia -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/friuli-venezia-giulia">
+        <rdf:type rdf:resource="&onto;Region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/lombardia -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/lombardia">
+        <rdf:type rdf:resource="&onto;Region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/molise -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/molise">
+        <rdf:type rdf:resource="&onto;Region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/monza-brianza -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/monza-brianza">
+        <rdf:type rdf:resource="&onto;Province"/>
+        <onto:isPartOf rdf:resource="http://www.essepuntato.it/modelet-example/lombardia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/mso4oawtd -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/mso4oawtd">
+        <rdf:type rdf:resource="&onto;Article"/>
+        <onto:hasIdentifier>MSO4OAWTD</onto:hasIdentifier>
+        <onto:hasItem rdf:resource="http://www.essepuntato.it/modelet-example/mso4oawtd-1"/>
+        <onto:hasItem rdf:resource="http://www.essepuntato.it/modelet-example/mso4oawtd-2"/>
+        <onto:hasArticleCategory rdf:resource="http://www.essepuntato.it/modelet-example/sweater"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/mso4oawtd-1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/mso4oawtd-1">
+        <rdf:type rdf:resource="&onto;Item"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/mso4oawtd-2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/mso4oawtd-2">
+        <rdf:type rdf:resource="&onto;Item"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/msu4oftl -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/msu4oftl">
+        <rdf:type rdf:resource="&onto;Article"/>
+        <onto:hasIdentifier>MSU4OFTL</onto:hasIdentifier>
+        <onto:hasItem rdf:resource="http://www.essepuntato.it/modelet-example/msu4oftl-1"/>
+        <onto:hasArticleCategory rdf:resource="http://www.essepuntato.it/modelet-example/sweater"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/msu4oftl-1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/msu4oftl-1">
+        <rdf:type rdf:resource="&onto;Item"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/msu4ojjl -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/msu4ojjl">
+        <rdf:type rdf:resource="&onto;Article"/>
+        <onto:hasIdentifier>MSU4OJJL</onto:hasIdentifier>
+        <onto:hasItem rdf:resource="http://www.essepuntato.it/modelet-example/msu4ojjl-1"/>
+        <onto:hasArticleCategory rdf:resource="http://www.essepuntato.it/modelet-example/sweater"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/msu4ojjl-1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/msu4ojjl-1">
+        <rdf:type rdf:resource="&onto;Item"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/order-1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/order-1">
+        <rdf:type rdf:resource="&onto;Order"/>
+        <onto:hasOrderDate rdf:datatype="&xsd;dateTime">2015-01-02T12:58:00</onto:hasOrderDate>
+        <onto:includesItem rdf:resource="http://www.essepuntato.it/modelet-example/amt3odo-1"/>
+        <onto:hasDeliveryPlace rdf:resource="http://www.essepuntato.it/modelet-example/trieste"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/order-2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/order-2">
+        <rdf:type rdf:resource="&onto;Order"/>
+        <onto:hasOrderDate rdf:datatype="&xsd;dateTime">2015-01-02T14:40:00</onto:hasOrderDate>
+        <onto:hasDeliveryPlace rdf:resource="http://www.essepuntato.it/modelet-example/potenza"/>
+        <onto:includesItem rdf:resource="http://www.essepuntato.it/modelet-example/pxi8ohs-1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/order-3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/order-3">
+        <rdf:type rdf:resource="&onto;Order"/>
+        <onto:hasOrderDate rdf:datatype="&xsd;dateTime">2015-01-02T16:18:00</onto:hasOrderDate>
+        <onto:hasDeliveryPlace rdf:resource="http://www.essepuntato.it/modelet-example/monza-brianza"/>
+        <onto:includesItem rdf:resource="http://www.essepuntato.it/modelet-example/mso4oawtd-1"/>
+        <onto:includesItem rdf:resource="http://www.essepuntato.it/modelet-example/mso4oawtd-2"/>
+        <onto:includesItem rdf:resource="http://www.essepuntato.it/modelet-example/msu4oftl-1"/>
+        <onto:includesItem rdf:resource="http://www.essepuntato.it/modelet-example/msu4ojjl-1"/>
+        <onto:includesItem rdf:resource="http://www.essepuntato.it/modelet-example/pxg8ovq-1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/order-4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/order-4">
+        <rdf:type rdf:resource="&onto;Order"/>
+        <onto:hasOrderDate rdf:datatype="&xsd;dateTime">2015-01-03T00:28:00</onto:hasOrderDate>
+        <onto:includesItem rdf:resource="http://www.essepuntato.it/modelet-example/anv5owm-1"/>
+        <onto:hasDeliveryPlace rdf:resource="http://www.essepuntato.it/modelet-example/campobasso"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/potenza -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/potenza">
+        <rdf:type rdf:resource="&onto;Province"/>
+        <onto:isPartOf rdf:resource="http://www.essepuntato.it/modelet-example/basilicata"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/pxg8ovq -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/pxg8ovq">
+        <rdf:type rdf:resource="&onto;Article"/>
+        <onto:hasIdentifier>PXG8OVQ</onto:hasIdentifier>
+        <onto:hasItem rdf:resource="http://www.essepuntato.it/modelet-example/pxg8ovq-1"/>
+        <onto:hasArticleCategory rdf:resource="http://www.essepuntato.it/modelet-example/trousers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/pxg8ovq-1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/pxg8ovq-1">
+        <rdf:type rdf:resource="&onto;Item"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/pxi8ohs -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/pxi8ohs">
+        <rdf:type rdf:resource="&onto;Article"/>
+        <onto:hasIdentifier>PXI8OHS</onto:hasIdentifier>
+        <onto:hasItem rdf:resource="http://www.essepuntato.it/modelet-example/pxi8ohs-1"/>
+        <onto:hasArticleCategory rdf:resource="http://www.essepuntato.it/modelet-example/trousers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/pxi8ohs-1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/pxi8ohs-1">
+        <rdf:type rdf:resource="&onto;Item"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sweater -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sweater">
+        <rdf:type rdf:resource="&onto;ArticleCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/trieste -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/trieste">
+        <rdf:type rdf:resource="&onto;Province"/>
+        <onto:isPartOf rdf:resource="http://www.essepuntato.it/modelet-example/friuli-venezia-giulia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/trousers -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/trousers">
+        <rdf:type rdf:resource="&onto;ArticleCategory"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+

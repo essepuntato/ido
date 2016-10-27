@@ -1,0 +1,76 @@
+1. Qual è la categoria di articolo più venduta il 2 gennaio 2015?
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX onto: <http://www.essepuntato.it/example/>
+PREFIX : <http://www.essepuntato.it/modelet-example/>
+
+SELECT ?category (count(?category) as ?n)
+WHERE {
+    ?order
+        onto:hasOrderDate ?date ;
+        onto:includesItem/(^onto:hasItem)/onto:hasArticleCategory ?category .
+    FILTER (year(?date) = 2015 && month(?date) = 1 && day(?date) = 2)
+}
+GROUP BY ?category
+ORDER BY DESC(?n)
+LIMIT 1
+
+2. Quali sono le categorie di articolo più vendute nelle varie regioni?
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX onto: <http://www.essepuntato.it/example/>
+PREFIX : <http://www.essepuntato.it/modelet-example/>
+
+SELECT ?region ?category
+WHERE {
+    {
+        SELECT ?region (MAX(?num) AS ?max)
+        WHERE {
+            {
+                SELECT ?region ?category (count(?category) as ?num)
+                WHERE {
+                    ?order
+                        onto:hasDeliveryPlace/onto:isPartOf* ?region ;
+                        onto:includesItem/(^onto:hasItem)/onto:hasArticleCategory ?category .
+                    ?region a onto:Region .
+                }
+                GROUP BY ?region ?category
+            }
+        } GROUP BY ?region
+    }
+    {
+        SELECT ?region ?category (count(?category) as ?num)
+        WHERE {
+            ?order
+                onto:hasDeliveryPlace/onto:isPartOf+ ?region ;
+                onto:includesItem/(^onto:hasItem)/onto:hasArticleCategory ?category .
+            ?region a onto:Region .
+        }
+        GROUP BY ?region ?category
+    }
+    FILTER (?num = ?max)
+}
+
+3. Qual è la categoria di articolo più venduta il 2 gennaio 2015 in Lombardia?
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX onto: <http://www.essepuntato.it/example/>
+PREFIX : <http://www.essepuntato.it/modelet-example/>
+
+SELECT ?category (count(?category) as ?n)
+WHERE {
+    ?order
+        onto:hasDeliveryPlace/onto:isPartOf* :lombardia ;
+        onto:hasOrderDate ?date ;
+        onto:includesItem/(^onto:hasItem)/onto:hasArticleCategory ?category .
+    FILTER (year(?date) = 2015 && month(?date) = 1 && day(?date) = 2)
+}
+GROUP BY ?category
+ORDER BY DESC(?n)
+LIMIT 1

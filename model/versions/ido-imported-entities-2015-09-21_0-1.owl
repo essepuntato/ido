@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY schema "http://schema.org/" >
+    <!ENTITY sioc "http://rdfs.org/sioc/ns#" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY frbr "http://purl.org/vocab/frbr/core#" >
+    <!ENTITY gr "http://purl.org/goodrelations/v1#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.essepuntato.it/2015/07/ido/"
+     xml:base="http://www.essepuntato.it/2015/07/ido/"
+     xmlns:schema="http://schema.org/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:gr="http://purl.org/goodrelations/v1#"
+     xmlns:frbr="http://purl.org/vocab/frbr/core#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:sioc="http://rdfs.org/sioc/ns#">
+    <owl:Ontology rdf:about="http://www.essepuntato.it/2015/07/ido-imported-entities">
+        <rdfs:label>IDO-IE</rdfs:label>
+        <owl:versionInfo rdf:datatype="&xsd;decimal">0.1</owl:versionInfo>
+        <dc:date>2015-09-22</dc:date>
+        <dc:title xml:lang="en">Imperial Data Ontology: imported entities (IDO-IE)</dc:title>
+        <dc:description xml:lang="en">The Imperial Data Ontology: imported entities (IDO-IE) is an OWL 2 DL ontology that specifies the entities that have been imported in IDO from external ontologies and that have been concretised by means of particular subclasses in IDO.</dc:description>
+        <rdfs:comment xml:lang="en">The Imperial Data Ontology: imported entities (IDO-IE) specifies the entities that have been imported in IDO from external ontologies.</rdfs:comment>
+        <dc:rights xml:lang="en">This work is distributed under a [[http://creativecommons.org/licenses/by/4.0/][Creative Commons Attribution 4.0 International (CC BY 4.0)]].</dc:rights>
+        <dc:title xml:lang="it">Ontologia delle entità importate per i dati di Imperial (IDO-IE)</dc:title>
+        <rdfs:comment xml:lang="it">Ontologia delle entità importate per i dati di Imperial (IDO-IE) è un&apos;ontologia specifica le entità che sono state importate in IDO da ontologie esterne.</rdfs:comment>
+        <dc:description xml:lang="it">Ontologia delle entità importate per i dati di Imperial (IDO-IE) è un&apos;ontologie OWL 2 DL che specifica le entità che sono state importate in IDO da ontologie esterne e che sono state usate in IDO attraverso l&apos;uso di specifiche sottoclassi.</dc:description>
+        <dc:rights xml:lang="it">Questo lavoro è distribuito sotto una licenza [[http://creativecommons.org/licenses/by/4.0/][Creative Commons Attribution 4.0 International (CC BY 4.0)]].</dc:rights>
+        <owl:versionIRI rdf:resource="http://www.essepuntato.it/2015/07/ido-imported-entities/0.1"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#isDefinedBy -->
+
+    <owl:AnnotationProperty rdf:about="&rdfs;isDefinedBy"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="&xsd;date"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#dateTime -->
+
+    <rdfs:Datatype rdf:about="&xsd;dateTime"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#float -->
+
+    <rdfs:Datatype rdf:about="&xsd;float"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/goodrelations/v1#PriceSpecification -->
+
+    <owl:Class rdf:about="&gr;PriceSpecification">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/goodrelations/v1"/>
+    </owl:Class>
+    
+
+
+    <!-- http://rdfs.org/sioc/ns#UserAccount -->
+
+    <owl:Class rdf:about="&sioc;UserAccount">
+        <rdfs:isDefinedBy rdf:resource="http://rdfs.org/sioc/ns"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Order -->
+
+    <owl:Class rdf:about="&schema;Order">
+        <rdfs:isDefinedBy rdf:resource="http://schema.org"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Person -->
+
+    <owl:Class rdf:about="&schema;Person">
+        <rdfs:isDefinedBy rdf:resource="http://schema.org"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Product -->
+
+    <owl:Class rdf:about="&schema;Product">
+        <rdfs:isDefinedBy rdf:resource="http://schema.org"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <owl:Class rdf:about="&foaf;Person">
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+

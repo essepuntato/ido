@@ -1,0 +1,5 @@
+#example_it Il cliente 4626 (femmina, nata il 15 giugno 1981, residente in provincia di Trieste, Friuli Venezia Giulia) ha ordinato (n. ordine 2378) in data 2 gennaio 2015, alle ore 12:58, l'articolo femminile di codice AMT3ODO (taglia S, colore nero, quantità 1) spendendo 89 euro.
+
+#example_en The customer 4626 (female, born on June 15, 1981, and living in the Province of Trieste, Friuli Venezia Giulia) has ordered (order number 2378, order date January 2, 2015, at 12:58), the female article with code AMT3ODO (size S, black, 1 item) spending 89 euros.
+
+#uri 01.owl

@@ -1,0 +1,35 @@
+ha prezzo: permette di associare un capo/articolo gestito in magazzino/pezzo con un prezzo.
+
+ha valore: è il valore relativo a un certo prezzo.
+
+ha valuta: è la valuta di un certo prezzo (euro, dollari, etc.).
+
+prezzo di cogs: costo di produzione industriale.
+
+prezzo di sell-in: prezzo riservato ai rivenditori.
+
+prezzo di sell-out: prezzo riservato ai consumatori finali.
+
+prezzo lordo: vuol dire che il prezzo di cui si parla non ha subito ancora alcun tipo di sconto o ritenuta.
+
+prezzo netto: è il prezzo al quale sono stati sottratti gli sconti, le imposte e le ritenute a essa relative.
+
+ha applicata l'IVA: indica se il prezzo include o meno l'IVA.
+
+ha applicato uno sconto (in percentuale): indica la percentuale utilizzata per il calcolo dello sconto che è incluso nel valore di un certo prezzo.
+
+intervallo di validità del prezzo: un periodo temporale in cui un certo prezzo è associato ad un capo/articolo gestito in magazzino/pezzo.
+
+ha data di inizio validità: la data di inizio di validità di un certo prezzo per un particolare capo/articolo gestito in magazzino/pezzo.
+
+ha data di fine validità: la data di fine di validità di un certo prezzo per un particolare capo/articolo gestito in magazzino/pezzo.
+
+è stato applicato contestualmente a: il contesto (ad esempio una certa piattaforma di distribuzione o una stagione) per cui un certo prezzo è applicabile.
+
+capo: è una particolare realizzazione di un modello relativamente ad un certo tessuto, e viene proposto per una certa stagione.
+
+articolo gestito in magazzino: indica una possibile combinazione di una taglia e di un colore relativamente capo.
+
+pezzo: l'oggetto concreto e prodotto seguendo le specifiche indicate da un articolo gestito in magazzino e dal relativo capo.
+
+ha articolo gestito in magazzino/pezzo relativo/a: permette di associare un capo con un relativo articolo gestito in magazzino, o un articolo gestito in magazzino con un relativo pezzo.

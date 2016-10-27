@@ -1,0 +1,30 @@
+1. Qual è la somma totale di tutti gli ordini effettuati in gennaio 2016?
+Risposta: il costo in euro della somma del valore di tutti gli ordini
+Esempio:
+    311 euro
+
+2. Qual è il valore totale della fattura associata a tutti gli ordini effettuati in gennaio 2016?
+Risposta: il costo in euro di ogni fattura e l'ordine a cui fa riferimento
+Esempio:
+    313 euro, ordine-2016-01-15
+
+3. Qual è il costo complessivo per articolo gestito in magazzino di tutti gli ordini?
+Risposta: il costo in euro dell'insieme di tutti gli articoli specificati in un ordine in base alla quantità ordinata, comprensivi dell'ordine in cui compaiono e del prezzo indicato a pezzo
+Esempio:
+    sku-1, 140 euro, 35 euro, ordine-2016-01-15
+    sku-2, 171 euro, 57 euro, ordine-2016-01-15
+
+4. Quali sono tutte le fatture che specificano un valore totale diverso rispetto a quello indicato dal relativo ordine?
+Risposta: la fattura con il suo costo, l'ordine relativo con il suo costo, e la differenza tra il costo della fattura e quello dell'ordine
+Esempio:
+    fattura-ordine-2016-01-15, 313 euro, ordine-2016-01-15, 311 euro, 2 euro
+
+5. Quali sono tutte le fatture che includono un pezzo di un articolo gestito in magazzino che non era incluso nel relativo ordine?
+Risposta: la fattura, l'articolo gestito in magazzino non incluso, numero di pezzi di questo articolo in fattura, l'ordine relativo
+Esempio:
+    fattura-ordine-2016-01-15, sku-3, 1, ordine-2016-01-15
+
+6. Quali sono le piattaforme e i canali di vendita utilizzati per tutti gli ordini?
+Risposta: l'ordine, comprensivo della piattaforma utilizzata e del relativo canale di vendita
+Esempio:
+    ordine-2016-01-15, B2B, e-commerce

@@ -1,0 +1,117 @@
+#question_it Qual è la somma totale di tutti gli ordini effettuati in gennaio 2016?
+
+#question_en What is the final amount of all the orders done in January 2016?
+
+#sparql
+PREFIX ido: <http://www.essepuntato.it/2015/07/ido/>
+PREFIX : <http://www.essepuntato.it/2015/07/ido/abox/>
+PREFIX schema: <http://schema.org/>
+
+SELECT DISTINCT (sum(?totalValue) AS ?sum)
+WHERE {
+    ?order a ido:Order ;
+        ido:hasTotalValue/ido:hasPriceValue ?totalValue ;
+        schema:orderDate ?date .
+    FILTER (year(?date) = 2016 && month(?date) = 1)
+}
+
+
+#question_it Qual è il valore totale della fattura associata a tutti gli ordini effettuati in gennaio 2016?
+
+#question_en What is the total amount of the invoice associated to all the orders issued in January 2016?
+
+#sparql PREFIX ido: <http://www.essepuntato.it/2015/07/ido/>
+PREFIX : <http://www.essepuntato.it/2015/07/ido/abox/>
+PREFIX schema: <http://schema.org/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+
+SELECT DISTINCT (sum(?totalValue) AS ?sum) ?order
+WHERE {
+    ?invoice a ido:Invoice ;
+        schema:referencesOrder ?order ;
+        schema:totalPaymentDue/ido:hasPriceValue ?totalValue ;
+        dcterms:issued ?date .
+    FILTER (year(?date) = 2016 && month(?date) = 1)
+} GROUP BY ?order
+
+
+#question_it Qual è il costo complessivo per articolo gestito in magazzino di tutti gli ordini?
+
+#question_en What is the total amount of all the stock keeping units ordered?
+
+#sparql PREFIX ido: <http://www.essepuntato.it/2015/07/ido/>
+PREFIX : <http://www.essepuntato.it/2015/07/ido/abox/>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+PREFIX schema: <http://schema.org/>
+
+SELECT DISTINCT ?sku ?sum ?price ?order
+WHERE {
+    ?order a ido:Order ;
+        schema:orderedItem ?skuamount .
+    ?skuamount a ido:StockKeepingUnitAmount ;
+        gr:typeOfGood ?sku ;
+        schema:orderQuantity ?amount ;
+        ido:hasPricePerPiece/ido:hasPriceValue ?price .
+    BIND (?amount * ?price AS ?sum)
+}
+
+
+#question_it Quali sono tutte le fatture che specificano un valore totale diverso rispetto a quello indicato dal relativo ordine?
+
+#question_en What are the invoices that specify a total amount different to that one indicated in the referenced order?
+
+#sparql PREFIX ido: <http://www.essepuntato.it/2015/07/ido/>
+PREFIX : <http://www.essepuntato.it/2015/07/ido/abox/>
+PREFIX schema: <http://schema.org/>
+
+SELECT DISTINCT ?invoice ?invoicevalue ?order ?ordervalue ?difference
+WHERE {
+    ?invoice a ido:Invoice ;
+        schema:referencesOrder ?order ;
+        schema:totalPaymentDue/ido:hasPriceValue ?invoicevalue .
+
+    ?order a ido:Order ;
+        ido:hasTotalValue/ido:hasPriceValue ?ordervalue .
+
+    FILTER (?invoicevalue != ?ordervalue)
+
+    BIND (?invoicevalue - ?ordervalue AS ?difference)
+}
+
+
+#question_it Quali sono tutte le fatture che includono un pezzo di un articolo gestito in magazzino che non era incluso nel relativo ordine?
+
+#question_en What are the invoices that include a piece of a stock keeping unit that was not included in the referenced order?
+
+#sparql PREFIX ido: <http://www.essepuntato.it/2015/07/ido/>
+PREFIX : <http://www.essepuntato.it/2015/07/ido/abox/>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+PREFIX schema: <http://schema.org/>
+
+SELECT DISTINCT ?invoice ?sku (count(?piece) AS ?n) ?order
+WHERE {
+    ?invoice a ido:Invoice ;
+        schema:referencesOrder ?order ;
+        ido:includesPiece/gr:typeOfGood ?piece .
+
+    ?piece ^ido:wasProducedAs ?sku .
+
+    FILTER NOT EXISTS {
+        ?order schema:orderedItem/gr:typeOfGood ?sku
+    }
+} GROUP BY ?invoice ?order ?sku
+
+
+#question_it Quali sono le piattaforme di distribuzione e i canali di vendita utilizzati per tutti gli ordini?
+
+#question_en What are the distribution platform and the sales channel used in the various orders?
+
+#sparql PREFIX ido: <http://www.essepuntato.it/2015/07/ido/>
+PREFIX : <http://www.essepuntato.it/2015/07/ido/abox/>
+
+SELECT DISTINCT ?order ?platform ?channel
+WHERE {
+    ?order a ido:Order ;
+        ido:specifiesDistributionPlatform ?platform ;
+        ido:specifiesSalesChannel ?channel
+}

@@ -1,0 +1,15 @@
+Nome: Organizzazione concettuale dei capi
+
+
+Descrizione: Un modello è un particolare disegno di un articolo di una certa categoria (es., maglia, gonna, pantalone) e destinato ad uno o più generi di persone ("uomo", "donna" o entrambi).
+
+Un capo è una particolare realizzazione di un modello relativamente ad un certo tessuto, e viene proposto per una certa stagione.
+
+Ogni capo può essere messo a disposizione in differenti taglie e colori. Una qualunque combinazione di queste caratteristiche definisce, in gergo, un articolo gestito in magazzino (anche detto "stock keeping unit" o "SKU").
+
+Il pezzo effettivamente prodotto, invece, è un esemplare di un articolo gestito in magazzino.
+
+Di conseguenza, ogni modello può essere realizzato in più capi, ogni capo può essere messo a disposizione in più articoli gestiti a magazzino, e ogni articolo gestito a magazzino può essere prodotto in molteplici pezzi. I modelli, i capi, gli articoli gestiti in magazzino, i pezzi, i colori, le taglie, i tessuti, e le stagioni possono avere un identificativo univoco associato.
+
+
+Esempio: Il capo di codice "AMT3ODO" di tessuto di codice "ODO", realizzazione dell'abito femminile di codice "AMT3" per la stagione primavera-estate 2016, è stato messo a disposizione in quattro taglie differenti - "s", "m", "l", e "xl" - nei colori bianco e nero. Dell'articolo a magazzino di taglia "m" ne sono stati prodotti 5 pezzi in colore nero e 3 pezzi di colore bianco.

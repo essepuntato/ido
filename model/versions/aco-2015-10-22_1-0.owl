@@ -1,0 +1,372 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY terms "http://purl.org/dc/terms/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY ido "http://www.essepuntato.it/2015/07/ido/" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY category "http://www.essepuntato.it/2015/07/ido/category/" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/owl/owlapi/turtle#"
+     xml:base="http://www.semanticweb.org/owl/owlapi/turtle"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:ido="http://www.essepuntato.it/2015/07/ido/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:category="&ido;category/">
+    <owl:Ontology rdf:about="http://www.essepuntato.it/2015/10/aco">
+        <rdfs:label>ACO</rdfs:label>
+        <owl:versionInfo rdf:datatype="&xsd;decimal">1.0</owl:versionInfo>
+        <terms:date>2015-10-22</terms:date>
+        <terms:title xml:lang="en">Article Category Ontology</terms:title>
+        <rdfs:comment xml:lang="en">This ontology defines a taxonomy of all the categories for the articles described by means of the Imperial Data Ontology (IDO, http://www.essepuntato.it/2015/07/ido).</rdfs:comment>
+        <rdfs:comment xml:lang="it">Questa ontologia definisce una tassonomia delle categorie degli articoli descrivibili usando la Imperial Data Ontology (IDO, http://www.essepuntato.it/2015/07/ido).</rdfs:comment>
+        <owl:versionIRI rdf:resource="http://www.essepuntato.it/2015/10/aco/1.0"/>
+        <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+    </owl:Ontology>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://purl.org/dc/terms/date -->
+
+    <owl:AnnotationProperty rdf:about="&terms;date"/>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/ArticleCategory -->
+
+    <owl:Class rdf:about="&ido;ArticleCategory">
+        <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2015/07/ido"/>
+    </owl:Class>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/category -->
+
+    <owl:NamedIndividual rdf:about="&ido;category">
+        <rdf:type rdf:resource="&skos;ConceptScheme"/>
+        <rdfs:label xml:lang="en">IMPERIAL article category thesaurus</rdfs:label>
+        <rdfs:label xml:lang="it">Tesauro IMPERIAL delle categorie degli articoli</rdfs:label>
+        <skos:hasTopConcept rdf:resource="&ido;category/blazer"/>
+        <skos:hasTopConcept rdf:resource="&ido;category/coat"/>
+        <skos:hasTopConcept rdf:resource="&ido;category/dress"/>
+        <skos:hasTopConcept rdf:resource="&ido;category/fur-neck"/>
+        <skos:hasTopConcept rdf:resource="&ido;category/hat"/>
+        <skos:hasTopConcept rdf:resource="&ido;category/heavy-jacket"/>
+        <skos:hasTopConcept rdf:resource="&ido;category/jacket"/>
+        <skos:hasTopConcept rdf:resource="&ido;category/leather-jacket"/>
+        <skos:hasTopConcept rdf:resource="&ido;category/perfume"/>
+        <skos:hasTopConcept rdf:resource="&ido;category/shirt"/>
+        <skos:hasTopConcept rdf:resource="&ido;category/skirt"/>
+        <skos:hasTopConcept rdf:resource="&ido;category/sweater"/>
+        <skos:hasTopConcept rdf:resource="&ido;category/tracksuit"/>
+        <skos:hasTopConcept rdf:resource="&ido;category/trousers"/>
+        <skos:hasTopConcept rdf:resource="&ido;category/vest"/>
+        <skos:hasTopConcept rdf:resource="&ido;category/waistcoat"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/category/blazer -->
+
+    <owl:NamedIndividual rdf:about="&ido;category/blazer">
+        <rdf:type rdf:resource="&ido;ArticleCategory"/>
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <rdfs:label xml:lang="en">blazer</rdfs:label>
+        <rdfs:label xml:lang="it">giacca</rdfs:label>
+        <skos:notation>J</skos:notation>
+        <skos:prefLabel xml:lang="en">blazer</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">giacca</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="&ido;category"/>
+        <skos:inScheme rdf:resource="&ido;category"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/category/coat -->
+
+    <owl:NamedIndividual rdf:about="&ido;category/coat">
+        <rdf:type rdf:resource="&ido;ArticleCategory"/>
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <rdfs:label xml:lang="en">coat</rdfs:label>
+        <rdfs:label xml:lang="it">cappotto</rdfs:label>
+        <skos:notation>K</skos:notation>
+        <skos:prefLabel xml:lang="en">coat</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">cappotto</skos:prefLabel>
+        <skos:inScheme rdf:resource="&ido;category"/>
+        <skos:topConceptOf rdf:resource="&ido;category"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/category/dress -->
+
+    <owl:NamedIndividual rdf:about="&ido;category/dress">
+        <rdf:type rdf:resource="&ido;ArticleCategory"/>
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <rdfs:label xml:lang="en">dress</rdfs:label>
+        <rdfs:label xml:lang="it">abito</rdfs:label>
+        <skos:notation>A</skos:notation>
+        <skos:prefLabel xml:lang="en">dress</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">abito</skos:prefLabel>
+        <skos:inScheme rdf:resource="&ido;category"/>
+        <skos:topConceptOf rdf:resource="&ido;category"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/category/fur-neck -->
+
+    <owl:NamedIndividual rdf:about="&ido;category/fur-neck">
+        <rdf:type rdf:resource="&ido;ArticleCategory"/>
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <rdfs:label xml:lang="en">fur neck</rdfs:label>
+        <rdfs:label xml:lang="it">collo di pelo</rdfs:label>
+        <skos:notation>9</skos:notation>
+        <skos:prefLabel xml:lang="en">fur neck</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">collo di pelo</skos:prefLabel>
+        <skos:inScheme rdf:resource="&ido;category"/>
+        <skos:topConceptOf rdf:resource="&ido;category"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/category/hat -->
+
+    <owl:NamedIndividual rdf:about="&ido;category/hat">
+        <rdf:type rdf:resource="&ido;ArticleCategory"/>
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <rdfs:label xml:lang="en">hat</rdfs:label>
+        <rdfs:label xml:lang="it">cappello</rdfs:label>
+        <skos:notation>5</skos:notation>
+        <skos:prefLabel xml:lang="en">hat</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">cappello</skos:prefLabel>
+        <skos:inScheme rdf:resource="&ido;category"/>
+        <skos:topConceptOf rdf:resource="&ido;category"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/category/heavy-jacket -->
+
+    <owl:NamedIndividual rdf:about="&ido;category/heavy-jacket">
+        <rdf:type rdf:resource="&ido;ArticleCategory"/>
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <rdfs:label xml:lang="en">heavy jacket</rdfs:label>
+        <rdfs:label xml:lang="it">giaccone</rdfs:label>
+        <skos:notation>U</skos:notation>
+        <skos:prefLabel xml:lang="en">heavy jacket</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">giaccone</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="&ido;category"/>
+        <skos:inScheme rdf:resource="&ido;category"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/category/jacket -->
+
+    <owl:NamedIndividual rdf:about="&ido;category/jacket">
+        <rdf:type rdf:resource="&ido;ArticleCategory"/>
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <rdfs:label xml:lang="en">jacket</rdfs:label>
+        <rdfs:label xml:lang="it">giubbotto</rdfs:label>
+        <skos:notation>V</skos:notation>
+        <skos:prefLabel xml:lang="en">jacket</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">giubbotto</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="&ido;category"/>
+        <skos:inScheme rdf:resource="&ido;category"/>
+        <skos:narrower rdf:resource="&ido;category/leather-jacket"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/category/leather-jacket -->
+
+    <owl:NamedIndividual rdf:about="&ido;category/leather-jacket">
+        <rdf:type rdf:resource="&ido;ArticleCategory"/>
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <rdfs:label xml:lang="en">leather jacket</rdfs:label>
+        <rdfs:label xml:lang="it">giubbotto di pelle</rdfs:label>
+        <skos:notation>1</skos:notation>
+        <skos:prefLabel xml:lang="en">leather jacket</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">giubbotto di pelle</skos:prefLabel>
+        <skos:inScheme rdf:resource="&ido;category"/>
+        <skos:broader rdf:resource="&ido;category/jacket"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/category/perfume -->
+
+    <owl:NamedIndividual rdf:about="&ido;category/perfume">
+        <rdf:type rdf:resource="&ido;ArticleCategory"/>
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <rdfs:label xml:lang="en">perfume</rdfs:label>
+        <rdfs:label xml:lang="it">profumo</rdfs:label>
+        <skos:notation>E</skos:notation>
+        <skos:prefLabel xml:lang="en">perfume</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">profumo</skos:prefLabel>
+        <skos:inScheme rdf:resource="&ido;category"/>
+        <skos:topConceptOf rdf:resource="&ido;category"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/category/shirt -->
+
+    <owl:NamedIndividual rdf:about="&ido;category/shirt">
+        <rdf:type rdf:resource="&ido;ArticleCategory"/>
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <rdfs:label xml:lang="en">shirt</rdfs:label>
+        <rdfs:label xml:lang="it">camicia</rdfs:label>
+        <skos:notation>C</skos:notation>
+        <skos:prefLabel xml:lang="en">shirt</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">camicia</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="&ido;category"/>
+        <skos:inScheme rdf:resource="&ido;category"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/category/skirt -->
+
+    <owl:NamedIndividual rdf:about="&ido;category/skirt">
+        <rdf:type rdf:resource="&ido;ArticleCategory"/>
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <rdfs:label xml:lang="en">skirt</rdfs:label>
+        <rdfs:label xml:lang="it">gonna</rdfs:label>
+        <skos:notation>G</skos:notation>
+        <skos:prefLabel xml:lang="en">skirt</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">gonna</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="&ido;category"/>
+        <skos:inScheme rdf:resource="&ido;category"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/category/sweater -->
+
+    <owl:NamedIndividual rdf:about="&ido;category/sweater">
+        <rdf:type rdf:resource="&ido;ArticleCategory"/>
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <rdfs:label xml:lang="en">sweater</rdfs:label>
+        <rdfs:label xml:lang="it">maglia</rdfs:label>
+        <skos:notation>M</skos:notation>
+        <skos:prefLabel xml:lang="en">sweater</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">maglia</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="&ido;category"/>
+        <skos:inScheme rdf:resource="&ido;category"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/category/tracksuit -->
+
+    <owl:NamedIndividual rdf:about="&ido;category/tracksuit">
+        <rdf:type rdf:resource="&ido;ArticleCategory"/>
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <rdfs:label xml:lang="en">tracksuit</rdfs:label>
+        <rdfs:label xml:lang="it">tuta</rdfs:label>
+        <skos:notation>Y</skos:notation>
+        <skos:prefLabel xml:lang="en">tracksuit</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">tuta</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="&ido;category"/>
+        <skos:inScheme rdf:resource="&ido;category"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/category/trousers -->
+
+    <owl:NamedIndividual rdf:about="&ido;category/trousers">
+        <rdf:type rdf:resource="&ido;ArticleCategory"/>
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <rdfs:label xml:lang="en">trousers</rdfs:label>
+        <rdfs:label xml:lang="it">pantalone</rdfs:label>
+        <skos:notation>P</skos:notation>
+        <skos:prefLabel xml:lang="en">trousers</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">pantalone</skos:prefLabel>
+        <skos:inScheme rdf:resource="&ido;category"/>
+        <skos:topConceptOf rdf:resource="&ido;category"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/category/vest -->
+
+    <owl:NamedIndividual rdf:about="&ido;category/vest">
+        <rdf:type rdf:resource="&ido;ArticleCategory"/>
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <rdfs:label xml:lang="en">vest</rdfs:label>
+        <rdfs:label xml:lang="it">canotta</rdfs:label>
+        <skos:notation>R</skos:notation>
+        <skos:prefLabel xml:lang="en">vest</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">canotta</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="&ido;category"/>
+        <skos:inScheme rdf:resource="&ido;category"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/category/waistcoat -->
+
+    <owl:NamedIndividual rdf:about="&ido;category/waistcoat">
+        <rdf:type rdf:resource="&ido;ArticleCategory"/>
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <rdfs:label xml:lang="en">waistcoat</rdfs:label>
+        <rdfs:label xml:lang="it">gilet</rdfs:label>
+        <skos:notation>L</skos:notation>
+        <skos:prefLabel xml:lang="en">waistcoat</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">gilet</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="&ido;category"/>
+        <skos:inScheme rdf:resource="&ido;category"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->

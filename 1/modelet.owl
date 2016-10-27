@@ -1,0 +1,334 @@
+Prefix: : <http://www.essepuntato.it/example/>
+Prefix: dc: <http://purl.org/dc/elements/1.1/>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+
+
+Ontology: <http://www.essepuntato.it/example>
+
+
+AnnotationProperty: rdfs:isDefinedBy
+
+    
+Datatype: xsd:dateTime
+
+    
+Datatype: xsd:float
+
+    
+Datatype: xsd:date
+
+    
+ObjectProperty: wasCreatedFor
+
+    Annotations: 
+        rdfs:isDefinedBy <http://www.essepuntato.it/example>
+    
+    Domain: 
+        Article
+    
+    Range: 
+        Genre
+    
+    
+ObjectProperty: hasColour
+
+    Annotations: 
+        rdfs:isDefinedBy <http://www.essepuntato.it/example>
+    
+    Domain: 
+        Materialisation
+    
+    Range: 
+        Colour
+    
+    
+ObjectProperty: hasGenre
+
+    Annotations: 
+        rdfs:isDefinedBy <http://www.essepuntato.it/example>
+    
+    Domain: 
+        Person
+    
+    Range: 
+        Genre
+    
+    
+ObjectProperty: hasPriceCurrency
+
+    Domain: 
+        Price
+    
+    
+ObjectProperty: isMaterialisedAs
+
+    Annotations: 
+        rdfs:isDefinedBy <http://www.essepuntato.it/example>
+    
+    Domain: 
+        Article
+    
+    Range: 
+        Materialisation
+    
+    
+ObjectProperty: isPartOf
+
+    Annotations: 
+        rdfs:isDefinedBy <http://www.essepuntato.it/example>
+    
+    Domain: 
+        Location
+    
+    Range: 
+        Location
+    
+    
+ObjectProperty: hasTotalPrice
+
+    Domain: 
+        Order
+    
+    Range: 
+        Price
+    
+    
+ObjectProperty: includesItem
+
+    Annotations: 
+        rdfs:isDefinedBy <http://www.essepuntato.it/example>
+    
+    Domain: 
+        Order
+    
+    Range: 
+        Item
+    
+    
+ObjectProperty: hasItem
+
+    Annotations: 
+        rdfs:isDefinedBy <http://www.essepuntato.it/example>
+    
+    Domain: 
+        Materialisation
+    
+    Range: 
+        Item
+    
+    
+ObjectProperty: hasSize
+
+    Annotations: 
+        rdfs:isDefinedBy <http://www.essepuntato.it/example>
+    
+    Domain: 
+        Materialisation
+    
+    Range: 
+        Size
+    
+    
+ObjectProperty: hasHomeLocation
+
+    Annotations: 
+        rdfs:isDefinedBy <http://www.essepuntato.it/example>
+    
+    Domain: 
+        Person
+    
+    Range: 
+        Location
+    
+    
+ObjectProperty: hasDeliveryLocation
+
+    Annotations: 
+        rdfs:isDefinedBy <http://www.essepuntato.it/example>
+    
+    Domain: 
+        Order
+    
+    Range: 
+        Location
+    
+    
+ObjectProperty: holdsAccount
+
+    Annotations: 
+        rdfs:isDefinedBy <http://www.essepuntato.it/example>
+    
+    Domain: 
+        Person
+    
+    Range: 
+        UserAccount
+    
+    
+ObjectProperty: madeOrder
+
+    Annotations: 
+        rdfs:isDefinedBy <http://www.essepuntato.it/example>
+    
+    Domain: 
+        UserAccount
+    
+    Range: 
+        Order
+    
+    
+DataProperty: hasIdentifier
+
+    Annotations: 
+        rdfs:isDefinedBy <http://www.essepuntato.it/example>
+    
+    
+DataProperty: hasPriceValue
+
+    Annotations: 
+        rdfs:isDefinedBy <http://www.essepuntato.it/example>
+    
+    Domain: 
+        Order
+    
+    Range: 
+        xsd:float
+    
+    
+DataProperty: hasOrderDate
+
+    Annotations: 
+        rdfs:isDefinedBy <http://www.essepuntato.it/example>
+    
+    Domain: 
+        Order
+    
+    Range: 
+        xsd:dateTime
+    
+    
+DataProperty: hasDateOfBirth
+
+    Annotations: 
+        rdfs:isDefinedBy <http://www.essepuntato.it/example>
+    
+    Domain: 
+        Person
+    
+    Range: 
+        xsd:date
+    
+    
+Class: Article
+
+    Annotations: 
+        rdfs:isDefinedBy <http://www.essepuntato.it/example>
+    
+    
+Class: Currency
+
+    
+Class: Materialisation
+
+    Annotations: 
+        rdfs:isDefinedBy <http://www.essepuntato.it/example>
+    
+    
+Class: UserAccount
+
+    Annotations: 
+        rdfs:isDefinedBy <http://www.essepuntato.it/example>
+    
+    
+Class: Location
+
+    Annotations: 
+        rdfs:isDefinedBy <http://www.essepuntato.it/example>
+    
+    
+Class: Price
+
+    Annotations: 
+        rdfs:isDefinedBy <http://www.essepuntato.it/example>
+    
+    
+Class: Person
+
+    Annotations: 
+        rdfs:isDefinedBy <http://www.essepuntato.it/example>
+    
+    
+Class: Order
+
+    Annotations: 
+        rdfs:isDefinedBy <http://www.essepuntato.it/example>
+    
+    
+Class: Genre
+
+    Annotations: 
+        rdfs:isDefinedBy <http://www.essepuntato.it/example>
+    
+    
+Class: owl:Thing
+
+    
+Class: Province
+
+    Annotations: 
+        rdfs:isDefinedBy <http://www.essepuntato.it/example>
+    
+    SubClassOf: 
+        Location
+    
+    
+Class: Region
+
+    Annotations: 
+        rdfs:isDefinedBy <http://www.essepuntato.it/example>
+    
+    SubClassOf: 
+        Location
+    
+    
+Class: Item
+
+    Annotations: 
+        rdfs:isDefinedBy <http://www.essepuntato.it/example>
+    
+    
+Class: Size
+
+    Annotations: 
+        rdfs:isDefinedBy <http://www.essepuntato.it/example>
+    
+    
+Class: Colour
+
+    Annotations: 
+        rdfs:isDefinedBy <http://www.essepuntato.it/example>
+    
+    
+Individual: female
+
+    Types: 
+        Genre
+    
+    
+Individual: euro
+
+    Types: 
+        Currency
+    
+    
+Individual: male
+
+    Types: 
+        Genre
+    
+    

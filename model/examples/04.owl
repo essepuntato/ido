@@ -1,0 +1,1019 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.essepuntato.it/2015/07/ido/abox/"
+     xml:base="http://www.essepuntato.it/2015/07/ido/abox/"
+     xmlns:schema="http://schema.org/"
+     xmlns:timeinterval="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:example="http://www.essepuntato.it/2015/07/ido/abox/"
+     xmlns:skos1="http://www.w3.org/2008/05/skos#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:ido="http://www.essepuntato.it/2015/07/ido/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:sw-vocab-status="http://www.w3.org/2003/06/sw-vocab-status/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:v1="http://purl.org/goodrelations/v1#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://www.essepuntato.it/2015/07/ido/abox">
+        <owl:imports rdf:resource="http://www.essepuntato.it/2015/07/ido"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/hasPrice -->
+
+    <owl:ObjectProperty rdf:about="http://www.essepuntato.it/2015/07/ido/hasPrice"/>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/hasPriceType -->
+
+    <owl:ObjectProperty rdf:about="http://www.essepuntato.it/2015/07/ido/hasPriceType"/>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/hasValidityInterval -->
+
+    <owl:ObjectProperty rdf:about="http://www.essepuntato.it/2015/07/ido/hasValidityInterval"/>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/isApplicableFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.essepuntato.it/2015/07/ido/isApplicableFor"/>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/wasProducedAs -->
+
+    <owl:ObjectProperty rdf:about="http://www.essepuntato.it/2015/07/ido/wasProducedAs"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/goodrelations/v1#hasCurrency -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/goodrelations/v1#hasCurrency"/>
+    
+
+
+    <!-- http://purl.org/goodrelations/v1#hasCurrencyValue -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/goodrelations/v1#hasCurrencyValue"/>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/hasDiscountPercentage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.essepuntato.it/2015/07/ido/hasDiscountPercentage"/>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/includesVAT -->
+
+    <owl:DatatypeProperty rdf:about="http://www.essepuntato.it/2015/07/ido/includesVAT"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalEndDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalEndDate"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalStartDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalStartDate"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/net -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/net"/>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/autumn-winter-2015 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/autumn-winter-2015"/>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/item -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/item">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Item"/>
+        <ido:isAvailableAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sales-january-2016 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sales-january-2016"/>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/StockKeepingUnit"/>
+        <ido:hasPrice rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-cogs"/>
+        <ido:hasPrice rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-cogs-sales"/>
+        <ido:hasPrice rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-sellin"/>
+        <ido:hasPrice rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-sellin-sales"/>
+        <ido:hasPrice rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-sellout"/>
+        <ido:hasPrice rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-sellout-sales"/>
+        <ido:wasProducedAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-1"/>
+        <ido:wasProducedAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-10"/>
+        <ido:wasProducedAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-11"/>
+        <ido:wasProducedAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-12"/>
+        <ido:wasProducedAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-13"/>
+        <ido:wasProducedAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-14"/>
+        <ido:wasProducedAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-15"/>
+        <ido:wasProducedAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-16"/>
+        <ido:wasProducedAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-17"/>
+        <ido:wasProducedAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-18"/>
+        <ido:wasProducedAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-19"/>
+        <ido:wasProducedAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-2"/>
+        <ido:wasProducedAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-20"/>
+        <ido:wasProducedAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-21"/>
+        <ido:wasProducedAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-22"/>
+        <ido:wasProducedAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-23"/>
+        <ido:wasProducedAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-24"/>
+        <ido:wasProducedAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-25"/>
+        <ido:wasProducedAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-26"/>
+        <ido:wasProducedAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-27"/>
+        <ido:wasProducedAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-28"/>
+        <ido:wasProducedAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-29"/>
+        <ido:wasProducedAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-3"/>
+        <ido:wasProducedAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-30"/>
+        <ido:wasProducedAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-31"/>
+        <ido:wasProducedAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-32"/>
+        <ido:wasProducedAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-4"/>
+        <ido:wasProducedAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-5"/>
+        <ido:wasProducedAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-6"/>
+        <ido:wasProducedAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-7"/>
+        <ido:wasProducedAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-8"/>
+        <ido:wasProducedAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-9"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-1">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Piece"/>
+        <ido:hasPrice rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-1-sellin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-1-sellin -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-1-sellin">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/SellInPrice"/>
+        <ido:hasPriceType rdf:resource="http://www.essepuntato.it/2015/07/ido/net"/>
+        <schema:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-12-15T00:00:00</schema:validFrom>
+        <ido:hasPriceCurrency>EUR</ido:hasPriceCurrency>
+        <ido:hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">24.0</ido:hasPriceValue>
+        <ido:includesVAT rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ido:includesVAT>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-10">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Piece"/>
+        <ido:hasPrice rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-10-sellout"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-10-sellout -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-10-sellout">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/SellOutPrice"/>
+        <ido:hasPriceType rdf:resource="http://www.essepuntato.it/2015/07/ido/net"/>
+        <schema:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-07T00:00:00</schema:validFrom>
+        <ido:hasDiscountPercentage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</ido:hasDiscountPercentage>
+        <ido:hasPriceCurrency>EUR</ido:hasPriceCurrency>
+        <ido:hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">35.1</ido:hasPriceValue>
+        <ido:includesVAT rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ido:includesVAT>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-11">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Piece"/>
+        <ido:hasPrice rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-11-sellout"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-11-sellout -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-11-sellout">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/SellOutPrice"/>
+        <ido:hasPriceType rdf:resource="http://www.essepuntato.it/2015/07/ido/net"/>
+        <schema:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-07T00:00:00</schema:validFrom>
+        <ido:hasDiscountPercentage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</ido:hasDiscountPercentage>
+        <ido:hasPriceCurrency>EUR</ido:hasPriceCurrency>
+        <ido:hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">35.1</ido:hasPriceValue>
+        <ido:includesVAT rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ido:includesVAT>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-12">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Piece"/>
+        <ido:hasPrice rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-12-sellout"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-12-sellout -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-12-sellout">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/SellOutPrice"/>
+        <ido:hasPriceType rdf:resource="http://www.essepuntato.it/2015/07/ido/net"/>
+        <schema:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-07T00:00:00</schema:validFrom>
+        <ido:hasDiscountPercentage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</ido:hasDiscountPercentage>
+        <ido:hasPriceCurrency>EUR</ido:hasPriceCurrency>
+        <ido:hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">35.1</ido:hasPriceValue>
+        <ido:includesVAT rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ido:includesVAT>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-13">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Piece"/>
+        <ido:hasPrice rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-13-sellin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-13-sellin -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-13-sellin">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/SellInPrice"/>
+        <ido:hasPriceType rdf:resource="http://www.essepuntato.it/2015/07/ido/net"/>
+        <schema:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-15T00:00:00</schema:validFrom>
+        <ido:hasPriceCurrency>EUR</ido:hasPriceCurrency>
+        <ido:hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">19.2</ido:hasPriceValue>
+        <ido:includesVAT rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ido:includesVAT>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-14 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-14">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Piece"/>
+        <ido:hasPrice rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-14-sellin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-14-sellin -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-14-sellin">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/SellInPrice"/>
+        <ido:hasPriceType rdf:resource="http://www.essepuntato.it/2015/07/ido/net"/>
+        <schema:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-15T00:00:00</schema:validFrom>
+        <ido:hasPriceCurrency>EUR</ido:hasPriceCurrency>
+        <ido:hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">19.2</ido:hasPriceValue>
+        <ido:includesVAT rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ido:includesVAT>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-15">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Piece"/>
+        <ido:hasPrice rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-15-sellin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-15-sellin -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-15-sellin">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/SellInPrice"/>
+        <ido:hasPriceType rdf:resource="http://www.essepuntato.it/2015/07/ido/net"/>
+        <schema:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-15T00:00:00</schema:validFrom>
+        <ido:hasPriceCurrency>EUR</ido:hasPriceCurrency>
+        <ido:hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">19.2</ido:hasPriceValue>
+        <ido:includesVAT rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ido:includesVAT>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-16 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-16">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Piece"/>
+        <ido:hasPrice rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-16-sellin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-16-sellin -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-16-sellin">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/SellInPrice"/>
+        <ido:hasPriceType rdf:resource="http://www.essepuntato.it/2015/07/ido/net"/>
+        <schema:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-15T00:00:00</schema:validFrom>
+        <ido:hasPriceCurrency>EUR</ido:hasPriceCurrency>
+        <ido:hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">19.2</ido:hasPriceValue>
+        <ido:includesVAT rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ido:includesVAT>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-17 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-17">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Piece"/>
+        <ido:hasPrice rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-17-sellin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-17-sellin -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-17-sellin">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/SellInPrice"/>
+        <ido:hasPriceType rdf:resource="http://www.essepuntato.it/2015/07/ido/net"/>
+        <schema:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-15T00:00:00</schema:validFrom>
+        <ido:hasPriceCurrency>EUR</ido:hasPriceCurrency>
+        <ido:hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">19.2</ido:hasPriceValue>
+        <ido:includesVAT rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ido:includesVAT>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-18 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-18">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Piece"/>
+        <ido:hasPrice rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-18-sellin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-18-sellin -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-18-sellin">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/SellInPrice"/>
+        <ido:hasPriceType rdf:resource="http://www.essepuntato.it/2015/07/ido/net"/>
+        <schema:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-15T00:00:00</schema:validFrom>
+        <ido:hasPriceCurrency>EUR</ido:hasPriceCurrency>
+        <ido:hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">19.2</ido:hasPriceValue>
+        <ido:includesVAT rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ido:includesVAT>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-19 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-19">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Piece"/>
+        <ido:hasPrice rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-19-sellin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-19-sellin -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-19-sellin">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/SellInPrice"/>
+        <ido:hasPriceType rdf:resource="http://www.essepuntato.it/2015/07/ido/net"/>
+        <schema:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-15T00:00:00</schema:validFrom>
+        <ido:hasPriceCurrency>EUR</ido:hasPriceCurrency>
+        <ido:hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">19.2</ido:hasPriceValue>
+        <ido:includesVAT rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ido:includesVAT>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-2">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Piece"/>
+        <ido:hasPrice rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-2-sellin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-2-sellin -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-2-sellin">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/SellInPrice"/>
+        <ido:hasPriceType rdf:resource="http://www.essepuntato.it/2015/07/ido/net"/>
+        <schema:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-12-15T00:00:00</schema:validFrom>
+        <ido:hasPriceCurrency>EUR</ido:hasPriceCurrency>
+        <ido:hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">24.0</ido:hasPriceValue>
+        <ido:includesVAT rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ido:includesVAT>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-20 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-20">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Piece"/>
+        <ido:hasPrice rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-20-sellin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-20-sellin -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-20-sellin">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/SellInPrice"/>
+        <ido:hasPriceType rdf:resource="http://www.essepuntato.it/2015/07/ido/net"/>
+        <schema:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-15T00:00:00</schema:validFrom>
+        <ido:hasPriceCurrency>EUR</ido:hasPriceCurrency>
+        <ido:hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">19.2</ido:hasPriceValue>
+        <ido:includesVAT rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ido:includesVAT>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-21 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-21">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Piece"/>
+        <ido:hasPrice rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-21-sellin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-21-sellin -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-21-sellin">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/SellInPrice"/>
+        <ido:hasPriceType rdf:resource="http://www.essepuntato.it/2015/07/ido/net"/>
+        <schema:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-15T00:00:00</schema:validFrom>
+        <ido:hasPriceCurrency>EUR</ido:hasPriceCurrency>
+        <ido:hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">19.2</ido:hasPriceValue>
+        <ido:includesVAT rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ido:includesVAT>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-22 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-22">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Piece"/>
+        <ido:hasPrice rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-22-sellin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-22-sellin -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-22-sellin">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/SellInPrice"/>
+        <ido:hasPriceType rdf:resource="http://www.essepuntato.it/2015/07/ido/net"/>
+        <schema:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-15T00:00:00</schema:validFrom>
+        <ido:hasPriceCurrency>EUR</ido:hasPriceCurrency>
+        <ido:hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">19.2</ido:hasPriceValue>
+        <ido:includesVAT rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ido:includesVAT>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-23 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-23">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Piece"/>
+        <ido:hasPrice rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-23-sellin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-23-sellin -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-23-sellin">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/SellInPrice"/>
+        <ido:hasPriceType rdf:resource="http://www.essepuntato.it/2015/07/ido/net"/>
+        <schema:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-15T00:00:00</schema:validFrom>
+        <ido:hasPriceCurrency>EUR</ido:hasPriceCurrency>
+        <ido:hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">19.2</ido:hasPriceValue>
+        <ido:includesVAT rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ido:includesVAT>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-24 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-24">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Piece"/>
+        <ido:hasPrice rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-24-sellin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-24-sellin -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-24-sellin">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/SellInPrice"/>
+        <ido:hasPriceType rdf:resource="http://www.essepuntato.it/2015/07/ido/net"/>
+        <schema:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-15T00:00:00</schema:validFrom>
+        <ido:hasPriceCurrency>EUR</ido:hasPriceCurrency>
+        <ido:hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">19.2</ido:hasPriceValue>
+        <ido:includesVAT rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ido:includesVAT>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-25 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-25">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Piece"/>
+        <ido:hasPrice rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-25-sellin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-25-sellin -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-25-sellin">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/SellInPrice"/>
+        <ido:hasPriceType rdf:resource="http://www.essepuntato.it/2015/07/ido/net"/>
+        <schema:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-15T00:00:00</schema:validFrom>
+        <ido:hasPriceCurrency>EUR</ido:hasPriceCurrency>
+        <ido:hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">19.2</ido:hasPriceValue>
+        <ido:includesVAT rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ido:includesVAT>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-26 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-26">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Piece"/>
+        <ido:hasPrice rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-26-sellin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-26-sellin -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-26-sellin">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/SellInPrice"/>
+        <ido:hasPriceType rdf:resource="http://www.essepuntato.it/2015/07/ido/net"/>
+        <schema:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-15T00:00:00</schema:validFrom>
+        <ido:hasPriceCurrency>EUR</ido:hasPriceCurrency>
+        <ido:hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">19.2</ido:hasPriceValue>
+        <ido:includesVAT rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ido:includesVAT>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-27 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-27">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Piece"/>
+        <ido:hasPrice rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-27-sellin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-27-sellin -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-27-sellin">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/SellInPrice"/>
+        <ido:hasPriceType rdf:resource="http://www.essepuntato.it/2015/07/ido/net"/>
+        <schema:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-15T00:00:00</schema:validFrom>
+        <ido:hasPriceCurrency>EUR</ido:hasPriceCurrency>
+        <ido:hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">19.2</ido:hasPriceValue>
+        <ido:includesVAT rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ido:includesVAT>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-28 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-28">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Piece"/>
+        <ido:hasPrice rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-28-sellin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-28-sellin -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-28-sellin">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/SellInPrice"/>
+        <ido:hasPriceType rdf:resource="http://www.essepuntato.it/2015/07/ido/net"/>
+        <schema:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-15T00:00:00</schema:validFrom>
+        <ido:hasPriceCurrency>EUR</ido:hasPriceCurrency>
+        <ido:hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">19.2</ido:hasPriceValue>
+        <ido:includesVAT rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ido:includesVAT>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-29 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-29">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Piece"/>
+        <ido:hasPrice rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-29-sellin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-29-sellin -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-29-sellin">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/SellInPrice"/>
+        <ido:hasPriceType rdf:resource="http://www.essepuntato.it/2015/07/ido/net"/>
+        <schema:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-15T00:00:00</schema:validFrom>
+        <ido:hasPriceCurrency>EUR</ido:hasPriceCurrency>
+        <ido:hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">19.2</ido:hasPriceValue>
+        <ido:includesVAT rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ido:includesVAT>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-3">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Piece"/>
+        <ido:hasPrice rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-3-sellin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-3-sellin -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-3-sellin">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/SellInPrice"/>
+        <ido:hasPriceType rdf:resource="http://www.essepuntato.it/2015/07/ido/net"/>
+        <schema:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-12-15T00:00:00</schema:validFrom>
+        <ido:hasPriceCurrency>EUR</ido:hasPriceCurrency>
+        <ido:hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">24.0</ido:hasPriceValue>
+        <ido:includesVAT rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ido:includesVAT>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-30 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-30">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Piece"/>
+        <ido:hasPrice rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-30-sellin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-30-sellin -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-30-sellin">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/SellInPrice"/>
+        <ido:hasPriceType rdf:resource="http://www.essepuntato.it/2015/07/ido/net"/>
+        <schema:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-15T00:00:00</schema:validFrom>
+        <ido:hasPriceCurrency>EUR</ido:hasPriceCurrency>
+        <ido:hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">19.2</ido:hasPriceValue>
+        <ido:includesVAT rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ido:includesVAT>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-31 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-31">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Piece"/>
+        <ido:hasPrice rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-31-sellin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-31-sellin -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-31-sellin">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/SellInPrice"/>
+        <ido:hasPriceType rdf:resource="http://www.essepuntato.it/2015/07/ido/net"/>
+        <schema:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-15T00:00:00</schema:validFrom>
+        <ido:hasPriceCurrency>EUR</ido:hasPriceCurrency>
+        <ido:hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">19.2</ido:hasPriceValue>
+        <ido:includesVAT rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ido:includesVAT>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-32 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-32">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Piece"/>
+        <ido:hasPrice rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-32-sellin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-32-sellin -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-32-sellin">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/SellInPrice"/>
+        <ido:hasPriceType rdf:resource="http://www.essepuntato.it/2015/07/ido/net"/>
+        <schema:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-15T00:00:00</schema:validFrom>
+        <ido:hasPriceCurrency>EUR</ido:hasPriceCurrency>
+        <ido:hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">19.2</ido:hasPriceValue>
+        <ido:includesVAT rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ido:includesVAT>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-4">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Piece"/>
+        <ido:hasPrice rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-4-sellout"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-4-sellout -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-4-sellout">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/SellOutPrice"/>
+        <ido:hasPriceType rdf:resource="http://www.essepuntato.it/2015/07/ido/net"/>
+        <schema:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-12-15T00:00:00</schema:validFrom>
+        <schema:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-06T23:59:59</schema:validThrough>
+        <ido:hasPriceCurrency>EUR</ido:hasPriceCurrency>
+        <ido:hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">39.0</ido:hasPriceValue>
+        <ido:includesVAT rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ido:includesVAT>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-5">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Piece"/>
+        <ido:hasPrice rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-5-sellout"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-5-sellout -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-5-sellout">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/SellOutPrice"/>
+        <ido:hasPriceType rdf:resource="http://www.essepuntato.it/2015/07/ido/net"/>
+        <schema:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-12-15T00:00:00</schema:validFrom>
+        <schema:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-06T23:59:59</schema:validThrough>
+        <ido:hasPriceCurrency>EUR</ido:hasPriceCurrency>
+        <ido:hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">39.0</ido:hasPriceValue>
+        <ido:includesVAT rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ido:includesVAT>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-6">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Piece"/>
+        <ido:hasPrice rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-6-sellout"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-6-sellout -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-6-sellout">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/SellOutPrice"/>
+        <ido:hasPriceType rdf:resource="http://www.essepuntato.it/2015/07/ido/net"/>
+        <schema:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-07T00:00:00</schema:validFrom>
+        <ido:hasDiscountPercentage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</ido:hasDiscountPercentage>
+        <ido:hasPriceCurrency>EUR</ido:hasPriceCurrency>
+        <ido:hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">35.1</ido:hasPriceValue>
+        <ido:includesVAT rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ido:includesVAT>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-7">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Piece"/>
+        <ido:hasPrice rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-7-sellout"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-7-sellout -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-7-sellout">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/SellOutPrice"/>
+        <ido:hasPriceType rdf:resource="http://www.essepuntato.it/2015/07/ido/net"/>
+        <schema:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-07T00:00:00</schema:validFrom>
+        <ido:hasDiscountPercentage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</ido:hasDiscountPercentage>
+        <ido:hasPriceCurrency>EUR</ido:hasPriceCurrency>
+        <ido:hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">35.1</ido:hasPriceValue>
+        <ido:includesVAT rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ido:includesVAT>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-8">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Piece"/>
+        <ido:hasPrice rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-8-sellout"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-8-sellout -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-8-sellout">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/SellOutPrice"/>
+        <ido:hasPriceType rdf:resource="http://www.essepuntato.it/2015/07/ido/net"/>
+        <schema:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-07T00:00:00</schema:validFrom>
+        <ido:hasDiscountPercentage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</ido:hasDiscountPercentage>
+        <ido:hasPriceCurrency>EUR</ido:hasPriceCurrency>
+        <ido:hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">35.1</ido:hasPriceValue>
+        <ido:includesVAT rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ido:includesVAT>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-9">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Piece"/>
+        <ido:hasPrice rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sko-9-sellout"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-9-sellout -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-9-sellout">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/SellOutPrice"/>
+        <ido:hasPriceType rdf:resource="http://www.essepuntato.it/2015/07/ido/net"/>
+        <schema:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-07T00:00:00</schema:validFrom>
+        <ido:hasDiscountPercentage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</ido:hasDiscountPercentage>
+        <ido:hasPriceCurrency>EUR</ido:hasPriceCurrency>
+        <ido:hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">35.1</ido:hasPriceValue>
+        <ido:includesVAT rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ido:includesVAT>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-cogs -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-cogs">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/CostOfGoodsSold"/>
+        <ido:hasPriceType rdf:resource="http://www.essepuntato.it/2015/07/ido/net"/>
+        <ido:isApplicableFor rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/autumn-winter-2015"/>
+        <schema:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-12-15T00:00:00</schema:validFrom>
+        <schema:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-14T23:59:59</schema:validThrough>
+        <ido:hasPriceCurrency>EUR</ido:hasPriceCurrency>
+        <ido:hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">15.0</ido:hasPriceValue>
+        <ido:includesVAT rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ido:includesVAT>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-cogs-sales -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-cogs-sales">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/CostOfGoodsSold"/>
+        <ido:hasPriceType rdf:resource="http://www.essepuntato.it/2015/07/ido/net"/>
+        <ido:isApplicableFor rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/autumn-winter-2015"/>
+        <ido:isApplicableFor rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sales-january-2016"/>
+        <schema:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-15T00:00:00</schema:validFrom>
+        <ido:hasPriceCurrency>EUR</ido:hasPriceCurrency>
+        <ido:hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">12.0</ido:hasPriceValue>
+        <ido:includesVAT rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ido:includesVAT>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-sellin -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-sellin">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/SellInPrice"/>
+        <ido:hasPriceType rdf:resource="http://www.essepuntato.it/2015/07/ido/net"/>
+        <ido:isApplicableFor rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/autumn-winter-2015"/>
+        <schema:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-12-15T00:00:00</schema:validFrom>
+        <ido:hasPriceCurrency>EUR</ido:hasPriceCurrency>
+        <ido:hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">24.0</ido:hasPriceValue>
+        <ido:includesVAT rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ido:includesVAT>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-sellin-sales -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-sellin-sales">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/SellInPrice"/>
+        <ido:hasPriceType rdf:resource="http://www.essepuntato.it/2015/07/ido/net"/>
+        <ido:isApplicableFor rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/autumn-winter-2015"/>
+        <ido:isApplicableFor rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sales-january-2016"/>
+        <schema:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-15T00:00:00</schema:validFrom>
+        <ido:hasPriceCurrency>EUR</ido:hasPriceCurrency>
+        <ido:hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">19.2</ido:hasPriceValue>
+        <ido:includesVAT rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ido:includesVAT>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-sellout -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-sellout">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/SellOutPrice"/>
+        <ido:hasPriceType rdf:resource="http://www.essepuntato.it/2015/07/ido/net"/>
+        <ido:isApplicableFor rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/autumn-winter-2015"/>
+        <schema:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-12-15T00:00:00</schema:validFrom>
+        <schema:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-06T23:59:59</schema:validThrough>
+        <ido:hasPriceCurrency>EUR</ido:hasPriceCurrency>
+        <ido:hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">39.0</ido:hasPriceValue>
+        <ido:includesVAT rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ido:includesVAT>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/2015/07/ido/abox/sko-sellout-sales -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/sko-sellout-sales">
+        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/SellOutPrice"/>
+        <ido:hasPriceType rdf:resource="http://www.essepuntato.it/2015/07/ido/net"/>
+        <ido:isApplicableFor rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/autumn-winter-2015"/>
+        <ido:isApplicableFor rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/sales-january-2016"/>
+        <schema:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-07T00:00:00</schema:validFrom>
+        <ido:hasDiscountPercentage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</ido:hasDiscountPercentage>
+        <ido:hasPriceCurrency>EUR</ido:hasPriceCurrency>
+        <ido:hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">35.1</ido:hasPriceValue>
+        <ido:includesVAT rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ido:includesVAT>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.1.20160306-0033) https://github.com/owlcs/owlapi -->
+

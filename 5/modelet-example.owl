@@ -1,0 +1,324 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY tbox "http://www.essepuntato.it/example/" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.essepuntato.it/modelet-example/"
+     xml:base="http://www.essepuntato.it/modelet-example/"
+     xmlns:tbox="http://www.essepuntato.it/example/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://www.essepuntato.it/modelet-example">
+        <owl:imports rdf:resource="http://www.essepuntato.it/example"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/invoice-order-2016-01-15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/invoice-order-2016-01-15">
+        <rdf:type rdf:resource="&tbox;Invoice"/>
+        <tbox:hasCreationDate rdf:datatype="&xsd;dateTime">2016-01-17T00:00:00</tbox:hasCreationDate>
+        <tbox:specifiesDistributionPlatform rdf:resource="&tbox;b2b"/>
+        <tbox:specifiesSalesChannel rdf:resource="&tbox;e-commerce"/>
+        <tbox:hasTotalValue rdf:resource="http://www.essepuntato.it/modelet-example/invoice-order-2016-01-15-total-value"/>
+        <tbox:includes rdf:resource="http://www.essepuntato.it/modelet-example/invoice-order-2016-01-15-total-value"/>
+        <tbox:refersTo rdf:resource="http://www.essepuntato.it/modelet-example/order-2016-01-15"/>
+        <tbox:includes rdf:resource="http://www.essepuntato.it/modelet-example/piece-1-sku-1-with-price"/>
+        <tbox:includes rdf:resource="http://www.essepuntato.it/modelet-example/piece-1-sku-2-with-price"/>
+        <tbox:includes rdf:resource="http://www.essepuntato.it/modelet-example/piece-1-sku-3-with-price"/>
+        <tbox:includes rdf:resource="http://www.essepuntato.it/modelet-example/piece-2-sku-1-with-price"/>
+        <tbox:includes rdf:resource="http://www.essepuntato.it/modelet-example/piece-2-sku-2-with-price"/>
+        <tbox:includes rdf:resource="http://www.essepuntato.it/modelet-example/piece-3-sku-1-with-price"/>
+        <tbox:includes rdf:resource="http://www.essepuntato.it/modelet-example/piece-3-sku-2-with-price"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/invoice-order-2016-01-15-total-value -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/invoice-order-2016-01-15-total-value">
+        <rdf:type rdf:resource="&tbox;Price"/>
+        <tbox:hasCurrencyValue rdf:datatype="&xsd;decimal">313</tbox:hasCurrencyValue>
+        <tbox:hasCurrency rdf:datatype="&rdfs;Literal">EUR</tbox:hasCurrency>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/order-2016-01-15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/order-2016-01-15">
+        <rdf:type rdf:resource="&tbox;Order"/>
+        <tbox:hasCreationDate rdf:datatype="&xsd;dateTime">2016-01-15T00:00:00</tbox:hasCreationDate>
+        <tbox:specifiesDistributionPlatform rdf:resource="&tbox;b2b"/>
+        <tbox:specifiesSalesChannel rdf:resource="&tbox;e-commerce"/>
+        <tbox:hasTotalValue rdf:resource="http://www.essepuntato.it/modelet-example/order-2016-01-15-total-value"/>
+        <tbox:includes rdf:resource="http://www.essepuntato.it/modelet-example/sku-1-4"/>
+        <tbox:includes rdf:resource="http://www.essepuntato.it/modelet-example/sku-2-3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/order-2016-01-15-total-value -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/order-2016-01-15-total-value">
+        <rdf:type rdf:resource="&tbox;Price"/>
+        <tbox:hasCurrencyValue rdf:datatype="&xsd;decimal">311</tbox:hasCurrencyValue>
+        <tbox:hasCurrency rdf:datatype="&rdfs;Literal">EUR</tbox:hasCurrency>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/piece-1-sku-1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/piece-1-sku-1">
+        <rdf:type rdf:resource="&tbox;Piece"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/piece-1-sku-1-with-price -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/piece-1-sku-1-with-price">
+        <rdf:type rdf:resource="&tbox;PieceWithPrice"/>
+        <tbox:hasPiece rdf:resource="http://www.essepuntato.it/modelet-example/piece-1-sku-1"/>
+        <tbox:hasPrice rdf:resource="http://www.essepuntato.it/modelet-example/sku-1-price"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/piece-1-sku-2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/piece-1-sku-2">
+        <rdf:type rdf:resource="&tbox;Piece"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/piece-1-sku-2-with-price -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/piece-1-sku-2-with-price">
+        <rdf:type rdf:resource="&tbox;PieceWithPrice"/>
+        <tbox:hasPiece rdf:resource="http://www.essepuntato.it/modelet-example/piece-1-sku-2"/>
+        <tbox:hasPrice rdf:resource="http://www.essepuntato.it/modelet-example/sku-2-price"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/piece-1-sku-3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/piece-1-sku-3">
+        <rdf:type rdf:resource="&tbox;Piece"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/piece-1-sku-3-with-price -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/piece-1-sku-3-with-price">
+        <rdf:type rdf:resource="&tbox;PieceWithPrice"/>
+        <tbox:hasPiece rdf:resource="http://www.essepuntato.it/modelet-example/piece-1-sku-3"/>
+        <tbox:hasPrice rdf:resource="http://www.essepuntato.it/modelet-example/sku-3-price"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/piece-2-sku-1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/piece-2-sku-1">
+        <rdf:type rdf:resource="&tbox;Piece"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/piece-2-sku-1-with-price -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/piece-2-sku-1-with-price">
+        <rdf:type rdf:resource="&tbox;PieceWithPrice"/>
+        <tbox:hasPiece rdf:resource="http://www.essepuntato.it/modelet-example/piece-2-sku-1"/>
+        <tbox:hasPrice rdf:resource="http://www.essepuntato.it/modelet-example/sku-1-price"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/piece-2-sku-2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/piece-2-sku-2">
+        <rdf:type rdf:resource="&tbox;Piece"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/piece-2-sku-2-with-price -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/piece-2-sku-2-with-price">
+        <rdf:type rdf:resource="&tbox;PieceWithPrice"/>
+        <tbox:hasPiece rdf:resource="http://www.essepuntato.it/modelet-example/piece-2-sku-2"/>
+        <tbox:hasPrice rdf:resource="http://www.essepuntato.it/modelet-example/sku-2-price"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/piece-3-sku-1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/piece-3-sku-1">
+        <rdf:type rdf:resource="&tbox;Piece"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/piece-3-sku-1-with-price -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/piece-3-sku-1-with-price">
+        <rdf:type rdf:resource="&tbox;PieceWithPrice"/>
+        <tbox:hasPiece rdf:resource="http://www.essepuntato.it/modelet-example/piece-3-sku-1"/>
+        <tbox:hasPrice rdf:resource="http://www.essepuntato.it/modelet-example/sku-1-price"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/piece-3-sku-2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/piece-3-sku-2">
+        <rdf:type rdf:resource="&tbox;Piece"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/piece-3-sku-2-with-price -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/piece-3-sku-2-with-price">
+        <rdf:type rdf:resource="&tbox;PieceWithPrice"/>
+        <tbox:hasPiece rdf:resource="http://www.essepuntato.it/modelet-example/piece-2-sku-2"/>
+        <tbox:hasPrice rdf:resource="http://www.essepuntato.it/modelet-example/sku-2-price"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sku-1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sku-1">
+        <rdf:type rdf:resource="&tbox;StockKeepingUnit"/>
+        <tbox:isAvailableAs rdf:resource="http://www.essepuntato.it/modelet-example/piece-1-sku-1"/>
+        <tbox:isAvailableAs rdf:resource="http://www.essepuntato.it/modelet-example/piece-2-sku-1"/>
+        <tbox:isAvailableAs rdf:resource="http://www.essepuntato.it/modelet-example/piece-3-sku-1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sku-1-4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sku-1-4">
+        <rdf:type rdf:resource="&tbox;StockKeepingUnitAmount"/>
+        <tbox:hasAmount rdf:datatype="&xsd;positiveInteger">4</tbox:hasAmount>
+        <tbox:hasStockKeepingUnit rdf:resource="http://www.essepuntato.it/modelet-example/sku-1"/>
+        <tbox:hasPricePerPiece rdf:resource="http://www.essepuntato.it/modelet-example/sku-1-price"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sku-1-price -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sku-1-price">
+        <rdf:type rdf:resource="&tbox;Price"/>
+        <tbox:hasCurrencyValue rdf:datatype="&xsd;decimal">35</tbox:hasCurrencyValue>
+        <tbox:hasCurrency rdf:datatype="&rdfs;Literal">EUR</tbox:hasCurrency>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sku-2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sku-2">
+        <rdf:type rdf:resource="&tbox;StockKeepingUnit"/>
+        <tbox:isAvailableAs rdf:resource="http://www.essepuntato.it/modelet-example/piece-1-sku-2"/>
+        <tbox:isAvailableAs rdf:resource="http://www.essepuntato.it/modelet-example/piece-2-sku-2"/>
+        <tbox:isAvailableAs rdf:resource="http://www.essepuntato.it/modelet-example/piece-3-sku-2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sku-2-3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sku-2-3">
+        <rdf:type rdf:resource="&tbox;StockKeepingUnitAmount"/>
+        <tbox:hasAmount rdf:datatype="&xsd;positiveInteger">3</tbox:hasAmount>
+        <tbox:hasStockKeepingUnit rdf:resource="http://www.essepuntato.it/modelet-example/sku-2"/>
+        <tbox:hasPricePerPiece rdf:resource="http://www.essepuntato.it/modelet-example/sku-2-price"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sku-2-price -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sku-2-price">
+        <rdf:type rdf:resource="&tbox;Price"/>
+        <tbox:hasCurrencyValue rdf:datatype="&xsd;decimal">57</tbox:hasCurrencyValue>
+        <tbox:hasCurrency rdf:datatype="&rdfs;Literal">EUR</tbox:hasCurrency>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sku-3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sku-3">
+        <rdf:type rdf:resource="&tbox;StockKeepingUnit"/>
+        <tbox:isAvailableAs rdf:resource="http://www.essepuntato.it/modelet-example/piece-1-sku-3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.essepuntato.it/modelet-example/sku-3-price -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/modelet-example/sku-3-price">
+        <rdf:type rdf:resource="&tbox;Price"/>
+        <tbox:hasCurrencyValue rdf:datatype="&xsd;decimal">37</tbox:hasCurrencyValue>
+        <tbox:hasCurrency rdf:datatype="&rdfs;Literal">EUR</tbox:hasCurrency>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+

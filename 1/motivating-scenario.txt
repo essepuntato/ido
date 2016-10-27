@@ -1,0 +1,4 @@
+Name: Ordine di un utente privato
+Descrizione: Il sistema di vendite online messo a disposizione da Imperial permette a delle persone iscritte alla piattaforma Imperial di ordinare un capo messo a disposizione nel catalogo online e di riceverlo direttamente all'indirizzo specificato (caratterizzato da provincia e regione). Ogni capo ordinato è identificato da un codice univoco, dal genere di destinazione (uomo o donna), dalla taglia e dal colore relativo. Ad ogni utente sono associati genere, data di nascita, provincia e regione di residenza.
+
+Esempio: Il cliente 4626 (femmina, nata il 15 giugno 1981, residente in provincia di Trieste, Friuli Venezia Giulia) ha ordinato (n. ordine 2378) in data 2 gennaio 2015, alle ore 12:58, l'articolo femminile di codice AMT3ODO (taglia S, colore nero, quantità 1) spendendo 89 euro.

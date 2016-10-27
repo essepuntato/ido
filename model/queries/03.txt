@@ -1,0 +1,69 @@
+#question_it  Qual è la categoria del modello, il genere, la stagione, il tessuto, la taglia, e il colore di tutti i pezzi prodotti?
+
+#question_en What are the article category, the genre, the season, the textile, the size, and the colour of all the pieces produced?
+
+#sparql PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX ido: <http://www.essepuntato.it/2015/07/ido/>
+PREFIX : <http://www.essepuntato.it/2015/07/ido/abox/>
+
+SELECT DISTINCT ?piece ?category ?genre ?season ?textile ?size ?colour
+WHERE {
+    ?style a ido:Style ;
+        ido:hasArticleCategory ?category ;
+        ido:wasDesignedFor ?genre ;
+        ido:wasRealisedAs [
+            a ido:Item ;
+            ido:wasProposedFor ?season ;
+            ido:wasMadeOf ?textile ;
+            ido:isAvailableAs [
+                a ido:StockKeepingUnit ;
+                ido:hasColour ?colour ;
+                ido:hasSize ?size ;
+                ido:wasProducedAs ?piece
+            ]
+        ]
+}
+
+
+#question_it Quali sono i colori più prodotti?
+
+#question_en What are the most produced colours?
+
+#sparql PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX ido: <http://www.essepuntato.it/2015/07/ido/>
+PREFIX : <http://www.essepuntato.it/2015/07/ido/abox/>
+
+SELECT DISTINCT ?colour (count(?colour) AS ?n)
+WHERE {
+    ?sku ido:wasProducedAs ?piece ;
+        ido:hasColour ?colour
+}
+GROUP BY ?colour
+ORDER BY DESC(?n)
+
+
+#question_it  Qual è la taglia degli articoli gestiti in magazzino di colore nero sono stati messi a disposizione per il capo di codice "AMT3ODO"?
+
+#question_en That is the size of the stock keeping units having colour black that relates with the item with code "AMT3ODO"?
+
+#sparql PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX ido: <http://www.essepuntato.it/2015/07/ido/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX : <http://www.essepuntato.it/2015/07/ido/abox/>
+
+SELECT DISTINCT ?sku ?size
+WHERE {
+    ?item dcterms:identifier "AMT3ODO"^^rdfs:Literal ;
+        ido:isAvailableAs ?sku .
+    ?sku ido:hasColour :black ;
+        ido:hasSize ?size
+}

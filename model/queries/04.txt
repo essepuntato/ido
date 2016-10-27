@@ -1,0 +1,116 @@
+#question_it Quali sono i prezzi di cogs, sell-in e sell-out (tutti al netto dell'IVA) di tutti gli articoli gestiti in magazzino relativamente al periodo successivo al 10 gennaio 2016?
+
+#question_en What are the cogs, sell-in, and sell-out prices (all net including VAT) of all the stock keeping units after the 10th of January 2016?
+
+#sparql PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX schema: <http://schema.org/>
+PREFIX ti: <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#>
+PREFIX ido: <http://www.essepuntato.it/2015/07/ido/>
+PREFIX : <http://www.essepuntato.it/2015/07/ido/abox/>
+
+SELECT DISTINCT ?sku ?cogs ?sellin ?sellout
+WHERE {
+    ?sku ido:hasPrice ?cogs_r, ?sellin_r, ?sellout_r .
+    ?cogs_r a ido:CostOfGoodsSold ;
+        ido:includesVAT "true"^^xsd:boolean ;
+        ido:hasPriceValue ?cogs .
+    FILTER NOT EXISTS {
+        ?cogs_r schema:validThrough ?cogs_et .
+        FILTER (?cogs_et < "2016-01-10T00:00:00"^^xsd:dateTime)
+    }
+
+    ?sellin_r a ido:SellInPrice ;
+        ido:includesVAT "true"^^xsd:boolean ;
+        ido:hasPriceValue ?sellin .
+    FILTER NOT EXISTS {
+        ?sellin_r schema:validThrough ?sellin_et .
+        FILTER (?sellin_et < "2016-01-10T00:00:00"^^xsd:dateTime)
+    }
+
+    ?sellout_r a ido:SellOutPrice ;
+        ido:includesVAT "true"^^xsd:boolean ;
+        ido:hasPriceValue ?sellout .
+    FILTER NOT EXISTS {
+        ?sellout_r schema:validThrough ?sellout_et .
+        FILTER (?sellout_et < "2016-01-10T00:00:00"^^xsd:dateTime)
+    }
+}
+
+
+#question_it Quali sono i pezzi che sono stati comprati con dello sconto, indipendentemente da particolare prezzo su cui lo sconto è stato applicato?
+
+#question_en What are the piece that were sold with a discount, independently from the particular price where the discount was applied?
+
+#sparql PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX ti: <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#>
+PREFIX schema: <http://schema.org/>
+PREFIX ido: <http://www.essepuntato.it/2015/07/ido/>
+PREFIX : <http://www.essepuntato.it/2015/07/ido/abox/>
+
+SELECT DISTINCT ?piece ?price ?type ?discount
+WHERE {
+    ?piece a ido:Piece ;
+    ido:hasPrice [
+        a ?type ;
+        ido:hasPriceValue ?price ;
+        ido:hasDiscountPercentage ?discount
+    ] .
+    FILTER (?discount > 0)
+    FILTER (contains(str(?type), "/ido/"))
+}
+
+
+#question_it Come è variato il prezzo di cogs di un certo articolo gestito in magazzino nel tempo?
+
+#question_en How has the cogs of a certain stock keeping unit changed in time?
+
+#sparql PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX ti: <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#>
+PREFIX schema: <http://schema.org/>
+PREFIX ido: <http://www.essepuntato.it/2015/07/ido/>
+PREFIX : <http://www.essepuntato.it/2015/07/ido/abox/>
+
+SELECT DISTINCT ?sku ?cogs ?st ?et
+WHERE {
+    ?sku a ido:StockKeepingUnit ;
+        ido:hasPrice ?cogs_r .
+
+    ?cogs_r a ido:CostOfGoodsSold ;
+        ido:hasPriceValue ?cogs ;
+        schema:validFrom ?st .
+    OPTIONAL {
+        ?cogs_r schema:validThrough ?et
+    }
+}
+ORDER BY ?st
+
+
+#question_it Qual è il ricavato totale di tutti i pezzi venduti?
+
+#question_en What is the full amount obtanied from all the sold pieces?
+
+#sparql PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX ti: <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#>
+PREFIX schema: <http://schema.org/>
+PREFIX ido: <http://www.essepuntato.it/2015/07/ido/>
+PREFIX : <http://www.essepuntato.it/2015/07/ido/abox/>
+
+SELECT DISTINCT (sum(?price) as ?tot)
+WHERE {
+    ?piece a ido:Piece ;
+        ido:hasPrice [
+            ido:hasPriceValue ?price
+        ]
+}

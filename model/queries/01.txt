@@ -1,0 +1,112 @@
+#question_it Chi è l'utente che ha speso di più sulla piattaforma nell'anno 2015?
+
+#question_en Who is the user that have spent more on the online platoform in 2015?
+
+#sparql PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX ido: <http://www.essepuntato.it/2015/07/ido/>
+PREFIX schema: <http://schema.org/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+
+SELECT DISTINCT ?client_id (sum(?price) AS ?total_amount)
+WHERE {
+	?client a ido:UserAccount ;
+		dcterms:identifier ?client_id ;
+		ido:madeOrder ?order .
+    ?order schema:orderDate ?date .
+    FILTER (year(?date) = 2015)
+	?order a ido:Order ;
+		ido:hasTotalPrice/gr:hasCurrencyValue ?price .
+
+}
+GROUP BY ?client_id
+ORDER BY DESC(?total_amount)
+LIMIT 1
+
+
+#question_it Qual è la provincia i cui utenti hanno ordinato il maggior numero di articoli?
+
+#question_en What is the province where the users have ordered the major amount of articles?
+
+#sparql PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX ido: <http://www.essepuntato.it/2015/07/ido/>
+PREFIX schema: <http://schema.org/>
+
+SELECT DISTINCT ?province (count(?item) AS ?total_item)
+WHERE {
+    ?province a ido:Province .
+	?order a ido:Order ;
+        schema:orderedItem ?item ;
+		ido:hasDeliveryLocation/schema:containedIn* ?province
+}
+GROUP BY ?province
+ORDER BY DESC(?total_item)
+LIMIT 1
+
+
+#question_it Qual è il colore più richiesto nel mese di gennaio 2015?
+
+#question_en What is the most requested colour in January 2015?
+
+#sparql PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX ido: <http://www.essepuntato.it/2015/07/ido/>
+PREFIX schema: <http://schema.org/>
+
+SELECT DISTINCT ?colour (count(?colour) AS ?total)
+WHERE {
+    ?order a ido:Order ;
+        schema:orderedItem ?item ;
+        schema:orderDate ?date .
+    ?item ^ido:wasProducedAs/ido:hasColour ?colour .
+    FILTER (month(?date) = 1 && year(?date) = 2015)
+}
+GROUP BY ?colour
+ORDER BY DESC(?total)
+LIMIT 1
+
+
+#question_it Qual è l'articolo più venduto del mese di gennaio 2015 e quale il suo colore più scelto?
+
+#question_en What is the most sold article in January 2015 and what is its color that has been preferred?
+
+#sparql PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX ido: <http://www.essepuntato.it/2015/07/ido/>
+PREFIX schema: <http://schema.org/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+
+SELECT DISTINCT ?article_id ?total ?colour (count(?colour) AS ?total_colour)
+WHERE {
+	?order a ido:Order ;
+		schema:orderedItem ?item ;
+		schema:orderDate ?date .
+	?item ^(ido:isAvailableAs/ido:wasProducedAs)/dcterms:identifier ?article_id .
+    ?item ^ido:wasProducedAs/ido:hasColour ?colour .
+    FILTER (month(?date) = 1 && year(?date) = 2015)
+	{
+		SELECT ?article_id (count(?item) AS ?total)
+		WHERE {
+			?order a ido:Order ;
+		        schema:orderedItem ?item ;
+		        schema:orderDate ?date .
+		    ?item
+		    	^(ido:isAvailableAs/ido:wasProducedAs)/dcterms:identifier ?article_id .
+		    FILTER (month(?date) = 1 && year(?date) = 2015)
+		}
+		GROUP BY ?article_id
+	}
+}
+GROUP BY ?article_id ?total ?colour
+ORDER BY DESC(?total) DESC(?total_colour)
+LIMIT 1

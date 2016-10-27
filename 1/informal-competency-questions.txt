@@ -1,0 +1,16 @@
+1. Chi è l'utente che ha speso di più sulla piattaforma nell'anno 2015?
+Risposta: l'utente e il prezzo che ha speso
+Esempio: 4626, 89 euro
+
+2. Quale provincia i cui utenti hanno ordinato il maggior numero di articoli?
+Risposta: la provincia e quanti articoli ha venduto
+Esempio: Trieste, 1 articolo venduto
+
+3. Qual è il colore più richiesto nel mese di gennaio 2015?
+Risposta: il colore e quanto è stato venduto
+Esempio: nero, venduto 1 volta
+
+4. Qual è l'articolo più venduto del mese di gennaio 2015 e quale il suo colore più scelto?
+Risposta: L'articolo, quanto è stato venduto, il colore più venduto accompagnato dalla quantità.
+Esempio: AMT3ODO, venduto 1 capo, venduto 1 capo di colore nero
+Dipende da: 3
