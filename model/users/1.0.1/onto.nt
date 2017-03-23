@@ -1,0 +1,163 @@
+<https://w3id.org/ido/users> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/ido/orders/1.0.1> .
+<https://w3id.org/ido/users> <http://purl.org/dc/elements/1.1/date> "2017-03-23" .
+<http://schema.org/gender> <http://www.w3.org/2000/01/rdf-schema#label> "ha genere"@it .
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<https://w3id.org/ido/UserAccount> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:N4bde32ea14c84ce0a462fa39d08550dd .
+<http://schema.org/homeLocation> <http://www.w3.org/2000/01/rdf-schema#label> "ha indirizzo di residenza"@it .
+<https://w3id.org/ido/UserAccount> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ido/users> .
+<https://w3id.org/ido/users> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/ido/madeOrder> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ido/users> .
+<http://schema.org/birthDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/gender> <http://www.w3.org/2000/01/rdf-schema#comment> "La propriet\u00E0 che permette di specificare il genere di una persona."@it .
+<https://w3id.org/ido/wasMadeBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ido/users> .
+<https://w3id.org/ido/hasDeliveryLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "The link between an order and the related delivery address."@en .
+<http://schema.org/gender> <http://www.w3.org/2000/01/rdf-schema#comment> "The property that allows one to specify the gender of a person."@en .
+_:Ne8e443734bc3487198423d1890692461 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/identifier> .
+<https://w3id.org/ido/Region> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/account> <http://www.w3.org/2000/01/rdf-schema#label> "ha un utente"@it .
+<http://schema.org/containedIn> <http://www.w3.org/2000/01/rdf-schema#label> "\u00E8 contenuto in"@it .
+_:Nd59567dcce2846b3a32bdb384984d3a5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/ido/wasMadeBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ido/Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Person> .
+<http://rdfs.org/sioc/ns#UserAccount> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://rdfs.org/sioc/ns> .
+<https://w3id.org/ido/hasDeliveryLocation> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/Place> .
+<http://schema.org/gender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/ido/Region> <http://www.w3.org/2000/01/rdf-schema#label> "region"@en .
+<http://schema.org/homeLocation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org> .
+<http://schema.org/containedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "La relazione di contenimento tra due luoghi, dove il primo \u00E8 contenuto nel secondo."@it .
+<https://w3id.org/ido/Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Person> .
+<http://schema.org/birthDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://schema.org/homeLocation> <http://www.w3.org/2000/01/rdf-schema#label> "has home location"@en .
+<http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/ido/users> <http://purl.org/dc/elements/1.1/rights> "This work is distributed under a [Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/)."@en .
+<https://w3id.org/ido/wasMadeBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://xmlns.com/foaf/0.1/account> <http://www.w3.org/2000/01/rdf-schema#comment> "The relationship that links a person with a particular user account that she has created."@en .
+<https://w3id.org/ido/Province> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of all the provinces."@en .
+<https://w3id.org/ido/users> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.1" .
+<https://w3id.org/ido/Province> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ido/users> .
+<https://w3id.org/ido/isDeliveryLocationIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://schema.org/containedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Place> .
+_:Nd59567dcce2846b3a32bdb384984d3a5 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<https://w3id.org/ido/madeOrder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ido/UserAccount> <http://www.w3.org/2000/01/rdf-schema#comment> "La classe di degli avatar con cui le persone sono riconosciute nella piattaforma di vendita."@it .
+<https://w3id.org/ido/madeOrder> <http://www.w3.org/2000/01/rdf-schema#comment> "La relazione che lega un utente all'ordine da esso effettuato."@it .
+<https://w3id.org/ido/Person> <http://www.w3.org/2000/01/rdf-schema#label> "persona"@it .
+<https://w3id.org/ido/Region> <http://www.w3.org/2000/01/rdf-schema#label> "regione"@it .
+<https://w3id.org/ido/users> <http://purl.org/dc/elements/1.1/description> <https://w3id.org/ido/ido-users.png> .
+<http://xmlns.com/foaf/0.1/account> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ido/hasDeliveryLocation> <http://www.w3.org/2000/01/rdf-schema#label> "has delivery location"@en .
+<https://w3id.org/ido/isDeliveryLocationIn> <http://www.w3.org/2000/01/rdf-schema#comment> "The relation between a place and the order where it is specified as delivery address."@en .
+_:N508cac68f2b14c528b49f2a8b5beff7e <http://www.w3.org/2002/07/owl#oneOf> _:N51ffa994c3e1477da3eb1195dd3d51fa .
+<https://w3id.org/ido/UserAccount> <http://www.w3.org/2000/01/rdf-schema#label> "user account"@en .
+<https://w3id.org/ido/Province> <http://www.w3.org/2000/01/rdf-schema#label> "province"@en .
+_:Nb9d34ca5eb6a4e6cbd91a89bb76e871b <http://www.w3.org/2002/07/owl#onProperty> <http://schema.org/birthDate> .
+<https://w3id.org/ido/users> <http://www.w3.org/2000/01/rdf-schema#label> "IDO-U" .
+<http://schema.org/gender> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Person> .
+_:N51ffa994c3e1477da3eb1195dd3d51fa <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N54490f967c484604b591cbea889f4abd .
+<https://w3id.org/ido/hasDeliveryLocation> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ido/isDeliveryLocationIn> .
+<http://schema.org/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N6205ffdf48734089b0241926c6321842 <http://www.w3.org/2002/07/owl#onProperty> <http://schema.org/homeLocation> .
+_:Nb9d34ca5eb6a4e6cbd91a89bb76e871b <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://schema.org/containedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "The containement relation between two places, where the first one is contained in the second one."@en .
+<https://w3id.org/ido/UserAccount> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of all the avatars that identify real people in the selling platform."@en .
+<http://schema.org/homeLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Person> .
+<http://schema.org/birthDate> <http://www.w3.org/2000/01/rdf-schema#label> "has birth date"@en .
+<http://xmlns.com/foaf/0.1/account> <http://www.w3.org/2000/01/rdf-schema#label> "holds an account"@en .
+_:N54490f967c484604b591cbea889f4abd <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://schema.org/containedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/Place> .
+<https://w3id.org/ido/users> <http://purl.org/dc/elements/1.1/title> "Imperial Data Ontology (IDO): module \"Users\""@en .
+_:Ne8e443734bc3487198423d1890692461 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://schema.org/birthDate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org> .
+_:N4bde32ea14c84ce0a462fa39d08550dd <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Nb9d34ca5eb6a4e6cbd91a89bb76e871b <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#date> .
+<http://schema.org/birthDate> <http://www.w3.org/2000/01/rdf-schema#comment> "La propriet\u00E0 che permette di specificare la data di nascita di una persona."@it .
+<http://schema.org/Person> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org> .
+<https://w3id.org/ido/users> <http://purl.org/dc/elements/1.1/title> "Ontologia per i dati di Imperial (IDO): modulo \"Utenti\""@it .
+<https://w3id.org/ido/Region> <http://www.w3.org/2000/01/rdf-schema#comment> "La classe di tutte le regioni."@it .
+_:N508cac68f2b14c528b49f2a8b5beff7e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<https://w3id.org/ido/wasMadeBy> <http://www.w3.org/2000/01/rdf-schema#label> "was made by"@en .
+<http://schema.org/birthDate> <http://www.w3.org/2000/01/rdf-schema#label> "ha data di nascita"@it .
+_:Nb9d34ca5eb6a4e6cbd91a89bb76e871b <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/ido/Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Nb9d34ca5eb6a4e6cbd91a89bb76e871b .
+<http://www.w3.org/2002/07/owl#Thing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/Place> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of all the entities that have a somewhat fixed, physical extension."@en .
+_:N4bde32ea14c84ce0a462fa39d08550dd <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://schema.org/containedIn> <http://www.w3.org/2000/01/rdf-schema#label> "is contained in"@en .
+<https://w3id.org/ido/isDeliveryLocationIn> <http://www.w3.org/2000/01/rdf-schema#comment> "La relazione tra un certo luogo e l'ordine in cui compare come indirizzo di consegna."@it .
+<https://w3id.org/ido/UserAccount> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rdfs.org/sioc/ns#UserAccount> .
+<https://w3id.org/ido/hasDeliveryLocation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ido/users> .
+<http://schema.org/Place> <http://www.w3.org/2000/01/rdf-schema#label> "luogo"@it .
+<https://w3id.org/ido/Province> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2001/XMLSchema#float> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<https://w3id.org/ido/users> <http://www.w3.org/2000/01/rdf-schema#comment> "L'Ontologia per i dati di Imperial (o Imperial Data Ontology, IDO) \u00E8 un'ontologia OWL 2 DL creata per la descrizione dei dati di vendita di aziende di moda. Questo modulo si preoccupa della descrizione degli utenti."@it .
+<https://w3id.org/ido/Region> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Place> .
+_:Ne8e443734bc3487198423d1890692461 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/ido/users> <http://purl.org/dc/elements/1.1/creator> "Silvio Peroni (http://orcid.org/0000-0003-0530-4305)" .
+<https://w3id.org/ido/users> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/swan/2.0/foaf-essential/> .
+_:Nd59567dcce2846b3a32bdb384984d3a5 <http://www.w3.org/2002/07/owl#onDataRange> _:N508cac68f2b14c528b49f2a8b5beff7e .
+_:N4bde32ea14c84ce0a462fa39d08550dd <http://www.w3.org/2002/07/owl#onProperty> _:N7ac7b05e8a6e4340bb573907505df299 .
+<https://w3id.org/ido/Person> <http://www.w3.org/2000/01/rdf-schema#label> "person"@en .
+<https://w3id.org/ido/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ido/UserAccount> <http://www.w3.org/2000/01/rdf-schema#label> "utente"@it .
+<https://w3id.org/ido/madeOrder> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ido/Order> .
+<https://w3id.org/ido/madeOrder> <http://www.w3.org/2000/01/rdf-schema#label> "ha effettuato un ordine"@it .
+<http://schema.org/homeLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "The link between a person and her home address."@en .
+<https://w3id.org/ido/isDeliveryLocationIn> <http://www.w3.org/2000/01/rdf-schema#label> "\u00E8 l'indirizzo di consegna nel"@it .
+<https://w3id.org/ido/Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:N6205ffdf48734089b0241926c6321842 .
+_:N54490f967c484604b591cbea889f4abd <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "male" .
+<https://w3id.org/ido/hasDeliveryLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ido/isDeliveryLocationIn> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ido/users> .
+<https://w3id.org/ido/madeOrder> <http://www.w3.org/2000/01/rdf-schema#comment> "The relationship between a user and the order it has done."@en .
+_:N6205ffdf48734089b0241926c6321842 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/ido/Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Nd59567dcce2846b3a32bdb384984d3a5 .
+<http://xmlns.com/foaf/0.1/account> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://xmlns.com/foaf/0.1/> .
+<https://w3id.org/ido/wasMadeBy> <http://www.w3.org/2000/01/rdf-schema#comment> "The link between an order and the user that did it."@en .
+_:N51ffa994c3e1477da3eb1195dd3d51fa <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://w3id.org/ido/Person> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ido/users> .
+<https://w3id.org/ido/users> <http://www.w3.org/2002/07/owl#imports> <http://rdfs.org/sioc/ns#> .
+<http://schema.org/Place> <http://www.w3.org/2000/01/rdf-schema#comment> "La classe di tutte le entit\u00E0 che hanno un estensione fisica fissata."@it .
+<https://w3id.org/ido/Person> <http://www.w3.org/2000/01/rdf-schema#comment> "La classe di tutte le persone regolarmente iscritte sulla piattaforma del negozio online. Ogni persona \u00E8 caratterizzata da un genere, dalla data di nascita, e dalla provincia e la regione di residenza."@it .
+<http://schema.org/gender> <http://www.w3.org/2000/01/rdf-schema#comment> <http://schema.org> .
+<http://schema.org/homeLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "La relazione che lega una persona con il suo indirizzo di residenza."@it .
+<https://w3id.org/ido/isDeliveryLocationIn> <http://www.w3.org/2000/01/rdf-schema#label> "is delivery location in"@en .
+<http://schema.org/birthDate> <http://www.w3.org/2000/01/rdf-schema#comment> "The property that allows one to specify the birth date of a person."@en .
+<https://w3id.org/ido/Person> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of all the people who have subscribed to the online platform. Each person is characterised by a genre, the birth date, and the home location."@en .
+<https://w3id.org/ido/Province> <http://www.w3.org/2000/01/rdf-schema#label> "provincia"@it .
+<http://www.w3.org/2001/XMLSchema#dateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://schema.org/homeLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:Nd59567dcce2846b3a32bdb384984d3a5 <http://www.w3.org/2002/07/owl#onProperty> <http://schema.org/gender> .
+<https://w3id.org/ido/wasMadeBy> <http://www.w3.org/2000/01/rdf-schema#comment> "La relazione che lega un ordine con l'utente che l'ha fatto."@it .
+<https://w3id.org/ido/users> <http://purl.org/dc/elements/1.1/rights> "Questo lavoro \u00E8 distribuito sotto una licenza [Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/)."@it .
+<http://schema.org/containedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ido/UserAccount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N7ac7b05e8a6e4340bb573907505df299 <http://www.w3.org/2002/07/owl#inverseOf> <http://xmlns.com/foaf/0.1/account> .
+<https://w3id.org/ido/hasDeliveryLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ido/Order> .
+<http://xmlns.com/foaf/0.1/account> <http://www.w3.org/2000/01/rdf-schema#comment> "La relazione che lega una persona con un particolare utente da essa creato."@it .
+<https://w3id.org/ido/hasDeliveryLocation> <http://www.w3.org/2000/01/rdf-schema#label> "ha indirizzo di spedizione"@it .
+<https://w3id.org/ido/madeOrder> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ido/wasMadeBy> .
+<https://w3id.org/ido/Province> <http://www.w3.org/2000/01/rdf-schema#comment> "La classe di tutte le province."@it .
+<http://schema.org/Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://xmlns.com/foaf/0.1> .
+<http://schema.org/gender> <http://www.w3.org/2000/01/rdf-schema#label> "has gender"@en .
+<http://schema.org/birthDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Person> .
+_:N54490f967c484604b591cbea889f4abd <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://w3id.org/ido/Province> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Place> .
+<http://schema.org/containedIn> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org> .
+_:N51ffa994c3e1477da3eb1195dd3d51fa <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "female" .
+<https://w3id.org/ido/wasMadeBy> <http://www.w3.org/2000/01/rdf-schema#label> "\u00E8 stato fatto da"@it .
+<https://w3id.org/ido/Region> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ido/users> .
+<http://schema.org/Place> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org> .
+_:N6205ffdf48734089b0241926c6321842 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://schema.org/Place> .
+<https://w3id.org/ido/madeOrder> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ido/UserAccount> .
+<https://w3id.org/ido/Order> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ido/madeOrder> <http://www.w3.org/2000/01/rdf-schema#label> "made an order"@en .
+<https://w3id.org/ido/UserAccount> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Ne8e443734bc3487198423d1890692461 .
+<https://w3id.org/ido/hasDeliveryLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://schema.org/Place> <http://www.w3.org/2000/01/rdf-schema#label> "place"@en .
+<https://w3id.org/ido/users> <http://www.w3.org/2000/01/rdf-schema#comment> "The Imperial Data Ontology (IDO) is an OWL 2 DL ontology that allows the description of selling data of fashion design industries. This module describes the users."@en .
+<https://w3id.org/ido/users> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/ido/users/1.0.1> .
+<https://w3id.org/ido/hasDeliveryLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "La relazione che lega un ordine con l'indirizzo a cui deve essere evaso."@it .
+<https://w3id.org/ido/Region> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of all the regions."@en .
+

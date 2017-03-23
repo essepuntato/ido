@@ -1,0 +1,196 @@
+@prefix : <https://w3id.org/ido/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix gr: <http://purl.org/goodrelations/v1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skos1: <http://www.w3.org/2008/05/skos#> .
+@prefix sw-vocab-status: <http://www.w3.org/2003/06/sw-vocab-status/> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix ti: <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+schema:containedIn a owl:ObjectProperty ;
+    rdfs:label "is contained in"@en,
+        "è contenuto in"@it ;
+    rdfs:comment "The containement relation between two places, where the first one is contained in the second one."@en,
+        "La relazione di contenimento tra due luoghi, dove il primo è contenuto nel secondo."@it ;
+    rdfs:domain schema:Place ;
+    rdfs:isDefinedBy <http://schema.org> ;
+    rdfs:range schema:Place .
+
+rdfs:isDefinedBy a owl:AnnotationProperty .
+
+xsd:dateTime a rdfs:Datatype .
+
+xsd:float a rdfs:Datatype .
+
+owl:Thing a owl:Class .
+
+:Person a owl:Class ;
+    rdfs:label "person"@en,
+        "persona"@it ;
+    rdfs:comment "The class of all the people who have subscribed to the online platform. Each person is characterised by a genre, the birth date, and the home location."@en,
+        "La classe di tutte le persone regolarmente iscritte sulla piattaforma del negozio online. Ogni persona è caratterizzata da un genere, dalla data di nascita, e dalla provincia e la regione di residenza."@it ;
+    rdfs:isDefinedBy :users ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty schema:homeLocation ;
+            owl:someValuesFrom schema:Place ],
+        [ a owl:Restriction ;
+            owl:onDataRange xsd:date ;
+            owl:onProperty schema:birthDate ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        [ a owl:Restriction ;
+            owl:onDataRange [ a rdfs:Datatype ;
+                    owl:oneOf [ a rdf:List ;
+                            rdf:first "female" ;
+                            rdf:rest [ a rdf:List ;
+                                    rdf:first "male" ;
+                                    rdf:rest () ] ] ] ;
+            owl:onProperty schema:gender ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        schema:Person,
+        foaf:Person .
+
+:Province a owl:Class ;
+    rdfs:label "province"@en,
+        "provincia"@it ;
+    rdfs:comment "The class of all the provinces."@en,
+        "La classe di tutte le province."@it ;
+    rdfs:isDefinedBy :users ;
+    rdfs:subClassOf schema:Place .
+
+:Region a owl:Class ;
+    rdfs:label "region"@en,
+        "regione"@it ;
+    rdfs:comment "The class of all the regions."@en,
+        "La classe di tutte le regioni."@it ;
+    rdfs:isDefinedBy :users ;
+    rdfs:subClassOf schema:Place .
+
+:hasDeliveryLocation a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "has delivery location"@en,
+        "ha indirizzo di spedizione"@it ;
+    rdfs:comment "The link between an order and the related delivery address."@en,
+        "La relazione che lega un ordine con l'indirizzo a cui deve essere evaso."@it ;
+    rdfs:domain :Order ;
+    rdfs:isDefinedBy :users ;
+    rdfs:range schema:Place ;
+    owl:inverseOf :isDeliveryLocationIn .
+
+:madeOrder a owl:ObjectProperty ;
+    rdfs:label "made an order"@en,
+        "ha effettuato un ordine"@it ;
+    rdfs:comment "The relationship between a user and the order it has done."@en,
+        "La relazione che lega un utente all'ordine da esso effettuato."@it ;
+    rdfs:domain :UserAccount ;
+    rdfs:isDefinedBy :users ;
+    rdfs:range :Order ;
+    owl:inverseOf :wasMadeBy .
+
+terms:identifier a owl:DatatypeProperty .
+
+sioc:UserAccount rdfs:isDefinedBy <http://rdfs.org/sioc/ns> .
+
+schema:birthDate a owl:DatatypeProperty ;
+    rdfs:label "has birth date"@en,
+        "ha data di nascita"@it ;
+    rdfs:comment "The property that allows one to specify the birth date of a person."@en,
+        "La proprietà che permette di specificare la data di nascita di una persona."@it ;
+    rdfs:domain schema:Person ;
+    rdfs:isDefinedBy <http://schema.org> ;
+    rdfs:range xsd:date .
+
+schema:gender a owl:DatatypeProperty ;
+    rdfs:label "has gender"@en,
+        "ha genere"@it ;
+    rdfs:comment <http://schema.org>,
+        "The property that allows one to specify the gender of a person."@en,
+        "La proprietà che permette di specificare il genere di una persona."@it ;
+    rdfs:domain schema:Person .
+
+schema:homeLocation a owl:ObjectProperty ;
+    rdfs:label "has home location"@en,
+        "ha indirizzo di residenza"@it ;
+    rdfs:comment "The link between a person and her home address."@en,
+        "La relazione che lega una persona con il suo indirizzo di residenza."@it ;
+    rdfs:domain schema:Person ;
+    rdfs:isDefinedBy <http://schema.org> .
+
+foaf:Person a owl:Class ;
+    rdfs:isDefinedBy <http://xmlns.com/foaf/0.1> .
+
+foaf:account a owl:ObjectProperty ;
+    rdfs:label "holds an account"@en,
+        "ha un utente"@it ;
+    rdfs:comment "The relationship that links a person with a particular user account that she has created."@en,
+        "La relazione che lega una persona con un particolare utente da essa creato."@it ;
+    rdfs:isDefinedBy foaf: .
+
+:UserAccount a owl:Class ;
+    rdfs:label "user account"@en,
+        "utente"@it ;
+    rdfs:comment "The class of all the avatars that identify real people in the selling platform."@en,
+        "La classe di degli avatar con cui le persone sono riconosciute nella piattaforma di vendita."@it ;
+    rdfs:isDefinedBy :users ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty [ owl:inverseOf foaf:account ] ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty terms:identifier ],
+        sioc:UserAccount .
+
+:isDeliveryLocationIn a owl:ObjectProperty ;
+    rdfs:label "is delivery location in"@en,
+        "è l'indirizzo di consegna nel"@it ;
+    rdfs:comment "The relation between a place and the order where it is specified as delivery address."@en,
+        "La relazione tra un certo luogo e l'ordine in cui compare come indirizzo di consegna."@it ;
+    rdfs:isDefinedBy :users .
+
+:wasMadeBy a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "was made by"@en,
+        "è stato fatto da"@it ;
+    rdfs:comment "The link between an order and the user that did it."@en,
+        "La relazione che lega un ordine con l'utente che l'ha fatto."@it ;
+    rdfs:isDefinedBy :users .
+
+xsd:date a rdfs:Datatype .
+
+:Order a owl:Class .
+
+schema:Person a owl:Class ;
+    rdfs:isDefinedBy <http://schema.org> .
+
+schema:Place a owl:Class ;
+    rdfs:label "place"@en,
+        "luogo"@it ;
+    rdfs:comment "The class of all the entities that have a somewhat fixed, physical extension."@en,
+        "La classe di tutte le entità che hanno un estensione fisica fissata."@it ;
+    rdfs:isDefinedBy <http://schema.org> .
+
+:users a owl:Ontology ;
+    rdfs:label "IDO-U" ;
+    dc:creator "Silvio Peroni (http://orcid.org/0000-0003-0530-4305)" ;
+    dc:date "2017-03-23" ;
+    dc:description :ido-users.png ;
+    dc:rights "This work is distributed under a [Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/)."@en,
+        "Questo lavoro è distribuito sotto una licenza [Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/)."@it ;
+    dc:title "Imperial Data Ontology (IDO): module \"Users\""@en,
+        "Ontologia per i dati di Imperial (IDO): modulo \"Utenti\""@it ;
+    rdfs:comment "The Imperial Data Ontology (IDO) is an OWL 2 DL ontology that allows the description of selling data of fashion design industries. This module describes the users."@en,
+        "L'Ontologia per i dati di Imperial (o Imperial Data Ontology, IDO) è un'ontologia OWL 2 DL creata per la descrizione dei dati di vendita di aziende di moda. Questo modulo si preoccupa della descrizione degli utenti."@it ;
+    owl:imports <http://purl.org/swan/2.0/foaf-essential/>,
+        sioc:,
+        <https://w3id.org/ido/orders/1.0.1> ;
+    owl:versionIRI <https://w3id.org/ido/users/1.0.1> ;
+    owl:versionInfo "1.0.1" .
+

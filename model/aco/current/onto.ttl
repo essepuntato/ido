@@ -1,0 +1,239 @@
+@prefix : <https://w3id.org/ido/aco/> .
+@prefix category: <https://w3id.org/ido/category/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ido: <https://w3id.org/ido/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dc:creator a owl:AnnotationProperty .
+
+dc:date a owl:AnnotationProperty .
+
+dc:rights a owl:AnnotationProperty .
+
+dc:title a owl:AnnotationProperty .
+
+ido:aco a owl:Ontology ;
+    rdfs:label "ACO" ;
+    dc:creator "Silvio Peroni (http://orcid.org/0000-0003-0530-4305)" ;
+    dc:date "2017-03-23" ;
+    dc:rights "This work is distributed under a [Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/)."@en,
+        "Questo lavoro è distribuito sotto una licenza [Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/)."@it ;
+    dc:title "Article Category Ontology"@en ;
+    rdfs:comment "This ontology defines a taxonomy of all the categories for the articles described by means of the Imperial Data Ontology (IDO, https://w3id.org/ido)."@en,
+        "Questa ontologia definisce una tassonomia delle categorie degli articoli descrivibili usando la Imperial Data Ontology (IDO, https://w3id.org/ido)."@it ;
+    owl:imports <http://www.w3.org/2004/02/skos/core> ;
+    owl:versionIRI <https://w3id.org/ido/aco/1.1.1> ;
+    owl:versionInfo "1.1.1" .
+
+category:blazer a owl:NamedIndividual,
+        skos:Concept,
+        ido:ArticleCategory ;
+    rdfs:label "blazer"@en,
+        "giacca"@it ;
+    skos:inScheme ido:category ;
+    skos:notation "J" ;
+    skos:prefLabel "blazer"@en,
+        "giacca"@it ;
+    skos:topConceptOf ido:category .
+
+category:coat a owl:NamedIndividual,
+        skos:Concept,
+        ido:ArticleCategory ;
+    rdfs:label "coat"@en,
+        "cappotto"@it ;
+    skos:inScheme ido:category ;
+    skos:notation "K" ;
+    skos:prefLabel "coat"@en,
+        "cappotto"@it ;
+    skos:topConceptOf ido:category .
+
+category:dress a owl:NamedIndividual,
+        skos:Concept,
+        ido:ArticleCategory ;
+    rdfs:label "dress"@en,
+        "abito"@it ;
+    skos:inScheme ido:category ;
+    skos:notation "A" ;
+    skos:prefLabel "dress"@en,
+        "abito"@it ;
+    skos:topConceptOf ido:category .
+
+category:fur-neck a owl:NamedIndividual,
+        skos:Concept,
+        ido:ArticleCategory ;
+    rdfs:label "fur neck"@en,
+        "collo di pelo"@it ;
+    skos:inScheme ido:category ;
+    skos:notation "9" ;
+    skos:prefLabel "fur neck"@en,
+        "collo di pelo"@it ;
+    skos:topConceptOf ido:category .
+
+category:hat a owl:NamedIndividual,
+        skos:Concept,
+        ido:ArticleCategory ;
+    rdfs:label "hat"@en,
+        "cappello"@it ;
+    skos:inScheme ido:category ;
+    skos:notation "5" ;
+    skos:prefLabel "hat"@en,
+        "cappello"@it ;
+    skos:topConceptOf ido:category .
+
+category:heavy-jacket a owl:NamedIndividual,
+        skos:Concept,
+        ido:ArticleCategory ;
+    rdfs:label "heavy jacket"@en,
+        "giaccone"@it ;
+    skos:inScheme ido:category ;
+    skos:notation "U" ;
+    skos:prefLabel "heavy jacket"@en,
+        "giaccone"@it ;
+    skos:topConceptOf ido:category .
+
+category:perfume a owl:NamedIndividual,
+        skos:Concept,
+        ido:ArticleCategory ;
+    rdfs:label "perfume"@en,
+        "profumo"@it ;
+    skos:inScheme ido:category ;
+    skos:notation "E" ;
+    skos:prefLabel "perfume"@en,
+        "profumo"@it ;
+    skos:topConceptOf ido:category .
+
+category:shirt a owl:NamedIndividual,
+        skos:Concept,
+        ido:ArticleCategory ;
+    rdfs:label "shirt"@en,
+        "camicia"@it ;
+    skos:inScheme ido:category ;
+    skos:notation "C" ;
+    skos:prefLabel "shirt"@en,
+        "camicia"@it ;
+    skos:topConceptOf ido:category .
+
+category:skirt a owl:NamedIndividual,
+        skos:Concept,
+        ido:ArticleCategory ;
+    rdfs:label "skirt"@en,
+        "gonna"@it ;
+    skos:inScheme ido:category ;
+    skos:notation "G" ;
+    skos:prefLabel "skirt"@en,
+        "gonna"@it ;
+    skos:topConceptOf ido:category .
+
+category:sweater a owl:NamedIndividual,
+        skos:Concept,
+        ido:ArticleCategory ;
+    rdfs:label "sweater"@en,
+        "maglia"@it ;
+    skos:inScheme ido:category ;
+    skos:notation "M" ;
+    skos:prefLabel "sweater"@en,
+        "maglia"@it ;
+    skos:topConceptOf ido:category .
+
+category:tracksuit a owl:NamedIndividual,
+        skos:Concept,
+        ido:ArticleCategory ;
+    rdfs:label "tracksuit"@en,
+        "tuta"@it ;
+    skos:inScheme ido:category ;
+    skos:notation "Y" ;
+    skos:prefLabel "tracksuit"@en,
+        "tuta"@it ;
+    skos:topConceptOf ido:category .
+
+category:trousers a owl:NamedIndividual,
+        skos:Concept,
+        ido:ArticleCategory ;
+    rdfs:label "trousers"@en,
+        "pantalone"@it ;
+    skos:inScheme ido:category ;
+    skos:notation "P" ;
+    skos:prefLabel "trousers"@en,
+        "pantalone"@it ;
+    skos:topConceptOf ido:category .
+
+category:vest a owl:NamedIndividual,
+        skos:Concept,
+        ido:ArticleCategory ;
+    rdfs:label "vest"@en,
+        "canotta"@it ;
+    skos:inScheme ido:category ;
+    skos:notation "R" ;
+    skos:prefLabel "vest"@en,
+        "canotta"@it ;
+    skos:topConceptOf ido:category .
+
+category:waistcoat a owl:NamedIndividual,
+        skos:Concept,
+        ido:ArticleCategory ;
+    rdfs:label "waistcoat"@en,
+        "gilet"@it ;
+    skos:inScheme ido:category ;
+    skos:notation "L" ;
+    skos:prefLabel "waistcoat"@en,
+        "gilet"@it ;
+    skos:topConceptOf ido:category .
+
+category:jacket a owl:NamedIndividual,
+        skos:Concept,
+        ido:ArticleCategory ;
+    rdfs:label "jacket"@en,
+        "giubbotto"@it ;
+    skos:inScheme ido:category ;
+    skos:narrower category:leather-jacket ;
+    skos:notation "V" ;
+    skos:prefLabel "jacket"@en,
+        "giubbotto"@it ;
+    skos:topConceptOf ido:category .
+
+category:leather-jacket a owl:NamedIndividual,
+        skos:Concept,
+        ido:ArticleCategory ;
+    rdfs:label "leather jacket"@en,
+        "giubbotto di pelle"@it ;
+    skos:broader category:jacket ;
+    skos:inScheme ido:category ;
+    skos:notation "1" ;
+    skos:prefLabel "leather jacket"@en,
+        "giubbotto di pelle"@it .
+
+ido:ArticleCategory a owl:Class ;
+    rdfs:label "article category"@en,
+        "categoria articolo"@it ;
+    rdfs:comment "This class enables the specification of the types of clothes that can be associated to the various styles in the catalogue, such as \"sweater\", \"trousers\", etc. All these types must be organised as a taxonomy."@en,
+        "Questa classe permette di specificare i tipi che possono essere associati ai vari modelli del catalago, come ad esempio \"maglia\", \"pantalone\", ecc. Tutti i tipi devono organizzati sotto forma tassonomica."@it ;
+    rdfs:isDefinedBy ido:aco ;
+    rdfs:subClassOf skos:Concept .
+
+ido:category a owl:NamedIndividual,
+        skos:ConceptScheme ;
+    rdfs:label "IMPERIAL article category thesaurus"@en,
+        "Tesauro IMPERIAL delle categorie degli articoli"@it ;
+    skos:hasTopConcept category:blazer,
+        category:coat,
+        category:dress,
+        category:fur-neck,
+        category:hat,
+        category:heavy-jacket,
+        category:jacket,
+        category:leather-jacket,
+        category:perfume,
+        category:shirt,
+        category:skirt,
+        category:sweater,
+        category:tracksuit,
+        category:trousers,
+        category:vest,
+        category:waistcoat .
+

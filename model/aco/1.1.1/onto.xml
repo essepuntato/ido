@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="https://w3id.org/ido/category/fur-neck">
+    <skos:notation>9</skos:notation>
+    <skos:prefLabel xml:lang="it">collo di pelo</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:inScheme rdf:resource="https://w3id.org/ido/category"/>
+    <rdfs:label xml:lang="it">collo di pelo</rdfs:label>
+    <skos:prefLabel xml:lang="en">fur neck</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="https://w3id.org/ido/category"/>
+    <rdfs:label xml:lang="en">fur neck</rdfs:label>
+    <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/category/leather-jacket">
+    <skos:broader rdf:resource="https://w3id.org/ido/category/jacket"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">leather jacket</skos:prefLabel>
+    <rdfs:label xml:lang="it">giubbotto di pelle</rdfs:label>
+    <skos:notation>1</skos:notation>
+    <rdfs:label xml:lang="en">leather jacket</rdfs:label>
+    <skos:prefLabel xml:lang="it">giubbotto di pelle</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
+    <skos:inScheme rdf:resource="https://w3id.org/ido/category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/aco">
+    <dc:title xml:lang="en">Article Category Ontology</dc:title>
+    <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+    <dc:rights xml:lang="it">Questo lavoro è distribuito sotto una licenza [Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/).</dc:rights>
+    <rdfs:comment xml:lang="en">This ontology defines a taxonomy of all the categories for the articles described by means of the Imperial Data Ontology (IDO, https://w3id.org/ido).</rdfs:comment>
+    <rdfs:comment xml:lang="it">Questa ontologia definisce una tassonomia delle categorie degli articoli descrivibili usando la Imperial Data Ontology (IDO, https://w3id.org/ido).</rdfs:comment>
+    <rdfs:label>ACO</rdfs:label>
+    <dc:creator>Silvio Peroni (http://orcid.org/0000-0003-0530-4305)</dc:creator>
+    <dc:rights xml:lang="en">This work is distributed under a [Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/).</dc:rights>
+    <dc:date>2017-03-23</dc:date>
+    <owl:versionInfo>1.1.1</owl:versionInfo>
+    <owl:versionIRI rdf:resource="https://w3id.org/ido/aco/1.1.1"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/category/tracksuit">
+    <skos:inScheme rdf:resource="https://w3id.org/ido/category"/>
+    <skos:notation>Y</skos:notation>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">tracksuit</skos:prefLabel>
+    <rdfs:label xml:lang="it">tuta</rdfs:label>
+    <skos:prefLabel xml:lang="it">tuta</skos:prefLabel>
+    <rdfs:label xml:lang="en">tracksuit</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:topConceptOf rdf:resource="https://w3id.org/ido/category"/>
+    <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/category/trousers">
+    <skos:notation>P</skos:notation>
+    <rdfs:label xml:lang="en">trousers</rdfs:label>
+    <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
+    <skos:prefLabel xml:lang="it">pantalone</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/ido/category"/>
+    <skos:topConceptOf rdf:resource="https://w3id.org/ido/category"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="it">pantalone</rdfs:label>
+    <skos:prefLabel xml:lang="en">trousers</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/category/heavy-jacket">
+    <skos:notation>U</skos:notation>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="en">heavy jacket</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
+    <skos:inScheme rdf:resource="https://w3id.org/ido/category"/>
+    <skos:topConceptOf rdf:resource="https://w3id.org/ido/category"/>
+    <skos:prefLabel xml:lang="en">heavy jacket</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">giaccone</skos:prefLabel>
+    <rdfs:label xml:lang="it">giaccone</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/category/blazer">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:topConceptOf rdf:resource="https://w3id.org/ido/category"/>
+    <skos:prefLabel xml:lang="it">giacca</skos:prefLabel>
+    <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
+    <skos:notation>J</skos:notation>
+    <rdfs:label xml:lang="it">giacca</rdfs:label>
+    <skos:prefLabel xml:lang="en">blazer</skos:prefLabel>
+    <rdfs:label xml:lang="en">blazer</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ido/category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/category/shirt">
+    <rdfs:label xml:lang="it">camicia</rdfs:label>
+    <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:inScheme rdf:resource="https://w3id.org/ido/category"/>
+    <skos:topConceptOf rdf:resource="https://w3id.org/ido/category"/>
+    <skos:prefLabel xml:lang="en">shirt</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:notation>C</skos:notation>
+    <rdfs:label xml:lang="en">shirt</rdfs:label>
+    <skos:prefLabel xml:lang="it">camicia</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/category/vest">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:notation>R</skos:notation>
+    <skos:prefLabel xml:lang="it">canotta</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="it">canotta</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ido/category"/>
+    <skos:topConceptOf rdf:resource="https://w3id.org/ido/category"/>
+    <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
+    <skos:prefLabel xml:lang="en">vest</skos:prefLabel>
+    <rdfs:label xml:lang="en">vest</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/category/sweater">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">sweater</skos:prefLabel>
+    <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
+    <rdfs:label xml:lang="it">maglia</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ido/category"/>
+    <skos:topConceptOf rdf:resource="https://w3id.org/ido/category"/>
+    <skos:notation>M</skos:notation>
+    <skos:prefLabel xml:lang="it">maglia</skos:prefLabel>
+    <rdfs:label xml:lang="en">sweater</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/title">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/category">
+    <skos:hasTopConcept rdf:resource="https://w3id.org/ido/category/dress"/>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/ido/category/perfume"/>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/ido/category/sweater"/>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/ido/category/tracksuit"/>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/ido/category/waistcoat"/>
+    <rdfs:label xml:lang="it">Tesauro IMPERIAL delle categorie degli articoli</rdfs:label>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/ido/category/skirt"/>
+    <rdfs:label xml:lang="en">IMPERIAL article category thesaurus</rdfs:label>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/ido/category/blazer"/>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/ido/category/shirt"/>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/ido/category/heavy-jacket"/>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/ido/category/vest"/>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/ido/category/hat"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/ido/category/fur-neck"/>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/ido/category/leather-jacket"/>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/ido/category/trousers"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/ido/category/coat"/>
+    <skos:hasTopConcept rdf:resource="https://w3id.org/ido/category/jacket"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/category/skirt">
+    <skos:prefLabel xml:lang="en">skirt</skos:prefLabel>
+    <rdfs:label xml:lang="en">skirt</rdfs:label>
+    <skos:prefLabel xml:lang="it">gonna</skos:prefLabel>
+    <rdfs:label xml:lang="it">gonna</rdfs:label>
+    <skos:notation>G</skos:notation>
+    <skos:inScheme rdf:resource="https://w3id.org/ido/category"/>
+    <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:topConceptOf rdf:resource="https://w3id.org/ido/category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/category/coat">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:topConceptOf rdf:resource="https://w3id.org/ido/category"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:label xml:lang="en">coat</rdfs:label>
+    <skos:inScheme rdf:resource="https://w3id.org/ido/category"/>
+    <skos:prefLabel xml:lang="it">cappotto</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">coat</skos:prefLabel>
+    <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
+    <skos:notation>K</skos:notation>
+    <rdfs:label xml:lang="it">cappotto</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/ArticleCategory">
+    <rdfs:label xml:lang="en">article category</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ido/aco"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:comment xml:lang="it">Questa classe permette di specificare i tipi che possono essere associati ai vari modelli del catalago, come ad esempio "maglia", "pantalone", ecc. Tutti i tipi devono organizzati sotto forma tassonomica.</rdfs:comment>
+    <rdfs:comment xml:lang="en">This class enables the specification of the types of clothes that can be associated to the various styles in the catalogue, such as "sweater", "trousers", etc. All these types must be organised as a taxonomy.</rdfs:comment>
+    <rdfs:label xml:lang="it">categoria articolo</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/creator">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/category/waistcoat">
+    <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
+    <rdfs:label xml:lang="it">gilet</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:inScheme rdf:resource="https://w3id.org/ido/category"/>
+    <skos:notation>L</skos:notation>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:label xml:lang="en">waistcoat</rdfs:label>
+    <skos:topConceptOf rdf:resource="https://w3id.org/ido/category"/>
+    <skos:prefLabel xml:lang="it">gilet</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">waistcoat</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/category/hat">
+    <rdfs:label xml:lang="en">hat</rdfs:label>
+    <skos:notation>5</skos:notation>
+    <rdfs:label xml:lang="it">cappello</rdfs:label>
+    <skos:prefLabel xml:lang="it">cappello</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">hat</skos:prefLabel>
+    <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/ido/category"/>
+    <skos:topConceptOf rdf:resource="https://w3id.org/ido/category"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/category/jacket">
+    <skos:inScheme rdf:resource="https://w3id.org/ido/category"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="it">giubbotto</rdfs:label>
+    <rdfs:label xml:lang="en">jacket</rdfs:label>
+    <skos:prefLabel xml:lang="it">giubbotto</skos:prefLabel>
+    <skos:notation>V</skos:notation>
+    <skos:narrower rdf:resource="https://w3id.org/ido/category/leather-jacket"/>
+    <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
+    <skos:topConceptOf rdf:resource="https://w3id.org/ido/category"/>
+    <skos:prefLabel xml:lang="en">jacket</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/category/perfume">
+    <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="it">profumo</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">perfume</skos:prefLabel>
+    <rdfs:label xml:lang="it">profumo</rdfs:label>
+    <skos:notation>E</skos:notation>
+    <skos:inScheme rdf:resource="https://w3id.org/ido/category"/>
+    <rdfs:label xml:lang="en">perfume</rdfs:label>
+    <skos:topConceptOf rdf:resource="https://w3id.org/ido/category"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/category/dress">
+    <skos:notation>A</skos:notation>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:label xml:lang="it">abito</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="en">dress</rdfs:label>
+    <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
+    <skos:inScheme rdf:resource="https://w3id.org/ido/category"/>
+    <skos:topConceptOf rdf:resource="https://w3id.org/ido/category"/>
+    <skos:prefLabel xml:lang="en">dress</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">abito</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/rights">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/date">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+</rdf:RDF>

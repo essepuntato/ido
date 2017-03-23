@@ -1,0 +1,1644 @@
+[
+  {
+    "@id": "_:N4324d314faac48b1b7122f2bee4cfc7c",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/ido/hasPricePerPiece"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://w3id.org/ido/Price"
+      }
+    ]
+  },
+  {
+    "@id": "_:N2f9b22dfede0402a82bc8667e12401d8",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#cardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/ido/hasOrderIdentifier"
+      }
+    ]
+  },
+  {
+    "@id": "http://schema.org/Order",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://schema.org"
+      }
+    ]
+  },
+  {
+    "@id": "_:N5db1eae297e74d24b1e3e1cf0393b51b",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://schema.org/OrderItem"
+          },
+          {
+            "@id": "http://schema.org/Product"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/ido/Order",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "This class describes all the orders of one or more articles bought at a certain price and done at a certain time."
+      },
+      {
+        "@language": "it",
+        "@value": "Questa classe descrive gli ordini di uno o più capi, eseguiti ad una certa ora."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/ido/orders"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "ordine"
+      },
+      {
+        "@language": "en",
+        "@value": "order"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:Na77fa37b261c49768bef92485bd2be1c"
+      },
+      {
+        "@id": "_:Nc6ffbf97e44d42308e8b9c77655b985f"
+      },
+      {
+        "@id": "_:N7b41ff53839d4e4aafaa265c8a5949f2"
+      },
+      {
+        "@id": "http://schema.org/Order"
+      },
+      {
+        "@id": "_:Ncb15fcfbe12848d398d4852ccf88db80"
+      },
+      {
+        "@id": "_:N2f9b22dfede0402a82bc8667e12401d8"
+      }
+    ]
+  },
+  {
+    "@id": "http://schema.org/orderedItem",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The link between an order and the amount of items which it includes."
+      },
+      {
+        "@language": "it",
+        "@value": "La relazione che mette in relazione un ordine con la quantità di capi da esso descritti."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:N3fe11e443a254baba150e339e809b6e5"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://schema.org"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "includes as ordered article"
+      },
+      {
+        "@language": "it",
+        "@value": "include come articolo ordinato"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "_:N5db1eae297e74d24b1e3e1cf0393b51b"
+      }
+    ]
+  },
+  {
+    "@id": "_:N66f38105fc3d4043b926ce46c60e1804",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:Nf654919dce9d4cf68fe803bb1b4a168c"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://w3id.org/ido/Order"
+      }
+    ]
+  },
+  {
+    "@id": "http://schema.org/orderDate",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The property that allows one to specify the order date."
+      },
+      {
+        "@language": "it",
+        "@value": "La proprietà che permette di specificare la data di creazione di un ordine."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://schema.org/Order"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://schema.org"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has order creation date"
+      },
+      {
+        "@language": "it",
+        "@value": "ha data di creazione dell'ordine"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ]
+  },
+  {
+    "@id": "http://schema.org/Invoice",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://schema.org"
+      }
+    ]
+  },
+  {
+    "@id": "_:N6772cbb57d6647edbdf3d628c02b987d",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onClass": [
+      {
+        "@id": "https://w3id.org/ido/StockKeepingUnit"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/goodrelations/v1#typeOfGood"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/ido/DistributionPlatform",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "La piattaforma di distribuzione (per esempio B2C o B2B) che può essere usata per distribuire un capo."
+      },
+      {
+        "@language": "en",
+        "@value": "The distribution platform (e.g., B2C or B2B) that can be used for distributing an item."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/ido/orders"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "piattaforma di distribuzione"
+      },
+      {
+        "@language": "en",
+        "@value": "distribution platform"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/ido/specifiesDistributionPlatform",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Questa proprietà permette la specificazione di una certa piattaforma di distribuzione associata ad un ordine o ad una fattura."
+      },
+      {
+        "@language": "en",
+        "@value": "This property allows to specify the particular distribution platform associated to either an order or invoice."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/ido/orders"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "specifies as distribution platform"
+      },
+      {
+        "@language": "it",
+        "@value": "specifica come piattaforma di distribuzione"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2002/07/owl#cardinality",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "_:Ne99f1cf0a0cd499c9702da78767e1321",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onClass": [
+      {
+        "@id": "https://w3id.org/ido/Piece"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/goodrelations/v1#typeOfGood"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/ido/Invoice",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Una lista di articoli spediti, con informazioni riguardo la spesa totale per il loro acquisto."
+      },
+      {
+        "@language": "en",
+        "@value": "A list of pieces that have been sent, with a statement of the sum due for these."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/ido/orders"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "fattura"
+      },
+      {
+        "@language": "en",
+        "@value": "invoice"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:N7bd916cbd19541e9a7e06d537284101d"
+      },
+      {
+        "@id": "_:N1388448ffe1e445bbda0cf0ee7efc3df"
+      },
+      {
+        "@id": "http://schema.org/Invoice"
+      },
+      {
+        "@id": "_:N13f881a207e84396ac5a1dc399581c47"
+      },
+      {
+        "@id": "_:Nf0c566f57f6d417499154f625bad5f8a"
+      },
+      {
+        "@id": "_:Ncb2085fbd1fb4e1e8177f2818df9a0d4"
+      },
+      {
+        "@id": "_:N1ffe073f2a394591a2d8d741428c8894"
+      },
+      {
+        "@id": "_:N6a5f52fe8bee42aab2bcfc184779081c"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2001/XMLSchema#date",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Datatype"
+    ]
+  },
+  {
+    "@id": "http://purl.org/goodrelations/v1#typeOfGood",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Questa proprietà permette di specificare un certo pezzo o una sua tipologia (cioè, un articolo gestito in magazzino) come indicato in un ordine o in una fattura."
+      },
+      {
+        "@language": "en",
+        "@value": "This property allows one to specify a particular piece or its kind (i.e., a stock keeping unit) as listed either in an order or in an invoice."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://purl.org/goodrelations/v1#TypeAndQuantityNode"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/goodrelations/v1"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "ha tipo di bene"
+      },
+      {
+        "@language": "en",
+        "@value": "has type of good"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "_:N8d0b5293f1894c66a3ab4ce1984f6a53"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/ido/includesPiece",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Questa proprietà permette di indicare i vari pezzi elencati in una fattura."
+      },
+      {
+        "@language": "en",
+        "@value": "This property allows one to identify the various pieces included in an invoice."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/ido/Invoice"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/ido/orders"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "includes piece"
+      },
+      {
+        "@language": "it",
+        "@value": "include pezzo"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/ido/PieceWithPrice"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "https://w3id.org/ido/isPieceIncludedIn"
+      }
+    ]
+  },
+  {
+    "@id": "_:Na77fa37b261c49768bef92485bd2be1c",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onDataRange": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://schema.org/orderDate"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/ido/e-commerce",
+    "@type": [
+      "https://w3id.org/ido/SalesChannel",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Il commercio elettronico è un canale per la vendita dei prodotti o servizi che fa uso di reti di calcolatori, ad esempio Internet."
+      },
+      {
+        "@language": "en",
+        "@value": "Electronic commerce, commonly written as e-commerce, is the a sales channel for products or services using computer networks, such as the Internet."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/ido/orders"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "commercio elettronico"
+      },
+      {
+        "@language": "en",
+        "@value": "electronic commerce"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nf209c1e2764640b298cdd435d1f6439e",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/ido/isPieceIncludedIn"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://w3id.org/ido/Invoice"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/goodrelations/v1#Individual",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "_:N1ffe073f2a394591a2d8d741428c8894",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "https://w3id.org/ido/Price"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://schema.org/totalPaymentDue"
+      }
+    ]
+  },
+  {
+    "@id": "_:N7b41ff53839d4e4aafaa265c8a5949f2",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/ido/hasTotalValue"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://w3id.org/ido/Price"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nb925c3cf261b4f5dbcc1385f2ae0f044",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onDataRange": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#positiveInteger"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://schema.org/orderQuantity"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/goodrelations/v1#SomeItems",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "_:N1b881b9a75f04ab0957a8c434d25b231",
+    "http://www.w3.org/2002/07/owl#cardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "http://schema.org/referencesOrder",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "It allows one to specify the order associated to the invoice in consideration."
+      },
+      {
+        "@language": "it",
+        "@value": "Permette di specificare l'ordine associato alla ricevuta in considerazione."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://schema.org/Invoice"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://schema.org"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "si riferisce all'ordine"
+      },
+      {
+        "@language": "en",
+        "@value": "references order"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://schema.org/Order"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/ido/SalesChannel",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Il canale di vendita (ad esempio, e-commerce) che può essere usato per vendere/comprare un capo."
+      },
+      {
+        "@language": "en",
+        "@value": "The sales channel (e.g., e-commerce) that can be used for buying/selling an item."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/ido/orders"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "canale di vendita"
+      },
+      {
+        "@language": "en",
+        "@value": "sales channel"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/ido/isPieceIncludedIn",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "This property allows one to link a particular piece to the invoice including it."
+      },
+      {
+        "@language": "it",
+        "@value": "Questa proprietà permette di collegare un particolare pezzo di un capo con la fattura a cui è associato."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/ido/orders"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "è incluso come pezzo in"
+      },
+      {
+        "@language": "en",
+        "@value": "is peice included in"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/issued",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "It allows to specify the issue date of an entity (e.g., an invoice)."
+      },
+      {
+        "@language": "it",
+        "@value": "Permette di specificare la data di immissione di un'entità (per esempio, una fattura)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#Thing"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/dc/terms"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "è stata emessa"
+      },
+      {
+        "@language": "en",
+        "@value": "was issued"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/ido/PieceWithPrice",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "This class allows the identification of a piece with the related price as recorded in an invoice."
+      },
+      {
+        "@language": "it",
+        "@value": "Questa classe permette l'identificazione di un pezzo e del relativo prezzo a cui è stato venduto come descritto in una fattura."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/ido/orders"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "pezzo con prezzo"
+      },
+      {
+        "@language": "en",
+        "@value": "piece with price"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/goodrelations/v1#TypeAndQuantityNode"
+      },
+      {
+        "@id": "_:Ne99f1cf0a0cd499c9702da78767e1321"
+      },
+      {
+        "@id": "_:Nce0743af35e5455f9911103d187129a1"
+      },
+      {
+        "@id": "_:Nf209c1e2764640b298cdd435d1f6439e"
+      }
+    ]
+  },
+  {
+    "@id": "_:N6a5f52fe8bee42aab2bcfc184779081c",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/ido/includesPiece"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://w3id.org/ido/PieceWithPrice"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/ido/hasOrderIdentifier",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "La proprietà che permette di specificare un numero identificativo dell'ordine."
+      },
+      {
+        "@language": "en",
+        "@value": "The property that allows one to specify the number associated to the order."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/ido/Order"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/ido/orders"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has order identifier"
+      },
+      {
+        "@language": "it",
+        "@value": "ha identificativo d'ordine"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://schema.org/orderNumber"
+      },
+      {
+        "@id": "http://purl.org/dc/terms/identifier"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/ido/specifiesSalesChannel",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "This property allows to specify the particular sales channel associated to either an order or invoice."
+      },
+      {
+        "@language": "it",
+        "@value": "Questa proprietà permette la specificazione di una certo canale di vendita associato ad un ordine o ad una fattura."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/ido/orders"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "specifica come canale di vendita"
+      },
+      {
+        "@language": "en",
+        "@value": "specifies as sales channel"
+      }
+    ]
+  },
+  {
+    "@id": "_:N7bd916cbd19541e9a7e06d537284101d",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://schema.org/totalPaymentDue"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://w3id.org/ido/Price"
+      }
+    ]
+  },
+  {
+    "@id": "http://schema.org/totalPaymentDue",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Permette di specificare la somma totale pagata in riferimento ad una ricevuta."
+      },
+      {
+        "@language": "en",
+        "@value": "It allows to specify the total amount paid related to an invoice."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://schema.org/Invoice"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://schema.org"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has total payment due"
+      },
+      {
+        "@language": "it",
+        "@value": "ha somma totale da pagare"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://schema.org/PriceSpecification"
+      }
+    ]
+  },
+  {
+    "@id": "http://schema.org/orderQuantity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://schema.org/OrderItem"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://schema.org"
+      },
+      {
+        "@language": "en",
+        "@value": "It allows one to describe the quantity of a certain article that is requested in an order."
+      },
+      {
+        "@language": "it",
+        "@value": "Premettere di indicare la quantità di un certo articolo a seconda di quanto ne sia richiesto in un ordine."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has order quantity"
+      },
+      {
+        "@language": "it",
+        "@value": "ha quantità ordinata"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/goodrelations/v1#TypeAndQuantityNode",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/goodrelations/v1"
+      }
+    ]
+  },
+  {
+    "@id": "_:N1388448ffe1e445bbda0cf0ee7efc3df",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://schema.org/referencesOrder"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://w3id.org/ido/Order"
+      }
+    ]
+  },
+  {
+    "@id": "_:N3fe11e443a254baba150e339e809b6e5",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://schema.org/Order"
+          },
+          {
+            "@id": "http://schema.org/OrderItem"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/ido/orders",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Ontology"
+    ],
+    "http://purl.org/dc/elements/1.1/creator": [
+      {
+        "@value": "Silvio Peroni (http://orcid.org/0000-0003-0530-4305)"
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/date": [
+      {
+        "@value": "2017-03-23"
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/description": [
+      {
+        "@id": "https://w3id.org/ido/ido-orders.png"
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/rights": [
+      {
+        "@language": "en",
+        "@value": "This work is distributed under a [Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/)."
+      },
+      {
+        "@language": "it",
+        "@value": "Questo lavoro è distribuito sotto una licenza [Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/)."
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "it",
+        "@value": "Ontologia per i dati di Imperial (IDO): modulo \"Ordini\""
+      },
+      {
+        "@language": "en",
+        "@value": "Imperial Data Ontology (IDO): module \"Orders\""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "L'Ontologia per i dati di Imperial (o Imperial Data Ontology, IDO) è un'ontologia OWL 2 DL creata per la descrizione dei dati di vendita di aziende di moda. Questo modulo si preoccupa della descrizione degli ordini e delle fatture."
+      },
+      {
+        "@language": "en",
+        "@value": "The Imperial Data Ontology (IDO) is an OWL 2 DL ontology that allows the description of selling data of fashion design industries. This module describes the orders and the invoices."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "IDO-O"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#imports": [
+      {
+        "@id": "https://w3id.org/ido/items"
+      },
+      {
+        "@id": "https://w3id.org/ido/prices"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#versionIRI": [
+      {
+        "@id": "https://w3id.org/ido/orders/1.0.1"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#versionInfo": [
+      {
+        "@value": "1.0.1"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Datatype"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/ido/b2b",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/ido/DistributionPlatform"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "La distribuzione via commercio interaziendale si applica quando un'azienda effettua una transazione commerciale con un'altra."
+      },
+      {
+        "@language": "en",
+        "@value": "Business-to-business (B2B) refers to distribution platform where one business makes a commercial transaction with another."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/ido/orders"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "commercio interaziendale"
+      },
+      {
+        "@language": "en",
+        "@value": "business to business"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/ido/b2c",
+    "@type": [
+      "https://w3id.org/ido/DistributionPlatform",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Business-to-consumer (B2C) refers to distribution platform where one business makes a commercial transaction with a consumer."
+      },
+      {
+        "@language": "it",
+        "@value": "La distribuzione via vendita al dettaglio si applica quando un'azienda effettua una transazione commerciale con un consumatore finale."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/ido/orders"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "business to consumer"
+      },
+      {
+        "@language": "it",
+        "@value": "vendita al dettaglio"
+      }
+    ]
+  },
+  {
+    "@id": "http://schema.org/OrderItem",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://schema.org"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ncb15fcfbe12848d398d4852ccf88db80",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "https://w3id.org/ido/StockKeepingUnitAmount"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://schema.org/orderedItem"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2002/07/owl#Thing",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://schema.org/Product",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "_:N13f881a207e84396ac5a1dc399581c47",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onDataRange": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/dc/terms/issued"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/identifier",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/ido/Piece",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://schema.org/orderNumber",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://schema.org"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ncb2085fbd1fb4e1e8177f2818df9a0d4",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#cardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/dc/terms/identifier"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/ido/hasTotalValue",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The link between an order and the total price paid by a person for the purchase of that order."
+      },
+      {
+        "@language": "it",
+        "@value": "La relazione tra un ordine e il valore totale associato."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/ido/Order"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/ido/orders"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "ha valore totale"
+      },
+      {
+        "@language": "en",
+        "@value": "has total value"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/ido/Price"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "https://w3id.org/ido/isTotalValueOf"
+      }
+    ]
+  },
+  {
+    "@id": "http://schema.org/partOfInvoice",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Permette di specificare che l'ordine in considerazione è stato pagato come parte della ricevuta a cui si riferisce."
+      },
+      {
+        "@language": "en",
+        "@value": "It allows one to specify that the order in consideration is being paid as part of the referenced invoice."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://schema.org"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "is part of invoice"
+      },
+      {
+        "@language": "it",
+        "@value": "è parte della ricevuta"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://schema.org/referencesOrder"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/ido/isTotalValueOf",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "La relazione tra il prezzo totale relativo ad un ordine."
+      },
+      {
+        "@language": "en",
+        "@value": "The link between the total amount of all the items of an order."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/ido/orders"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "è valore totale del"
+      },
+      {
+        "@language": "en",
+        "@value": "is total value of"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ne30aae8cbc7c41df8bf5b3d6ed8b856f",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "https://w3id.org/ido/PieceWithPrice"
+          },
+          {
+            "@id": "https://w3id.org/ido/StockKeepingUnitAmount"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/ido/StockKeepingUnitAmount",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "This class describes the requested amount of a particular stock keeping unit as recorded in an order."
+      },
+      {
+        "@language": "it",
+        "@value": "Questa classe describe la quantità richiesta di un certo articolo gestito in magazzino come indicato in un ordine."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/ido/orders"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "quantità dell'articolo gestito in magazzino"
+      },
+      {
+        "@language": "en",
+        "@value": "stock keeping unit amount"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:N66f38105fc3d4043b926ce46c60e1804"
+      },
+      {
+        "@id": "http://purl.org/goodrelations/v1#TypeAndQuantityNode"
+      },
+      {
+        "@id": "_:N6772cbb57d6647edbdf3d628c02b987d"
+      },
+      {
+        "@id": "http://schema.org/OrderItem"
+      },
+      {
+        "@id": "_:Nb925c3cf261b4f5dbcc1385f2ae0f044"
+      },
+      {
+        "@id": "_:N4324d314faac48b1b7122f2bee4cfc7c"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2001/XMLSchema#float",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Datatype"
+    ]
+  },
+  {
+    "@id": "_:N8d0b5293f1894c66a3ab4ce1984f6a53",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/goodrelations/v1#Individual"
+          },
+          {
+            "@id": "http://purl.org/goodrelations/v1#SomeItems"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/ido/StockKeepingUnit",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "_:Nc6ffbf97e44d42308e8b9c77655b985f",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://schema.org/orderedItem"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://w3id.org/ido/StockKeepingUnitAmount"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/ido/front-desk",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/ido/SalesChannel"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Il commercio diretto è un canale di vendita per prodotti e servizi che usa l'interazione diretta e fisica tra un venditore e un compratore."
+      },
+      {
+        "@language": "en",
+        "@value": "Front desk commerce is the a sales channel for products or services using direct and physical interaction between the seller and the buyer."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/ido/orders"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "front desk commerce"
+      },
+      {
+        "@language": "it",
+        "@value": "commercio diretto"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nf654919dce9d4cf68fe803bb1b4a168c",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://schema.org/orderedItem"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nce0743af35e5455f9911103d187129a1",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/ido/hasPricePerPiece"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://w3id.org/ido/Price"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nf0c566f57f6d417499154f625bad5f8a",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "https://w3id.org/ido/Order"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://schema.org/referencesOrder"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/ido/hasPricePerPiece",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Questa proprietà permette di specificare il prezzo relativo a un certo pezzo come indicato in un ordine o in una fattura."
+      },
+      {
+        "@language": "en",
+        "@value": "This property allows one to specify the price related to a particular (kind of a) piece as indicated in either in an order or invoice."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:Ne30aae8cbc7c41df8bf5b3d6ed8b856f"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/ido/orders"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has price per piece"
+      },
+      {
+        "@language": "it",
+        "@value": "ha prezzo per pezzo"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/ido/Price"
+      }
+    ]
+  }
+]

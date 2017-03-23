@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/ido/isProductOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:label xml:lang="it">è un prodotto di</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2015/07/ido"/>
+    <rdfs:comment xml:lang="en">The link between a concrete physical item and its materialisation.</rdfs:comment>
+    <owl:inverseOf rdf:resource="https://w3id.org/ido/wasProducedAs"/>
+    <rdfs:comment xml:lang="it">La relazione che associa uno specifico capo fisico alla sua relativa materializzazione.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#exemplarOf"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">is a product of</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#embodiment">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/frbr"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/Style">
+    <rdfs:comment xml:lang="en">The class of all the style designed, available in the shop catalogue and created for a particular genre (male or female). Each style is also identified by a unique code.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://schema.org/Product"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="Ne51e07ea9dfc46eabb6d60030cf0b47d"/>
+    <rdfs:label xml:lang="en">style</rdfs:label>
+    <rdfs:comment xml:lang="it">La classe di tutti i modelli messi a disposizione nel catalogo del negozio per un particolare genere di persona (uomo o donna) e identificato da un codice univoco.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://purl.org/goodrelations/v1#ProductOrServiceModel"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
+    <rdfs:label xml:lang="it">modello</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ido/items"/>
+    <rdfs:subClassOf rdf:nodeID="Nedb337d174ee4338ad61dd126c4d5a4c"/>
+    <rdfs:subClassOf rdf:nodeID="N744f3fe5f2fb4276a4fe34ce391b601e"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/isColourIn">
+    <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2015/07/ido"/>
+    <rdfs:comment xml:lang="en">The link between a colour and the stock keeping units that have used it.</rdfs:comment>
+    <rdfs:comment xml:lang="it">La relazione tra un certo colore e i vari articoli gestiti in magazzino in cui è stato usato.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="it">è un colore di</rdfs:label>
+    <rdfs:label xml:lang="en">is colour in</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N744f3fe5f2fb4276a4fe34ce391b601e">
+    <owl:someValuesFrom rdf:resource="https://w3id.org/ido/ArticleCategory"/>
+    <owl:onProperty rdf:resource="https://w3id.org/ido/hasArticleCategory"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.org/Product">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/StockKeepingUnit">
+    <rdfs:subClassOf rdf:resource="http://purl.org/goodrelations/v1#SomeItems"/>
+    <rdfs:comment xml:lang="it">La classe di tutti gli articoli disponibili in magazzino, caratterizzati dalla descrizione dei loro colori e delle loro taglie.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The class of all the available stock keeping units, which are characterised by their colours and their sizes.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ido/items"/>
+    <rdfs:subClassOf rdf:resource="http://schema.org/Product"/>
+    <rdfs:label xml:lang="en">stock keeping unit</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#Manifestation"/>
+    <rdfs:subClassOf rdf:nodeID="N4bc651bb391c4dceb7d6afc027ece441"/>
+    <rdfs:label xml:lang="it">articolo disponibile in magazzino</rdfs:label>
+    <rdfs:subClassOf rdf:nodeID="N41118ccf20a245aaa613195d21c77401"/>
+    <rdfs:subClassOf rdf:nodeID="Neb1e540cd65d468d95c169606fb5bf18"/>
+    <rdfs:subClassOf rdf:nodeID="Nd008a7355789463785f3443b12b3ceae"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/Colour">
+    <rdfs:label xml:lang="en">colour</rdfs:label>
+    <rdfs:label xml:lang="it">colore</rdfs:label>
+    <owl:disjointWith rdf:resource="https://w3id.org/ido/Size"/>
+    <rdfs:comment xml:lang="en">The class of all the colours that can be associated to the materialisations of the articles available.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://purl.org/goodrelations/v1#QualitativeValue"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ido/items"/>
+    <rdfs:comment xml:lang="it">La classe di tutti icolori che possono essere associati alle varie materializzazioni degli articoli in vendita.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#exemplarOf">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/frbr"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/identifier">
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms"/>
+    <rdfs:comment xml:lang="it">Un attributo usato per associare un identificativo ad un'entità come un capo.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:comment xml:lang="en">An attribute used for associating an identifier to an entity (such as an item).</rdfs:comment>
+    <rdfs:label xml:lang="it">ha identificativo</rdfs:label>
+    <rdfs:label xml:lang="en">has identifier</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/included">
+    <rdfs:comment xml:lang="en">The relation that links a season with all the items proposed for such season.</rdfs:comment>
+    <rdfs:label xml:lang="en">included</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2015/07/ido"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/ido/wasProposedFor"/>
+    <rdfs:comment xml:lang="it">La relazione che collega una stagione con tutti i capi proposti per quella stagione.</rdfs:comment>
+    <rdfs:label xml:lang="it">ha incluso</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/wasProposedFor">
+    <rdfs:range rdf:resource="https://w3id.org/ido/Season"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2015/07/ido"/>
+    <rdfs:domain rdf:resource="https://w3id.org/ido/Item"/>
+    <rdfs:comment xml:lang="en">The relation that allows one to specify the season for which an item was proposed for.</rdfs:comment>
+    <rdfs:label xml:lang="en">was proposed for</rdfs:label>
+    <rdfs:label xml:lang="it">è stato proposto per</rdfs:label>
+    <rdfs:comment xml:lang="it">La relazione che permette di specificare la stagione a cui un capo è destinato.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/hasArticleCategory">
+    <rdfs:comment xml:lang="it">Questa proprietà permette di collegare un modello con la sua categoria relativa.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://schema.org/additionalType"/>
+    <rdfs:comment xml:lang="en">This property allows one to link a style with its related category.</rdfs:comment>
+    <rdfs:domain rdf:resource="https://w3id.org/ido/Style"/>
+    <rdfs:label xml:lang="en">has article category</rdfs:label>
+    <rdfs:label xml:lang="it">ha categoria articolo</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://schema.org/category"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2015/07/ido"/>
+    <rdfs:range rdf:resource="https://w3id.org/ido/ArticleCategory"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/ido/isArticleCategoryOf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/isSizeOf">
+    <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2015/07/ido"/>
+    <rdfs:label xml:lang="it">è taglia di</rdfs:label>
+    <rdfs:label xml:lang="en">is size of</rdfs:label>
+    <rdfs:comment xml:lang="it">La relazione che permette di collegare la taglia di un articolo it suo relativo articolo gestito in magazzino.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">The link between a size of an article with its related materialisation.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne51e07ea9dfc46eabb6d60030cf0b47d">
+    <owl:someValuesFrom rdf:resource="https://w3id.org/ido/Item"/>
+    <owl:onProperty rdf:resource="https://w3id.org/ido/wasRealisedAs"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4bc651bb391c4dceb7d6afc027ece441">
+    <owl:someValuesFrom rdf:resource="https://w3id.org/ido/Item"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:nodeID="N84b5a515ba6d497aab53345590c97faa"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/wasRealisedAs">
+    <rdfs:comment xml:lang="en">The relation that allows one to link the style with the items that have been realised according to it.</rdfs:comment>
+    <rdfs:domain rdf:resource="https://w3id.org/ido/Style"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="it">La relazione che permette di collegare un modello con i capi che sono stati realizzati a partire da quello.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#realization"/>
+    <rdfs:label xml:lang="it">è stato realizzato come</rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/ido/Item"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2015/07/ido"/>
+    <rdfs:label xml:lang="en">was realised as</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/wasUsedIn">
+    <rdfs:label xml:lang="en">was used in</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="it">è stato usato in</rdfs:label>
+    <rdfs:comment xml:lang="it">La relazione che collega un tessuto con tutti i capi che lo hanno usato.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2015/07/ido"/>
+    <rdfs:comment xml:lang="en">The relation that links a textile with all the items that have used it.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/Piece">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ido/items"/>
+    <rdfs:subClassOf rdf:resource="http://schema.org/Product"/>
+    <rdfs:comment xml:lang="it">La classe di tutti pezzi a disposizione per l'acquisto.</rdfs:comment>
+    <rdfs:label xml:lang="it">pezzo</rdfs:label>
+    <rdfs:subClassOf rdf:nodeID="N7d3c06d26d7c460998830b4a0727fc16"/>
+    <rdfs:comment xml:lang="en">The class of all the physical pieces (i.e., wear) that are available to customers.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://purl.org/goodrelations/v1#Individual"/>
+    <rdfs:label xml:lang="en">piece</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#Item"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/items">
+    <owl:imports rdf:resource="https://w3id.org/ido/aco/1.1.1"/>
+    <dc:title xml:lang="it">Ontologia per i dati di Imperial (IDO): modulo "Capi"</dc:title>
+    <rdfs:comment xml:lang="en">The Imperial Data Ontology (IDO) is an OWL 2 DL ontology that allows the description of selling data of fashion design industries. This module describes all the items to sell.</rdfs:comment>
+    <dc:rights xml:lang="it">Questo lavoro è distribuito sotto una licenza [Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/).</dc:rights>
+    <owl:versionIRI rdf:resource="https://w3id.org/ido/items/1.0.1"/>
+    <dc:date>2017-03-23</dc:date>
+    <owl:imports rdf:resource="https://w3id.org/ido/prices/1.0.1"/>
+    <dc:description rdf:resource="https://w3id.org/ido/ido-items.png"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <dc:rights xml:lang="en">This work is distributed under a [Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/).</dc:rights>
+    <dc:creator>Silvio Peroni (http://orcid.org/0000-0003-0530-4305)</dc:creator>
+    <dc:title xml:lang="en">Imperial Data Ontology (IDO): module "Items"</dc:title>
+    <owl:versionInfo>1.0.1</owl:versionInfo>
+    <rdfs:comment xml:lang="it">L'Ontologia per i dati di Imperial (o Imperial Data Ontology, IDO) è un'ontologia OWL 2 DL creata per la descrizione dei dati di vendita di aziende di moda. Questo modulo si preoccupa della descrizione degli capi destinati alla vendita.</rdfs:comment>
+    <rdfs:label>IDO-I</rdfs:label>
+    <owl:imports rdf:resource="http://purl.org/spar/frbr"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/hasColour">
+    <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2015/07/ido"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/goodrelations/v1#qualitativeProductOrServiceProperty"/>
+    <rdfs:range rdf:resource="https://w3id.org/ido/Colour"/>
+    <rdfs:comment xml:lang="it">La relazione che permette di collegare un articolo gestito in magazzino con il relativo colore associato.</rdfs:comment>
+    <owl:inverseOf rdf:resource="https://w3id.org/ido/isColourIn"/>
+    <rdfs:label xml:lang="it">ha colore</rdfs:label>
+    <rdfs:label xml:lang="en">has colour</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/ido/StockKeepingUnit"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">The relationship that allows the link between a stock keeping unit and the associated colour.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/hasSize">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">The relationship that allows the link between a stock keeping unit and the associated size.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/goodrelations/v1#qualitativeProductOrServiceProperty"/>
+    <rdfs:comment xml:lang="it">La relazione che permette di collegare un articolo gestito in magazzino con la relativa taglia associata.</rdfs:comment>
+    <rdfs:domain rdf:resource="https://w3id.org/ido/StockKeepingUnit"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2015/07/ido"/>
+    <rdfs:label xml:lang="it">ha taglia</rdfs:label>
+    <rdfs:label xml:lang="en">has size</rdfs:label>
+    <owl:inverseOf rdf:resource="https://w3id.org/ido/isSizeOf"/>
+    <rdfs:range rdf:resource="https://w3id.org/ido/Size"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/wasMadeOf">
+    <rdfs:comment xml:lang="it">La relazione che permette di collegare un capo con il tessuto con cui è stato realizzato.</rdfs:comment>
+    <rdfs:domain rdf:resource="https://w3id.org/ido/Item"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="it">è stato realizzato con</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2015/07/ido"/>
+    <rdfs:comment xml:lang="en">The relation that allows one to link an item with the texture it uses.</rdfs:comment>
+    <rdfs:range rdf:resource="https://w3id.org/ido/Textile"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/ido/wasUsedIn"/>
+    <rdfs:label xml:lang="en">was realised with</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/wasProducedAs">
+    <rdfs:domain rdf:resource="https://w3id.org/ido/StockKeepingUnit"/>
+    <rdfs:comment xml:lang="en">The link between a certain materialisation of an article and one of the concrete physical items of such article.</rdfs:comment>
+    <rdfs:label xml:lang="en">was produced as</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2015/07/ido"/>
+    <rdfs:comment xml:lang="it">La relazione che associa una certa materializzazione di un articolo con uno specifico capo fisico di quell'articolo prodotto.</rdfs:comment>
+    <rdfs:label xml:lang="it">è stato prodotto come</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="https://w3id.org/ido/Piece"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#exemplar"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/Size">
+    <rdfs:comment xml:lang="en">The class of all the sizes that can be associated to the materialisations of the articles available.</rdfs:comment>
+    <rdfs:label xml:lang="en">size</rdfs:label>
+    <rdfs:label xml:lang="it">taglia</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ido/items"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/goodrelations/v1#QualitativeValue"/>
+    <rdfs:comment xml:lang="it">La classe di tutte le taglie che possono essere associate alle varie materializzazioni degli articoli in vendita.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/Season">
+    <rdfs:comment xml:lang="en">The class defining all the seasons (e.g., spring-summer 2016) for which the items have been proposed.</rdfs:comment>
+    <rdfs:comment xml:lang="it">La classe che definisce tutte le stagioni (es., primavera-estate 2016) a cui i capi possono essere destinati.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">season</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ido/items"/>
+    <rdfs:label xml:lang="it">stagione</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/isArticleCategoryOf">
+    <rdfs:label xml:lang="en">is article category of</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="it">è categoria dell'articolo</rdfs:label>
+    <rdfs:comment xml:lang="en">This property allows one to link an article category with the related articles.</rdfs:comment>
+    <rdfs:comment xml:lang="it">Questa proprietà permette di collegare una categoria di vestiario con i modelli relativi.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#float">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/isAvailableAs">
+    <rdfs:label xml:lang="en">is available as</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2015/07/ido"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/ido/isStockKeepingUnitOf"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#embodiment"/>
+    <rdfs:label xml:lang="it">è disponibile in</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/ido/Item"/>
+    <rdfs:comment xml:lang="it">La relazione che associa un certo articolo con la descrizione del suo colore e la sua misura.</rdfs:comment>
+    <rdfs:range rdf:resource="https://w3id.org/ido/StockKeepingUnit"/>
+    <rdfs:comment xml:lang="en">The link between a certain article and the description of its colour and size.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/Item">
+    <rdfs:subClassOf rdf:nodeID="N4940f34a58ad4f6fa6240a2fe9c21b22"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://schema.org/Product"/>
+    <rdfs:label xml:lang="en">item</rdfs:label>
+    <rdfs:comment xml:lang="it">La classe di tutte le possibili realizzazioni di un modello, relativamente a certi tessuti e proposte per determinate stagioni.</rdfs:comment>
+    <rdfs:subClassOf rdf:nodeID="N204905d25a6e4b8a94bc728eeffbbfe2"/>
+    <rdfs:comment xml:lang="en">The class of all the realizations of a style by using particular textiles and proposed for specific seasons.</rdfs:comment>
+    <rdfs:label xml:lang="it">capo</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ido/items"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <rdfs:subClassOf rdf:nodeID="N56eefac424d64a4698f5f1740ed2176e"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/goodrelations/v1#ProductOrServiceModel"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4940f34a58ad4f6fa6240a2fe9c21b22">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://w3id.org/ido/wasProposedFor"/>
+    <owl:someValuesFrom rdf:resource="https://w3id.org/ido/Season"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/isStockKeepingUnitOf">
+    <rdfs:label xml:lang="en">is stock keeping unit of</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/goodrelations/v1#hasMakeAndModel"/>
+    <rdfs:comment xml:lang="it">The link between a certain materialization on an article and the article itself.</rdfs:comment>
+    <rdfs:comment xml:lang="it">La relazione che associa una certa materializzazione di articolo con l'articolo stesso.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#embodimentOf"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2015/07/ido"/>
+    <rdfs:label xml:lang="it">è articolo gestito in magazzino di</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd008a7355789463785f3443b12b3ceae">
+    <owl:onProperty rdf:resource="https://w3id.org/ido/hasColour"/>
+    <owl:someValuesFrom rdf:resource="https://w3id.org/ido/Colour"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/hasPrice">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">has price</rdfs:label>
+    <rdfs:domain rdf:nodeID="N69a1d7da73944e63a5a81a72a56db8e6"/>
+    <rdfs:label xml:lang="it">ha prezzo</rdfs:label>
+    <rdfs:comment xml:lang="en">It allows one to link an item, stock keeping unit, or piece to the related selling price.</rdfs:comment>
+    <owl:inverseOf rdf:resource="https://w3id.org/ido/isPriceOf"/>
+    <rdfs:comment xml:lang="it">Permette di associare un capo, articolo presente in magazzino, o pezzo con il relativo prezzo a cui viene venduto.</rdfs:comment>
+    <rdfs:range rdf:resource="https://w3id.org/ido/Price"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ido/items"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#Manifestation">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/frbr"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/wasRealisedAccordingTo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/ido/wasRealisedAs"/>
+    <rdfs:comment xml:lang="en">The relation that links an item with its style.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#realizationOf"/>
+    <rdfs:comment xml:lang="it">La relazione che permette di collegare un capo con il suo modello di riferimento.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2015/07/ido"/>
+    <rdfs:label xml:lang="en">was realised according to</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/goodrelations/v1#hasMakeAndModel"/>
+    <rdfs:label xml:lang="it">è stato realizzato conformemente a</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/wasDesignedFor">
+    <rdfs:comment xml:lang="it">La proprietà che permette di specificare il genere delle persone per le quali un articolo è stato creato.</rdfs:comment>
+    <rdfs:domain rdf:resource="https://w3id.org/ido/Style"/>
+    <rdfs:comment xml:lang="en">The property that allows one to specify the gender of the people for whom an article has been created.</rdfs:comment>
+    <rdfs:label xml:lang="en">was designed for</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:nodeID="N5e7b084970dc4594b55c7c9e58d4a8f2"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2015/07/ido"/>
+    <rdfs:label xml:lang="it">è stato creato per</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N41118ccf20a245aaa613195d21c77401">
+    <owl:someValuesFrom rdf:resource="https://w3id.org/ido/Piece"/>
+    <owl:onProperty rdf:resource="https://w3id.org/ido/wasProducedAs"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N204905d25a6e4b8a94bc728eeffbbfe2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="https://w3id.org/ido/wasMadeOf"/>
+    <owl:someValuesFrom rdf:resource="https://w3id.org/ido/Textile"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/Textile">
+    <rdfs:comment xml:lang="it">La classe che definisce tutti i possibili tipi di tessuto che possono essere utilizzati per caratterizzare un certo capo.</rdfs:comment>
+    <rdfs:label xml:lang="en">textile</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ido/items"/>
+    <rdfs:comment xml:lang="en">The class defining possible kinds of textile used for realising items.</rdfs:comment>
+    <rdfs:label xml:lang="it">tessuto</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.org/category">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/isPriceOf">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ido/items"/>
+    <rdfs:comment xml:lang="it">Permette di risalire all'articolo a cui il prezzo in considerazione è stato applicato.</rdfs:comment>
+    <rdfs:label xml:lang="it">è prezzo di</rdfs:label>
+    <rdfs:comment xml:lang="it">It allows to reach the article to which the current price has been applied.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">is price of</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N56eefac424d64a4698f5f1740ed2176e">
+    <owl:onProperty rdf:resource="https://w3id.org/ido/isAvailableAs"/>
+    <owl:someValuesFrom rdf:resource="https://w3id.org/ido/StockKeepingUnit"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nedb337d174ee4338ad61dd126c4d5a4c">
+    <owl:onProperty rdf:resource="https://w3id.org/ido/wasDesignedFor"/>
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Neb1e540cd65d468d95c169606fb5bf18">
+    <owl:onProperty rdf:resource="https://w3id.org/ido/hasSize"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5c7e169059be4467a62a40a657783613">
+    <owl:inverseOf rdf:resource="https://w3id.org/ido/wasProducedAs"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbb317af0e36048c2b62e2a1524a81c1d">
+    <rdf:first rdf:resource="https://w3id.org/ido/Item"/>
+    <rdf:rest rdf:nodeID="Na783d8c376f445db8a62b5a1c1684e8f"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N84b5a515ba6d497aab53345590c97faa">
+    <owl:inverseOf rdf:resource="https://w3id.org/ido/isAvailableAs"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/goodrelations/v1#QualitativeValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#exemplar">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/frbr"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5587e833b52843c3b390db4f0d1f1f76">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+    <rdf:first>male</rdf:first>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/ArticleCategory">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb336b4e63c744659949dda7214a6201a">
+    <rdf:rest rdf:nodeID="N5587e833b52843c3b390db4f0d1f1f76"/>
+    <rdf:first>female</rdf:first>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na783d8c376f445db8a62b5a1c1684e8f">
+    <rdf:first rdf:resource="https://w3id.org/ido/Piece"/>
+    <rdf:rest rdf:nodeID="N975edc3706d24925a91174c943b1a77f"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/goodrelations/v1#qualitativeProductOrServiceProperty">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N69a1d7da73944e63a5a81a72a56db8e6">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="Nbb317af0e36048c2b62e2a1524a81c1d"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7d3c06d26d7c460998830b4a0727fc16">
+    <owl:someValuesFrom rdf:resource="https://w3id.org/ido/StockKeepingUnit"/>
+    <owl:onProperty rdf:nodeID="N5c7e169059be4467a62a40a657783613"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/goodrelations/v1#ProductOrServiceModel">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.org/additionalType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5e7b084970dc4594b55c7c9e58d4a8f2">
+    <owl:oneOf rdf:nodeID="Nb336b4e63c744659949dda7214a6201a"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#embodimentOf">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/frbr"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#Item">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/frbr"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N975edc3706d24925a91174c943b1a77f">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="https://w3id.org/ido/StockKeepingUnit"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/goodrelations/v1#SomeItems">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#Expression">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/frbr"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/goodrelations/v1#hasMakeAndModel">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/goodrelations/v1#Individual">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>

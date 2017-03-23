@@ -1,0 +1,357 @@
+@prefix : <https://w3id.org/ido/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix gr: <http://purl.org/goodrelations/v1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skos1: <http://www.w3.org/2008/05/skos#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix ti: <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+schema:partOfInvoice a owl:ObjectProperty ;
+    rdfs:label "is part of invoice"@en,
+        "è parte della ricevuta"@it ;
+    rdfs:comment "It allows one to specify that the order in consideration is being paid as part of the referenced invoice."@en,
+        "Permette di specificare che l'ordine in considerazione è stato pagato come parte della ricevuta a cui si riferisce."@it ;
+    rdfs:isDefinedBy <http://schema.org> ;
+    owl:inverseOf schema:referencesOrder .
+
+rdfs:isDefinedBy a owl:AnnotationProperty .
+
+xsd:date a rdfs:Datatype .
+
+xsd:float a rdfs:Datatype .
+
+owl:cardinality a owl:AnnotationProperty .
+
+:b2b a owl:NamedIndividual,
+        :DistributionPlatform ;
+    rdfs:label "business to business"@en,
+        "commercio interaziendale"@it ;
+    rdfs:comment "Business-to-business (B2B) refers to distribution platform where one business makes a commercial transaction with another."@en,
+        "La distribuzione via commercio interaziendale si applica quando un'azienda effettua una transazione commerciale con un'altra."@it ;
+    rdfs:isDefinedBy :orders .
+
+:b2c a owl:NamedIndividual,
+        :DistributionPlatform ;
+    rdfs:label "business to consumer"@en,
+        "vendita al dettaglio"@it ;
+    rdfs:comment "Business-to-consumer (B2C) refers to distribution platform where one business makes a commercial transaction with a consumer."@en,
+        "La distribuzione via vendita al dettaglio si applica quando un'azienda effettua una transazione commerciale con un consumatore finale."@it ;
+    rdfs:isDefinedBy :orders .
+
+:e-commerce a owl:NamedIndividual,
+        :SalesChannel ;
+    rdfs:label "electronic commerce"@en,
+        "commercio elettronico"@it ;
+    rdfs:comment "Electronic commerce, commonly written as e-commerce, is the a sales channel for products or services using computer networks, such as the Internet."@en,
+        "Il commercio elettronico è un canale per la vendita dei prodotti o servizi che fa uso di reti di calcolatori, ad esempio Internet."@it ;
+    rdfs:isDefinedBy :orders .
+
+:front-desk a owl:NamedIndividual,
+        :SalesChannel ;
+    rdfs:label "front desk commerce"@en,
+        "commercio diretto"@it ;
+    rdfs:comment "Front desk commerce is the a sales channel for products or services using direct and physical interaction between the seller and the buyer."@en,
+        "Il commercio diretto è un canale di vendita per prodotti e servizi che usa l'interazione diretta e fisica tra un venditore e un compratore."@it ;
+    rdfs:isDefinedBy :orders .
+
+:specifiesDistributionPlatform a owl:ObjectProperty ;
+    rdfs:label "specifies as distribution platform"@en,
+        "specifica come piattaforma di distribuzione"@it ;
+    rdfs:comment "This property allows to specify the particular distribution platform associated to either an order or invoice."@en,
+        "Questa proprietà permette la specificazione di una certa piattaforma di distribuzione associata ad un ordine o ad una fattura."@it ;
+    rdfs:isDefinedBy :orders .
+
+:specifiesSalesChannel a owl:ObjectProperty ;
+    rdfs:label "specifies as sales channel"@en,
+        "specifica come canale di vendita"@it ;
+    rdfs:comment "This property allows to specify the particular sales channel associated to either an order or invoice."@en,
+        "Questa proprietà permette la specificazione di una certo canale di vendita associato ad un ordine o ad una fattura."@it ;
+    rdfs:isDefinedBy :orders .
+
+terms:issued a owl:DatatypeProperty ;
+    rdfs:label "was issued"@en,
+        "è stata emessa"@it ;
+    rdfs:comment "It allows to specify the issue date of an entity (e.g., an invoice)."@en,
+        "Permette di specificare la data di immissione di un'entità (per esempio, una fattura)."@it ;
+    rdfs:domain owl:Thing ;
+    rdfs:isDefinedBy <http://purl.org/dc/terms> ;
+    rdfs:range rdfs:Literal .
+
+gr:Individual a owl:Class .
+
+gr:SomeItems a owl:Class .
+
+schema:Product a owl:Class .
+
+schema:orderDate a owl:DatatypeProperty ;
+    rdfs:label "has order creation date"@en,
+        "ha data di creazione dell'ordine"@it ;
+    rdfs:comment "The property that allows one to specify the order date."@en,
+        "La proprietà che permette di specificare la data di creazione di un ordine."@it ;
+    rdfs:domain schema:Order ;
+    rdfs:isDefinedBy <http://schema.org> ;
+    rdfs:range xsd:dateTime .
+
+schema:orderNumber a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <http://schema.org> .
+
+schema:orderQuantity a owl:DatatypeProperty ;
+    rdfs:label "has order quantity"@en,
+        "ha quantità ordinata"@it ;
+    rdfs:domain schema:OrderItem ;
+    rdfs:isDefinedBy <http://schema.org>,
+        "It allows one to describe the quantity of a certain article that is requested in an order."@en,
+        "Premettere di indicare la quantità di un certo articolo a seconda di quanto ne sia richiesto in un ordine."@it ;
+    rdfs:range xsd:decimal .
+
+owl:Thing a owl:Class .
+
+:Piece a owl:Class .
+
+:StockKeepingUnit a owl:Class .
+
+:hasOrderIdentifier a owl:DatatypeProperty ;
+    rdfs:label "has order identifier"@en,
+        "ha identificativo d'ordine"@it ;
+    rdfs:comment "The property that allows one to specify the number associated to the order."@en,
+        "La proprietà che permette di specificare un numero identificativo dell'ordine."@it ;
+    rdfs:domain :Order ;
+    rdfs:isDefinedBy :orders ;
+    rdfs:subPropertyOf terms:identifier,
+        schema:orderNumber .
+
+:hasTotalValue a owl:ObjectProperty ;
+    rdfs:label "has total value"@en,
+        "ha valore totale"@it ;
+    rdfs:comment "The link between an order and the total price paid by a person for the purchase of that order."@en,
+        "La relazione tra un ordine e il valore totale associato."@it ;
+    rdfs:domain :Order ;
+    rdfs:isDefinedBy :orders ;
+    rdfs:range :Price ;
+    owl:inverseOf :isTotalValueOf .
+
+:includesPiece a owl:ObjectProperty ;
+    rdfs:label "includes piece"@en,
+        "include pezzo"@it ;
+    rdfs:comment "This property allows one to identify the various pieces included in an invoice."@en,
+        "Questa proprietà permette di indicare i vari pezzi elencati in una fattura."@it ;
+    rdfs:domain :Invoice ;
+    rdfs:isDefinedBy :orders ;
+    rdfs:range :PieceWithPrice ;
+    owl:inverseOf :isPieceIncludedIn .
+
+:isTotalValueOf a owl:ObjectProperty ;
+    rdfs:label "is total value of"@en,
+        "è valore totale del"@it ;
+    rdfs:comment "The link between the total amount of all the items of an order."@en,
+        "La relazione tra il prezzo totale relativo ad un ordine."@it ;
+    rdfs:isDefinedBy :orders .
+
+terms:identifier a owl:DatatypeProperty .
+
+gr:typeOfGood a owl:ObjectProperty ;
+    rdfs:label "has type of good"@en,
+        "ha tipo di bene"@it ;
+    rdfs:comment "This property allows one to specify a particular piece or its kind (i.e., a stock keeping unit) as listed either in an order or in an invoice."@en,
+        "Questa proprietà permette di specificare un certo pezzo o una sua tipologia (cioè, un articolo gestito in magazzino) come indicato in un ordine o in una fattura."@it ;
+    rdfs:domain gr:TypeAndQuantityNode ;
+    rdfs:isDefinedBy <http://purl.org/goodrelations/v1> ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( gr:Individual gr:SomeItems ) ] .
+
+schema:totalPaymentDue a owl:ObjectProperty ;
+    rdfs:label "has total payment due"@en,
+        "ha somma totale da pagare"@it ;
+    rdfs:comment "It allows to specify the total amount paid related to an invoice."@en,
+        "Permette di specificare la somma totale pagata in riferimento ad una ricevuta."@it ;
+    rdfs:domain schema:Invoice ;
+    rdfs:isDefinedBy <http://schema.org> ;
+    rdfs:range schema:PriceSpecification .
+
+:DistributionPlatform a owl:Class ;
+    rdfs:label "distribution platform"@en,
+        "piattaforma di distribuzione"@it ;
+    rdfs:comment "The distribution platform (e.g., B2C or B2B) that can be used for distributing an item."@en,
+        "La piattaforma di distribuzione (per esempio B2C o B2B) che può essere usata per distribuire un capo."@it ;
+    rdfs:isDefinedBy :orders .
+
+:Invoice a owl:Class ;
+    rdfs:label "invoice"@en,
+        "fattura"@it ;
+    rdfs:comment "A list of pieces that have been sent, with a statement of the sum due for these."@en,
+        "Una lista di articoli spediti, con informazioni riguardo la spesa totale per il loro acquisto."@it ;
+    rdfs:isDefinedBy :orders ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty schema:referencesOrder ;
+            owl:someValuesFrom :Order ],
+        [ a owl:Restriction ;
+            owl:onDataRange xsd:dateTime ;
+            owl:onProperty terms:issued ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :Price ;
+            owl:onProperty schema:totalPaymentDue ],
+        [ a owl:Restriction ;
+            owl:onProperty :includesPiece ;
+            owl:someValuesFrom :PieceWithPrice ],
+        [ a owl:Restriction ;
+            owl:onProperty schema:totalPaymentDue ;
+            owl:someValuesFrom :Price ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty terms:identifier ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :Order ;
+            owl:onProperty schema:referencesOrder ],
+        schema:Invoice .
+
+:SalesChannel a owl:Class ;
+    rdfs:label "sales channel"@en,
+        "canale di vendita"@it ;
+    rdfs:comment "The sales channel (e.g., e-commerce) that can be used for buying/selling an item."@en,
+        "Il canale di vendita (ad esempio, e-commerce) che può essere usato per vendere/comprare un capo."@it ;
+    rdfs:isDefinedBy :orders .
+
+:hasPricePerPiece a owl:ObjectProperty ;
+    rdfs:label "has price per piece"@en,
+        "ha prezzo per pezzo"@it ;
+    rdfs:comment "This property allows one to specify the price related to a particular (kind of a) piece as indicated in either in an order or invoice."@en,
+        "Questa proprietà permette di specificare il prezzo relativo a un certo pezzo come indicato in un ordine o in una fattura."@it ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( :PieceWithPrice :StockKeepingUnitAmount ) ] ;
+    rdfs:isDefinedBy :orders ;
+    rdfs:range :Price .
+
+:isPieceIncludedIn a owl:ObjectProperty ;
+    rdfs:label "is peice included in"@en,
+        "è incluso come pezzo in"@it ;
+    rdfs:comment "This property allows one to link a particular piece to the invoice including it."@en,
+        "Questa proprietà permette di collegare un particolare pezzo di un capo con la fattura a cui è associato."@it ;
+    rdfs:isDefinedBy :orders .
+
+gr:TypeAndQuantityNode a owl:Class ;
+    rdfs:isDefinedBy <http://purl.org/goodrelations/v1> .
+
+schema:Invoice a owl:Class ;
+    rdfs:isDefinedBy <http://schema.org> .
+
+schema:orderedItem a owl:ObjectProperty ;
+    rdfs:label "includes as ordered article"@en,
+        "include come articolo ordinato"@it ;
+    rdfs:comment "The link between an order and the amount of items which it includes."@en,
+        "La relazione che mette in relazione un ordine con la quantità di capi da esso descritti."@it ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( schema:Order schema:OrderItem ) ] ;
+    rdfs:isDefinedBy <http://schema.org> ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( schema:OrderItem schema:Product ) ] .
+
+schema:referencesOrder a owl:ObjectProperty ;
+    rdfs:label "references order"@en,
+        "si riferisce all'ordine"@it ;
+    rdfs:comment "It allows one to specify the order associated to the invoice in consideration."@en,
+        "Permette di specificare l'ordine associato alla ricevuta in considerazione."@it ;
+    rdfs:domain schema:Invoice ;
+    rdfs:isDefinedBy <http://schema.org> ;
+    rdfs:range schema:Order .
+
+xsd:dateTime a rdfs:Datatype .
+
+:PieceWithPrice a owl:Class ;
+    rdfs:label "piece with price"@en,
+        "pezzo con prezzo"@it ;
+    rdfs:comment "This class allows the identification of a piece with the related price as recorded in an invoice."@en,
+        "Questa classe permette l'identificazione di un pezzo e del relativo prezzo a cui è stato venduto come descritto in una fattura."@it ;
+    rdfs:isDefinedBy :orders ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasPricePerPiece ;
+            owl:someValuesFrom :Price ],
+        [ a owl:Restriction ;
+            owl:onClass :Piece ;
+            owl:onProperty gr:typeOfGood ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        [ a owl:Restriction ;
+            owl:onProperty :isPieceIncludedIn ;
+            owl:someValuesFrom :Invoice ],
+        gr:TypeAndQuantityNode .
+
+:StockKeepingUnitAmount a owl:Class ;
+    rdfs:label "stock keeping unit amount"@en,
+        "quantità dell'articolo gestito in magazzino"@it ;
+    rdfs:comment "This class describes the requested amount of a particular stock keeping unit as recorded in an order."@en,
+        "Questa classe describe la quantità richiesta di un certo articolo gestito in magazzino come indicato in un ordine."@it ;
+    rdfs:isDefinedBy :orders ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasPricePerPiece ;
+            owl:someValuesFrom :Price ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf schema:orderedItem ] ;
+            owl:someValuesFrom :Order ],
+        [ a owl:Restriction ;
+            owl:onClass :StockKeepingUnit ;
+            owl:onProperty gr:typeOfGood ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        [ a owl:Restriction ;
+            owl:onDataRange xsd:positiveInteger ;
+            owl:onProperty schema:orderQuantity ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        gr:TypeAndQuantityNode,
+        schema:OrderItem .
+
+schema:Order a owl:Class ;
+    rdfs:isDefinedBy <http://schema.org> .
+
+schema:OrderItem a owl:Class ;
+    rdfs:isDefinedBy <http://schema.org> .
+
+:Order a owl:Class ;
+    rdfs:label "order"@en,
+        "ordine"@it ;
+    rdfs:comment "This class describes all the orders of one or more articles bought at a certain price and done at a certain time."@en,
+        "Questa classe descrive gli ordini di uno o più capi, eseguiti ad una certa ora."@it ;
+    rdfs:isDefinedBy :orders ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :hasOrderIdentifier ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasTotalValue ;
+            owl:someValuesFrom :Price ],
+        [ a owl:Restriction ;
+            owl:onDataRange xsd:dateTime ;
+            owl:onProperty schema:orderDate ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        [ a owl:Restriction ;
+            owl:onProperty schema:orderedItem ;
+            owl:someValuesFrom :StockKeepingUnitAmount ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :StockKeepingUnitAmount ;
+            owl:onProperty schema:orderedItem ],
+        schema:Order .
+
+:orders a owl:Ontology ;
+    rdfs:label "IDO-O" ;
+    dc:creator "Silvio Peroni (http://orcid.org/0000-0003-0530-4305)" ;
+    dc:date "2017-03-23" ;
+    dc:description :ido-orders.png ;
+    dc:rights "This work is distributed under a [Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/)."@en,
+        "Questo lavoro è distribuito sotto una licenza [Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/)."@it ;
+    dc:title "Imperial Data Ontology (IDO): module \"Orders\""@en,
+        "Ontologia per i dati di Imperial (IDO): modulo \"Ordini\""@it ;
+    rdfs:comment "The Imperial Data Ontology (IDO) is an OWL 2 DL ontology that allows the description of selling data of fashion design industries. This module describes the orders and the invoices."@en,
+        "L'Ontologia per i dati di Imperial (o Imperial Data Ontology, IDO) è un'ontologia OWL 2 DL creata per la descrizione dei dati di vendita di aziende di moda. Questo modulo si preoccupa della descrizione degli ordini e delle fatture."@it ;
+    owl:imports :items,
+        :prices ;
+    owl:versionIRI <https://w3id.org/ido/orders/1.0.1> ;
+    owl:versionInfo "1.0.1" .
+
+[] owl:cardinality "1"^^xsd:nonNegativeInteger .
+

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/ido/users">
+    <owl:imports rdf:resource="https://w3id.org/ido/orders/1.0.1"/>
+    <owl:versionInfo>1.0.1</owl:versionInfo>
+    <rdfs:comment xml:lang="it">L'Ontologia per i dati di Imperial (o Imperial Data Ontology, IDO) è un'ontologia OWL 2 DL creata per la descrizione dei dati di vendita di aziende di moda. Questo modulo si preoccupa della descrizione degli utenti.</rdfs:comment>
+    <dc:rights xml:lang="en">This work is distributed under a [Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/).</dc:rights>
+    <dc:rights xml:lang="it">Questo lavoro è distribuito sotto una licenza [Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/).</dc:rights>
+    <dc:title xml:lang="en">Imperial Data Ontology (IDO): module "Users"</dc:title>
+    <dc:creator>Silvio Peroni (http://orcid.org/0000-0003-0530-4305)</dc:creator>
+    <owl:imports rdf:resource="http://purl.org/swan/2.0/foaf-essential/"/>
+    <dc:description rdf:resource="https://w3id.org/ido/ido-users.png"/>
+    <dc:title xml:lang="it">Ontologia per i dati di Imperial (IDO): modulo "Utenti"</dc:title>
+    <owl:imports rdf:resource="http://rdfs.org/sioc/ns#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <dc:date>2017-03-23</dc:date>
+    <rdfs:label>IDO-U</rdfs:label>
+    <owl:versionIRI rdf:resource="https://w3id.org/ido/users/1.0.1"/>
+    <rdfs:comment xml:lang="en">The Imperial Data Ontology (IDO) is an OWL 2 DL ontology that allows the description of selling data of fashion design industries. This module describes the users.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.org/gender">
+    <rdfs:comment xml:lang="en">The property that allows one to specify the gender of a person.</rdfs:comment>
+    <rdfs:label xml:lang="it">ha genere</rdfs:label>
+    <rdfs:label xml:lang="en">has gender</rdfs:label>
+    <rdfs:comment rdf:resource="http://schema.org"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="it">La proprietà che permette di specificare il genere di una persona.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://schema.org/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/UserAccount">
+    <rdfs:subClassOf rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
+    <rdfs:comment xml:lang="en">The class of all the avatars that identify real people in the selling platform.</rdfs:comment>
+    <rdfs:label xml:lang="it">utente</rdfs:label>
+    <rdfs:label xml:lang="en">user account</rdfs:label>
+    <rdfs:subClassOf rdf:nodeID="N4bde32ea14c84ce0a462fa39d08550dd"/>
+    <rdfs:comment xml:lang="it">La classe di degli avatar con cui le persone sono riconosciute nella piattaforma di vendita.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ido/users"/>
+    <rdfs:subClassOf rdf:nodeID="Ne8e443734bc3487198423d1890692461"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.org/homeLocation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="it">ha indirizzo di residenza</rdfs:label>
+    <rdfs:domain rdf:resource="http://schema.org/Person"/>
+    <rdfs:comment xml:lang="it">La relazione che lega una persona con il suo indirizzo di residenza.</rdfs:comment>
+    <rdfs:label xml:lang="en">has home location</rdfs:label>
+    <rdfs:comment xml:lang="en">The link between a person and her home address.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://schema.org"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/madeOrder">
+    <owl:inverseOf rdf:resource="https://w3id.org/ido/wasMadeBy"/>
+    <rdfs:range rdf:resource="https://w3id.org/ido/Order"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ido/users"/>
+    <rdfs:comment xml:lang="en">The relationship between a user and the order it has done.</rdfs:comment>
+    <rdfs:domain rdf:resource="https://w3id.org/ido/UserAccount"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="it">La relazione che lega un utente all'ordine da esso effettuato.</rdfs:comment>
+    <rdfs:label xml:lang="en">made an order</rdfs:label>
+    <rdfs:label xml:lang="it">ha effettuato un ordine</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.org/birthDate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">has birth date</rdfs:label>
+    <rdfs:label xml:lang="it">ha data di nascita</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://schema.org"/>
+    <rdfs:comment xml:lang="en">The property that allows one to specify the birth date of a person.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdfs:comment xml:lang="it">La proprietà che permette di specificare la data di nascita di una persona.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://schema.org/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/wasMadeBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:comment xml:lang="it">La relazione che lega un ordine con l'utente che l'ha fatto.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ido/users"/>
+    <rdfs:comment xml:lang="en">The link between an order and the user that did it.</rdfs:comment>
+    <rdfs:label xml:lang="it">è stato fatto da</rdfs:label>
+    <rdfs:label xml:lang="en">was made by</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/hasDeliveryLocation">
+    <rdfs:label xml:lang="en">has delivery location</rdfs:label>
+    <rdfs:label xml:lang="it">ha indirizzo di spedizione</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ido/users"/>
+    <rdfs:range rdf:resource="http://schema.org/Place"/>
+    <rdfs:comment xml:lang="it">La relazione che lega un ordine con l'indirizzo a cui deve essere evaso.</rdfs:comment>
+    <owl:inverseOf rdf:resource="https://w3id.org/ido/isDeliveryLocationIn"/>
+    <rdfs:comment xml:lang="en">The link between an order and the related delivery address.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/ido/Order"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne8e443734bc3487198423d1890692461">
+    <owl:onProperty rdf:resource="http://purl.org/dc/terms/identifier"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/Region">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="it">La classe di tutte le regioni.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ido/users"/>
+    <rdfs:comment xml:lang="en">The class of all the regions.</rdfs:comment>
+    <rdfs:label xml:lang="it">regione</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://schema.org/Place"/>
+    <rdfs:label xml:lang="en">region</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/account">
+    <rdfs:comment xml:lang="it">La relazione che lega una persona con un particolare utente da essa creato.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The relationship that links a person with a particular user account that she has created.</rdfs:comment>
+    <rdfs:label xml:lang="it">ha un utente</rdfs:label>
+    <rdfs:label xml:lang="en">holds an account</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.org/containedIn">
+    <rdfs:comment xml:lang="en">The containement relation between two places, where the first one is contained in the second one.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://schema.org"/>
+    <rdfs:label xml:lang="it">è contenuto in</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://schema.org/Place"/>
+    <rdfs:comment xml:lang="it">La relazione di contenimento tra due luoghi, dove il primo è contenuto nel secondo.</rdfs:comment>
+    <rdfs:range rdf:resource="http://schema.org/Place"/>
+    <rdfs:label xml:lang="en">is contained in</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd59567dcce2846b3a32bdb384984d3a5">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onProperty rdf:resource="http://schema.org/gender"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onDataRange rdf:nodeID="N508cac68f2b14c528b49f2a8b5beff7e"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/Person">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ido/users"/>
+    <rdfs:label xml:lang="en">person</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://schema.org/Person"/>
+    <rdfs:subClassOf rdf:nodeID="N6205ffdf48734089b0241926c6321842"/>
+    <rdfs:label xml:lang="it">persona</rdfs:label>
+    <rdfs:comment xml:lang="it">La classe di tutte le persone regolarmente iscritte sulla piattaforma del negozio online. Ogni persona è caratterizzata da un genere, dalla data di nascita, e dalla provincia e la regione di residenza.</rdfs:comment>
+    <rdfs:subClassOf rdf:nodeID="Nb9d34ca5eb6a4e6cbd91a89bb76e871b"/>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:subClassOf rdf:nodeID="Nd59567dcce2846b3a32bdb384984d3a5"/>
+    <rdfs:comment xml:lang="en">The class of all the people who have subscribed to the online platform. Each person is characterised by a genre, the birth date, and the home location.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rdfs.org/sioc/ns#UserAccount">
+    <rdfs:isDefinedBy rdf:resource="http://rdfs.org/sioc/ns"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/Province">
+    <rdfs:subClassOf rdf:resource="http://schema.org/Place"/>
+    <rdfs:comment xml:lang="en">The class of all the provinces.</rdfs:comment>
+    <rdfs:label xml:lang="it">provincia</rdfs:label>
+    <rdfs:comment xml:lang="it">La classe di tutte le province.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ido/users"/>
+    <rdfs:label xml:lang="en">province</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/isDeliveryLocationIn">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ido/users"/>
+    <rdfs:comment xml:lang="it">La relazione tra un certo luogo e l'ordine in cui compare come indirizzo di consegna.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The relation between a place and the order where it is specified as delivery address.</rdfs:comment>
+    <rdfs:label xml:lang="en">is delivery location in</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="it">è l'indirizzo di consegna nel</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N508cac68f2b14c528b49f2a8b5beff7e">
+    <owl:oneOf rdf:nodeID="N51ffa994c3e1477da3eb1195dd3d51fa"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb9d34ca5eb6a4e6cbd91a89bb76e871b">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <owl:onProperty rdf:resource="http://schema.org/birthDate"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N51ffa994c3e1477da3eb1195dd3d51fa">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+    <rdf:first>female</rdf:first>
+    <rdf:rest rdf:nodeID="N54490f967c484604b591cbea889f4abd"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.org/Person">
+    <rdfs:isDefinedBy rdf:resource="http://schema.org"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6205ffdf48734089b0241926c6321842">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://schema.org/homeLocation"/>
+    <owl:someValuesFrom rdf:resource="http://schema.org/Place"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N54490f967c484604b591cbea889f4abd">
+    <rdf:first>male</rdf:first>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4bde32ea14c84ce0a462fa39d08550dd">
+    <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:nodeID="N7ac7b05e8a6e4340bb573907505df299"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.org/Place">
+    <rdfs:label xml:lang="it">luogo</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://schema.org"/>
+    <rdfs:comment xml:lang="it">La classe di tutte le entità che hanno un estensione fisica fissata.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">place</rdfs:label>
+    <rdfs:comment xml:lang="en">The class of all the entities that have a somewhat fixed, physical extension.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#float">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person">
+    <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7ac7b05e8a6e4340bb573907505df299">
+    <owl:inverseOf rdf:resource="http://xmlns.com/foaf/0.1/account"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/identifier">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/Order">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>

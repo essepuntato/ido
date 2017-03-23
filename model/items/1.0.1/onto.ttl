@@ -1,0 +1,373 @@
+@prefix : <https://w3id.org/ido/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix gr: <http://purl.org/goodrelations/v1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skos1: <http://www.w3.org/2008/05/skos#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix ti: <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+terms:identifier a owl:DatatypeProperty ;
+    rdfs:label "has identifier"@en,
+        "ha identificativo"@it ;
+    rdfs:comment "An attribute used for associating an identifier to an entity (such as an item)."@en,
+        "Un attributo usato per associare un identificativo ad un'entità come un capo."@it ;
+    rdfs:domain owl:Thing ;
+    rdfs:isDefinedBy <http://purl.org/dc/terms> ;
+    rdfs:range rdfs:Literal .
+
+rdfs:isDefinedBy a owl:AnnotationProperty .
+
+xsd:date a rdfs:Datatype .
+
+xsd:dateTime a rdfs:Datatype .
+
+xsd:float a rdfs:Datatype .
+
+:hasPrice a owl:ObjectProperty ;
+    rdfs:label "has price"@en,
+        "ha prezzo"@it ;
+    rdfs:comment "It allows one to link an item, stock keeping unit, or piece to the related selling price."@en,
+        "Permette di associare un capo, articolo presente in magazzino, o pezzo con il relativo prezzo a cui viene venduto."@it ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( :Item :Piece :StockKeepingUnit ) ] ;
+    rdfs:isDefinedBy :items ;
+    rdfs:range :Price ;
+    owl:inverseOf :isPriceOf .
+
+:included a owl:ObjectProperty ;
+    rdfs:label "included"@en,
+        "ha incluso"@it ;
+    rdfs:comment "The relation that links a season with all the items proposed for such season."@en,
+        "La relazione che collega una stagione con tutti i capi proposti per quella stagione."@it ;
+    rdfs:isDefinedBy <http://www.essepuntato.it/2015/07/ido> ;
+    owl:inverseOf :wasProposedFor .
+
+:isProductOf a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "is a product of"@en,
+        "è un prodotto di"@it ;
+    rdfs:comment "The link between a concrete physical item and its materialisation."@en,
+        "La relazione che associa uno specifico capo fisico alla sua relativa materializzazione."@it ;
+    rdfs:isDefinedBy <http://www.essepuntato.it/2015/07/ido> ;
+    rdfs:subPropertyOf frbr:exemplarOf ;
+    owl:inverseOf :wasProducedAs .
+
+:wasRealisedAccordingTo a owl:ObjectProperty ;
+    rdfs:label "was realised according to"@en,
+        "è stato realizzato conformemente a"@it ;
+    rdfs:comment "The relation that links an item with its style."@en,
+        "La relazione che permette di collegare un capo con il suo modello di riferimento."@it ;
+    rdfs:isDefinedBy <http://www.essepuntato.it/2015/07/ido> ;
+    rdfs:subPropertyOf gr:hasMakeAndModel,
+        frbr:realizationOf ;
+    owl:inverseOf :wasRealisedAs .
+
+gr:Individual a owl:Class .
+
+gr:SomeItems a owl:Class .
+
+frbr:Expression rdfs:isDefinedBy <http://purl.org/spar/frbr> .
+
+frbr:Item rdfs:isDefinedBy <http://purl.org/spar/frbr> .
+
+frbr:Manifestation rdfs:isDefinedBy <http://purl.org/spar/frbr> .
+
+frbr:embodiment rdfs:isDefinedBy <http://purl.org/spar/frbr> .
+
+frbr:embodimentOf rdfs:isDefinedBy <http://purl.org/spar/frbr> .
+
+frbr:exemplar rdfs:isDefinedBy <http://purl.org/spar/frbr> .
+
+frbr:exemplarOf rdfs:isDefinedBy <http://purl.org/spar/frbr> .
+
+schema:additionalType a owl:ObjectProperty .
+
+schema:category a owl:ObjectProperty .
+
+owl:Thing a owl:Class .
+
+:hasArticleCategory a owl:ObjectProperty ;
+    rdfs:label "has article category"@en,
+        "ha categoria articolo"@it ;
+    rdfs:comment "This property allows one to link a style with its related category."@en,
+        "Questa proprietà permette di collegare un modello con la sua categoria relativa."@it ;
+    rdfs:domain :Style ;
+    rdfs:isDefinedBy <http://www.essepuntato.it/2015/07/ido> ;
+    rdfs:range :ArticleCategory ;
+    rdfs:subPropertyOf schema:additionalType,
+        schema:category ;
+    owl:inverseOf :isArticleCategoryOf .
+
+:hasColour a owl:ObjectProperty ;
+    rdfs:label "has colour"@en,
+        "ha colore"@it ;
+    rdfs:comment "The relationship that allows the link between a stock keeping unit and the associated colour."@en,
+        "La relazione che permette di collegare un articolo gestito in magazzino con il relativo colore associato."@it ;
+    rdfs:domain :StockKeepingUnit ;
+    rdfs:isDefinedBy <http://www.essepuntato.it/2015/07/ido> ;
+    rdfs:range :Colour ;
+    rdfs:subPropertyOf gr:qualitativeProductOrServiceProperty ;
+    owl:inverseOf :isColourIn .
+
+:hasSize a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "has size"@en,
+        "ha taglia"@it ;
+    rdfs:comment "The relationship that allows the link between a stock keeping unit and the associated size."@en,
+        "La relazione che permette di collegare un articolo gestito in magazzino con la relativa taglia associata."@it ;
+    rdfs:domain :StockKeepingUnit ;
+    rdfs:isDefinedBy <http://www.essepuntato.it/2015/07/ido> ;
+    rdfs:range :Size ;
+    rdfs:subPropertyOf gr:qualitativeProductOrServiceProperty ;
+    owl:inverseOf :isSizeOf .
+
+:isArticleCategoryOf a owl:ObjectProperty ;
+    rdfs:label "is article category of"@en,
+        "è categoria dell'articolo"@it ;
+    rdfs:comment "This property allows one to link an article category with the related articles."@en,
+        "Questa proprietà permette di collegare una categoria di vestiario con i modelli relativi."@it .
+
+:isColourIn a owl:ObjectProperty ;
+    rdfs:label "is colour in"@en,
+        "è un colore di"@it ;
+    rdfs:comment "The link between a colour and the stock keeping units that have used it."@en,
+        "La relazione tra un certo colore e i vari articoli gestiti in magazzino in cui è stato usato."@it ;
+    rdfs:isDefinedBy <http://www.essepuntato.it/2015/07/ido> .
+
+:isPriceOf a owl:ObjectProperty ;
+    rdfs:label "is price of"@en,
+        "è prezzo di"@it ;
+    rdfs:comment "It allows to reach the article to which the current price has been applied."@it,
+        "Permette di risalire all'articolo a cui il prezzo in considerazione è stato applicato."@it ;
+    rdfs:isDefinedBy :items .
+
+:isSizeOf a owl:ObjectProperty ;
+    rdfs:label "is size of"@en,
+        "è taglia di"@it ;
+    rdfs:comment "The link between a size of an article with its related materialisation."@en,
+        "La relazione che permette di collegare la taglia di un articolo it suo relativo articolo gestito in magazzino."@it ;
+    rdfs:isDefinedBy <http://www.essepuntato.it/2015/07/ido> .
+
+:isStockKeepingUnitOf a owl:ObjectProperty ;
+    rdfs:label "is stock keeping unit of"@en,
+        "è articolo gestito in magazzino di"@it ;
+    rdfs:comment "La relazione che associa una certa materializzazione di articolo con l'articolo stesso."@it,
+        "The link between a certain materialization on an article and the article itself."@it ;
+    rdfs:isDefinedBy <http://www.essepuntato.it/2015/07/ido> ;
+    rdfs:subPropertyOf gr:hasMakeAndModel,
+        frbr:embodimentOf .
+
+:wasDesignedFor a owl:DatatypeProperty ;
+    rdfs:label "was designed for"@en,
+        "è stato creato per"@it ;
+    rdfs:comment "The property that allows one to specify the gender of the people for whom an article has been created."@en,
+        "La proprietà che permette di specificare il genere delle persone per le quali un articolo è stato creato."@it ;
+    rdfs:domain :Style ;
+    rdfs:isDefinedBy <http://www.essepuntato.it/2015/07/ido> ;
+    rdfs:range [ a rdfs:Datatype ;
+            owl:oneOf [ a rdf:List ;
+                    rdf:first "female" ;
+                    rdf:rest [ a rdf:List ;
+                            rdf:first "male" ;
+                            rdf:rest () ] ] ] .
+
+:wasMadeOf a owl:ObjectProperty ;
+    rdfs:label "was realised with"@en,
+        "è stato realizzato con"@it ;
+    rdfs:comment "The relation that allows one to link an item with the texture it uses."@en,
+        "La relazione che permette di collegare un capo con il tessuto con cui è stato realizzato."@it ;
+    rdfs:domain :Item ;
+    rdfs:isDefinedBy <http://www.essepuntato.it/2015/07/ido> ;
+    rdfs:range :Textile ;
+    owl:inverseOf :wasUsedIn .
+
+:wasUsedIn a owl:ObjectProperty ;
+    rdfs:label "was used in"@en,
+        "è stato usato in"@it ;
+    rdfs:comment "The relation that links a textile with all the items that have used it."@en,
+        "La relazione che collega un tessuto con tutti i capi che lo hanno usato."@it ;
+    rdfs:isDefinedBy <http://www.essepuntato.it/2015/07/ido> .
+
+gr:ProductOrServiceModel a owl:Class .
+
+gr:QualitativeValue a owl:Class .
+
+gr:hasMakeAndModel a owl:ObjectProperty .
+
+gr:qualitativeProductOrServiceProperty a owl:ObjectProperty .
+
+:ArticleCategory a owl:Class ;
+    rdfs:subClassOf skos:Concept .
+
+:Colour a owl:Class ;
+    rdfs:label "colour"@en,
+        "colore"@it ;
+    rdfs:comment "The class of all the colours that can be associated to the materialisations of the articles available."@en,
+        "La classe di tutti icolori che possono essere associati alle varie materializzazioni degli articoli in vendita."@it ;
+    rdfs:isDefinedBy :items ;
+    rdfs:subClassOf gr:QualitativeValue ;
+    owl:disjointWith :Size .
+
+:Season a owl:Class ;
+    rdfs:label "season"@en,
+        "stagione"@it ;
+    rdfs:comment "The class defining all the seasons (e.g., spring-summer 2016) for which the items have been proposed."@en,
+        "La classe che definisce tutte le stagioni (es., primavera-estate 2016) a cui i capi possono essere destinati."@it ;
+    rdfs:isDefinedBy :items .
+
+:Size a owl:Class ;
+    rdfs:label "size"@en,
+        "taglia"@it ;
+    rdfs:comment "The class of all the sizes that can be associated to the materialisations of the articles available."@en,
+        "La classe di tutte le taglie che possono essere associate alle varie materializzazioni degli articoli in vendita."@it ;
+    rdfs:isDefinedBy :items ;
+    rdfs:subClassOf gr:QualitativeValue .
+
+:Textile a owl:Class ;
+    rdfs:label "textile"@en,
+        "tessuto"@it ;
+    rdfs:comment "The class defining possible kinds of textile used for realising items."@en,
+        "La classe che definisce tutti i possibili tipi di tessuto che possono essere utilizzati per caratterizzare un certo capo."@it ;
+    rdfs:isDefinedBy :items .
+
+:isAvailableAs a owl:ObjectProperty ;
+    rdfs:label "is available as"@en,
+        "è disponibile in"@it ;
+    rdfs:comment "The link between a certain article and the description of its colour and size."@en,
+        "La relazione che associa un certo articolo con la descrizione del suo colore e la sua misura."@it ;
+    rdfs:domain :Item ;
+    rdfs:isDefinedBy <http://www.essepuntato.it/2015/07/ido> ;
+    rdfs:range :StockKeepingUnit ;
+    rdfs:subPropertyOf frbr:embodiment ;
+    owl:inverseOf :isStockKeepingUnitOf .
+
+:wasProposedFor a owl:ObjectProperty ;
+    rdfs:label "was proposed for"@en,
+        "è stato proposto per"@it ;
+    rdfs:comment "The relation that allows one to specify the season for which an item was proposed for."@en,
+        "La relazione che permette di specificare la stagione a cui un capo è destinato."@it ;
+    rdfs:domain :Item ;
+    rdfs:isDefinedBy <http://www.essepuntato.it/2015/07/ido> ;
+    rdfs:range :Season .
+
+:wasRealisedAs a owl:ObjectProperty ;
+    rdfs:label "was realised as"@en,
+        "è stato realizzato come"@it ;
+    rdfs:comment "The relation that allows one to link the style with the items that have been realised according to it."@en,
+        "La relazione che permette di collegare un modello con i capi che sono stati realizzati a partire da quello."@it ;
+    rdfs:domain :Style ;
+    rdfs:isDefinedBy <http://www.essepuntato.it/2015/07/ido> ;
+    rdfs:range :Item ;
+    rdfs:subPropertyOf frbr:realization .
+
+:Piece a owl:Class ;
+    rdfs:label "piece"@en,
+        "pezzo"@it ;
+    rdfs:comment "The class of all the physical pieces (i.e., wear) that are available to customers."@en,
+        "La classe di tutti pezzi a disposizione per l'acquisto."@it ;
+    rdfs:isDefinedBy :items ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf :wasProducedAs ] ;
+            owl:someValuesFrom :StockKeepingUnit ],
+        gr:Individual,
+        frbr:Item,
+        schema:Product .
+
+:Style a owl:Class ;
+    rdfs:label "style"@en,
+        "modello"@it ;
+    rdfs:comment "The class of all the style designed, available in the shop catalogue and created for a particular genre (male or female). Each style is also identified by a unique code."@en,
+        "La classe di tutti i modelli messi a disposizione nel catalogo del negozio per un particolare genere di persona (uomo o donna) e identificato da un codice univoco."@it ;
+    rdfs:isDefinedBy :items ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasArticleCategory ;
+            owl:someValuesFrom :ArticleCategory ],
+        [ a owl:Restriction ;
+            owl:onProperty :wasRealisedAs ;
+            owl:someValuesFrom :Item ],
+        [ a owl:Restriction ;
+            owl:onProperty :wasDesignedFor ;
+            owl:someValuesFrom rdfs:Literal ],
+        gr:ProductOrServiceModel,
+        frbr:Work,
+        schema:Product .
+
+:wasProducedAs a owl:ObjectProperty ;
+    rdfs:label "was produced as"@en,
+        "è stato prodotto come"@it ;
+    rdfs:comment "The link between a certain materialisation of an article and one of the concrete physical items of such article."@en,
+        "La relazione che associa una certa materializzazione di un articolo con uno specifico capo fisico di quell'articolo prodotto."@it ;
+    rdfs:domain :StockKeepingUnit ;
+    rdfs:isDefinedBy <http://www.essepuntato.it/2015/07/ido> ;
+    rdfs:range :Piece ;
+    rdfs:subPropertyOf frbr:exemplar .
+
+schema:Product a owl:Class .
+
+:Item a owl:Class ;
+    rdfs:label "item"@en,
+        "capo"@it ;
+    rdfs:comment "The class of all the realizations of a style by using particular textiles and proposed for specific seasons."@en,
+        "La classe di tutte le possibili realizzazioni di un modello, relativamente a certi tessuti e proposte per determinate stagioni."@it ;
+    rdfs:isDefinedBy :items ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :wasMadeOf ;
+            owl:someValuesFrom :Textile ],
+        [ a owl:Restriction ;
+            owl:onProperty :wasProposedFor ;
+            owl:someValuesFrom :Season ],
+        [ a owl:Restriction ;
+            owl:onProperty :isAvailableAs ;
+            owl:someValuesFrom :StockKeepingUnit ],
+        gr:ProductOrServiceModel,
+        frbr:Expression,
+        schema:Product .
+
+:StockKeepingUnit a owl:Class ;
+    rdfs:label "stock keeping unit"@en,
+        "articolo disponibile in magazzino"@it ;
+    rdfs:comment "The class of all the available stock keeping units, which are characterised by their colours and their sizes."@en,
+        "La classe di tutti gli articoli disponibili in magazzino, caratterizzati dalla descrizione dei loro colori e delle loro taglie."@it ;
+    rdfs:isDefinedBy :items ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :wasProducedAs ;
+            owl:someValuesFrom :Piece ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf :isAvailableAs ] ;
+            owl:someValuesFrom :Item ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasColour ;
+            owl:someValuesFrom :Colour ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :hasSize ],
+        gr:SomeItems,
+        frbr:Manifestation,
+        schema:Product .
+
+:items a owl:Ontology ;
+    rdfs:label "IDO-I" ;
+    dc:creator "Silvio Peroni (http://orcid.org/0000-0003-0530-4305)" ;
+    dc:date "2017-03-23" ;
+    dc:description :ido-items.png ;
+    dc:rights "This work is distributed under a [Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/)."@en,
+        "Questo lavoro è distribuito sotto una licenza [Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/)."@it ;
+    dc:title "Imperial Data Ontology (IDO): module \"Items\""@en,
+        "Ontologia per i dati di Imperial (IDO): modulo \"Capi\""@it ;
+    rdfs:comment "The Imperial Data Ontology (IDO) is an OWL 2 DL ontology that allows the description of selling data of fashion design industries. This module describes all the items to sell."@en,
+        "L'Ontologia per i dati di Imperial (o Imperial Data Ontology, IDO) è un'ontologia OWL 2 DL creata per la descrizione dei dati di vendita di aziende di moda. Questo modulo si preoccupa della descrizione degli capi destinati alla vendita."@it ;
+    owl:imports <http://purl.org/spar/frbr>,
+        <https://w3id.org/ido/aco/1.1.1>,
+        <https://w3id.org/ido/prices/1.0.1> ;
+    owl:versionIRI <https://w3id.org/ido/items/1.0.1> ;
+    owl:versionInfo "1.0.1" .
+

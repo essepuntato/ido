@@ -1,0 +1,1628 @@
+[
+  {
+    "@id": "https://w3id.org/ido/Textile",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "La classe che definisce tutti i possibili tipi di tessuto che possono essere utilizzati per caratterizzare un certo capo."
+      },
+      {
+        "@language": "en",
+        "@value": "The class defining possible kinds of textile used for realising items."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/ido/items"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "textile"
+      },
+      {
+        "@language": "it",
+        "@value": "tessuto"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/ido/isColourIn",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The link between a colour and the stock keeping units that have used it."
+      },
+      {
+        "@language": "it",
+        "@value": "La relazione tra un certo colore e i vari articoli gestiti in magazzino in cui è stato usato."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.essepuntato.it/2015/07/ido"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "è un colore di"
+      },
+      {
+        "@language": "en",
+        "@value": "is colour in"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/ido/wasUsedIn",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "La relazione che collega un tessuto con tutti i capi che lo hanno usato."
+      },
+      {
+        "@language": "en",
+        "@value": "The relation that links a textile with all the items that have used it."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.essepuntato.it/2015/07/ido"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "was used in"
+      },
+      {
+        "@language": "it",
+        "@value": "è stato usato in"
+      }
+    ]
+  },
+  {
+    "@id": "_:N41118ccf20a245aaa613195d21c77401",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/ido/wasProducedAs"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://w3id.org/ido/Piece"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/goodrelations/v1#hasMakeAndModel",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/ido/isProductOf",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#FunctionalProperty",
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The link between a concrete physical item and its materialisation."
+      },
+      {
+        "@language": "it",
+        "@value": "La relazione che associa uno specifico capo fisico alla sua relativa materializzazione."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.essepuntato.it/2015/07/ido"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "è un prodotto di"
+      },
+      {
+        "@language": "en",
+        "@value": "is a product of"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://purl.org/vocab/frbr/core#exemplarOf"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "https://w3id.org/ido/wasProducedAs"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/ido/wasProposedFor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The relation that allows one to specify the season for which an item was proposed for."
+      },
+      {
+        "@language": "it",
+        "@value": "La relazione che permette di specificare la stagione a cui un capo è destinato."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/ido/Item"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.essepuntato.it/2015/07/ido"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "was proposed for"
+      },
+      {
+        "@language": "it",
+        "@value": "è stato proposto per"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/ido/Season"
+      }
+    ]
+  },
+  {
+    "@id": "_:N7d3c06d26d7c460998830b4a0727fc16",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:N5c7e169059be4467a62a40a657783613"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://w3id.org/ido/StockKeepingUnit"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/ido/wasMadeOf",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "La relazione che permette di collegare un capo con il tessuto con cui è stato realizzato."
+      },
+      {
+        "@language": "en",
+        "@value": "The relation that allows one to link an item with the texture it uses."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/ido/Item"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.essepuntato.it/2015/07/ido"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "è stato realizzato con"
+      },
+      {
+        "@language": "en",
+        "@value": "was realised with"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/ido/Textile"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "https://w3id.org/ido/wasUsedIn"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/ido/wasRealisedAccordingTo",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The relation that links an item with its style."
+      },
+      {
+        "@language": "it",
+        "@value": "La relazione che permette di collegare un capo con il suo modello di riferimento."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.essepuntato.it/2015/07/ido"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "was realised according to"
+      },
+      {
+        "@language": "it",
+        "@value": "è stato realizzato conformemente a"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://purl.org/vocab/frbr/core#realizationOf"
+      },
+      {
+        "@id": "http://purl.org/goodrelations/v1#hasMakeAndModel"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "https://w3id.org/ido/wasRealisedAs"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/ido/hasColour",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "La relazione che permette di collegare un articolo gestito in magazzino con il relativo colore associato."
+      },
+      {
+        "@language": "en",
+        "@value": "The relationship that allows the link between a stock keeping unit and the associated colour."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/ido/StockKeepingUnit"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.essepuntato.it/2015/07/ido"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "ha colore"
+      },
+      {
+        "@language": "en",
+        "@value": "has colour"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/ido/Colour"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://purl.org/goodrelations/v1#qualitativeProductOrServiceProperty"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "https://w3id.org/ido/isColourIn"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/ido/isArticleCategoryOf",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "This property allows one to link an article category with the related articles."
+      },
+      {
+        "@language": "it",
+        "@value": "Questa proprietà permette di collegare una categoria di vestiario con i modelli relativi."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "is article category of"
+      },
+      {
+        "@language": "it",
+        "@value": "è categoria dell'articolo"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/vocab/frbr/core#Item",
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/frbr"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/ido/Item",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "La classe di tutte le possibili realizzazioni di un modello, relativamente a certi tessuti e proposte per determinate stagioni."
+      },
+      {
+        "@language": "en",
+        "@value": "The class of all the realizations of a style by using particular textiles and proposed for specific seasons."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/ido/items"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "item"
+      },
+      {
+        "@language": "it",
+        "@value": "capo"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:N4940f34a58ad4f6fa6240a2fe9c21b22"
+      },
+      {
+        "@id": "http://schema.org/Product"
+      },
+      {
+        "@id": "_:N204905d25a6e4b8a94bc728eeffbbfe2"
+      },
+      {
+        "@id": "http://purl.org/vocab/frbr/core#Expression"
+      },
+      {
+        "@id": "_:N56eefac424d64a4698f5f1740ed2176e"
+      },
+      {
+        "@id": "http://purl.org/goodrelations/v1#ProductOrServiceModel"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/ido/isAvailableAs",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "La relazione che associa un certo articolo con la descrizione del suo colore e la sua misura."
+      },
+      {
+        "@language": "en",
+        "@value": "The link between a certain article and the description of its colour and size."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/ido/Item"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.essepuntato.it/2015/07/ido"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "is available as"
+      },
+      {
+        "@language": "it",
+        "@value": "è disponibile in"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/ido/StockKeepingUnit"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://purl.org/vocab/frbr/core#embodiment"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "https://w3id.org/ido/isStockKeepingUnitOf"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/ido/wasDesignedFor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "La proprietà che permette di specificare il genere delle persone per le quali un articolo è stato creato."
+      },
+      {
+        "@language": "en",
+        "@value": "The property that allows one to specify the gender of the people for whom an article has been created."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/ido/Style"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.essepuntato.it/2015/07/ido"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "was designed for"
+      },
+      {
+        "@language": "it",
+        "@value": "è stato creato per"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "_:N5e7b084970dc4594b55c7c9e58d4a8f2"
+      }
+    ]
+  },
+  {
+    "@id": "_:N5e7b084970dc4594b55c7c9e58d4a8f2",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Datatype"
+    ],
+    "http://www.w3.org/2002/07/owl#oneOf": [
+      {
+        "@list": [
+          {
+            "@value": "female"
+          },
+          {
+            "@value": "male"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/ido/isPriceOf",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Permette di risalire all'articolo a cui il prezzo in considerazione è stato applicato."
+      },
+      {
+        "@language": "it",
+        "@value": "It allows to reach the article to which the current price has been applied."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/ido/items"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "è prezzo di"
+      },
+      {
+        "@language": "en",
+        "@value": "is price of"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/vocab/frbr/core#Manifestation",
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/frbr"
+      }
+    ]
+  },
+  {
+    "@id": "_:Neb1e540cd65d468d95c169606fb5bf18",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#cardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/ido/hasSize"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nd008a7355789463785f3443b12b3ceae",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/ido/hasColour"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://w3id.org/ido/Colour"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/ido/Colour",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The class of all the colours that can be associated to the materialisations of the articles available."
+      },
+      {
+        "@language": "it",
+        "@value": "La classe di tutti icolori che possono essere associati alle varie materializzazioni degli articoli in vendita."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/ido/items"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "colour"
+      },
+      {
+        "@language": "it",
+        "@value": "colore"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/goodrelations/v1#QualitativeValue"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#disjointWith": [
+      {
+        "@id": "https://w3id.org/ido/Size"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/ido/included",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The relation that links a season with all the items proposed for such season."
+      },
+      {
+        "@language": "it",
+        "@value": "La relazione che collega una stagione con tutti i capi proposti per quella stagione."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.essepuntato.it/2015/07/ido"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "included"
+      },
+      {
+        "@language": "it",
+        "@value": "ha incluso"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "https://w3id.org/ido/wasProposedFor"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2001/XMLSchema#date",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Datatype"
+    ]
+  },
+  {
+    "@id": "_:N69a1d7da73944e63a5a81a72a56db8e6",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "https://w3id.org/ido/Item"
+          },
+          {
+            "@id": "https://w3id.org/ido/Piece"
+          },
+          {
+            "@id": "https://w3id.org/ido/StockKeepingUnit"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/vocab/frbr/core#embodimentOf",
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/frbr"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/goodrelations/v1#SomeItems",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/ido/Piece",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "La classe di tutti pezzi a disposizione per l'acquisto."
+      },
+      {
+        "@language": "en",
+        "@value": "The class of all the physical pieces (i.e., wear) that are available to customers."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/ido/items"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "pezzo"
+      },
+      {
+        "@language": "en",
+        "@value": "piece"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://schema.org/Product"
+      },
+      {
+        "@id": "_:N7d3c06d26d7c460998830b4a0727fc16"
+      },
+      {
+        "@id": "http://purl.org/goodrelations/v1#Individual"
+      },
+      {
+        "@id": "http://purl.org/vocab/frbr/core#Item"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/vocab/frbr/core#Expression",
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/frbr"
+      }
+    ]
+  },
+  {
+    "@id": "_:N4940f34a58ad4f6fa6240a2fe9c21b22",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/ido/wasProposedFor"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://w3id.org/ido/Season"
+      }
+    ]
+  },
+  {
+    "@id": "_:N204905d25a6e4b8a94bc728eeffbbfe2",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/ido/wasMadeOf"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://w3id.org/ido/Textile"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/ido/hasPrice",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "It allows one to link an item, stock keeping unit, or piece to the related selling price."
+      },
+      {
+        "@language": "it",
+        "@value": "Permette di associare un capo, articolo presente in magazzino, o pezzo con il relativo prezzo a cui viene venduto."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:N69a1d7da73944e63a5a81a72a56db8e6"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/ido/items"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has price"
+      },
+      {
+        "@language": "it",
+        "@value": "ha prezzo"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/ido/Price"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "https://w3id.org/ido/isPriceOf"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/ido/wasRealisedAs",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The relation that allows one to link the style with the items that have been realised according to it."
+      },
+      {
+        "@language": "it",
+        "@value": "La relazione che permette di collegare un modello con i capi che sono stati realizzati a partire da quello."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/ido/Style"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.essepuntato.it/2015/07/ido"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "è stato realizzato come"
+      },
+      {
+        "@language": "en",
+        "@value": "was realised as"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/ido/Item"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://purl.org/vocab/frbr/core#realization"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/ido/hasSize",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2002/07/owl#FunctionalProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The relationship that allows the link between a stock keeping unit and the associated size."
+      },
+      {
+        "@language": "it",
+        "@value": "La relazione che permette di collegare un articolo gestito in magazzino con la relativa taglia associata."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/ido/StockKeepingUnit"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.essepuntato.it/2015/07/ido"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "ha taglia"
+      },
+      {
+        "@language": "en",
+        "@value": "has size"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/ido/Size"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://purl.org/goodrelations/v1#qualitativeProductOrServiceProperty"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "https://w3id.org/ido/isSizeOf"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/vocab/frbr/core#exemplar",
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/frbr"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/vocab/frbr/core#embodiment",
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/frbr"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/ido/wasProducedAs",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The link between a certain materialisation of an article and one of the concrete physical items of such article."
+      },
+      {
+        "@language": "it",
+        "@value": "La relazione che associa una certa materializzazione di un articolo con uno specifico capo fisico di quell'articolo prodotto."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/ido/StockKeepingUnit"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.essepuntato.it/2015/07/ido"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "was produced as"
+      },
+      {
+        "@language": "it",
+        "@value": "è stato prodotto come"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/ido/Piece"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://purl.org/vocab/frbr/core#exemplar"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/ido/Season",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The class defining all the seasons (e.g., spring-summer 2016) for which the items have been proposed."
+      },
+      {
+        "@language": "it",
+        "@value": "La classe che definisce tutte le stagioni (es., primavera-estate 2016) a cui i capi possono essere destinati."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/ido/items"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "season"
+      },
+      {
+        "@language": "it",
+        "@value": "stagione"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/ido/Style",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The class of all the style designed, available in the shop catalogue and created for a particular genre (male or female). Each style is also identified by a unique code."
+      },
+      {
+        "@language": "it",
+        "@value": "La classe di tutti i modelli messi a disposizione nel catalogo del negozio per un particolare genere di persona (uomo o donna) e identificato da un codice univoco."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/ido/items"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "style"
+      },
+      {
+        "@language": "it",
+        "@value": "modello"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://schema.org/Product"
+      },
+      {
+        "@id": "_:Ne51e07ea9dfc46eabb6d60030cf0b47d"
+      },
+      {
+        "@id": "http://purl.org/goodrelations/v1#ProductOrServiceModel"
+      },
+      {
+        "@id": "http://purl.org/vocab/frbr/core#Work"
+      },
+      {
+        "@id": "_:Nedb337d174ee4338ad61dd126c4d5a4c"
+      },
+      {
+        "@id": "_:N744f3fe5f2fb4276a4fe34ce391b601e"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/vocab/frbr/core#exemplarOf",
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/frbr"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Datatype"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/ido/ArticleCategory",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/goodrelations/v1#QualitativeValue",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://schema.org/additionalType",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/goodrelations/v1#ProductOrServiceModel",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://schema.org/category",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2002/07/owl#Thing",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://schema.org/Product",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/identifier",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Un attributo usato per associare un identificativo ad un'entità come un capo."
+      },
+      {
+        "@language": "en",
+        "@value": "An attribute used for associating an identifier to an entity (such as an item)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#Thing"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/dc/terms"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "ha identificativo"
+      },
+      {
+        "@language": "en",
+        "@value": "has identifier"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      }
+    ]
+  },
+  {
+    "@id": "_:N4bc651bb391c4dceb7d6afc027ece441",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:N84b5a515ba6d497aab53345590c97faa"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://w3id.org/ido/Item"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/ido/Size",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The class of all the sizes that can be associated to the materialisations of the articles available."
+      },
+      {
+        "@language": "it",
+        "@value": "La classe di tutte le taglie che possono essere associate alle varie materializzazioni degli articoli in vendita."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/ido/items"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "size"
+      },
+      {
+        "@language": "it",
+        "@value": "taglia"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/goodrelations/v1#QualitativeValue"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nedb337d174ee4338ad61dd126c4d5a4c",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/ido/wasDesignedFor"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/goodrelations/v1#Individual",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/ido/hasArticleCategory",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Questa proprietà permette di collegare un modello con la sua categoria relativa."
+      },
+      {
+        "@language": "en",
+        "@value": "This property allows one to link a style with its related category."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/ido/Style"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.essepuntato.it/2015/07/ido"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has article category"
+      },
+      {
+        "@language": "it",
+        "@value": "ha categoria articolo"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/ido/ArticleCategory"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://schema.org/additionalType"
+      },
+      {
+        "@id": "http://schema.org/category"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "https://w3id.org/ido/isArticleCategoryOf"
+      }
+    ]
+  },
+  {
+    "@id": "_:N84b5a515ba6d497aab53345590c97faa",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "https://w3id.org/ido/isAvailableAs"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/ido/items",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Ontology"
+    ],
+    "http://purl.org/dc/elements/1.1/creator": [
+      {
+        "@value": "Silvio Peroni (http://orcid.org/0000-0003-0530-4305)"
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/date": [
+      {
+        "@value": "2017-03-23"
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/description": [
+      {
+        "@id": "https://w3id.org/ido/ido-items.png"
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/rights": [
+      {
+        "@language": "it",
+        "@value": "Questo lavoro è distribuito sotto una licenza [Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/)."
+      },
+      {
+        "@language": "en",
+        "@value": "This work is distributed under a [Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/)."
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "it",
+        "@value": "Ontologia per i dati di Imperial (IDO): modulo \"Capi\""
+      },
+      {
+        "@language": "en",
+        "@value": "Imperial Data Ontology (IDO): module \"Items\""
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The Imperial Data Ontology (IDO) is an OWL 2 DL ontology that allows the description of selling data of fashion design industries. This module describes all the items to sell."
+      },
+      {
+        "@language": "it",
+        "@value": "L'Ontologia per i dati di Imperial (o Imperial Data Ontology, IDO) è un'ontologia OWL 2 DL creata per la descrizione dei dati di vendita di aziende di moda. Questo modulo si preoccupa della descrizione degli capi destinati alla vendita."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "IDO-I"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#imports": [
+      {
+        "@id": "https://w3id.org/ido/aco/1.1.1"
+      },
+      {
+        "@id": "https://w3id.org/ido/prices/1.0.1"
+      },
+      {
+        "@id": "http://purl.org/spar/frbr"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#versionIRI": [
+      {
+        "@id": "https://w3id.org/ido/items/1.0.1"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#versionInfo": [
+      {
+        "@value": "1.0.1"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/ido/isSizeOf",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "La relazione che permette di collegare la taglia di un articolo it suo relativo articolo gestito in magazzino."
+      },
+      {
+        "@language": "en",
+        "@value": "The link between a size of an article with its related materialisation."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.essepuntato.it/2015/07/ido"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "è taglia di"
+      },
+      {
+        "@language": "en",
+        "@value": "is size of"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2001/XMLSchema#float",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Datatype"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/ido/StockKeepingUnit",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "La classe di tutti gli articoli disponibili in magazzino, caratterizzati dalla descrizione dei loro colori e delle loro taglie."
+      },
+      {
+        "@language": "en",
+        "@value": "The class of all the available stock keeping units, which are characterised by their colours and their sizes."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/ido/items"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "stock keeping unit"
+      },
+      {
+        "@language": "it",
+        "@value": "articolo disponibile in magazzino"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/goodrelations/v1#SomeItems"
+      },
+      {
+        "@id": "http://schema.org/Product"
+      },
+      {
+        "@id": "http://purl.org/vocab/frbr/core#Manifestation"
+      },
+      {
+        "@id": "_:N4bc651bb391c4dceb7d6afc027ece441"
+      },
+      {
+        "@id": "_:N41118ccf20a245aaa613195d21c77401"
+      },
+      {
+        "@id": "_:Neb1e540cd65d468d95c169606fb5bf18"
+      },
+      {
+        "@id": "_:Nd008a7355789463785f3443b12b3ceae"
+      }
+    ]
+  },
+  {
+    "@id": "_:N5c7e169059be4467a62a40a657783613",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "https://w3id.org/ido/wasProducedAs"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/goodrelations/v1#qualitativeProductOrServiceProperty",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ]
+  },
+  {
+    "@id": "_:Ne51e07ea9dfc46eabb6d60030cf0b47d",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/ido/wasRealisedAs"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://w3id.org/ido/Item"
+      }
+    ]
+  },
+  {
+    "@id": "_:N56eefac424d64a4698f5f1740ed2176e",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/ido/isAvailableAs"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://w3id.org/ido/StockKeepingUnit"
+      }
+    ]
+  },
+  {
+    "@id": "_:N744f3fe5f2fb4276a4fe34ce391b601e",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "https://w3id.org/ido/hasArticleCategory"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "https://w3id.org/ido/ArticleCategory"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/ido/isStockKeepingUnitOf",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "The link between a certain materialization on an article and the article itself."
+      },
+      {
+        "@language": "it",
+        "@value": "La relazione che associa una certa materializzazione di articolo con l'articolo stesso."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.essepuntato.it/2015/07/ido"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "is stock keeping unit of"
+      },
+      {
+        "@language": "it",
+        "@value": "è articolo gestito in magazzino di"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://purl.org/goodrelations/v1#hasMakeAndModel"
+      },
+      {
+        "@id": "http://purl.org/vocab/frbr/core#embodimentOf"
+      }
+    ]
+  }
+]

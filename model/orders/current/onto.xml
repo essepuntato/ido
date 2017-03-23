@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/ido/PieceWithPrice">
+    <rdfs:comment xml:lang="en">This class allows the identification of a piece with the related price as recorded in an invoice.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ido/orders"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/goodrelations/v1#TypeAndQuantityNode"/>
+    <rdfs:comment xml:lang="it">Questa classe permette l'identificazione di un pezzo e del relativo prezzo a cui è stato venduto come descritto in una fattura.</rdfs:comment>
+    <rdfs:label xml:lang="it">pezzo con prezzo</rdfs:label>
+    <rdfs:subClassOf rdf:nodeID="Ne99f1cf0a0cd499c9702da78767e1321"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="Nce0743af35e5455f9911103d187129a1"/>
+    <rdfs:subClassOf rdf:nodeID="Nf209c1e2764640b298cdd435d1f6439e"/>
+    <rdfs:label xml:lang="en">piece with price</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.org/orderedItem">
+    <rdfs:comment xml:lang="en">The link between an order and the amount of items which it includes.</rdfs:comment>
+    <rdfs:comment xml:lang="it">La relazione che mette in relazione un ordine con la quantità di capi da esso descritti.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://schema.org"/>
+    <rdfs:label xml:lang="en">includes as ordered article</rdfs:label>
+    <rdfs:label xml:lang="it">include come articolo ordinato</rdfs:label>
+    <rdfs:range rdf:nodeID="N5db1eae297e74d24b1e3e1cf0393b51b"/>
+    <rdfs:domain rdf:nodeID="N3fe11e443a254baba150e339e809b6e5"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/includesPiece">
+    <rdfs:range rdf:resource="https://w3id.org/ido/PieceWithPrice"/>
+    <rdfs:label xml:lang="en">includes piece</rdfs:label>
+    <rdfs:label xml:lang="it">include pezzo</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ido/orders"/>
+    <rdfs:comment xml:lang="it">Questa proprietà permette di indicare i vari pezzi elencati in una fattura.</rdfs:comment>
+    <rdfs:comment xml:lang="en">This property allows one to identify the various pieces included in an invoice.</rdfs:comment>
+    <owl:inverseOf rdf:resource="https://w3id.org/ido/isPieceIncludedIn"/>
+    <rdfs:domain rdf:resource="https://w3id.org/ido/Invoice"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/goodrelations/v1#SomeItems">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/front-desk">
+    <rdfs:label xml:lang="en">front desk commerce</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ido/orders"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:comment xml:lang="it">Il commercio diretto è un canale di vendita per prodotti e servizi che usa l'interazione diretta e fisica tra un venditore e un compratore.</rdfs:comment>
+    <rdf:type rdf:resource="https://w3id.org/ido/SalesChannel"/>
+    <rdfs:comment xml:lang="en">Front desk commerce is the a sales channel for products or services using direct and physical interaction between the seller and the buyer.</rdfs:comment>
+    <rdfs:label xml:lang="it">commercio diretto</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8d0b5293f1894c66a3ab4ce1984f6a53">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="Na7995ecea9d7456c9e6f1ace5f368b44"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.org/totalPaymentDue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="it">Permette di specificare la somma totale pagata in riferimento ad una ricevuta.</rdfs:comment>
+    <rdfs:range rdf:resource="http://schema.org/PriceSpecification"/>
+    <rdfs:label xml:lang="en">has total payment due</rdfs:label>
+    <rdfs:comment xml:lang="en">It allows to specify the total amount paid related to an invoice.</rdfs:comment>
+    <rdfs:label xml:lang="it">ha somma totale da pagare</rdfs:label>
+    <rdfs:domain rdf:resource="http://schema.org/Invoice"/>
+    <rdfs:isDefinedBy rdf:resource="http://schema.org"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/specifiesDistributionPlatform">
+    <rdfs:label xml:lang="en">specifies as distribution platform</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="it">specifica come piattaforma di distribuzione</rdfs:label>
+    <rdfs:comment xml:lang="it">Questa proprietà permette la specificazione di una certa piattaforma di distribuzione associata ad un ordine o ad una fattura.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ido/orders"/>
+    <rdfs:comment xml:lang="en">This property allows to specify the particular distribution platform associated to either an order or invoice.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncb15fcfbe12848d398d4852ccf88db80">
+    <owl:onProperty rdf:resource="http://schema.org/orderedItem"/>
+    <owl:allValuesFrom rdf:resource="https://w3id.org/ido/StockKeepingUnitAmount"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.org/orderDate">
+    <rdfs:label xml:lang="en">has order creation date</rdfs:label>
+    <rdfs:comment xml:lang="en">The property that allows one to specify the order date.</rdfs:comment>
+    <rdfs:comment xml:lang="it">La proprietà che permette di specificare la data di creazione di un ordine.</rdfs:comment>
+    <rdfs:label xml:lang="it">ha data di creazione dell'ordine</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:isDefinedBy rdf:resource="http://schema.org"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://schema.org/Order"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na77fa37b261c49768bef92485bd2be1c">
+    <owl:onProperty rdf:resource="http://schema.org/orderDate"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6772cbb57d6647edbdf3d628c02b987d">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onClass rdf:resource="https://w3id.org/ido/StockKeepingUnit"/>
+    <owl:onProperty rdf:resource="http://purl.org/goodrelations/v1#typeOfGood"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0f84d96793ef4e2d97ee85409df11424">
+    <rdf:first rdf:resource="http://schema.org/Product"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/hasPricePerPiece">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">has price per piece</rdfs:label>
+    <rdfs:domain rdf:nodeID="Ne30aae8cbc7c41df8bf5b3d6ed8b856f"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ido/orders"/>
+    <rdfs:comment xml:lang="it">Questa proprietà permette di specificare il prezzo relativo a un certo pezzo come indicato in un ordine o in una fattura.</rdfs:comment>
+    <rdfs:range rdf:resource="https://w3id.org/ido/Price"/>
+    <rdfs:label xml:lang="it">ha prezzo per pezzo</rdfs:label>
+    <rdfs:comment xml:lang="en">This property allows one to specify the price related to a particular (kind of a) piece as indicated in either in an order or invoice.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf654919dce9d4cf68fe803bb1b4a168c">
+    <owl:inverseOf rdf:resource="http://schema.org/orderedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/Order">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ido/orders"/>
+    <rdfs:subClassOf rdf:nodeID="Na77fa37b261c49768bef92485bd2be1c"/>
+    <rdfs:subClassOf rdf:nodeID="Nc6ffbf97e44d42308e8b9c77655b985f"/>
+    <rdfs:label xml:lang="it">ordine</rdfs:label>
+    <rdfs:subClassOf rdf:nodeID="N7b41ff53839d4e4aafaa265c8a5949f2"/>
+    <rdfs:comment xml:lang="en">This class describes all the orders of one or more articles bought at a certain price and done at a certain time.</rdfs:comment>
+    <rdfs:comment xml:lang="it">Questa classe descrive gli ordini di uno o più capi, eseguiti ad una certa ora.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://schema.org/Order"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="Ncb15fcfbe12848d398d4852ccf88db80"/>
+    <rdfs:label xml:lang="en">order</rdfs:label>
+    <rdfs:subClassOf rdf:nodeID="N2f9b22dfede0402a82bc8667e12401d8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/hasTotalValue">
+    <rdfs:label xml:lang="it">ha valore totale</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/ido/Order"/>
+    <rdfs:comment xml:lang="en">The link between an order and the total price paid by a person for the purchase of that order.</rdfs:comment>
+    <rdfs:range rdf:resource="https://w3id.org/ido/Price"/>
+    <rdfs:comment xml:lang="it">La relazione tra un ordine e il valore totale associato.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/ido/isTotalValueOf"/>
+    <rdfs:label xml:lang="en">has total value</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ido/orders"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/issued">
+    <rdfs:comment xml:lang="en">It allows to specify the issue date of an entity (e.g., an invoice).</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="it">è stata emessa</rdfs:label>
+    <rdfs:comment xml:lang="it">Permette di specificare la data di immissione di un'entità (per esempio, una fattura).</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms"/>
+    <rdfs:label xml:lang="en">was issued</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.org/orderQuantity">
+    <rdfs:isDefinedBy rdf:resource="http://schema.org"/>
+    <rdfs:isDefinedBy xml:lang="en">It allows one to describe the quantity of a certain article that is requested in an order.</rdfs:isDefinedBy>
+    <rdfs:label xml:lang="en">has order quantity</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:isDefinedBy xml:lang="it">Premettere di indicare la quantità di un certo articolo a seconda di quanto ne sia richiesto in un ordine.</rdfs:isDefinedBy>
+    <rdfs:domain rdf:resource="http://schema.org/OrderItem"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <rdfs:label xml:lang="it">ha quantità ordinata</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/Invoice">
+    <rdfs:subClassOf rdf:nodeID="N7bd916cbd19541e9a7e06d537284101d"/>
+    <rdfs:subClassOf rdf:nodeID="N1388448ffe1e445bbda0cf0ee7efc3df"/>
+    <rdfs:subClassOf rdf:resource="http://schema.org/Invoice"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ido/orders"/>
+    <rdfs:subClassOf rdf:nodeID="N13f881a207e84396ac5a1dc399581c47"/>
+    <rdfs:label xml:lang="it">fattura</rdfs:label>
+    <rdfs:subClassOf rdf:nodeID="Nf0c566f57f6d417499154f625bad5f8a"/>
+    <rdfs:subClassOf rdf:nodeID="Ncb2085fbd1fb4e1e8177f2818df9a0d4"/>
+    <rdfs:label xml:lang="en">invoice</rdfs:label>
+    <rdfs:comment xml:lang="it">Una lista di articoli spediti, con informazioni riguardo la spesa totale per il loro acquisto.</rdfs:comment>
+    <rdfs:subClassOf rdf:nodeID="N1ffe073f2a394591a2d8d741428c8894"/>
+    <rdfs:subClassOf rdf:nodeID="N6a5f52fe8bee42aab2bcfc184779081c"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">A list of pieces that have been sent, with a statement of the sum due for these.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nce0743af35e5455f9911103d187129a1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="https://w3id.org/ido/Price"/>
+    <owl:onProperty rdf:resource="https://w3id.org/ido/hasPricePerPiece"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/DistributionPlatform">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="it">La piattaforma di distribuzione (per esempio B2C o B2B) che può essere usata per distribuire un capo.</rdfs:comment>
+    <rdfs:label xml:lang="it">piattaforma di distribuzione</rdfs:label>
+    <rdfs:label xml:lang="en">distribution platform</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ido/orders"/>
+    <rdfs:comment xml:lang="en">The distribution platform (e.g., B2C or B2B) that can be used for distributing an item.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/StockKeepingUnitAmount">
+    <rdfs:subClassOf rdf:nodeID="N66f38105fc3d4043b926ce46c60e1804"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ido/orders"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/goodrelations/v1#TypeAndQuantityNode"/>
+    <rdfs:subClassOf rdf:nodeID="N6772cbb57d6647edbdf3d628c02b987d"/>
+    <rdfs:label xml:lang="it">quantità dell'articolo gestito in magazzino</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://schema.org/OrderItem"/>
+    <rdfs:label xml:lang="en">stock keeping unit amount</rdfs:label>
+    <rdfs:subClassOf rdf:nodeID="Nb925c3cf261b4f5dbcc1385f2ae0f044"/>
+    <rdfs:comment xml:lang="en">This class describes the requested amount of a particular stock keeping unit as recorded in an order.</rdfs:comment>
+    <rdfs:subClassOf rdf:nodeID="N4324d314faac48b1b7122f2bee4cfc7c"/>
+    <rdfs:comment xml:lang="it">Questa classe describe la quantità richiesta di un certo articolo gestito in magazzino come indicato in un ordine.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/goodrelations/v1#typeOfGood">
+    <rdfs:domain rdf:resource="http://purl.org/goodrelations/v1#TypeAndQuantityNode"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/goodrelations/v1"/>
+    <rdfs:range rdf:nodeID="N8d0b5293f1894c66a3ab4ce1984f6a53"/>
+    <rdfs:comment xml:lang="it">Questa proprietà permette di specificare un certo pezzo o una sua tipologia (cioè, un articolo gestito in magazzino) come indicato in un ordine o in una fattura.</rdfs:comment>
+    <rdfs:label xml:lang="it">ha tipo di bene</rdfs:label>
+    <rdfs:comment xml:lang="en">This property allows one to specify a particular piece or its kind (i.e., a stock keeping unit) as listed either in an order or in an invoice.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">has type of good</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne99f1cf0a0cd499c9702da78767e1321">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onProperty rdf:resource="http://purl.org/goodrelations/v1#typeOfGood"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onClass rdf:resource="https://w3id.org/ido/Piece"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/isTotalValueOf">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ido/orders"/>
+    <rdfs:comment xml:lang="it">La relazione tra il prezzo totale relativo ad un ordine.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="it">è valore totale del</rdfs:label>
+    <rdfs:label xml:lang="en">is total value of</rdfs:label>
+    <rdfs:comment xml:lang="en">The link between the total amount of all the items of an order.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/e-commerce">
+    <rdfs:label xml:lang="it">commercio elettronico</rdfs:label>
+    <rdfs:label xml:lang="en">electronic commerce</rdfs:label>
+    <rdf:type rdf:resource="https://w3id.org/ido/SalesChannel"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:comment xml:lang="it">Il commercio elettronico è un canale per la vendita dei prodotti o servizi che fa uso di reti di calcolatori, ad esempio Internet.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Electronic commerce, commonly written as e-commerce, is the a sales channel for products or services using computer networks, such as the Internet.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ido/orders"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5db1eae297e74d24b1e3e1cf0393b51b">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="N8fef8744839b412cb5689ef1ea388e05"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/SalesChannel">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ido/orders"/>
+    <rdfs:comment xml:lang="it">Il canale di vendita (ad esempio, e-commerce) che può essere usato per vendere/comprare un capo.</rdfs:comment>
+    <rdfs:label xml:lang="it">canale di vendita</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">The sales channel (e.g., e-commerce) that can be used for buying/selling an item.</rdfs:comment>
+    <rdfs:label xml:lang="en">sales channel</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/orders">
+    <rdfs:comment xml:lang="it">L'Ontologia per i dati di Imperial (o Imperial Data Ontology, IDO) è un'ontologia OWL 2 DL creata per la descrizione dei dati di vendita di aziende di moda. Questo modulo si preoccupa della descrizione degli ordini e delle fatture.</rdfs:comment>
+    <dc:title xml:lang="it">Ontologia per i dati di Imperial (IDO): modulo "Ordini"</dc:title>
+    <owl:imports rdf:resource="https://w3id.org/ido/items"/>
+    <rdfs:label>IDO-O</rdfs:label>
+    <dc:creator>Silvio Peroni (http://orcid.org/0000-0003-0530-4305)</dc:creator>
+    <owl:versionInfo>1.0.1</owl:versionInfo>
+    <rdfs:comment xml:lang="en">The Imperial Data Ontology (IDO) is an OWL 2 DL ontology that allows the description of selling data of fashion design industries. This module describes the orders and the invoices.</rdfs:comment>
+    <dc:title xml:lang="en">Imperial Data Ontology (IDO): module "Orders"</dc:title>
+    <dc:rights xml:lang="en">This work is distributed under a [Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/).</dc:rights>
+    <owl:imports rdf:resource="https://w3id.org/ido/prices"/>
+    <dc:date>2017-03-23</dc:date>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <dc:rights xml:lang="it">Questo lavoro è distribuito sotto una licenza [Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/).</dc:rights>
+    <dc:description rdf:resource="https://w3id.org/ido/ido-orders.png"/>
+    <owl:versionIRI rdf:resource="https://w3id.org/ido/orders/1.0.1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.org/referencesOrder">
+    <rdfs:comment xml:lang="en">It allows one to specify the order associated to the invoice in consideration.</rdfs:comment>
+    <rdfs:label xml:lang="it">si riferisce all'ordine</rdfs:label>
+    <rdfs:comment xml:lang="it">Permette di specificare l'ordine associato alla ricevuta in considerazione.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://schema.org/Invoice"/>
+    <rdfs:range rdf:resource="http://schema.org/Order"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">references order</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://schema.org"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/b2b">
+    <rdfs:comment xml:lang="it">La distribuzione via commercio interaziendale si applica quando un'azienda effettua una transazione commerciale con un'altra.</rdfs:comment>
+    <rdfs:label xml:lang="it">commercio interaziendale</rdfs:label>
+    <rdfs:comment xml:lang="en">Business-to-business (B2B) refers to distribution platform where one business makes a commercial transaction with another.</rdfs:comment>
+    <rdfs:label xml:lang="en">business to business</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/ido/DistributionPlatform"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ido/orders"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.org/Invoice">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://schema.org"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.org/partOfInvoice">
+    <rdfs:comment xml:lang="it">Permette di specificare che l'ordine in considerazione è stato pagato come parte della ricevuta a cui si riferisce.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://schema.org"/>
+    <rdfs:label xml:lang="en">is part of invoice</rdfs:label>
+    <owl:inverseOf rdf:resource="http://schema.org/referencesOrder"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">It allows one to specify that the order in consideration is being paid as part of the referenced invoice.</rdfs:comment>
+    <rdfs:label xml:lang="it">è parte della ricevuta</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6a5f52fe8bee42aab2bcfc184779081c">
+    <owl:onProperty rdf:resource="https://w3id.org/ido/includesPiece"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="https://w3id.org/ido/PieceWithPrice"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7bd916cbd19541e9a7e06d537284101d">
+    <owl:onProperty rdf:resource="http://schema.org/totalPaymentDue"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="https://w3id.org/ido/Price"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne30aae8cbc7c41df8bf5b3d6ed8b856f">
+    <owl:unionOf rdf:nodeID="N7f468e1f8d7a4a16b8b494997f5be998"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/b2c">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ido/orders"/>
+    <rdfs:label xml:lang="en">business to consumer</rdfs:label>
+    <rdf:type rdf:resource="https://w3id.org/ido/DistributionPlatform"/>
+    <rdfs:comment xml:lang="en">Business-to-consumer (B2C) refers to distribution platform where one business makes a commercial transaction with a consumer.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="it">vendita al dettaglio</rdfs:label>
+    <rdfs:comment xml:lang="it">La distribuzione via vendita al dettaglio si applica quando un'azienda effettua una transazione commerciale con un consumatore finale.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfbbd39ec83de462d8ab291af8842d45d">
+    <rdf:first rdf:resource="http://schema.org/OrderItem"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/specifiesSalesChannel">
+    <rdfs:label xml:lang="it">specifica come canale di vendita</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">This property allows to specify the particular sales channel associated to either an order or invoice.</rdfs:comment>
+    <rdfs:label xml:lang="en">specifies as sales channel</rdfs:label>
+    <rdfs:comment xml:lang="it">Questa proprietà permette la specificazione di una certo canale di vendita associato ad un ordine o ad una fattura.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ido/orders"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/isPieceIncludedIn">
+    <rdfs:comment xml:lang="en">This property allows one to link a particular piece to the invoice including it.</rdfs:comment>
+    <rdfs:label xml:lang="it">è incluso come pezzo in</rdfs:label>
+    <rdfs:label xml:lang="en">is peice included in</rdfs:label>
+    <rdfs:comment xml:lang="it">Questa proprietà permette di collegare un particolare pezzo di un capo con la fattura a cui è associato.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ido/orders"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf0c566f57f6d417499154f625bad5f8a">
+    <owl:allValuesFrom rdf:resource="https://w3id.org/ido/Order"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://schema.org/referencesOrder"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc6ffbf97e44d42308e8b9c77655b985f">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="https://w3id.org/ido/StockKeepingUnitAmount"/>
+    <owl:onProperty rdf:resource="http://schema.org/orderedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7b41ff53839d4e4aafaa265c8a5949f2">
+    <owl:someValuesFrom rdf:resource="https://w3id.org/ido/Price"/>
+    <owl:onProperty rdf:resource="https://w3id.org/ido/hasTotalValue"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/identifier">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N13f881a207e84396ac5a1dc399581c47">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <owl:onProperty rdf:resource="http://purl.org/dc/terms/issued"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.org/orderNumber">
+    <rdfs:isDefinedBy rdf:resource="http://schema.org"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/goodrelations/v1#Individual">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na67919064d0b448cb8fcbb674e5c1168">
+    <rdf:rest rdf:nodeID="Nfbbd39ec83de462d8ab291af8842d45d"/>
+    <rdf:first rdf:resource="http://schema.org/Order"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1ffe073f2a394591a2d8d741428c8894">
+    <owl:allValuesFrom rdf:resource="https://w3id.org/ido/Price"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://schema.org/totalPaymentDue"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf209c1e2764640b298cdd435d1f6439e">
+    <owl:someValuesFrom rdf:resource="https://w3id.org/ido/Invoice"/>
+    <owl:onProperty rdf:resource="https://w3id.org/ido/isPieceIncludedIn"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#cardinality">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/StockKeepingUnit">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.org/Order">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://schema.org"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1388448ffe1e445bbda0cf0ee7efc3df">
+    <owl:onProperty rdf:resource="http://schema.org/referencesOrder"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="https://w3id.org/ido/Order"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/hasOrderIdentifier">
+    <rdfs:comment xml:lang="it">La proprietà che permette di specificare un numero identificativo dell'ordine.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The property that allows one to specify the number associated to the order.</rdfs:comment>
+    <rdfs:label xml:lang="en">has order identifier</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://schema.org/orderNumber"/>
+    <rdfs:label xml:lang="it">ha identificativo d'ordine</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
+    <rdfs:domain rdf:resource="https://w3id.org/ido/Order"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/ido/orders"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.org/OrderItem">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://schema.org"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na7995ecea9d7456c9e6f1ace5f368b44">
+    <rdf:rest rdf:nodeID="Na3da364c920d4cf08946411827903fe1"/>
+    <rdf:first rdf:resource="http://purl.org/goodrelations/v1#Individual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nab8a8c699b064aef8d0139f07fde9ef5">
+    <rdf:first rdf:resource="https://w3id.org/ido/StockKeepingUnitAmount"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na3da364c920d4cf08946411827903fe1">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/goodrelations/v1#SomeItems"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N66f38105fc3d4043b926ce46c60e1804">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="https://w3id.org/ido/Order"/>
+    <owl:onProperty rdf:nodeID="Nf654919dce9d4cf68fe803bb1b4a168c"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.org/Product">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8fef8744839b412cb5689ef1ea388e05">
+    <rdf:rest rdf:nodeID="N0f84d96793ef4e2d97ee85409df11424"/>
+    <rdf:first rdf:resource="http://schema.org/OrderItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7f468e1f8d7a4a16b8b494997f5be998">
+    <rdf:rest rdf:nodeID="Nab8a8c699b064aef8d0139f07fde9ef5"/>
+    <rdf:first rdf:resource="https://w3id.org/ido/PieceWithPrice"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2f9b22dfede0402a82bc8667e12401d8">
+    <owl:onProperty rdf:resource="https://w3id.org/ido/hasOrderIdentifier"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#float">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb925c3cf261b4f5dbcc1385f2ae0f044">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://schema.org/orderQuantity"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/goodrelations/v1#TypeAndQuantityNode">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/goodrelations/v1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4324d314faac48b1b7122f2bee4cfc7c">
+    <owl:someValuesFrom rdf:resource="https://w3id.org/ido/Price"/>
+    <owl:onProperty rdf:resource="https://w3id.org/ido/hasPricePerPiece"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1b881b9a75f04ab0957a8c434d25b231">
+    <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncb2085fbd1fb4e1e8177f2818df9a0d4">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    <owl:onProperty rdf:resource="http://purl.org/dc/terms/identifier"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/ido/Piece">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3fe11e443a254baba150e339e809b6e5">
+    <owl:unionOf rdf:nodeID="Na67919064d0b448cb8fcbb674e5c1168"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>

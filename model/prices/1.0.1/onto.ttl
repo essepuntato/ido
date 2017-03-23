@@ -1,0 +1,243 @@
+@prefix : <https://w3id.org/ido/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix gr: <http://purl.org/goodrelations/v1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skos1: <http://www.w3.org/2008/05/skos#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix ti: <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+rdfs:isDefinedBy a owl:AnnotationProperty .
+
+xsd:date a rdfs:Datatype .
+
+xsd:float a rdfs:Datatype .
+
+owl:Thing a owl:Class .
+
+:gross a owl:NamedIndividual,
+        :PriceType ;
+    rdfs:label "gross price"@en,
+        "prezzo lordo"@it ;
+    rdfs:comment "It is the price that still includes discounts, taxes, and deductions."@en,
+        "È il prezzo al quale sono ancora stati sottratti gli sconti, le imposte e le ritenute."@it ;
+    rdfs:isDefinedBy :prices .
+
+:hasDiscountPercentage a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "has discount percentage"@en,
+        "ha percentuale di sconto"@it ;
+    rdfs:comment "It indicates the percentage used for calculating the discount already inclused in the currency value of a certain price."@en,
+        "Indica la percentuale utilizzata per il calcolo dello sconto che è incluso nel valore di un certo prezzo."@it ;
+    rdfs:domain :Price ;
+    rdfs:isDefinedBy :prices ;
+    rdfs:range xsd:decimal .
+
+:isApplicabilityContextOf a owl:ObjectProperty ;
+    rdfs:label "is applicability context of"@en,
+        "Permette di collegare una certa entità (ad esempio una stagione o una piattaforma di distribuzione) con il prezzo di cui ne rappresenta un possibile contesto di applicazione."@it,
+        "è contesto di applicazione per"@it ;
+    rdfs:comment "It allows one to link an entity, such as a season or a distribution platform) to the price for which it is an applicative context."@en ;
+    rdfs:isDefinedBy :prices ;
+    owl:inverseOf :isApplicableFor .
+
+:net a owl:NamedIndividual,
+        :PriceType ;
+    rdfs:label "net price"@en,
+        "prezzo netto"@it ;
+    rdfs:comment "It is the price from which discounts, taxes, and deductions have been removed."@en,
+        "È il prezzo al quale sono stati sottratti gli sconti, le imposte e le ritenute a essa relative."@it ;
+    rdfs:isDefinedBy :prices .
+
+gr:PriceSpecification a owl:Class ;
+    rdfs:isDefinedBy <http://purl.org/goodrelations/v1> .
+
+gr:hasCurrency a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <http://purl.org/goodrelations/v1> .
+
+gr:hasCurrencyValue a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <http://purl.org/goodrelations/v1> .
+
+gr:valueAddedTaxIncluded a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <http://purl.org/goodrelations/v1> .
+
+schema:PriceSpecification a owl:Class ;
+    rdfs:isDefinedBy <http://schema.org> .
+
+schema:additionalType a owl:ObjectProperty ;
+    rdfs:isDefinedBy <http://schema.org> .
+
+schema:price a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <http://schema.org> .
+
+schema:priceCurrency a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <http://schema.org> .
+
+schema:validFrom a owl:DatatypeProperty ;
+    rdfs:label "is valid from"@en,
+        "è valido dal"@it ;
+    rdfs:comment "It indicates the start date of the validity of a certain price associated to a particular object (e.g., an item)."@en,
+        "Indica la data di inizio di validità di un certo prezzo per un particolare oggetto (ad esempio un capo)."@it ;
+    rdfs:isDefinedBy <http://schema.org> .
+
+schema:validThrough a owl:DatatypeProperty ;
+    rdfs:label "is valid through"@en,
+        "è valido fino"@it ;
+    rdfs:comment "It indicates the end date of the validity of a certain price associated to a particular object (e.g., an item)."@en,
+        "Indica la data di fine di validità di un certo prezzo per un particolare oggetto (ad esempio un capo)."@it ;
+    rdfs:isDefinedBy <http://schema.org> .
+
+schema:valueAddedTaxIncluded a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <http://schema.org> .
+
+:CostOfGoodsSold a owl:Class ;
+    rdfs:label "cost of goods sold"@en,
+        "costo di produzione industriale"@it ;
+    rdfs:comment "It is the industrial cost for creating a particular article."@en,
+        "È il costo industriale necessario per la realizzazione di un certo articolo."@it ;
+    rdfs:isDefinedBy :prices ;
+    rdfs:subClassOf :Price .
+
+:SellInPrice a owl:Class ;
+    rdfs:label "sell-in price"@en,
+        "prezzo per i rivenditori"@it ;
+    rdfs:comment "It is the price applied to an article when it is sold to a retailer."@en,
+        "È il prezzo (maggiorato rispetto al costo di produzione industriale) a cui un certo articolo viene venduto a un rivenditore."@it ;
+    rdfs:isDefinedBy :prices ;
+    rdfs:subClassOf :Price .
+
+:SellOutPrice a owl:Class ;
+    rdfs:label "sell-out price"@en,
+        "prezzo di vendita al dettaglio"@it ;
+    rdfs:comment "It is the price applied to an article when it is sold to a final customer."@en,
+        "È il prezzo a cui un certo capo viene venduto ad un consumatore finale."@it ;
+    rdfs:isDefinedBy :prices ;
+    rdfs:subClassOf :Price .
+
+:hasPriceCurrency a owl:DatatypeProperty ;
+    rdfs:label "has currency"@en,
+        "ha valuta"@it ;
+    rdfs:comment "The property that allows the specification of the currency of a certain price."@en,
+        "La proprietà che permette di specificare la valuta associata ad un certo prezzo."@it ;
+    rdfs:domain :Price ;
+    rdfs:isDefinedBy :prices ;
+    rdfs:range [ a rdfs:Datatype ;
+            owl:onDatatype xsd:string ;
+            owl:withRestrictions ( [ xsd:pattern "[A-Z][A-Z][A-Z]" ] ) ] ;
+    rdfs:subPropertyOf gr:hasCurrency,
+        schema:priceCurrency .
+
+:hasPriceType a owl:ObjectProperty ;
+    rdfs:label "has price type"@en,
+        "ha tipo di prezzo"@it ;
+    rdfs:comment "It allows the specification of the type (e.g., net and gross) of a certain price."@en,
+        "Permette di specificare il tipo (ad esempio, netto o lordo) di un certo prezzo."@it ;
+    rdfs:domain :Price ;
+    rdfs:isDefinedBy :prices ;
+    rdfs:range :PriceType ;
+    rdfs:subPropertyOf schema:additionalType ;
+    owl:inverseOf :isPriceTypeOf .
+
+:hasPriceValue a owl:DatatypeProperty ;
+    rdfs:label "has price"@en,
+        "ha prezzo"@it ;
+    rdfs:comment "The property that allows the value of a certain price."@en,
+        "La proprietà che permette di specificare il valore di un certo prezzo."@it ;
+    rdfs:domain :Price ;
+    rdfs:isDefinedBy :prices ;
+    rdfs:range xsd:double ;
+    rdfs:subPropertyOf gr:hasCurrencyValue,
+        schema:price .
+
+:includesVAT a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "includes VAT"@en,
+        "include l'IVA"@it ;
+    rdfs:comment "It describes whether the price includes the VAT or not."@en,
+        "Indica se il prezzo include o meno l'IVA."@it ;
+    rdfs:domain :Price ;
+    rdfs:isDefinedBy :prices ;
+    rdfs:range xsd:boolean ;
+    rdfs:subPropertyOf gr:valueAddedTaxIncluded,
+        schema:valueAddedTaxIncluded .
+
+:isApplicableFor a owl:ObjectProperty ;
+    rdfs:label "is applicable for"@en,
+        "si applica per"@it ;
+    rdfs:comment "It allows one to link a price with a certain context (e.g., a distribution platform or a season) for which that price is applicable."@en,
+        "Permette di associare un prezzo con un particolare contesto (ad esempio una certa piattaforma di distribuzione o una stagione) per cui quel prezzo è applicabile."@it ;
+    rdfs:domain :Price ;
+    rdfs:isDefinedBy :prices .
+
+:isPriceTypeOf a owl:ObjectProperty ;
+    rdfs:label "is price type of"@en,
+        "è tipo di prezzo di"@it ;
+    rdfs:comment "It allows one to link a specific type (e.g., gross or net) with the price it refers to."@en,
+        "Permette di collegare un certo tipo (ad esempio, netto e lordo) con il prezzo a cui si riferisce."@it ;
+    rdfs:isDefinedBy :prices .
+
+xsd:dateTime a rdfs:Datatype .
+
+:PriceType a owl:Class ;
+    rdfs:label "price type"@en,
+        "tipo di prezzo"@it ;
+    rdfs:comment "It describes the particular kind of a price - e.g., gross or net."@en,
+        "Descrive la particolare tipologia di un prezzo - ad esempio lordo o netto."@it ;
+    rdfs:isDefinedBy :prices ;
+    rdfs:subClassOf skos:Concept .
+
+:Price a owl:Class ;
+    rdfs:label "price"@en,
+        "prezzo"@it ;
+    rdfs:comment "This class allows the characterisation of a certain price value according to a particular currency. Each individual of this class exists only within the context of the object (e.g., an item) to which it is applied."@en,
+        "Questa classe permette la caratterizzazione di un certo valore commerciale in una specifica valuta. Ogni individuo di questa classe esiste solo nel contesto di un oggetto (ad esempio un capo) a cui è applicato."@it ;
+    rdfs:isDefinedBy :prices ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onDataRange xsd:dateTime ;
+            owl:onProperty schema:validFrom ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onDataRange xsd:dateTime ;
+            owl:onProperty schema:validThrough ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasPriceType ;
+            owl:someValuesFrom :PriceType ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :hasPriceCurrency ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :includesVAT ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty :hasPriceValue ],
+        gr:PriceSpecification,
+        schema:PriceSpecification .
+
+:prices a owl:Ontology ;
+    rdfs:label "IDO-P" ;
+    dc:date "2017-03-23" ;
+    dc:description :ido-prices.png ;
+    dc:rights "This work is distributed under a [Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/)."@en,
+        "Questo lavoro è distribuito sotto una licenza [Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/)."@it ;
+    dc:title "Imperial Data Ontology (IDO)"@en,
+        "Ontologia per i dati di Imperial (IDO): modulo \"Prezzi\""@it ;
+    terms:creator "Silvio Peroni (http://orcid.org/0000-0003-0530-4305)" ;
+    rdfs:comment "The Imperial Data Ontology (IDO) is an OWL 2 DL ontology that allows the description of selling data of fashion design industries. This module describes all the selling prices of articles."@en,
+        "L'Ontologia per i dati di Imperial (o Imperial Data Ontology, IDO) è un'ontologia OWL 2 DL creata per la descrizione dei dati di vendita di aziende di moda. Questo modulo si occupa della descrizione dei prezzi di vendita dei vari articoli."@it ;
+    owl:imports <http://www.w3.org/2004/02/skos/core> ;
+    owl:versionIRI <https://w3id.org/ido/prices/1.0.1> ;
+    owl:versionInfo "1.0.1" .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( :CostOfGoodsSold :SellInPrice :SellOutPrice ) .
+

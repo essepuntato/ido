@@ -1,0 +1,210 @@
+_:N4c1cbba180ea43a3914546dc2e2cb89e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<https://w3id.org/ido/CostOfGoodsSold> <http://www.w3.org/2000/01/rdf-schema#comment> "\u00C8 il costo industriale necessario per la realizzazione di un certo articolo."@it .
+<https://w3id.org/ido/hasPriceCurrency> <http://www.w3.org/2000/01/rdf-schema#comment> "The property that allows the specification of the currency of a certain price."@en .
+<https://w3id.org/ido/SellInPrice> <http://www.w3.org/2000/01/rdf-schema#label> "sell-in price"@en .
+<http://purl.org/goodrelations/v1#hasCurrencyValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/ido/isPriceTypeOf> <http://www.w3.org/2000/01/rdf-schema#label> "\u00E8 tipo di prezzo di"@it .
+<https://w3id.org/ido/prices> <http://purl.org/dc/elements/1.1/date> "2017-03-23" .
+<http://schema.org/PriceSpecification> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org> .
+<https://w3id.org/ido/hasDiscountPercentage> <http://www.w3.org/2000/01/rdf-schema#label> "has discount percentage"@en .
+<http://schema.org/validThrough> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:N453067bc40c44d50b84fee4f13041947 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Ne776369ea0bc4719b87d0bb20095f9d5 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ido/hasPriceValue> .
+<https://w3id.org/ido/hasPriceCurrency> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ido/prices> .
+<https://w3id.org/ido/isPriceTypeOf> <http://www.w3.org/2000/01/rdf-schema#label> "is price type of"@en .
+<https://w3id.org/ido/Price> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/goodrelations/v1#PriceSpecification> .
+<https://w3id.org/ido/includesVAT> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica se il prezzo include o meno l'IVA."@it .
+<https://w3id.org/ido/isPriceTypeOf> <http://www.w3.org/2000/01/rdf-schema#comment> "It allows one to link a specific type (e.g., gross or net) with the price it refers to."@en .
+_:N4c1cbba180ea43a3914546dc2e2cb89e <http://www.w3.org/2002/07/owl#withRestrictions> _:N1085662b678247d1b38c0f8f70f4c6c8 .
+<http://schema.org/additionalType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org> .
+<https://w3id.org/ido/prices> <http://www.w3.org/2000/01/rdf-schema#label> "IDO-P" .
+<https://w3id.org/ido/Price> <http://www.w3.org/2000/01/rdf-schema#comment> "Questa classe permette la caratterizzazione di un certo valore commerciale in una specifica valuta. Ogni individuo di questa classe esiste solo nel contesto di un oggetto (ad esempio un capo) a cui \u00E8 applicato."@it .
+<http://schema.org/validFrom> <http://www.w3.org/2000/01/rdf-schema#comment> "It indicates the start date of the validity of a certain price associated to a particular object (e.g., an item)."@en .
+<https://w3id.org/ido/isApplicabilityContextOf> <http://www.w3.org/2000/01/rdf-schema#label> "is applicability context of"@en .
+<https://w3id.org/ido/isApplicableFor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ido/prices> .
+_:N5d9cca56d48144fca8ef1d783993f630 <http://www.w3.org/2001/XMLSchema#pattern> "[A-Z][A-Z][A-Z]" .
+<http://schema.org/validFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/ido/includesVAT> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/goodrelations/v1#valueAddedTaxIncluded> .
+<https://w3id.org/ido/hasPriceType> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ido/PriceType> .
+<https://w3id.org/ido/hasPriceValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/2001/XMLSchema#dateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<https://w3id.org/ido/prices> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/2004/02/skos/core> .
+<https://w3id.org/ido/SellInPrice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ido/Price> .
+<https://w3id.org/ido/hasPriceType> <http://www.w3.org/2000/01/rdf-schema#comment> "Permette di specificare il tipo (ad esempio, netto o lordo) di un certo prezzo."@it .
+_:N059829af1c2d4801bc29906ec0a3e6ae <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/ido/hasDiscountPercentage> <http://www.w3.org/2000/01/rdf-schema#comment> "It indicates the percentage used for calculating the discount already inclused in the currency value of a certain price."@en .
+<https://w3id.org/ido/CostOfGoodsSold> <http://www.w3.org/2000/01/rdf-schema#comment> "It is the industrial cost for creating a particular article."@en .
+<http://schema.org/priceCurrency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:N1085662b678247d1b38c0f8f70f4c6c8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/ido/gross> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:Nc034c767125945c6b5b32fae948981fe <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/ido/hasPriceType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ido/Price> .
+<http://schema.org/additionalType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ido/includesVAT> <http://www.w3.org/2000/01/rdf-schema#comment> "It describes whether the price includes the VAT or not."@en .
+<https://w3id.org/ido/prices> <http://purl.org/dc/elements/1.1/rights> "This work is distributed under a [Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/)."@en .
+<https://w3id.org/ido/SellOutPrice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ido/Price> .
+<https://w3id.org/ido/CostOfGoodsSold> <http://www.w3.org/2000/01/rdf-schema#label> "costo di produzione industriale"@it .
+<https://w3id.org/ido/CostOfGoodsSold> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ido/Price> .
+<https://w3id.org/ido/isApplicableFor> <http://www.w3.org/2000/01/rdf-schema#label> "si applica per"@it .
+<https://w3id.org/ido/CostOfGoodsSold> <http://www.w3.org/2000/01/rdf-schema#label> "cost of goods sold"@en .
+<https://w3id.org/ido/hasDiscountPercentage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/ido/hasPriceType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/additionalType> .
+<http://purl.org/goodrelations/v1#hasCurrency> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/goodrelations/v1> .
+<https://w3id.org/ido/SellOutPrice> <http://www.w3.org/2000/01/rdf-schema#label> "sell-out price"@en .
+<http://schema.org/validFrom> <http://www.w3.org/2000/01/rdf-schema#label> "\u00E8 valido dal"@it .
+<https://w3id.org/ido/isApplicableFor> <http://www.w3.org/2000/01/rdf-schema#comment> "It allows one to link a price with a certain context (e.g., a distribution platform or a season) for which that price is applicable."@en .
+<https://w3id.org/ido/prices> <http://www.w3.org/2000/01/rdf-schema#comment> "The Imperial Data Ontology (IDO) is an OWL 2 DL ontology that allows the description of selling data of fashion design industries. This module describes all the selling prices of articles."@en .
+<https://w3id.org/ido/isPriceTypeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ido/prices> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/ido/prices/1.0.1> .
+_:N38243d33ec5b41aa827a9e75397b720b <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/ido/includesVAT> <http://www.w3.org/2000/01/rdf-schema#label> "includes VAT"@en .
+<https://w3id.org/ido/net> <http://www.w3.org/2000/01/rdf-schema#label> "prezzo netto"@it .
+<https://w3id.org/ido/prices> <http://purl.org/dc/elements/1.1/description> <https://w3id.org/ido/ido-prices.png> .
+<http://purl.org/goodrelations/v1#valueAddedTaxIncluded> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:N19a111bddd5646a180af1fae90b5ae38 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/ido/hasPriceCurrency> <http://www.w3.org/2000/01/rdf-schema#label> "ha valuta"@it .
+<https://w3id.org/ido/CostOfGoodsSold> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2001/XMLSchema#float> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<https://w3id.org/ido/SellInPrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:N081743800e9f4fb38da860227944a872 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/ido/hasDiscountPercentage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://schema.org/valueAddedTaxIncluded> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org> .
+<https://w3id.org/ido/gross> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ido/PriceType> .
+<https://w3id.org/ido/Price> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ido/hasPriceValue> <http://www.w3.org/2000/01/rdf-schema#label> "has price"@en .
+<https://w3id.org/ido/hasPriceType> <http://www.w3.org/2000/01/rdf-schema#comment> "It allows the specification of the type (e.g., net and gross) of a certain price."@en .
+<https://w3id.org/ido/SellOutPrice> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ido/prices> .
+<https://w3id.org/ido/isApplicableFor> <http://www.w3.org/2000/01/rdf-schema#label> "is applicable for"@en .
+<https://w3id.org/ido/hasPriceCurrency> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/priceCurrency> .
+<https://w3id.org/ido/hasDiscountPercentage> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica la percentuale utilizzata per il calcolo dello sconto che \u00E8 incluso nel valore di un certo prezzo."@it .
+<https://w3id.org/ido/Price> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Nc034c767125945c6b5b32fae948981fe .
+<https://w3id.org/ido/hasPriceType> <http://www.w3.org/2000/01/rdf-schema#label> "has price type"@en .
+_:N1b73faae8894485f9b2acd5444a7bca5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+<https://w3id.org/ido/isApplicabilityContextOf> <http://www.w3.org/2000/01/rdf-schema#label> "Permette di collegare una certa entit\u00E0 (ad esempio una stagione o una piattaforma di distribuzione) con il prezzo di cui ne rappresenta un possibile contesto di applicazione."@it .
+<https://w3id.org/ido/gross> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ido/prices> .
+_:N4c1cbba180ea43a3914546dc2e2cb89e <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/ido/isApplicabilityContextOf> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ido/isApplicableFor> .
+<https://w3id.org/ido/includesVAT> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/valueAddedTaxIncluded> .
+_:N36eb3be2ddc5426db00ec7e10cbb7012 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ido/CostOfGoodsSold> .
+<http://schema.org/price> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org> .
+_:Nc034c767125945c6b5b32fae948981fe <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<https://w3id.org/ido/hasDiscountPercentage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/ido/net> <http://www.w3.org/2000/01/rdf-schema#comment> "\u00C8 il prezzo al quale sono stati sottratti gli sconti, le imposte e le ritenute a essa relative."@it .
+_:N36eb3be2ddc5426db00ec7e10cbb7012 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N8b0ca2505ad347638db3a87cd86a8037 .
+<https://w3id.org/ido/isPriceTypeOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ido/prices> .
+<https://w3id.org/ido/includesVAT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/ido/SellInPrice> <http://www.w3.org/2000/01/rdf-schema#comment> "\u00C8 il prezzo (maggiorato rispetto al costo di produzione industriale) a cui un certo articolo viene venduto a un rivenditore."@it .
+<https://w3id.org/ido/hasPriceCurrency> <http://www.w3.org/2000/01/rdf-schema#range> _:N4c1cbba180ea43a3914546dc2e2cb89e .
+<https://w3id.org/ido/hasPriceValue> <http://www.w3.org/2000/01/rdf-schema#comment> "La propriet\u00E0 che permette di specificare il valore di un certo prezzo."@it .
+<https://w3id.org/ido/isApplicabilityContextOf> <http://www.w3.org/2000/01/rdf-schema#label> "\u00E8 contesto di applicazione per"@it .
+_:N081743800e9f4fb38da860227944a872 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ido/SellOutPrice> .
+<https://w3id.org/ido/includesVAT> <http://www.w3.org/2000/01/rdf-schema#label> "include l'IVA"@it .
+<https://w3id.org/ido/hasDiscountPercentage> <http://www.w3.org/2000/01/rdf-schema#label> "ha percentuale di sconto"@it .
+<http://schema.org/validThrough> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica la data di fine di validit\u00E0 di un certo prezzo per un particolare oggetto (ad esempio un capo)."@it .
+_:N1b73faae8894485f9b2acd5444a7bca5 <http://www.w3.org/2002/07/owl#members> _:N36eb3be2ddc5426db00ec7e10cbb7012 .
+<https://w3id.org/ido/PriceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ido/prices> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://purl.org/goodrelations/v1#hasCurrency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/ido/Price> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:N453067bc40c44d50b84fee4f13041947 .
+<https://w3id.org/ido/hasPriceValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The property that allows the value of a certain price."@en .
+<https://w3id.org/ido/hasPriceCurrency> <http://www.w3.org/2000/01/rdf-schema#label> "has currency"@en .
+<https://w3id.org/ido/prices> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.1" .
+<https://w3id.org/ido/hasPriceCurrency> <http://www.w3.org/2000/01/rdf-schema#comment> "La propriet\u00E0 che permette di specificare la valuta associata ad un certo prezzo."@it .
+_:N8b0ca2505ad347638db3a87cd86a8037 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ido/SellInPrice> .
+_:N059829af1c2d4801bc29906ec0a3e6ae <http://www.w3.org/2002/07/owl#onProperty> <http://schema.org/validFrom> .
+_:N453067bc40c44d50b84fee4f13041947 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Ne776369ea0bc4719b87d0bb20095f9d5 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Nc034c767125945c6b5b32fae948981fe <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ido/includesVAT> .
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<https://w3id.org/ido/SellInPrice> <http://www.w3.org/2000/01/rdf-schema#comment> "It is the price applied to an article when it is sold to a retailer."@en .
+_:N8b0ca2505ad347638db3a87cd86a8037 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N081743800e9f4fb38da860227944a872 .
+<https://w3id.org/ido/PriceType> <http://www.w3.org/2000/01/rdf-schema#label> "price type"@en .
+<https://w3id.org/ido/prices> <http://www.w3.org/2000/01/rdf-schema#comment> "L'Ontologia per i dati di Imperial (o Imperial Data Ontology, IDO) \u00E8 un'ontologia OWL 2 DL creata per la descrizione dei dati di vendita di aziende di moda. Questo modulo si occupa della descrizione dei prezzi di vendita dei vari articoli."@it .
+<https://w3id.org/ido/Price> <http://www.w3.org/2000/01/rdf-schema#label> "prezzo"@it .
+<https://w3id.org/ido/CostOfGoodsSold> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ido/prices> .
+<https://w3id.org/ido/Price> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:N19a111bddd5646a180af1fae90b5ae38 .
+<https://w3id.org/ido/hasPriceValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/price> .
+<https://w3id.org/ido/isApplicabilityContextOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ido/prices> .
+_:N38243d33ec5b41aa827a9e75397b720b <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ido/hasPriceType> .
+<https://w3id.org/ido/includesVAT> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/ido/PriceType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ido/prices> .
+<https://w3id.org/ido/prices> <http://purl.org/dc/terms/creator> "Silvio Peroni (http://orcid.org/0000-0003-0530-4305)" .
+_:N453067bc40c44d50b84fee4f13041947 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ido/hasPriceCurrency> .
+<https://w3id.org/ido/gross> <http://www.w3.org/2000/01/rdf-schema#comment> "\u00C8 il prezzo al quale sono ancora stati sottratti gli sconti, le imposte e le ritenute."@it .
+<http://schema.org/price> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:N38243d33ec5b41aa827a9e75397b720b <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/ido/PriceType> .
+<https://w3id.org/ido/prices> <http://purl.org/dc/elements/1.1/rights> "Questo lavoro \u00E8 distribuito sotto una licenza [Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/)."@it .
+<http://schema.org/validThrough> <http://www.w3.org/2000/01/rdf-schema#comment> "It indicates the end date of the validity of a certain price associated to a particular object (e.g., an item)."@en .
+<https://w3id.org/ido/PriceType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://schema.org/validThrough> <http://www.w3.org/2000/01/rdf-schema#label> "is valid through"@en .
+<https://w3id.org/ido/hasPriceValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ido/Price> .
+<https://w3id.org/ido/PriceType> <http://www.w3.org/2000/01/rdf-schema#label> "tipo di prezzo"@it .
+<https://w3id.org/ido/SellInPrice> <http://www.w3.org/2000/01/rdf-schema#label> "prezzo per i rivenditori"@it .
+<https://w3id.org/ido/hasPriceType> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/ido/isPriceTypeOf> .
+<http://schema.org/valueAddedTaxIncluded> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/ido/isApplicabilityContextOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ido/hasPriceType> <http://www.w3.org/2000/01/rdf-schema#label> "ha tipo di prezzo"@it .
+<https://w3id.org/ido/SellInPrice> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ido/prices> .
+<https://w3id.org/ido/isApplicabilityContextOf> <http://www.w3.org/2000/01/rdf-schema#comment> "It allows one to link an entity, such as a season or a distribution platform) to the price for which it is an applicative context."@en .
+<https://w3id.org/ido/gross> <http://www.w3.org/2000/01/rdf-schema#label> "gross price"@en .
+<https://w3id.org/ido/prices> <http://purl.org/dc/elements/1.1/title> "Imperial Data Ontology (IDO)"@en .
+_:N1085662b678247d1b38c0f8f70f4c6c8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:N5d9cca56d48144fca8ef1d783993f630 .
+<http://schema.org/validFrom> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica la data di inizio di validit\u00E0 di un certo prezzo per un particolare oggetto (ad esempio un capo)."@it .
+<https://w3id.org/ido/PriceType> <http://www.w3.org/2000/01/rdf-schema#comment> "Descrive la particolare tipologia di un prezzo - ad esempio lordo o netto."@it .
+<http://purl.org/goodrelations/v1#PriceSpecification> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/goodrelations/v1> .
+<https://w3id.org/ido/Price> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:N38243d33ec5b41aa827a9e75397b720b .
+<https://w3id.org/ido/isApplicableFor> <http://www.w3.org/2000/01/rdf-schema#comment> "Permette di associare un prezzo con un particolare contesto (ad esempio una certa piattaforma di distribuzione o una stagione) per cui quel prezzo \u00E8 applicabile."@it .
+<http://schema.org/validThrough> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org> .
+<https://w3id.org/ido/isPriceTypeOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Permette di collegare un certo tipo (ad esempio, netto e lordo) con il prezzo a cui si riferisce."@it .
+<https://w3id.org/ido/prices> <http://purl.org/dc/elements/1.1/title> "Ontologia per i dati di Imperial (IDO): modulo \"Prezzi\""@it .
+<https://w3id.org/ido/Price> <http://www.w3.org/2000/01/rdf-schema#comment> "This class allows the characterisation of a certain price value according to a particular currency. Each individual of this class exists only within the context of the object (e.g., an item) to which it is applied."@en .
+<https://w3id.org/ido/hasPriceValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ido/prices> .
+<http://schema.org/validThrough> <http://www.w3.org/2000/01/rdf-schema#label> "\u00E8 valido fino"@it .
+<https://w3id.org/ido/hasDiscountPercentage> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ido/Price> .
+<https://w3id.org/ido/hasPriceValue> <http://www.w3.org/2000/01/rdf-schema#label> "ha prezzo"@it .
+<https://w3id.org/ido/isApplicableFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/2002/07/owl#Thing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ido/hasPriceCurrency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/ido/isApplicableFor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ido/Price> .
+<https://w3id.org/ido/SellOutPrice> <http://www.w3.org/2000/01/rdf-schema#comment> "\u00C8 il prezzo a cui un certo capo viene venduto ad un consumatore finale."@it .
+<https://w3id.org/ido/SellOutPrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ido/PriceType> <http://www.w3.org/2000/01/rdf-schema#comment> "It describes the particular kind of a price - e.g., gross or net."@en .
+_:Ne776369ea0bc4719b87d0bb20095f9d5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/ido/hasPriceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ido/hasPriceValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/goodrelations/v1#hasCurrencyValue> .
+<https://w3id.org/ido/hasPriceCurrency> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/goodrelations/v1#hasCurrency> .
+<https://w3id.org/ido/net> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ido/prices> .
+_:N059829af1c2d4801bc29906ec0a3e6ae <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<https://w3id.org/ido/gross> <http://www.w3.org/2000/01/rdf-schema#comment> "It is the price that still includes discounts, taxes, and deductions."@en .
+<https://w3id.org/ido/Price> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Ne776369ea0bc4719b87d0bb20095f9d5 .
+<https://w3id.org/ido/net> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/ido/PriceType> .
+<http://purl.org/goodrelations/v1#PriceSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ido/Price> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:N059829af1c2d4801bc29906ec0a3e6ae .
+_:N19a111bddd5646a180af1fae90b5ae38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:N19a111bddd5646a180af1fae90b5ae38 <http://www.w3.org/2002/07/owl#onProperty> <http://schema.org/validThrough> .
+<http://schema.org/validFrom> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org> .
+<http://schema.org/PriceSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ido/SellOutPrice> <http://www.w3.org/2000/01/rdf-schema#comment> "It is the price applied to an article when it is sold to a final customer."@en .
+<https://w3id.org/ido/hasPriceCurrency> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ido/Price> .
+<https://w3id.org/ido/Price> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/PriceSpecification> .
+<https://w3id.org/ido/net> <http://www.w3.org/2000/01/rdf-schema#label> "net price"@en .
+<https://w3id.org/ido/net> <http://www.w3.org/2000/01/rdf-schema#comment> "It is the price from which discounts, taxes, and deductions have been removed."@en .
+<https://w3id.org/ido/hasPriceType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ido/prices> .
+<http://purl.org/goodrelations/v1#hasCurrencyValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/goodrelations/v1> .
+<http://purl.org/goodrelations/v1#valueAddedTaxIncluded> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/goodrelations/v1> .
+<https://w3id.org/ido/gross> <http://www.w3.org/2000/01/rdf-schema#label> "prezzo lordo"@it .
+<http://schema.org/validFrom> <http://www.w3.org/2000/01/rdf-schema#label> "is valid from"@en .
+<https://w3id.org/ido/net> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ido/Price> <http://www.w3.org/2000/01/rdf-schema#label> "price"@en .
+<https://w3id.org/ido/Price> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ido/prices> .
+<https://w3id.org/ido/includesVAT> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ido/Price> .
+<http://schema.org/priceCurrency> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org> .
+<https://w3id.org/ido/hasDiscountPercentage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ido/prices> .
+<https://w3id.org/ido/hasPriceValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/ido/includesVAT> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ido/prices> .
+<https://w3id.org/ido/SellOutPrice> <http://www.w3.org/2000/01/rdf-schema#label> "prezzo di vendita al dettaglio"@it .
+_:N19a111bddd5646a180af1fae90b5ae38 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<https://w3id.org/ido/includesVAT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:N059829af1c2d4801bc29906ec0a3e6ae <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#dateTime> .
+
