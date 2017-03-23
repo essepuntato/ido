@@ -1,23 +1,23 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.essepuntato.it/2015/07/ido/abox/"
-     xml:base="http://www.essepuntato.it/2015/07/ido/abox/"
+<rdf:RDF xmlns="https://w3id.org/ido/abox/"
+     xml:base="https://w3id.org/ido/abox/"
      xmlns:schema="http://schema.org/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:abox="http://www.essepuntato.it/2015/07/ido/abox/"
+     xmlns:abox="https://w3id.org/ido/abox/"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:onto="http://www.essepuntato.it/example/"
      xmlns:skos1="http://www.w3.org/2008/05/skos#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:ido="http://www.essepuntato.it/2015/07/ido/"
+     xmlns:ido="https://w3id.org/ido/"
      xmlns:sw-vocab-status="http://www.w3.org/2003/06/sw-vocab-status/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:v1="http://purl.org/goodrelations/v1#"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <owl:Ontology rdf:about="http://www.essepuntato.it/2015/07/ido/abox">
-        <owl:imports rdf:resource="http://www.essepuntato.it/2015/07/ido/"/>
+    <owl:Ontology rdf:about="https://w3id.org/ido/abox">
+        <owl:imports rdf:resource="https://w3id.org/ido/"/>
     </owl:Ontology>
     
 
@@ -45,21 +45,21 @@
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/hasArticleCategory -->
+    <!-- https://w3id.org/ido/hasArticleCategory -->
 
-    <owl:ObjectProperty rdf:about="http://www.essepuntato.it/2015/07/ido/hasArticleCategory"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ido/hasArticleCategory"/>
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/hasDeliveryLocation -->
+    <!-- https://w3id.org/ido/hasDeliveryLocation -->
 
-    <owl:ObjectProperty rdf:about="http://www.essepuntato.it/2015/07/ido/hasDeliveryLocation"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ido/hasDeliveryLocation"/>
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/isAvailableAs -->
+    <!-- https://w3id.org/ido/isAvailableAs -->
 
-    <owl:ObjectProperty rdf:about="http://www.essepuntato.it/2015/07/ido/isAvailableAs"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ido/isAvailableAs"/>
     
 
 
@@ -97,393 +97,393 @@
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/amt3 -->
+    <!-- https://w3id.org/ido/abox/amt3 -->
 
-    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/amt3">
-        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Style"/>
-        <ido:hasArticleCategory rdf:resource="http://www.essepuntato.it/2015/07/ido/category/dress"/>
-        <ido:wasRealisedAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/amt3odo"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ido/abox/amt3">
+        <rdf:type rdf:resource="https://w3id.org/ido/Style"/>
+        <ido:hasArticleCategory rdf:resource="https://w3id.org/ido/category/dress"/>
+        <ido:wasRealisedAs rdf:resource="https://w3id.org/ido/abox/amt3odo"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/amt3odo -->
+    <!-- https://w3id.org/ido/abox/amt3odo -->
 
-    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/amt3odo">
-        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Item"/>
-        <ido:isAvailableAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/amt3odo-m"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ido/abox/amt3odo">
+        <rdf:type rdf:resource="https://w3id.org/ido/Item"/>
+        <ido:isAvailableAs rdf:resource="https://w3id.org/ido/abox/amt3odo-m"/>
         <dcterms:identifier>AMT3ODO</dcterms:identifier>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/amt3odo-1 -->
+    <!-- https://w3id.org/ido/abox/amt3odo-1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/amt3odo-1">
-        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/StockKeepingUnitAmount"/>
-        <v1:typeOfGood rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/amt3odo-m"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ido/abox/amt3odo-1">
+        <rdf:type rdf:resource="https://w3id.org/ido/StockKeepingUnitAmount"/>
+        <v1:typeOfGood rdf:resource="https://w3id.org/ido/abox/amt3odo-m"/>
         <schema:orderQuantity rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1</schema:orderQuantity>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/amt3odo-m -->
+    <!-- https://w3id.org/ido/abox/amt3odo-m -->
 
-    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/amt3odo-m">
-        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/StockKeepingUnit"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ido/abox/amt3odo-m">
+        <rdf:type rdf:resource="https://w3id.org/ido/StockKeepingUnit"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/anv5 -->
+    <!-- https://w3id.org/ido/abox/anv5 -->
 
-    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/anv5">
-        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Style"/>
-        <ido:hasArticleCategory rdf:resource="http://www.essepuntato.it/2015/07/ido/category/dress"/>
-        <ido:wasRealisedAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/anv5owm"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ido/abox/anv5">
+        <rdf:type rdf:resource="https://w3id.org/ido/Style"/>
+        <ido:hasArticleCategory rdf:resource="https://w3id.org/ido/category/dress"/>
+        <ido:wasRealisedAs rdf:resource="https://w3id.org/ido/abox/anv5owm"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/anv5owm -->
+    <!-- https://w3id.org/ido/abox/anv5owm -->
 
-    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/anv5owm">
-        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Item"/>
-        <ido:isAvailableAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/anv5owm-m"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ido/abox/anv5owm">
+        <rdf:type rdf:resource="https://w3id.org/ido/Item"/>
+        <ido:isAvailableAs rdf:resource="https://w3id.org/ido/abox/anv5owm-m"/>
         <dcterms:identifier>ANV5OWM</dcterms:identifier>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/anv5owm-1 -->
+    <!-- https://w3id.org/ido/abox/anv5owm-1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/anv5owm-1">
-        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/StockKeepingUnitAmount"/>
-        <v1:typeOfGood rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/anv5owm-m"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ido/abox/anv5owm-1">
+        <rdf:type rdf:resource="https://w3id.org/ido/StockKeepingUnitAmount"/>
+        <v1:typeOfGood rdf:resource="https://w3id.org/ido/abox/anv5owm-m"/>
         <schema:orderQuantity rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1</schema:orderQuantity>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/anv5owm-m -->
+    <!-- https://w3id.org/ido/abox/anv5owm-m -->
 
-    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/anv5owm-m">
-        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/StockKeepingUnit"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ido/abox/anv5owm-m">
+        <rdf:type rdf:resource="https://w3id.org/ido/StockKeepingUnit"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/basilicata -->
+    <!-- https://w3id.org/ido/abox/basilicata -->
 
-    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/basilicata">
-        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Region"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ido/abox/basilicata">
+        <rdf:type rdf:resource="https://w3id.org/ido/Region"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/campobasso -->
+    <!-- https://w3id.org/ido/abox/campobasso -->
 
-    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/campobasso">
-        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Province"/>
-        <schema:containedIn rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/molise"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ido/abox/campobasso">
+        <rdf:type rdf:resource="https://w3id.org/ido/Province"/>
+        <schema:containedIn rdf:resource="https://w3id.org/ido/abox/molise"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/friuli-venezia-giulia -->
+    <!-- https://w3id.org/ido/abox/friuli-venezia-giulia -->
 
-    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/friuli-venezia-giulia">
-        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Region"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ido/abox/friuli-venezia-giulia">
+        <rdf:type rdf:resource="https://w3id.org/ido/Region"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/lombardia -->
+    <!-- https://w3id.org/ido/abox/lombardia -->
 
-    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/lombardia">
-        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Region"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ido/abox/lombardia">
+        <rdf:type rdf:resource="https://w3id.org/ido/Region"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/molise -->
+    <!-- https://w3id.org/ido/abox/molise -->
 
-    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/molise">
-        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Region"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ido/abox/molise">
+        <rdf:type rdf:resource="https://w3id.org/ido/Region"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/monza-brianza -->
+    <!-- https://w3id.org/ido/abox/monza-brianza -->
 
-    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/monza-brianza">
-        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Province"/>
-        <schema:containedIn rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/lombardia"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ido/abox/monza-brianza">
+        <rdf:type rdf:resource="https://w3id.org/ido/Province"/>
+        <schema:containedIn rdf:resource="https://w3id.org/ido/abox/lombardia"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/mso4 -->
+    <!-- https://w3id.org/ido/abox/mso4 -->
 
-    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/mso4">
-        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Style"/>
-        <ido:hasArticleCategory rdf:resource="http://www.essepuntato.it/2015/07/ido/category/sweater"/>
-        <ido:wasRealisedAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/mso4oawtd"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ido/abox/mso4">
+        <rdf:type rdf:resource="https://w3id.org/ido/Style"/>
+        <ido:hasArticleCategory rdf:resource="https://w3id.org/ido/category/sweater"/>
+        <ido:wasRealisedAs rdf:resource="https://w3id.org/ido/abox/mso4oawtd"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/mso4oawtd -->
+    <!-- https://w3id.org/ido/abox/mso4oawtd -->
 
-    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/mso4oawtd">
-        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Item"/>
-        <ido:isAvailableAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/mso4oawtd-m"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ido/abox/mso4oawtd">
+        <rdf:type rdf:resource="https://w3id.org/ido/Item"/>
+        <ido:isAvailableAs rdf:resource="https://w3id.org/ido/abox/mso4oawtd-m"/>
         <dcterms:identifier>MSO4OAWTD</dcterms:identifier>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/mso4oawtd-2 -->
+    <!-- https://w3id.org/ido/abox/mso4oawtd-2 -->
 
-    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/mso4oawtd-2">
-        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/StockKeepingUnitAmount"/>
-        <v1:typeOfGood rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/mso4oawtd-m"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ido/abox/mso4oawtd-2">
+        <rdf:type rdf:resource="https://w3id.org/ido/StockKeepingUnitAmount"/>
+        <v1:typeOfGood rdf:resource="https://w3id.org/ido/abox/mso4oawtd-m"/>
         <schema:orderQuantity rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</schema:orderQuantity>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/mso4oawtd-m -->
+    <!-- https://w3id.org/ido/abox/mso4oawtd-m -->
 
-    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/mso4oawtd-m">
-        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/StockKeepingUnit"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ido/abox/mso4oawtd-m">
+        <rdf:type rdf:resource="https://w3id.org/ido/StockKeepingUnit"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/msu4 -->
+    <!-- https://w3id.org/ido/abox/msu4 -->
 
-    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/msu4">
-        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Style"/>
-        <ido:hasArticleCategory rdf:resource="http://www.essepuntato.it/2015/07/ido/category/sweater"/>
-        <ido:wasRealisedAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/msu4oftl"/>
-        <ido:wasRealisedAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/msu4ojjl"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ido/abox/msu4">
+        <rdf:type rdf:resource="https://w3id.org/ido/Style"/>
+        <ido:hasArticleCategory rdf:resource="https://w3id.org/ido/category/sweater"/>
+        <ido:wasRealisedAs rdf:resource="https://w3id.org/ido/abox/msu4oftl"/>
+        <ido:wasRealisedAs rdf:resource="https://w3id.org/ido/abox/msu4ojjl"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/msu4oftl -->
+    <!-- https://w3id.org/ido/abox/msu4oftl -->
 
-    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/msu4oftl">
-        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Item"/>
-        <ido:isAvailableAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/msu4oftl-m"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ido/abox/msu4oftl">
+        <rdf:type rdf:resource="https://w3id.org/ido/Item"/>
+        <ido:isAvailableAs rdf:resource="https://w3id.org/ido/abox/msu4oftl-m"/>
         <dcterms:identifier>MSU4OFTL</dcterms:identifier>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/msu4oftl-1 -->
+    <!-- https://w3id.org/ido/abox/msu4oftl-1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/msu4oftl-1">
-        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/StockKeepingUnitAmount"/>
-        <v1:typeOfGood rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/msu4oftl-m"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ido/abox/msu4oftl-1">
+        <rdf:type rdf:resource="https://w3id.org/ido/StockKeepingUnitAmount"/>
+        <v1:typeOfGood rdf:resource="https://w3id.org/ido/abox/msu4oftl-m"/>
         <schema:orderQuantity rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1</schema:orderQuantity>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/msu4oftl-m -->
+    <!-- https://w3id.org/ido/abox/msu4oftl-m -->
 
-    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/msu4oftl-m">
-        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/StockKeepingUnit"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ido/abox/msu4oftl-m">
+        <rdf:type rdf:resource="https://w3id.org/ido/StockKeepingUnit"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/msu4ojjl -->
+    <!-- https://w3id.org/ido/abox/msu4ojjl -->
 
-    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/msu4ojjl">
-        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Item"/>
-        <ido:isAvailableAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/msu4ojjl-m"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ido/abox/msu4ojjl">
+        <rdf:type rdf:resource="https://w3id.org/ido/Item"/>
+        <ido:isAvailableAs rdf:resource="https://w3id.org/ido/abox/msu4ojjl-m"/>
         <dcterms:identifier>MSU4OJJL</dcterms:identifier>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/msu4ojjl-1 -->
+    <!-- https://w3id.org/ido/abox/msu4ojjl-1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/msu4ojjl-1">
-        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/StockKeepingUnitAmount"/>
-        <v1:typeOfGood rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/msu4ojjl-m"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ido/abox/msu4ojjl-1">
+        <rdf:type rdf:resource="https://w3id.org/ido/StockKeepingUnitAmount"/>
+        <v1:typeOfGood rdf:resource="https://w3id.org/ido/abox/msu4ojjl-m"/>
         <schema:orderQuantity rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1</schema:orderQuantity>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/msu4ojjl-m -->
+    <!-- https://w3id.org/ido/abox/msu4ojjl-m -->
 
-    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/msu4ojjl-m">
-        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/StockKeepingUnit"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ido/abox/msu4ojjl-m">
+        <rdf:type rdf:resource="https://w3id.org/ido/StockKeepingUnit"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/order-1 -->
+    <!-- https://w3id.org/ido/abox/order-1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/order-1">
-        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Order"/>
-        <schema:orderedItem rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/amt3odo-1"/>
-        <ido:hasDeliveryLocation rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/trieste"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ido/abox/order-1">
+        <rdf:type rdf:resource="https://w3id.org/ido/Order"/>
+        <schema:orderedItem rdf:resource="https://w3id.org/ido/abox/amt3odo-1"/>
+        <ido:hasDeliveryLocation rdf:resource="https://w3id.org/ido/abox/trieste"/>
         <schema:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-01-02T12:58:00</schema:orderDate>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/order-2 -->
+    <!-- https://w3id.org/ido/abox/order-2 -->
 
-    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/order-2">
-        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Order"/>
-        <schema:orderedItem rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/pxi8ohs-1"/>
-        <ido:hasDeliveryLocation rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/potenza"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ido/abox/order-2">
+        <rdf:type rdf:resource="https://w3id.org/ido/Order"/>
+        <schema:orderedItem rdf:resource="https://w3id.org/ido/abox/pxi8ohs-1"/>
+        <ido:hasDeliveryLocation rdf:resource="https://w3id.org/ido/abox/potenza"/>
         <schema:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-01-02T14:40:00</schema:orderDate>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/order-3 -->
+    <!-- https://w3id.org/ido/abox/order-3 -->
 
-    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/order-3">
-        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Order"/>
-        <schema:orderedItem rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/mso4oawtd-2"/>
-        <schema:orderedItem rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/msu4oftl-1"/>
-        <schema:orderedItem rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/msu4ojjl-1"/>
-        <schema:orderedItem rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/pxg8ovq-1"/>
-        <ido:hasDeliveryLocation rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/monza-brianza"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ido/abox/order-3">
+        <rdf:type rdf:resource="https://w3id.org/ido/Order"/>
+        <schema:orderedItem rdf:resource="https://w3id.org/ido/abox/mso4oawtd-2"/>
+        <schema:orderedItem rdf:resource="https://w3id.org/ido/abox/msu4oftl-1"/>
+        <schema:orderedItem rdf:resource="https://w3id.org/ido/abox/msu4ojjl-1"/>
+        <schema:orderedItem rdf:resource="https://w3id.org/ido/abox/pxg8ovq-1"/>
+        <ido:hasDeliveryLocation rdf:resource="https://w3id.org/ido/abox/monza-brianza"/>
         <schema:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-01-02T16:18:00</schema:orderDate>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/order-4 -->
+    <!-- https://w3id.org/ido/abox/order-4 -->
 
-    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/order-4">
-        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Order"/>
-        <schema:orderedItem rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/anv5owm-1"/>
-        <ido:hasDeliveryLocation rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/campobasso"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ido/abox/order-4">
+        <rdf:type rdf:resource="https://w3id.org/ido/Order"/>
+        <schema:orderedItem rdf:resource="https://w3id.org/ido/abox/anv5owm-1"/>
+        <ido:hasDeliveryLocation rdf:resource="https://w3id.org/ido/abox/campobasso"/>
         <schema:orderDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-01-03T00:28:00</schema:orderDate>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/potenza -->
+    <!-- https://w3id.org/ido/abox/potenza -->
 
-    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/potenza">
-        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Province"/>
-        <schema:containedIn rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/basilicata"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ido/abox/potenza">
+        <rdf:type rdf:resource="https://w3id.org/ido/Province"/>
+        <schema:containedIn rdf:resource="https://w3id.org/ido/abox/basilicata"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/pxg8 -->
+    <!-- https://w3id.org/ido/abox/pxg8 -->
 
-    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/pxg8">
-        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Style"/>
-        <ido:hasArticleCategory rdf:resource="http://www.essepuntato.it/2015/07/ido/category/trousers"/>
-        <ido:wasRealisedAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/pxg8ovq"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ido/abox/pxg8">
+        <rdf:type rdf:resource="https://w3id.org/ido/Style"/>
+        <ido:hasArticleCategory rdf:resource="https://w3id.org/ido/category/trousers"/>
+        <ido:wasRealisedAs rdf:resource="https://w3id.org/ido/abox/pxg8ovq"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/pxg8ovq -->
+    <!-- https://w3id.org/ido/abox/pxg8ovq -->
 
-    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/pxg8ovq">
-        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Item"/>
-        <ido:isAvailableAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/pxg8ovq-m"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ido/abox/pxg8ovq">
+        <rdf:type rdf:resource="https://w3id.org/ido/Item"/>
+        <ido:isAvailableAs rdf:resource="https://w3id.org/ido/abox/pxg8ovq-m"/>
         <dcterms:identifier>PXG8OVQ</dcterms:identifier>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/pxg8ovq-1 -->
+    <!-- https://w3id.org/ido/abox/pxg8ovq-1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/pxg8ovq-1">
-        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/StockKeepingUnitAmount"/>
-        <v1:typeOfGood rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/pxg8ovq-m"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ido/abox/pxg8ovq-1">
+        <rdf:type rdf:resource="https://w3id.org/ido/StockKeepingUnitAmount"/>
+        <v1:typeOfGood rdf:resource="https://w3id.org/ido/abox/pxg8ovq-m"/>
         <schema:orderQuantity rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1</schema:orderQuantity>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/pxg8ovq-m -->
+    <!-- https://w3id.org/ido/abox/pxg8ovq-m -->
 
-    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/pxg8ovq-m">
-        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/StockKeepingUnit"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ido/abox/pxg8ovq-m">
+        <rdf:type rdf:resource="https://w3id.org/ido/StockKeepingUnit"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/pxi8 -->
+    <!-- https://w3id.org/ido/abox/pxi8 -->
 
-    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/pxi8">
-        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Style"/>
-        <ido:hasArticleCategory rdf:resource="http://www.essepuntato.it/2015/07/ido/category/trousers"/>
-        <ido:wasRealisedAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/pxi8ohs"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ido/abox/pxi8">
+        <rdf:type rdf:resource="https://w3id.org/ido/Style"/>
+        <ido:hasArticleCategory rdf:resource="https://w3id.org/ido/category/trousers"/>
+        <ido:wasRealisedAs rdf:resource="https://w3id.org/ido/abox/pxi8ohs"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/pxi8ohs -->
+    <!-- https://w3id.org/ido/abox/pxi8ohs -->
 
-    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/pxi8ohs">
-        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Item"/>
-        <ido:isAvailableAs rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/pxi8ohs-m"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ido/abox/pxi8ohs">
+        <rdf:type rdf:resource="https://w3id.org/ido/Item"/>
+        <ido:isAvailableAs rdf:resource="https://w3id.org/ido/abox/pxi8ohs-m"/>
         <dcterms:identifier>PXI8OHS</dcterms:identifier>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/pxi8ohs-1 -->
+    <!-- https://w3id.org/ido/abox/pxi8ohs-1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/pxi8ohs-1">
-        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/StockKeepingUnitAmount"/>
-        <v1:typeOfGood rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/pxi8ohs-m"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ido/abox/pxi8ohs-1">
+        <rdf:type rdf:resource="https://w3id.org/ido/StockKeepingUnitAmount"/>
+        <v1:typeOfGood rdf:resource="https://w3id.org/ido/abox/pxi8ohs-m"/>
         <schema:orderQuantity rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1</schema:orderQuantity>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/pxi8ohs-m -->
+    <!-- https://w3id.org/ido/abox/pxi8ohs-m -->
 
-    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/pxi8ohs-m">
-        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/StockKeepingUnit"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ido/abox/pxi8ohs-m">
+        <rdf:type rdf:resource="https://w3id.org/ido/StockKeepingUnit"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/trieste -->
+    <!-- https://w3id.org/ido/abox/trieste -->
 
-    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/abox/trieste">
-        <rdf:type rdf:resource="http://www.essepuntato.it/2015/07/ido/Province"/>
-        <schema:containedIn rdf:resource="http://www.essepuntato.it/2015/07/ido/abox/friuli-venezia-giulia"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ido/abox/trieste">
+        <rdf:type rdf:resource="https://w3id.org/ido/Province"/>
+        <schema:containedIn rdf:resource="https://w3id.org/ido/abox/friuli-venezia-giulia"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/category/dress -->
+    <!-- https://w3id.org/ido/category/dress -->
 
-    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/category/dress"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ido/category/dress"/>
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/category/sweater -->
+    <!-- https://w3id.org/ido/category/sweater -->
 
-    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/category/sweater"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ido/category/sweater"/>
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/category/trousers -->
+    <!-- https://w3id.org/ido/category/trousers -->
 
-    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2015/07/ido/category/trousers"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ido/category/trousers"/>
 </rdf:RDF>
 
 

@@ -7,7 +7,7 @@
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY tbox "http://www.essepuntato.it/example/" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
-    <!ENTITY ido "http://www.essepuntato.it/2015/07/ido/" >
+    <!ENTITY ido "https://w3id.org/ido/" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
 ]>
 
@@ -18,11 +18,11 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:ido="http://www.essepuntato.it/2015/07/ido/"
+     xmlns:ido="https://w3id.org/ido/"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="&ido;abox">
-        <owl:imports rdf:resource="http://www.essepuntato.it/2015/07/ido/"/>
+        <owl:imports rdf:resource="https://w3id.org/ido/"/>
     </owl:Ontology>
 
 
@@ -38,49 +38,49 @@
 
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/hasArticleCategory -->
+    <!-- https://w3id.org/ido/hasArticleCategory -->
 
     <owl:ObjectProperty rdf:about="&ido;hasArticleCategory"/>
 
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/hasColour -->
+    <!-- https://w3id.org/ido/hasColour -->
 
     <owl:ObjectProperty rdf:about="&ido;hasColour"/>
 
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/hasSize -->
+    <!-- https://w3id.org/ido/hasSize -->
 
     <owl:ObjectProperty rdf:about="&ido;hasSize"/>
 
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/isAvailableAs -->
+    <!-- https://w3id.org/ido/isAvailableAs -->
 
     <owl:ObjectProperty rdf:about="&ido;isAvailableAs"/>
 
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/wasProducedAs -->
+    <!-- https://w3id.org/ido/wasProducedAs -->
 
     <owl:ObjectProperty rdf:about="&ido;wasProducedAs"/>
 
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/wasProposedFor -->
+    <!-- https://w3id.org/ido/wasProposedFor -->
 
     <owl:ObjectProperty rdf:about="&ido;wasProposedFor"/>
 
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/wasRealisedAs -->
+    <!-- https://w3id.org/ido/wasRealisedAs -->
 
     <owl:ObjectProperty rdf:about="&ido;wasRealisedAs"/>
 
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/wasMadeOf -->
+    <!-- https://w3id.org/ido/wasMadeOf -->
 
     <owl:ObjectProperty rdf:about="&ido;wasMadeOf"/>
 
@@ -103,7 +103,7 @@
 
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/wasDesignedFor -->
+    <!-- https://w3id.org/ido/wasDesignedFor -->
 
     <owl:DatatypeProperty rdf:about="&ido;wasDesignedFor"/>
 
@@ -120,7 +120,7 @@
 
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/AMT3 -->
+    <!-- https://w3id.org/ido/abox/AMT3 -->
 
     <owl:NamedIndividual rdf:about="&ido;abox/AMT3">
         <rdf:type rdf:resource="&ido;Style"/>
@@ -131,7 +131,7 @@
 
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/AMT3ODO -->
+    <!-- https://w3id.org/ido/abox/AMT3ODO -->
 
     <owl:NamedIndividual rdf:about="&ido;abox/AMT3ODO">
         <rdf:type rdf:resource="&ido;Item"/>
@@ -150,7 +150,7 @@
 
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/AMT3ODO-l-black -->
+    <!-- https://w3id.org/ido/abox/AMT3ODO-l-black -->
 
     <owl:NamedIndividual rdf:about="&ido;abox/AMT3ODO-l-black">
         <rdf:type rdf:resource="&ido;StockKeepingUnit"/>
@@ -160,7 +160,7 @@
 
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/AMT3ODO-l-white -->
+    <!-- https://w3id.org/ido/abox/AMT3ODO-l-white -->
 
     <owl:NamedIndividual rdf:about="&ido;abox/AMT3ODO-l-white">
         <rdf:type rdf:resource="&ido;StockKeepingUnit"/>
@@ -170,7 +170,7 @@
 
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/AMT3ODO-m-black -->
+    <!-- https://w3id.org/ido/abox/AMT3ODO-m-black -->
 
     <owl:NamedIndividual rdf:about="&ido;abox/AMT3ODO-m-black">
         <rdf:type rdf:resource="&ido;StockKeepingUnit"/>
@@ -185,7 +185,7 @@
 
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/AMT3ODO-m-black-1 -->
+    <!-- https://w3id.org/ido/abox/AMT3ODO-m-black-1 -->
 
     <owl:NamedIndividual rdf:about="&ido;abox/AMT3ODO-m-black-1">
         <rdf:type rdf:resource="&ido;Piece"/>
@@ -193,7 +193,7 @@
 
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/AMT3ODO-m-black-2 -->
+    <!-- https://w3id.org/ido/abox/AMT3ODO-m-black-2 -->
 
     <owl:NamedIndividual rdf:about="&ido;abox/AMT3ODO-m-black-2">
         <rdf:type rdf:resource="&ido;Piece"/>
@@ -201,7 +201,7 @@
 
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/AMT3ODO-m-black-3 -->
+    <!-- https://w3id.org/ido/abox/AMT3ODO-m-black-3 -->
 
     <owl:NamedIndividual rdf:about="&ido;abox/AMT3ODO-m-black-3">
         <rdf:type rdf:resource="&ido;Piece"/>
@@ -209,7 +209,7 @@
 
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/AMT3ODO-m-black-4 -->
+    <!-- https://w3id.org/ido/abox/AMT3ODO-m-black-4 -->
 
     <owl:NamedIndividual rdf:about="&ido;abox/AMT3ODO-m-black-4">
         <rdf:type rdf:resource="&ido;Piece"/>
@@ -217,7 +217,7 @@
 
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/AMT3ODO-m-black-5 -->
+    <!-- https://w3id.org/ido/abox/AMT3ODO-m-black-5 -->
 
     <owl:NamedIndividual rdf:about="&ido;abox/AMT3ODO-m-black-5">
         <rdf:type rdf:resource="&ido;Piece"/>
@@ -225,7 +225,7 @@
 
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/AMT3ODO-m-white -->
+    <!-- https://w3id.org/ido/abox/AMT3ODO-m-white -->
 
     <owl:NamedIndividual rdf:about="&ido;abox/AMT3ODO-m-white">
         <rdf:type rdf:resource="&ido;StockKeepingUnit"/>
@@ -238,7 +238,7 @@
 
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/AMT3ODO-m-white-1 -->
+    <!-- https://w3id.org/ido/abox/AMT3ODO-m-white-1 -->
 
     <owl:NamedIndividual rdf:about="&ido;abox/AMT3ODO-m-white-1">
         <rdf:type rdf:resource="&ido;Piece"/>
@@ -246,7 +246,7 @@
 
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/AMT3ODO-m-white-2 -->
+    <!-- https://w3id.org/ido/abox/AMT3ODO-m-white-2 -->
 
     <owl:NamedIndividual rdf:about="&ido;abox/AMT3ODO-m-white-2">
         <rdf:type rdf:resource="&ido;Piece"/>
@@ -254,7 +254,7 @@
 
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/AMT3ODO-m-white-3 -->
+    <!-- https://w3id.org/ido/abox/AMT3ODO-m-white-3 -->
 
     <owl:NamedIndividual rdf:about="&ido;abox/AMT3ODO-m-white-3">
         <rdf:type rdf:resource="&ido;Piece"/>
@@ -262,7 +262,7 @@
 
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/AMT3ODO-s-black -->
+    <!-- https://w3id.org/ido/abox/AMT3ODO-s-black -->
 
     <owl:NamedIndividual rdf:about="&ido;abox/AMT3ODO-s-black">
         <rdf:type rdf:resource="&ido;StockKeepingUnit"/>
@@ -272,7 +272,7 @@
 
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/AMT3ODO-s-white -->
+    <!-- https://w3id.org/ido/abox/AMT3ODO-s-white -->
 
     <owl:NamedIndividual rdf:about="&ido;abox/AMT3ODO-s-white">
         <rdf:type rdf:resource="&ido;StockKeepingUnit"/>
@@ -282,7 +282,7 @@
 
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/AMT3ODO-xl-black -->
+    <!-- https://w3id.org/ido/abox/AMT3ODO-xl-black -->
 
     <owl:NamedIndividual rdf:about="&ido;abox/AMT3ODO-xl-black">
         <rdf:type rdf:resource="&ido;StockKeepingUnit"/>
@@ -292,7 +292,7 @@
 
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/AMT3ODO-xl-white -->
+    <!-- https://w3id.org/ido/abox/AMT3ODO-xl-white -->
 
     <owl:NamedIndividual rdf:about="&ido;abox/AMT3ODO-xl-white">
         <rdf:type rdf:resource="&ido;StockKeepingUnit"/>
@@ -302,7 +302,7 @@
 
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/ODO -->
+    <!-- https://w3id.org/ido/abox/ODO -->
 
     <owl:NamedIndividual rdf:about="&ido;abox/ODO">
         <rdf:type rdf:resource="&ido;Textile"/>
@@ -311,7 +311,7 @@
 
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/black -->
+    <!-- https://w3id.org/ido/abox/black -->
 
     <owl:NamedIndividual rdf:about="&ido;abox/black">
         <rdf:type rdf:resource="&ido;Colour"/>
@@ -319,7 +319,7 @@
 
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/l -->
+    <!-- https://w3id.org/ido/abox/l -->
 
     <owl:NamedIndividual rdf:about="&ido;abox/l">
         <rdf:type rdf:resource="&ido;Size"/>
@@ -327,7 +327,7 @@
 
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/m -->
+    <!-- https://w3id.org/ido/abox/m -->
 
     <owl:NamedIndividual rdf:about="&ido;abox/m">
         <rdf:type rdf:resource="&ido;Size"/>
@@ -335,7 +335,7 @@
 
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/s -->
+    <!-- https://w3id.org/ido/abox/s -->
 
     <owl:NamedIndividual rdf:about="&ido;abox/s">
         <rdf:type rdf:resource="&ido;Size"/>
@@ -343,7 +343,7 @@
 
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/spring-summer-2016 -->
+    <!-- https://w3id.org/ido/abox/spring-summer-2016 -->
 
     <owl:NamedIndividual rdf:about="&ido;abox/spring-summer-2016">
         <rdf:type rdf:resource="&ido;Season"/>
@@ -351,7 +351,7 @@
 
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/white -->
+    <!-- https://w3id.org/ido/abox/white -->
 
     <owl:NamedIndividual rdf:about="&ido;abox/white">
         <rdf:type rdf:resource="&ido;Colour"/>
@@ -359,7 +359,7 @@
 
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/xl -->
+    <!-- https://w3id.org/ido/abox/xl -->
 
     <owl:NamedIndividual rdf:about="&ido;abox/xl">
         <rdf:type rdf:resource="&ido;Size"/>
@@ -367,7 +367,7 @@
 
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/category/dress -->
+    <!-- https://w3id.org/ido/category/dress -->
 
     <owl:NamedIndividual rdf:about="&ido;category/dress"/>
 </rdf:RDF>

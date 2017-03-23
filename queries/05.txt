@@ -3,8 +3,8 @@
 #question_en What is the final amount of all the orders done in January 2016?
 
 #sparql
-PREFIX ido: <http://www.essepuntato.it/2015/07/ido/>
-PREFIX : <http://www.essepuntato.it/2015/07/ido/abox/>
+PREFIX ido: <https://w3id.org/ido/>
+PREFIX : <https://w3id.org/ido/abox/>
 PREFIX schema: <http://schema.org/>
 
 SELECT DISTINCT (sum(?totalValue) AS ?sum)
@@ -20,8 +20,8 @@ WHERE {
 
 #question_en What is the total amount of the invoice associated to all the orders issued in January 2016?
 
-#sparql PREFIX ido: <http://www.essepuntato.it/2015/07/ido/>
-PREFIX : <http://www.essepuntato.it/2015/07/ido/abox/>
+#sparql PREFIX ido: <https://w3id.org/ido/>
+PREFIX : <https://w3id.org/ido/abox/>
 PREFIX schema: <http://schema.org/>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 
@@ -39,8 +39,8 @@ WHERE {
 
 #question_en What is the total amount of all the stock keeping units ordered?
 
-#sparql PREFIX ido: <http://www.essepuntato.it/2015/07/ido/>
-PREFIX : <http://www.essepuntato.it/2015/07/ido/abox/>
+#sparql PREFIX ido: <https://w3id.org/ido/>
+PREFIX : <https://w3id.org/ido/abox/>
 PREFIX gr: <http://purl.org/goodrelations/v1#>
 PREFIX schema: <http://schema.org/>
 
@@ -60,8 +60,8 @@ WHERE {
 
 #question_en What are the invoices that specify a total amount different to that one indicated in the referenced order?
 
-#sparql PREFIX ido: <http://www.essepuntato.it/2015/07/ido/>
-PREFIX : <http://www.essepuntato.it/2015/07/ido/abox/>
+#sparql PREFIX ido: <https://w3id.org/ido/>
+PREFIX : <https://w3id.org/ido/abox/>
 PREFIX schema: <http://schema.org/>
 
 SELECT DISTINCT ?invoice ?invoicevalue ?order ?ordervalue ?difference
@@ -83,8 +83,8 @@ WHERE {
 
 #question_en What are the invoices that include a piece of a stock keeping unit that was not included in the referenced order?
 
-#sparql PREFIX ido: <http://www.essepuntato.it/2015/07/ido/>
-PREFIX : <http://www.essepuntato.it/2015/07/ido/abox/>
+#sparql PREFIX ido: <https://w3id.org/ido/>
+PREFIX : <https://w3id.org/ido/abox/>
 PREFIX gr: <http://purl.org/goodrelations/v1#>
 PREFIX schema: <http://schema.org/>
 
@@ -106,8 +106,8 @@ WHERE {
 
 #question_en What are the distribution platform and the sales channel used in the various orders?
 
-#sparql PREFIX ido: <http://www.essepuntato.it/2015/07/ido/>
-PREFIX : <http://www.essepuntato.it/2015/07/ido/abox/>
+#sparql PREFIX ido: <https://w3id.org/ido/>
+PREFIX : <https://w3id.org/ido/abox/>
 
 SELECT DISTINCT ?order ?platform ?channel
 WHERE {

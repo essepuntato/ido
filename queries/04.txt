@@ -8,8 +8,8 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX schema: <http://schema.org/>
 PREFIX ti: <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#>
-PREFIX ido: <http://www.essepuntato.it/2015/07/ido/>
-PREFIX : <http://www.essepuntato.it/2015/07/ido/abox/>
+PREFIX ido: <https://w3id.org/ido/>
+PREFIX : <https://w3id.org/ido/abox/>
 
 SELECT DISTINCT ?sku ?cogs ?sellin ?sellout
 WHERE {
@@ -50,8 +50,8 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX ti: <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#>
 PREFIX schema: <http://schema.org/>
-PREFIX ido: <http://www.essepuntato.it/2015/07/ido/>
-PREFIX : <http://www.essepuntato.it/2015/07/ido/abox/>
+PREFIX ido: <https://w3id.org/ido/>
+PREFIX : <https://w3id.org/ido/abox/>
 
 SELECT DISTINCT ?piece ?price ?type ?discount
 WHERE {
@@ -76,8 +76,8 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX ti: <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#>
 PREFIX schema: <http://schema.org/>
-PREFIX ido: <http://www.essepuntato.it/2015/07/ido/>
-PREFIX : <http://www.essepuntato.it/2015/07/ido/abox/>
+PREFIX ido: <https://w3id.org/ido/>
+PREFIX : <https://w3id.org/ido/abox/>
 
 SELECT DISTINCT ?sku ?cogs ?st ?et
 WHERE {
@@ -104,8 +104,8 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX ti: <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#>
 PREFIX schema: <http://schema.org/>
-PREFIX ido: <http://www.essepuntato.it/2015/07/ido/>
-PREFIX : <http://www.essepuntato.it/2015/07/ido/abox/>
+PREFIX ido: <https://w3id.org/ido/>
+PREFIX : <https://w3id.org/ido/abox/>
 
 SELECT DISTINCT (sum(?price) as ?tot)
 WHERE {

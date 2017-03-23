@@ -10,14 +10,14 @@
     <!ENTITY gr "http://purl.org/goodrelations/v1#" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
-    <!ENTITY ido "http://www.essepuntato.it/2015/07/ido/" >
+    <!ENTITY ido "https://w3id.org/ido/" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-    <!ENTITY abox "http://www.essepuntato.it/2015/07/ido/abox/" >
+    <!ENTITY abox "https://w3id.org/ido/abox/" >
 ]>
 
 
-<rdf:RDF xmlns="http://www.semanticweb.org/owl/owlapi/turtle#"
-     xml:base="http://www.semanticweb.org/owl/owlapi/turtle"
+<rdf:RDF xmlns="https://w3id.org/ido/abox/"
+     xml:base="https://w3id.org/ido/abox/"
      xmlns:schema="http://schema.org/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:abox="&ido;abox/"
@@ -25,12 +25,12 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:gr="http://purl.org/goodrelations/v1#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:ido="http://www.essepuntato.it/2015/07/ido/"
+     xmlns:ido="https://w3id.org/ido/"
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="&ido;abox">
-        <owl:imports rdf:resource="http://www.essepuntato.it/2015/07/ido"/>
+        <owl:imports rdf:resource="https://w3id.org/ido"/>
     </owl:Ontology>
     
 
@@ -46,7 +46,7 @@
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/isAvailableAs -->
+    <!-- https://w3id.org/ido/isAvailableAs -->
 
     <owl:ObjectProperty rdf:about="&ido;isAvailableAs"/>
     
@@ -63,7 +63,7 @@
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/wasDesignedFor -->
+    <!-- https://w3id.org/ido/wasDesignedFor -->
 
     <owl:DatatypeProperty rdf:about="&ido;wasDesignedFor"/>
     
@@ -80,7 +80,7 @@
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/amt3 -->
+    <!-- https://w3id.org/ido/abox/amt3 -->
 
     <owl:NamedIndividual rdf:about="&ido;abox/amt3">
         <rdf:type rdf:resource="&ido;Style"/>
@@ -90,7 +90,7 @@
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/amt3odo -->
+    <!-- https://w3id.org/ido/abox/amt3odo -->
 
     <owl:NamedIndividual rdf:about="&ido;abox/amt3odo">
         <rdf:type rdf:resource="&ido;Item"/>
@@ -100,7 +100,7 @@
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/amt3odo-s-black -->
+    <!-- https://w3id.org/ido/abox/amt3odo-s-black -->
 
     <owl:NamedIndividual rdf:about="&ido;abox/amt3odo-s-black">
         <rdf:type rdf:resource="&ido;StockKeepingUnit"/>
@@ -111,7 +111,7 @@
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/amt3odo-s-black-1 -->
+    <!-- https://w3id.org/ido/abox/amt3odo-s-black-1 -->
 
     <owl:NamedIndividual rdf:about="&ido;abox/amt3odo-s-black-1">
         <rdf:type rdf:resource="&ido;Piece"/>
@@ -119,7 +119,7 @@
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/colour-black -->
+    <!-- https://w3id.org/ido/abox/colour-black -->
 
     <owl:NamedIndividual rdf:about="&ido;abox/colour-black">
         <rdf:type rdf:resource="&ido;Colour"/>
@@ -127,7 +127,7 @@
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/order-2378 -->
+    <!-- https://w3id.org/ido/abox/order-2378 -->
 
     <owl:NamedIndividual rdf:about="&ido;abox/order-2378">
         <rdf:type rdf:resource="&ido;Order"/>
@@ -140,7 +140,7 @@
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/order-2378-price -->
+    <!-- https://w3id.org/ido/abox/order-2378-price -->
 
     <owl:NamedIndividual rdf:about="&ido;abox/order-2378-price">
         <rdf:type rdf:resource="&ido;Price"/>
@@ -150,7 +150,7 @@
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/person-1981 -->
+    <!-- https://w3id.org/ido/abox/person-1981 -->
 
     <owl:NamedIndividual rdf:about="&ido;abox/person-1981">
         <rdf:type rdf:resource="&ido;Person"/>
@@ -162,7 +162,7 @@
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/province-trieste -->
+    <!-- https://w3id.org/ido/abox/province-trieste -->
 
     <owl:NamedIndividual rdf:about="&ido;abox/province-trieste">
         <rdf:type rdf:resource="&ido;Province"/>
@@ -171,7 +171,7 @@
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/region-friuli-venezia-giulia -->
+    <!-- https://w3id.org/ido/abox/region-friuli-venezia-giulia -->
 
     <owl:NamedIndividual rdf:about="&ido;abox/region-friuli-venezia-giulia">
         <rdf:type rdf:resource="&ido;Region"/>
@@ -179,7 +179,7 @@
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/size-s -->
+    <!-- https://w3id.org/ido/abox/size-s -->
 
     <owl:NamedIndividual rdf:about="&ido;abox/size-s">
         <rdf:type rdf:resource="&ido;Size"/>
@@ -187,7 +187,7 @@
     
 
 
-    <!-- http://www.essepuntato.it/2015/07/ido/abox/user-4626 -->
+    <!-- https://w3id.org/ido/abox/user-4626 -->
 
     <owl:NamedIndividual rdf:about="&ido;abox/user-4626">
         <rdf:type rdf:resource="&ido;UserAccount"/>

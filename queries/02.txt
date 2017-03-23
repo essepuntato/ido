@@ -5,11 +5,11 @@
 #sparql PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX ido: <http://www.essepuntato.it/2015/07/ido/>
+PREFIX ido: <https://w3id.org/ido/>
 PREFIX schema: <http://schema.org/>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX gr: <http://purl.org/goodrelations/v1#>
-PREFIX : <http://www.essepuntato.it/2015/07/ido/abox/>
+PREFIX : <https://w3id.org/ido/abox/>
 
 SELECT ?category (sum(?amount) as ?n)
 WHERE {
@@ -33,11 +33,11 @@ LIMIT 1
 #sparql PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX ido: <http://www.essepuntato.it/2015/07/ido/>
+PREFIX ido: <https://w3id.org/ido/>
 PREFIX schema: <http://schema.org/>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX gr: <http://purl.org/goodrelations/v1#>
-PREFIX : <http://www.essepuntato.it/2015/07/ido/abox/>
+PREFIX : <https://w3id.org/ido/abox/>
 
 SELECT ?region ?category
 WHERE {
@@ -85,11 +85,11 @@ WHERE {
 #sparql PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX ido: <http://www.essepuntato.it/2015/07/ido/>
+PREFIX ido: <https://w3id.org/ido/>
 PREFIX schema: <http://schema.org/>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX gr: <http://purl.org/goodrelations/v1#>
-PREFIX : <http://www.essepuntato.it/2015/07/ido/abox/>
+PREFIX : <https://w3id.org/ido/abox/>
 
 SELECT ?category (sum(?amount) as ?n)
 WHERE {
