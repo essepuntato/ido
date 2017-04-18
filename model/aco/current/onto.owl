@@ -12,17 +12,17 @@
      xmlns:category="https://w3id.org/ido/category/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="https://w3id.org/ido/aco">
-        <owl:versionIRI rdf:resource="https://w3id.org/ido/aco/1.1.1"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/ido/aco/1.2"/>
         <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <dc:rights xml:lang="it">Questo lavoro è distribuito sotto una licenza [Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/).</dc:rights>
-        <owl:versionInfo>1.1.1</owl:versionInfo>
-        <rdfs:comment xml:lang="en">This ontology defines a taxonomy of all the categories for the articles described by means of the Imperial Data Ontology (IDO, https://w3id.org/ido).</rdfs:comment>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.2</owl:versionInfo>
         <dc:title xml:lang="en">Article Category Ontology</dc:title>
         <rdfs:label>ACO</rdfs:label>
         <dc:creator>Silvio Peroni (http://orcid.org/0000-0003-0530-4305)</dc:creator>
-        <dc:date>2017-03-23</dc:date>
-        <dc:rights xml:lang="en">This work is distributed under a [Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/).</dc:rights>
+        <dc:date>2017-04-18</dc:date>
+        <rdfs:comment xml:lang="en">This ontology defines a taxonomy of all the categories for the articles described by means of the Imperial Data Ontology (IDO, https://w3id.org/ido).</rdfs:comment>
         <rdfs:comment xml:lang="it">Questa ontologia definisce una tassonomia delle categorie degli articoli descrivibili usando la Imperial Data Ontology (IDO, https://w3id.org/ido).</rdfs:comment>
+        <dc:rights xml:lang="en">This work is distributed under a [Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/).</dc:rights>
     </owl:Ontology>
     
 
@@ -123,11 +123,75 @@
     
 
 
+    <!-- https://w3id.org/ido/aco/bodysuit -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ido/aco/bodysuit">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
+        <skos:inScheme rdf:resource="https://w3id.org/ido/category"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/ido/category"/>
+        <skos:notation>B</skos:notation>
+        <rdfs:label xml:lang="it">body</rdfs:label>
+        <rdfs:label xml:lang="en">bodysuit</rdfs:label>
+        <skos:prefLabel xml:lang="it">body</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">bodysuit</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ido/aco/shoe -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ido/aco/shoe">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
+        <skos:inScheme rdf:resource="https://w3id.org/ido/category"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/ido/category"/>
+        <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</skos:notation>
+        <rdfs:label xml:lang="it">scarpa</rdfs:label>
+        <rdfs:label xml:lang="en">shoe</rdfs:label>
+        <skos:prefLabel xml:lang="it">scarpa</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">shoe</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ido/aco/tshirt -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ido/aco/tshirt">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
+        <skos:inScheme rdf:resource="https://w3id.org/ido/category"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/ido/category"/>
+        <skos:notation>T</skos:notation>
+        <rdfs:label xml:lang="it">maglietta</rdfs:label>
+        <rdfs:label xml:lang="en">t-shirt</rdfs:label>
+        <skos:prefLabel xml:lang="it">maglietta</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">t-shirt</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ido/aco/underwear -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ido/aco/underwear">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
+        <skos:inScheme rdf:resource="https://w3id.org/ido/category"/>
+        <skos:topConceptOf rdf:resource="https://w3id.org/ido/category"/>
+        <skos:notation>O</skos:notation>
+        <rdfs:label xml:lang="it">intimo</rdfs:label>
+        <rdfs:label xml:lang="en">underwear</rdfs:label>
+        <skos:prefLabel xml:lang="it">intimo</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">underwear</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/ido/category/blazer -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ido/category/blazer">
-        <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
         <skos:inScheme rdf:resource="https://w3id.org/ido/category"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/ido/category"/>
         <skos:notation>J</skos:notation>
@@ -142,8 +206,8 @@
     <!-- https://w3id.org/ido/category/coat -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ido/category/coat">
-        <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
         <skos:inScheme rdf:resource="https://w3id.org/ido/category"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/ido/category"/>
         <skos:notation>K</skos:notation>
@@ -158,8 +222,8 @@
     <!-- https://w3id.org/ido/category/dress -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ido/category/dress">
-        <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
         <skos:inScheme rdf:resource="https://w3id.org/ido/category"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/ido/category"/>
         <skos:notation>A</skos:notation>
@@ -174,8 +238,8 @@
     <!-- https://w3id.org/ido/category/fur-neck -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ido/category/fur-neck">
-        <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
         <skos:inScheme rdf:resource="https://w3id.org/ido/category"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/ido/category"/>
         <skos:notation>9</skos:notation>
@@ -190,8 +254,8 @@
     <!-- https://w3id.org/ido/category/hat -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ido/category/hat">
-        <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
         <skos:inScheme rdf:resource="https://w3id.org/ido/category"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/ido/category"/>
         <skos:notation>5</skos:notation>
@@ -206,8 +270,8 @@
     <!-- https://w3id.org/ido/category/heavy-jacket -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ido/category/heavy-jacket">
-        <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
         <skos:inScheme rdf:resource="https://w3id.org/ido/category"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/ido/category"/>
         <skos:notation>U</skos:notation>
@@ -222,8 +286,8 @@
     <!-- https://w3id.org/ido/category/jacket -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ido/category/jacket">
-        <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
         <skos:inScheme rdf:resource="https://w3id.org/ido/category"/>
         <skos:narrower rdf:resource="https://w3id.org/ido/category/leather-jacket"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/ido/category"/>
@@ -239,8 +303,8 @@
     <!-- https://w3id.org/ido/category/leather-jacket -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ido/category/leather-jacket">
-        <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
         <skos:broader rdf:resource="https://w3id.org/ido/category/jacket"/>
         <skos:inScheme rdf:resource="https://w3id.org/ido/category"/>
         <skos:notation>1</skos:notation>
@@ -255,8 +319,8 @@
     <!-- https://w3id.org/ido/category/perfume -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ido/category/perfume">
-        <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
         <skos:inScheme rdf:resource="https://w3id.org/ido/category"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/ido/category"/>
         <skos:notation>E</skos:notation>
@@ -271,8 +335,8 @@
     <!-- https://w3id.org/ido/category/shirt -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ido/category/shirt">
-        <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
         <skos:inScheme rdf:resource="https://w3id.org/ido/category"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/ido/category"/>
         <skos:notation>C</skos:notation>
@@ -287,8 +351,8 @@
     <!-- https://w3id.org/ido/category/skirt -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ido/category/skirt">
-        <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
         <skos:inScheme rdf:resource="https://w3id.org/ido/category"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/ido/category"/>
         <skos:notation>G</skos:notation>
@@ -303,8 +367,8 @@
     <!-- https://w3id.org/ido/category/sweater -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ido/category/sweater">
-        <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
         <skos:inScheme rdf:resource="https://w3id.org/ido/category"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/ido/category"/>
         <skos:notation>M</skos:notation>
@@ -319,8 +383,8 @@
     <!-- https://w3id.org/ido/category/tracksuit -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ido/category/tracksuit">
-        <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
         <skos:inScheme rdf:resource="https://w3id.org/ido/category"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/ido/category"/>
         <skos:notation>Y</skos:notation>
@@ -335,8 +399,8 @@
     <!-- https://w3id.org/ido/category/trousers -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ido/category/trousers">
-        <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
         <skos:inScheme rdf:resource="https://w3id.org/ido/category"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/ido/category"/>
         <skos:notation>P</skos:notation>
@@ -351,8 +415,8 @@
     <!-- https://w3id.org/ido/category/vest -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ido/category/vest">
-        <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
         <skos:inScheme rdf:resource="https://w3id.org/ido/category"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/ido/category"/>
         <skos:notation>R</skos:notation>
@@ -367,8 +431,8 @@
     <!-- https://w3id.org/ido/category/waistcoat -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ido/category/waistcoat">
-        <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
         <skos:inScheme rdf:resource="https://w3id.org/ido/category"/>
         <skos:topConceptOf rdf:resource="https://w3id.org/ido/category"/>
         <skos:notation>L</skos:notation>
@@ -381,5 +445,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.2.1.20160306-0033) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
 
