@@ -18,7 +18,7 @@ dc:rights a owl:AnnotationProperty .
 
 dc:title a owl:AnnotationProperty .
 
-:bodysuit a owl:NamedIndividual,
+ido:bodysuit a owl:NamedIndividual,
         skos:Concept,
         ido:ArticleCategory ;
     rdfs:label "bodysuit"@en,
@@ -29,7 +29,7 @@ dc:title a owl:AnnotationProperty .
         "body"@it ;
     skos:topConceptOf ido:category .
 
-:shoe a owl:NamedIndividual,
+ido:shoe a owl:NamedIndividual,
         skos:Concept,
         ido:ArticleCategory ;
     rdfs:label "shoe"@en,
@@ -40,7 +40,7 @@ dc:title a owl:AnnotationProperty .
         "scarpa"@it ;
     skos:topConceptOf ido:category .
 
-:tshirt a owl:NamedIndividual,
+ido:tshirt a owl:NamedIndividual,
         skos:Concept,
         ido:ArticleCategory ;
     rdfs:label "t-shirt"@en,
@@ -51,7 +51,7 @@ dc:title a owl:AnnotationProperty .
         "maglietta"@it ;
     skos:topConceptOf ido:category .
 
-:underwear a owl:NamedIndividual,
+ido:underwear a owl:NamedIndividual,
         skos:Concept,
         ido:ArticleCategory ;
     rdfs:label "underwear"@en,
