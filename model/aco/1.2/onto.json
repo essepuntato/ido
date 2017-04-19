@@ -2,9 +2,9 @@
   {
     "@id": "https://w3id.org/ido/category/skirt",
     "@type": [
-      "https://w3id.org/ido/ArticleCategory",
       "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "http://www.w3.org/2004/02/skos/core#Concept"
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/ido/ArticleCategory"
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
@@ -45,18 +45,18 @@
   {
     "@id": "https://w3id.org/ido/category/hat",
     "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
       "http://www.w3.org/2004/02/skos/core#Concept",
-      "https://w3id.org/ido/ArticleCategory"
+      "https://w3id.org/ido/ArticleCategory",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@language": "it",
-        "@value": "cappello"
-      },
-      {
         "@language": "en",
         "@value": "hat"
+      },
+      {
+        "@language": "it",
+        "@value": "cappello"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -71,12 +71,12 @@
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
-        "@language": "en",
-        "@value": "hat"
-      },
-      {
         "@language": "it",
         "@value": "cappello"
+      },
+      {
+        "@language": "en",
+        "@value": "hat"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#topConceptOf": [
@@ -92,7 +92,7 @@
     ]
   },
   {
-    "@id": "https://w3id.org/ido/bodysuit",
+    "@id": "https://w3id.org/ido/category/underwear",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
       "http://www.w3.org/2002/07/owl#NamedIndividual",
@@ -101,11 +101,11 @@
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "it",
-        "@value": "body"
+        "@value": "intimo"
       },
       {
         "@language": "en",
-        "@value": "bodysuit"
+        "@value": "underwear"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -115,17 +115,17 @@
     ],
     "http://www.w3.org/2004/02/skos/core#notation": [
       {
-        "@value": "B"
+        "@value": "O"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "bodysuit"
+        "@value": "underwear"
       },
       {
         "@language": "it",
-        "@value": "body"
+        "@value": "intimo"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#topConceptOf": [
@@ -137,18 +137,18 @@
   {
     "@id": "https://w3id.org/ido/category/waistcoat",
     "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/ido/ArticleCategory",
+      "http://www.w3.org/2004/02/skos/core#Concept",
       "http://www.w3.org/2002/07/owl#NamedIndividual"
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@language": "en",
-        "@value": "waistcoat"
-      },
-      {
         "@language": "it",
         "@value": "gilet"
+      },
+      {
+        "@language": "en",
+        "@value": "waistcoat"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -178,49 +178,6 @@
     ]
   },
   {
-    "@id": "https://w3id.org/ido/shoe",
-    "@type": [
-      "https://w3id.org/ido/ArticleCategory",
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "shoe"
-      },
-      {
-        "@language": "it",
-        "@value": "scarpa"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://w3id.org/ido/category"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#notation": [
-      {
-        "@value": 4
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@language": "en",
-        "@value": "shoe"
-      },
-      {
-        "@language": "it",
-        "@value": "scarpa"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#topConceptOf": [
-      {
-        "@id": "https://w3id.org/ido/category"
-      }
-    ]
-  },
-  {
     "@id": "http://purl.org/dc/elements/1.1/date",
     "@type": [
       "http://www.w3.org/2002/07/owl#AnnotationProperty"
@@ -229,9 +186,9 @@
   {
     "@id": "https://w3id.org/ido/category/fur-neck",
     "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/ido/ArticleCategory",
       "http://www.w3.org/2004/02/skos/core#Concept",
-      "https://w3id.org/ido/ArticleCategory"
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
@@ -302,12 +259,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
-        "@language": "en",
-        "@value": "This ontology defines a taxonomy of all the categories for the articles described by means of the Imperial Data Ontology (IDO, https://w3id.org/ido)."
-      },
-      {
         "@language": "it",
         "@value": "Questa ontologia definisce una tassonomia delle categorie degli articoli descrivibili usando la Imperial Data Ontology (IDO, https://w3id.org/ido)."
+      },
+      {
+        "@language": "en",
+        "@value": "This ontology defines a taxonomy of all the categories for the articles described by means of the Imperial Data Ontology (IDO, https://w3id.org/ido)."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -339,63 +296,20 @@
     ]
   },
   {
-    "@id": "https://w3id.org/ido/underwear",
+    "@id": "https://w3id.org/ido/category/vest",
     "@type": [
-      "https://w3id.org/ido/ArticleCategory",
       "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/ido/ArticleCategory",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@language": "it",
-        "@value": "intimo"
-      },
-      {
         "@language": "en",
-        "@value": "underwear"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://w3id.org/ido/category"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#notation": [
-      {
-        "@value": "O"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@language": "en",
-        "@value": "underwear"
+        "@value": "vest"
       },
-      {
-        "@language": "it",
-        "@value": "intimo"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#topConceptOf": [
-      {
-        "@id": "https://w3id.org/ido/category"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/ido/category/vest",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept",
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "https://w3id.org/ido/ArticleCategory"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "it",
         "@value": "canotta"
-      },
-      {
-        "@language": "en",
-        "@value": "vest"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -410,12 +324,12 @@
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
-        "@language": "it",
-        "@value": "canotta"
-      },
-      {
         "@language": "en",
         "@value": "vest"
+      },
+      {
+        "@language": "it",
+        "@value": "canotta"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#topConceptOf": [
@@ -431,12 +345,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
-        "@language": "en",
-        "@value": "This class enables the specification of the types of clothes that can be associated to the various styles in the catalogue, such as \"sweater\", \"trousers\", etc. All these types must be organised as a taxonomy."
-      },
-      {
         "@language": "it",
         "@value": "Questa classe permette di specificare i tipi che possono essere associati ai vari modelli del catalago, come ad esempio \"maglia\", \"pantalone\", ecc. Tutti i tipi devono organizzati sotto forma tassonomica."
+      },
+      {
+        "@language": "en",
+        "@value": "This class enables the specification of the types of clothes that can be associated to the various styles in the catalogue, such as \"sweater\", \"trousers\", etc. All these types must be organised as a taxonomy."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
@@ -463,9 +377,9 @@
   {
     "@id": "https://w3id.org/ido/category/trousers",
     "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
       "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "https://w3id.org/ido/ArticleCategory",
-      "http://www.w3.org/2004/02/skos/core#Concept"
+      "https://w3id.org/ido/ArticleCategory"
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
@@ -504,10 +418,53 @@
     ]
   },
   {
+    "@id": "https://w3id.org/ido/category/tshirt",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/ido/ArticleCategory"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "t-shirt"
+      },
+      {
+        "@language": "it",
+        "@value": "maglietta"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/ido/category"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "T"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "it",
+        "@value": "maglietta"
+      },
+      {
+        "@language": "en",
+        "@value": "t-shirt"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf": [
+      {
+        "@id": "https://w3id.org/ido/category"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/ido/category",
     "@type": [
-      "http://www.w3.org/2004/02/skos/core#ConceptScheme",
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.w3.org/2004/02/skos/core#ConceptScheme"
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
@@ -521,52 +478,52 @@
     ],
     "http://www.w3.org/2004/02/skos/core#hasTopConcept": [
       {
-        "@id": "https://w3id.org/ido/category/dress"
-      },
-      {
-        "@id": "https://w3id.org/ido/category/coat"
-      },
-      {
-        "@id": "https://w3id.org/ido/category/blazer"
-      },
-      {
-        "@id": "https://w3id.org/ido/category/leather-jacket"
-      },
-      {
-        "@id": "https://w3id.org/ido/category/skirt"
-      },
-      {
-        "@id": "https://w3id.org/ido/category/sweater"
-      },
-      {
-        "@id": "https://w3id.org/ido/category/jacket"
-      },
-      {
-        "@id": "https://w3id.org/ido/category/trousers"
-      },
-      {
-        "@id": "https://w3id.org/ido/category/waistcoat"
-      },
-      {
-        "@id": "https://w3id.org/ido/category/vest"
-      },
-      {
-        "@id": "https://w3id.org/ido/category/fur-neck"
-      },
-      {
-        "@id": "https://w3id.org/ido/category/tracksuit"
+        "@id": "https://w3id.org/ido/category/perfume"
       },
       {
         "@id": "https://w3id.org/ido/category/shirt"
       },
       {
+        "@id": "https://w3id.org/ido/category/tracksuit"
+      },
+      {
+        "@id": "https://w3id.org/ido/category/sweater"
+      },
+      {
+        "@id": "https://w3id.org/ido/category/skirt"
+      },
+      {
         "@id": "https://w3id.org/ido/category/heavy-jacket"
       },
       {
-        "@id": "https://w3id.org/ido/category/perfume"
+        "@id": "https://w3id.org/ido/category/leather-jacket"
+      },
+      {
+        "@id": "https://w3id.org/ido/category/trousers"
+      },
+      {
+        "@id": "https://w3id.org/ido/category/dress"
       },
       {
         "@id": "https://w3id.org/ido/category/hat"
+      },
+      {
+        "@id": "https://w3id.org/ido/category/blazer"
+      },
+      {
+        "@id": "https://w3id.org/ido/category/waistcoat"
+      },
+      {
+        "@id": "https://w3id.org/ido/category/fur-neck"
+      },
+      {
+        "@id": "https://w3id.org/ido/category/vest"
+      },
+      {
+        "@id": "https://w3id.org/ido/category/jacket"
+      },
+      {
+        "@id": "https://w3id.org/ido/category/coat"
       }
     ]
   },
@@ -622,8 +579,8 @@
   {
     "@id": "https://w3id.org/ido/category/heavy-jacket",
     "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept",
       "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/ido/ArticleCategory"
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -663,11 +620,54 @@
     ]
   },
   {
+    "@id": "https://w3id.org/ido/category/bodysuit",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/ido/ArticleCategory"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "bodysuit"
+      },
+      {
+        "@language": "it",
+        "@value": "body"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/ido/category"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "B"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "bodysuit"
+      },
+      {
+        "@language": "it",
+        "@value": "body"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf": [
+      {
+        "@id": "https://w3id.org/ido/category"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/ido/category/dress",
     "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept",
       "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "https://w3id.org/ido/ArticleCategory"
+      "https://w3id.org/ido/ArticleCategory",
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
@@ -709,8 +709,8 @@
     "@id": "https://w3id.org/ido/category/sweater",
     "@type": [
       "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "https://w3id.org/ido/ArticleCategory",
-      "http://www.w3.org/2004/02/skos/core#Concept"
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/ido/ArticleCategory"
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
@@ -734,12 +734,12 @@
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
-        "@language": "en",
-        "@value": "sweater"
-      },
-      {
         "@language": "it",
         "@value": "maglia"
+      },
+      {
+        "@language": "en",
+        "@value": "sweater"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#topConceptOf": [
@@ -751,18 +751,18 @@
   {
     "@id": "https://w3id.org/ido/category/leather-jacket",
     "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/ido/ArticleCategory",
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@language": "it",
-        "@value": "giubbotto di pelle"
-      },
-      {
         "@language": "en",
         "@value": "leather jacket"
+      },
+      {
+        "@language": "it",
+        "@value": "giubbotto di pelle"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
@@ -782,12 +782,12 @@
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
-        "@language": "en",
-        "@value": "leather jacket"
-      },
-      {
         "@language": "it",
         "@value": "giubbotto di pelle"
+      },
+      {
+        "@language": "en",
+        "@value": "leather jacket"
       }
     ]
   },
@@ -883,20 +883,63 @@
     ]
   },
   {
-    "@id": "https://w3id.org/ido/category/blazer",
+    "@id": "https://w3id.org/ido/category/shoe",
     "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/ido/ArticleCategory",
+      "http://www.w3.org/2004/02/skos/core#Concept",
       "http://www.w3.org/2002/07/owl#NamedIndividual"
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "en",
-        "@value": "blazer"
+        "@value": "shoe"
       },
       {
         "@language": "it",
+        "@value": "scarpa"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/ido/category"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": 4
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "it",
+        "@value": "scarpa"
+      },
+      {
+        "@language": "en",
+        "@value": "shoe"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf": [
+      {
+        "@id": "https://w3id.org/ido/category"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/ido/category/blazer",
+    "@type": [
+      "https://w3id.org/ido/ArticleCategory",
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
         "@value": "giacca"
+      },
+      {
+        "@language": "en",
+        "@value": "blazer"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -928,9 +971,9 @@
   {
     "@id": "https://w3id.org/ido/category/perfume",
     "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/ido/ArticleCategory",
       "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "https://w3id.org/ido/ArticleCategory"
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
@@ -954,12 +997,12 @@
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
-        "@language": "it",
-        "@value": "profumo"
-      },
-      {
         "@language": "en",
         "@value": "perfume"
+      },
+      {
+        "@language": "it",
+        "@value": "profumo"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#topConceptOf": [
@@ -971,9 +1014,9 @@
   {
     "@id": "https://w3id.org/ido/category/coat",
     "@type": [
-      "https://w3id.org/ido/ArticleCategory",
       "http://www.w3.org/2004/02/skos/core#Concept",
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/ido/ArticleCategory"
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
@@ -1003,49 +1046,6 @@
       {
         "@language": "it",
         "@value": "cappotto"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#topConceptOf": [
-      {
-        "@id": "https://w3id.org/ido/category"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/ido/tshirt",
-    "@type": [
-      "https://w3id.org/ido/ArticleCategory",
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "it",
-        "@value": "maglietta"
-      },
-      {
-        "@language": "en",
-        "@value": "t-shirt"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://w3id.org/ido/category"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#notation": [
-      {
-        "@value": "T"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@language": "it",
-        "@value": "maglietta"
-      },
-      {
-        "@language": "en",
-        "@value": "t-shirt"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#topConceptOf": [

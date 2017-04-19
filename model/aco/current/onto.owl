@@ -123,9 +123,9 @@
     
 
 
-    <!-- https://w3id.org/ido/bodysuit -->
+    <!-- https://w3id.org/ido/category/bodysuit -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/ido/bodysuit">
+    <owl:NamedIndividual rdf:about="https://w3id.org/ido/category/bodysuit">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
         <skos:inScheme rdf:resource="https://w3id.org/ido/category"/>
@@ -139,9 +139,9 @@
     
 
 
-    <!-- https://w3id.org/ido/shoe -->
+    <!-- https://w3id.org/ido/category/shoe -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/ido/shoe">
+    <owl:NamedIndividual rdf:about="https://w3id.org/ido/category/shoe">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
         <skos:inScheme rdf:resource="https://w3id.org/ido/category"/>
@@ -155,9 +155,9 @@
     
 
 
-    <!-- https://w3id.org/ido/tshirt -->
+    <!-- https://w3id.org/ido/category/tshirt -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/ido/tshirt">
+    <owl:NamedIndividual rdf:about="https://w3id.org/ido/category/tshirt">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
         <skos:inScheme rdf:resource="https://w3id.org/ido/category"/>
@@ -171,9 +171,9 @@
     
 
 
-    <!-- https://w3id.org/ido/underwear -->
+    <!-- https://w3id.org/ido/category/underwear -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/ido/underwear">
+    <owl:NamedIndividual rdf:about="https://w3id.org/ido/category/underwear">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/ido/ArticleCategory"/>
         <skos:inScheme rdf:resource="https://w3id.org/ido/category"/>
